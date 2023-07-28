@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>M23 Computer Programming</title>
+    <link>https://example.com/docs/course_material/quizzes/</link>
+    <description>Recent content on M23 Computer Programming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://example.com/docs/course_material/quizzes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quiz 1</title>
+      <link>https://example.com/docs/course_material/quizzes/quiz1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/docs/course_material/quizzes/quiz1/</guid>
+      <description>quiz 1 # Question 1 # The question body would go here
+Question 2 # Maybe another question here</description>
+    </item>
+    
+    <item>
+      <title>Quiz 2</title>
+      <link>https://example.com/docs/course_material/quizzes/quiz2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/docs/course_material/quizzes/quiz2/</guid>
+      <description>quiz 2 # Question 3 # The question body would go here
+Question 4 # Maybe another question here</description>
+    </item>
+    
+  </channel>
+</rss>
