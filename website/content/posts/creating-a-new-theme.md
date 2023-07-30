@@ -4,7 +4,7 @@ linktitle: Creating a New Theme
 menu:
   main:
     parent: tutorials
-next: /tutorials/github-pages-blog
+next: /tutorials/migrate-from-jekyll
 prev: /tutorials/automated-deployments
 title: Creating a New Theme
 weight: 10

@@ -4,7 +4,7 @@ linktitle: Migrating from Jekyll
 menu:
   main:
     parent: tutorials
-prev: /tutorials/mathjax
+prev: /tutorials/creating-a-new-theme
 title: Migrate to Hugo from Jekyll
 weight: 10
 ---
