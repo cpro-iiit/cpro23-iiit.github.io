@@ -1,7 +1,7 @@
 ---
-title: "Assignment X"
+title: "Template"
 ---
-# Assignment X
+# Course material template
 
 ## Question 1
 
@@ -15,7 +15,7 @@ Linked list can be defined as either a node structure doing nothing or one that 
 
 ## Links
 
-See linked: [Recursion]({{< relref "recursion.md" >}})
+See linked: [Recursion]({{< relref "template.md" >}})
 
 ## Button
 
@@ -55,9 +55,9 @@ Lorem markdownum insigne...
 
 ## KaTeX
 
-{{</* katex block text-center */>}}
+{{< katex block text-center >}}
 f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
-{{</* /katex */>}}
+{{</katex>}}
 
 ## Tabs
 
