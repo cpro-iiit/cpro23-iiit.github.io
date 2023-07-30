@@ -10,6 +10,7 @@ categories = [
     "golang",
 ]
 weight = 1
+bookHidden = true
 +++
 
 ## Content here

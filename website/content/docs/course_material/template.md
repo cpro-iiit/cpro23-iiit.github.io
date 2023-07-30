@@ -1,5 +1,6 @@
 ---
 title: "Template"
+bookHidden: true
 ---
 # Course material template
 
