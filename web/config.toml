@@ -1,0 +1,4 @@
+baseURL = 'https://cpro-iiit.github.io'
+languageCode = 'en-us'
+title = 'CPro Mon 23'
+theme = 'hugo-book'
