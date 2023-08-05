@@ -1,7 +1,7 @@
 ---
 menu:
-  before:
-    name: announcements
+  after:
+    name: resources
     weight: 5
-title: Announcements
+title: Resources
 ---
