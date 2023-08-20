@@ -101,7 +101,7 @@ Output a single integer which denotes the reverse of the `n`. Note that the outp
 
 ### Problem Description
 
-Given a time as input in `hh:mm:ss` format, print the otal number of minutes which have passed in the day.
+Given a time as input in `hh:mm:ss` format, print the total number of minutes which have passed in the day.
 
 ### Input format
 
