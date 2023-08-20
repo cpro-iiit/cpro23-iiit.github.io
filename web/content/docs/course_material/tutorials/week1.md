@@ -15,10 +15,10 @@ with someone who only understands French. This situation would require a transla
 
 There are various stages in which the code is converted from C-language into binary for the computer to understand it:
 
-1. **Preprocessing**:  All headers files starting with “#include” are processed in this phase. (Several other forms of processing including the removal of comments also happen at this stage). This generates a .i file 
-2. **Compiling**: For now, assume it to be an intermediate process of conversion from .i to .s file. The .s file (known as an assembly file) is a set of commands which our machine knows to execute.
-3. **Assembly**: Code is converted into machine-understandable code by the assembler. The file output is known as .o/.obj file. 
-4. **Linking**: links library files(eg: stdio.h, math.h etc) to the object file to produce the a.out file, which is a binary executable of the program that was supplied as input.
+1. **Preprocessing**:  All headers files starting with “#include” are processed in this phase. (Several other forms of processing including the removal of comments also happen at this stage). This generates a `.i` file 
+2. **Compiling**: For now, assume it to be an intermediate process of conversion from `.i` to `.s` file. The `.s` file (known as an assembly file) is a set of commands which our machine knows to execute.
+3. **Assembly**: Code is converted into machine-understandable code by the assembler. The file output is a `.o` or `.obj` file. 
+4. **Linking**: links library files(eg: `stdio.h`, `math.h` etc) to the object file to produce the `a.out` file, which is a binary executable of the program that was supplied as input.
 
 Finally, we execute the `a.out` file to get the desired output.
 
