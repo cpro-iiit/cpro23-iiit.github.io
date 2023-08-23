@@ -151,6 +151,6 @@ Output a single integer that denotes the number of pairs `(a, b)` that satisfy t
 
 | Sample Input | Sample Output |
 | ------------ | ------------- |
-| `5`         |`11`       |
+| `5`         |`9`       |
 
 ---
