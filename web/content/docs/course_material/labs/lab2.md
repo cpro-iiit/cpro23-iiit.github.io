@@ -14,7 +14,7 @@ Given an integer which has `n` digits, print `YES` if it is divisible by 3, and 
 Note: The input number will not contain any leading zeroes.
 {{</hint>}}
 
-<!-- [Link to problem on OJ]() -->
+[Link to problem on OJ](http://oj.iiit.ac.in/problem/cpro23lab2q1)
 
 ### Input constraints 
 
@@ -50,7 +50,7 @@ You are given three non-negative integers `x`, `y` and `k` where {{<katex block 
 0 \le k \le 31{{</katex>}}. 
 Replace the first `k` bits (from the right) of `x` with the first `k` bits of `y` and print the new value of `x`. In other words, replace the `k` least significant bits of `x` with the corresponding bits from `y`.
 
-<!-- [Link to problem on OJ]() -->
+[Link to problem on OJ](http://oj.iiit.ac.in/problem/cpro23lab2q2)
 
 ### Input constraints 
 
