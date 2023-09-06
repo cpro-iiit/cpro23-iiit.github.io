@@ -46,6 +46,23 @@ Print `YES` if the two squares are horizontally adjacent, and `NO` otherwise.
 | `5 6`         | `YES`       |
 | `6 7`         | `NO`       |
 
+### Solution
+
+```c
+#include <stdio.h>
+
+int main() {
+    int A, B;
+    scanf("%d %d", &A, &B);
+
+    if ((A - 1) % 3 == (B - 1) % 3) 
+        printf("YES\n");
+    else 
+        printf("NO\n");
+    return 0;
+}
+```
+
 ---
 
 ## Question 2
@@ -53,6 +70,11 @@ Print `YES` if the two squares are horizontally adjacent, and `NO` otherwise.
 ### Problem Description
 
 Shiven was given a problem to solve as assignment. In the problem, he was given two numbers `n` and `s`. He was asked to create a sequence of `n` **non-negative integers** such that the median of the sequence is **as large as possible** and that sum of all numbers of the sequence is `s`. Can you help Shiven find the maximum possible median of such a sequence?
+
+
+
+**Note:** The definition of the median is the {{<katex inline>}}  \left\lceil \frac{n}{2}\right\rceil^{th} {{</katex>}}   element of a sequence
+noted in the ascending order
 
 ### Input constraints 
 
@@ -73,5 +95,22 @@ Output a single integer that is the **maximum median** of such a sequence.
 | Sample Input | Sample Output |
 | ------------ | ------------- |
 | `7 17`         |`4`       |
+
+### Solution
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int n, s;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &n, &s);
+    int m = n / 2 + 1;
+    int ans = s / m;
+    printf("The maximum value of median is: %d\n", ans);
+    return 0;
+}
+```
 
 ---

@@ -40,6 +40,20 @@ Output a single integer that denotes the number of possible password sequences.
 | ------------ | ------------- |
 | `1`         | `216`       |
 
+### Solution
+
+```c
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int ans = ((10-n)*(10-n-1))/2 * 6; // (10-n)C2 * 4C2
+    printf("%d\n", ans);
+    return 0;
+}
+```
+
 ---
 
 ## Question 2
@@ -68,6 +82,22 @@ Output a single integer that denotes `z` as described in the problem statement
 | ------------ | ------------- |
 | `1 3`         |`2`       |
 
+### Solution
+
+```c
+#include <stdio.h>
+
+int main() {
+    int x, y;
+    scanf("%d %d", &x, &y);
+
+    int z = x ^ y;
+    printf("%d", z);
+
+    return 0;
+}
+```
+
 ---
 
 ## Question 3
@@ -95,6 +125,28 @@ Output a single integer which denotes the reverse of the `n`. Note that the outp
 | `3214`         |`4123`       |
 | `5600`         |`0065`       |
 
+### Solution
+
+```c
+#include <stdio.h>
+
+int main() {
+    int n, reversed = 0;
+
+    // Input a 4-digit number
+    printf("Enter a 4-digit number: ");
+    scanf("%d", &n);
+
+    // Reverse the number using modulo operator
+    reversed = (n % 10) * 1000 + ((n / 10) % 10) * 100 + ((n / 100) % 10) * 10 + (n / 1000);
+
+    // Output the reversed number
+    printf("Reversed number: %d\n", reversed);
+
+    return 0;
+}
+```
+
 ---
 
 ## Question 4
@@ -116,6 +168,32 @@ Output the total number of minutes that have passed. Note that this may not be a
 | Sample Input | Sample Output |
 | ------------ | ------------- |
 | `13:40:30`         |`820.5`       |
+
+### Solution
+
+```c
+#include <stdio.h>
+
+int main() {
+    // Declare three variables that will be used to store the hours, minutes,
+    // and seconds, respectively
+    int h, m, s;
+    
+    // Take input in the specified format
+    scanf("%d:%d:%d", &h, &m, &s);
+
+    /**
+     * Calculate the total minutes
+     * Total minutes = hours * 60 + minutes + seconds / 60
+     * However, to ensure that float division is done, we typecast the seconds
+     * to float
+     */
+    float minutes = 60 * h + m + (float)s / 60;
+
+    // Output the total minutes as a floating point number
+    printf("%f", minutes);
+}
+```
 
 ---
 
@@ -152,5 +230,21 @@ Output a single integer that denotes the number of pairs `(a, b)` that satisfy t
 | Sample Input | Sample Output |
 | ------------ | ------------- |
 | `5`         |`11`       |
+
+### Solution
+
+```c
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int ans = n + 2 * ((n / 2) + (n / 3));
+    printf("%d", n);
+
+    return 0;
+}
+```
 
 ---

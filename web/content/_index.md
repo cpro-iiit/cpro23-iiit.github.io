@@ -42,7 +42,7 @@ Through hands-on practice and coding assignments, you'll develop the confidence 
 - Bonus*: 5%
 
 {{<hint info>}}
-Note*: Total score for a student would be capped at 100% (if the student's score happens to exceed 100)
+Note: Total score for a student would be capped at 100% (if the student's score happens to exceed 100)
 {{</hint>}}
 
 ## Honour Code
