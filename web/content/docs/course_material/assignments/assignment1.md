@@ -24,7 +24,7 @@ The only line of input contains a single integer `n`
 
 ### Output Format
 
-Output a continous stream of bits of ~n~ starting from the most significant bit.
+Output a continous stream of bits of `n` starting from the most significant bit.
 
 ### Sample input and output
 
@@ -87,7 +87,7 @@ The only line of input contains a single integer `n`.
 
 ### Output Format
 
-Output all primes that are less than or equal ~n~ in ascending order separated by spaces
+Output all primes that are less than or equal `n` in ascending order separated by spaces
 
 ### Sample input and output
 
@@ -189,7 +189,7 @@ int main() {
 
 ### Problem Description
 
-You are given three integers `n`, `x` and `y`. You need to print the first `n` terms of the sequence `S` which starts with `S_1=x` and `S_2=y` and further terms are derived from the relation `S_i = S_{i-1} + S_{i-2}`
+You are given three integers `n`, `x` and `y`. You need to print the first `n` terms of the sequence `S` which starts with {{<katex inline>}}S_1=x{{</katex>}} and {{<katex inline>}}S_2=y{{</katex>}} and further terms are derived from the relation  {{<katex inline>}}S_i = S_{i-1} + S_{i-2}{{</katex>}}.
 
 {{<hint info>}}
 The first `n` values of `S` are guaranteed to fit in `int`
@@ -277,7 +277,7 @@ Kushagra is in love with pairs. He has a list of numbers where each number has a
 
 The first line contains an integer `n` denoting the numbers present in the list.
 
-The second line contains n space-separated integers `[A_0, A_1, A_2,... A_{n-1}]`.
+The second line contains n space-separated integers {{<katex inline>}}[A_0, A_1, A_2,... A_{n-1}]{{</katex>}}.
 
 ### Output Format
 
