@@ -5,6 +5,7 @@ menu:
     name: tas
     weight: 6
 ---
+# Teaching Assistants
 
 - Pramod Rao | pramod.b@research.iiit.ac.in
 - Shreeya Singh | shreeya.singh@students.iiit.ac.in

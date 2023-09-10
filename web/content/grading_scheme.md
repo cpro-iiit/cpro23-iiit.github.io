@@ -5,7 +5,7 @@ menu:
     name: grading
     weight: 7
 ---
-
+# Grading Scheme
 
 - Assignments: 30%
 - Quizzes: 20% (2 Quizzes worth 10% each)
