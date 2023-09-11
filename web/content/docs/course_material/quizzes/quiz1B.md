@@ -99,7 +99,7 @@ Write `-15` in 1’s complement form (assume `8-bit` representation)
 ### Solution & Grading Scheme
 
 The number 15 in binary is given by: `00001111` **(2 marks)**<br>
-In 2 complement it is given by: `11110000`. **(3 marks)**
+In 1's complement it is given by: `11110000`. **(3 marks)**
 
 ---
 
