@@ -104,6 +104,8 @@ ul.pagination {
     width: $menu-width;
     padding: $padding-16;
     background: var(--body-background);
+    border-right: 1px solid #c5c3c3;
+
 
     @include fixed;
   }
