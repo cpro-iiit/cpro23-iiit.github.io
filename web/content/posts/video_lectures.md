@@ -3,9 +3,9 @@ title = "Video Lectures from Elsewhere"
 date = "2023-09-05"
 tags = [
     "video",
-    "setup",3
+    "setup",
 ]
-weight = 
+weight = 3
 +++
 
 You can find some video lectures on c programming from other universities bellow:
