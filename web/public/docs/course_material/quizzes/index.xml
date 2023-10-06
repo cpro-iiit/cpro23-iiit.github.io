@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>M23 Computer Programming</title>
-    <link>https://example.com/docs/course_material/quizzes/</link>
-    <description>Recent content on M23 Computer Programming</description>
+    <title>CPro Mon 23</title>
+    <link>https://cpro-iiit.github.io/docs/course_material/quizzes/</link>
+    <description>Recent content on CPro Mon 23</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://example.com/docs/course_material/quizzes/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://cpro-iiit.github.io/docs/course_material/quizzes/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Quiz 1</title>
-      <link>https://example.com/docs/course_material/quizzes/quiz1/</link>
+      <title>Quiz - 1 Section A</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz1A/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/course_material/quizzes/quiz1/</guid>
-      <description>quiz 1 # Question 1 # The question body would go here
-Question 2 # Maybe another question here</description>
+      <guid>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz1A/</guid>
+      <description>Quiz 1#Section AQuestion 1 - 5 marks#Problem Description#Write a program to find the factorial of a number. Here n can be taken to be an input from the user.
+Solution##include &amp;lt;stdio.h&amp;gt; int main(){ int n; scanf(&amp;#34;%d&amp;#34;,&amp;amp;n); if(n&amp;lt;0){ printf(&amp;#34;Invalid Input!&amp;#34;); }else{ int ans=1; for(int i=1;i&amp;lt;=n;i++){ ans*=i; } printf(&amp;#34;%d\n&amp;#34;,ans); } return 0; } Grading Scheme#1 mark: For writing
+#include &amp;lt;stdio.h&amp;gt; 1 mark: For writing</description>
     </item>
     
     <item>
-      <title>Quiz 2</title>
-      <link>https://example.com/docs/course_material/quizzes/quiz2/</link>
+      <title>Quiz - 1 Section B</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz1B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/course_material/quizzes/quiz2/</guid>
-      <description>quiz 2 # Question 3 # The question body would go here
-Question 4 # Maybe another question here</description>
+      <guid>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz1B/</guid>
+      <description>Quiz 1#Section BQuestion 1 - 5 marks#Problem Description#Write a program to find the sum of first n even numbers. Here n can be taken to be an input from the user.
+Solution#Both Codes are considered to be valid.
+#include&amp;lt;stdio.h&amp;gt; int main() { int i, ans = 0,n; scanf(&amp;#34;%d&amp;#34;, &amp;amp;n); for(i=0; i &amp;lt; n; i ++) { ans = ans + 2*i; } printf(&amp;#34;%d\n&amp;#34;, ans); return 0; } #include&amp;lt;stdio.</description>
     </item>
     
   </channel>

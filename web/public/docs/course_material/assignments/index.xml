@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>M23 Computer Programming</title>
-    <link>https://example.com/docs/course_material/assignments/</link>
-    <description>Recent content on M23 Computer Programming</description>
+    <title>CPro Mon 23</title>
+    <link>https://cpro-iiit.github.io/docs/course_material/assignments/</link>
+    <description>Recent content on CPro Mon 23</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://example.com/docs/course_material/assignments/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://cpro-iiit.github.io/docs/course_material/assignments/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Assignment 1</title>
-      <link>https://example.com/docs/course_material/assignments/a1/</link>
+      <title>Assignment - 1</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/assignments/assignment1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/course_material/assignments/a1/</guid>
-      <description>Assignment 1 # Question 1 # The question body would go here
-Question 2 # Maybe another question here</description>
-    </item>
-    
-    <item>
-      <title>Assignment 2</title>
-      <link>https://example.com/docs/course_material/assignments/a2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/docs/course_material/assignments/a2/</guid>
-      <description>Assignment 2 # Question 3 # The question body would go here
-Question 4 # Maybe another question here</description>
+      <guid>https://cpro-iiit.github.io/docs/course_material/assignments/assignment1/</guid>
+      <description>Assignment 1#Question 1#Problem Description#Given an integer n as input, print its binary representation starting with the most significant bit, i.e. don&amp;rsquo;t print the 0&amp;rsquo;s before the first 1.
+Link to problem on OJ
+Input constraints#\(0 \le n \le 2^{30}\)Input format#The only line of input contains a single integer n
+Output Format#Output a continous stream of bits of n starting from the most significant bit.</description>
     </item>
     
   </channel>

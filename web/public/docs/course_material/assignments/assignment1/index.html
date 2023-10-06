@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Assignment 1#Question 1#Problem Description#Given an integer n as input, print its binary representation starting with the most significant bit, i.e. don&rsquo;t print the 0&rsquo;s before the first 1.
+Link to problem on OJ
+Input constraints#\(0 \le n \le 2^{30}\)Input format#The only line of input contains a single integer n
+Output Format#Output a continous stream of bits of n starting from the most significant bit.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Assignment - 1" />
+<meta property="og:description" content="Assignment 1#Question 1#Problem Description#Given an integer n as input, print its binary representation starting with the most significant bit, i.e. don&rsquo;t print the 0&rsquo;s before the first 1.
+Link to problem on OJ
+Input constraints#\(0 \le n \le 2^{30}\)Input format#The only line of input contains a single integer n
+Output Format#Output a continous stream of bits of n starting from the most significant bit." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/assignments/assignment1/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2023-09-11T02:23:06+05:30" />
+<title>Assignment - 1 | CPro Mon 23</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.9813b9a015516c05172c78b95be3219e264c32dfcd09bf530a1dcd298208c8d2.js" integrity="sha256-mBO5oBVRbAUXLHi5W&#43;MhniZMMt/NCb9TCh3NKYIIyNI=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>CPro Mon 23</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Course Material</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c87ef19fe67bdb63d85d44d099797871" class="toggle"  />
+    <label for="section-c87ef19fe67bdb63d85d44d099797871" class="flex justify-between">
+      <a role="button" class="">Lectures</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/4_10/" class="">II.1 Typedef, Struct Initialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/6_10/" class="">II.2 Strings and Enums</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5b2c745bf85b67a9cd73528333cc29a8" class="toggle" checked />
+    <label for="section-5b2c745bf85b67a9cd73528333cc29a8" class="flex justify-between">
+      <a role="button" class="">Assignments</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/assignments/assignment1/" class="active">Assignment - 1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-68a23d3bc0e29a3d69b03994606ba228" class="toggle"  />
+    <label for="section-68a23d3bc0e29a3d69b03994606ba228" class="flex justify-between">
+      <a role="button" class="">Labs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab1/" class="">Lab - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab2/" class="">Lab - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab3/" class="">Lab - 3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c04055d7141066e86bae893cc2c0e07" class="toggle"  />
+    <label for="section-7c04055d7141066e86bae893cc2c0e07" class="flex justify-between">
+      <a role="button" class="">Practice Problems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week1/" class="">Week - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week2/" class="">Week - 2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4cc6bae32fccbb5cd498aeeba537746f" class="toggle"  />
+    <label for="section-4cc6bae32fccbb5cd498aeeba537746f" class="flex justify-between">
+      <a role="button" class="">Tutorials</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/tutorials/week1/" class="">Tutorial - 1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="toggle"  />
+    <label for="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="flex justify-between">
+      <a role="button" class="">Quizzes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/quiz1A/" class="">Quiz - 1 Section A</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/quiz1B/" class="">Quiz - 1 Section B</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Resources
+      </a>
+  </li>
+  
+  <li>
+    <a href="/tas/"  >
+        Teaching Assistants
+      </a>
+  </li>
+  
+  <li>
+    <a href="/grading_scheme/"  >
+        Grading Scheme
+      </a>
+  </li>
+  
+  <li>
+    <a href="/honor_code/"  >
+        Honor Code
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/cpro-iiit/cpro-iiit.github.io"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Assignment - 1</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#assignment-1">Assignment 1</a>
+      <ul>
+        <li><a href="#question-1">Question 1</a>
+          <ul>
+            <li><a href="#problem-description">Problem Description</a></li>
+            <li><a href="#input-constraints">Input constraints</a></li>
+            <li><a href="#input-format">Input format</a></li>
+            <li><a href="#output-format">Output Format</a></li>
+            <li><a href="#sample-input-and-output">Sample input and output</a></li>
+            <li><a href="#solution">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-2">Question 2</a>
+          <ul>
+            <li><a href="#problem-description-1">Problem Description</a></li>
+            <li><a href="#input-constraints-1">Input constraints</a></li>
+            <li><a href="#input-format-1">Input format</a></li>
+            <li><a href="#output-format-1">Output Format</a></li>
+            <li><a href="#sample-input-and-output-1">Sample input and output</a></li>
+            <li><a href="#solution-1">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-3">Question 3</a>
+          <ul>
+            <li><a href="#problem-description-2">Problem Description</a></li>
+            <li><a href="#input-constraints-2">Input constraints</a></li>
+            <li><a href="#input-format-2">Input format</a></li>
+            <li><a href="#output-format-2">Output Format</a></li>
+            <li><a href="#sample-input-and-output-2">Sample input and output</a></li>
+            <li><a href="#solution-2">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-4">Question 4</a>
+          <ul>
+            <li><a href="#problem-description-3">Problem Description</a></li>
+            <li><a href="#input-constraints-3">Input constraints</a></li>
+            <li><a href="#input-format-3">Input format</a></li>
+            <li><a href="#output-format-3">Output Format</a></li>
+            <li><a href="#sample-input-and-output-3">Sample input and output</a></li>
+            <li><a href="#solution-3">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-5">Question 5</a>
+          <ul>
+            <li><a href="#problem-description-4">Problem Description</a></li>
+            <li><a href="#input-constraints-4">Input constraints</a></li>
+            <li><a href="#input-format-4">Input format</a></li>
+            <li><a href="#output-format-4">Output Format</a></li>
+            <li><a href="#sample-input-and-output-4">Sample input and output</a></li>
+            <li><a href="#solution-4">Solution</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="assignment-1">
+  Assignment 1
+  <a class="anchor" href="#assignment-1">#</a>
+</h1>
+<h2 id="question-1">
+  Question 1
+  <a class="anchor" href="#question-1">#</a>
+</h2>
+<h3 id="problem-description">
+  Problem Description
+  <a class="anchor" href="#problem-description">#</a>
+</h3>
+<p>Given an integer <code>n</code> as input, print its binary representation starting with the most significant bit, i.e. don&rsquo;t print the <code>0</code>&rsquo;s before the first <code>1</code>.</p>
+<p><a href="http://oj.iiit.ac.in/problem/cpro23a1q1">Link to problem on OJ</a></p>
+<h3 id="input-constraints">
+  Input constraints
+  <a class="anchor" href="#input-constraints">#</a>
+</h3>
+
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \(
+0 \le n \le 2^{30}\)
+</span>
+
+<h3 id="input-format">
+  Input format
+  <a class="anchor" href="#input-format">#</a>
+</h3>
+<p>The only line of input contains a single integer <code>n</code></p>
+<h3 id="output-format">
+  Output Format
+  <a class="anchor" href="#output-format">#</a>
+</h3>
+<p>Output a continous stream of bits of <code>n</code> starting from the most significant bit.</p>
+<h3 id="sample-input-and-output">
+  Sample input and output
+  <a class="anchor" href="#sample-input-and-output">#</a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Sample Input</th>
+<th>Sample Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>11</code></td>
+<td><code>1011</code></td>
+</tr>
+<tr>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="solution">
+  Solution
+  <a class="anchor" href="#solution">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> x;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scanf</span>(<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">&amp;</span>x);
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (x<span style="color:#f92672">==</span><span style="color:#ae81ff">0</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;0&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> mask <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">30</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> flag_first_one <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">while</span> (mask) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (x <span style="color:#f92672">&amp;</span> mask) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;1&#34;</span>);
+</span></span><span style="display:flex;"><span>      flag_first_one <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (flag_first_one) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;0&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">&gt;&gt;=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="question-2">
+  Question 2
+  <a class="anchor" href="#question-2">#</a>
+</h2>
+<h3 id="problem-description-1">
+  Problem Description
+  <a class="anchor" href="#problem-description-1">#</a>
+</h3>
+<p>Given an integer <code>n</code> between <code>2</code> and <code>100</code> as input, print all prime numbers from <code>1</code> to <code>n</code> (including <code>n</code>) in ascending order.</p>
+<p><a href="http://oj.iiit.ac.in/problem/cpro23a1q2">Link to problem on OJ</a></p>
+<h3 id="input-constraints-1">
+  Input constraints
+  <a class="anchor" href="#input-constraints-1">#</a>
+</h3>
+<span>
+  \(
+2 \le n \le 100\)
+</span>
+
+<h3 id="input-format-1">
+  Input format
+  <a class="anchor" href="#input-format-1">#</a>
+</h3>
+<p>The only line of input contains a single integer <code>n</code>.</p>
+<h3 id="output-format-1">
+  Output Format
+  <a class="anchor" href="#output-format-1">#</a>
+</h3>
+<p>Output all primes that are less than or equal <code>n</code> in ascending order separated by spaces</p>
+<h3 id="sample-input-and-output-1">
+  Sample input and output
+  <a class="anchor" href="#sample-input-and-output-1">#</a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Sample Input</th>
+<th>Sample Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>2</code></td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td><code>6</code></td>
+<td><code>2 3 5</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="solution-1">
+  Solution
+  <a class="anchor" href="#solution-1">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> n;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scanf</span>(<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">&amp;</span>n);
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>; i <span style="color:#f92672">&lt;=</span> n; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (i <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">||</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">||</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">||</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">7</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d &#34;</span>, i);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (i <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">7</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d &#34;</span>, i);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="question-3">
+  Question 3
+  <a class="anchor" href="#question-3">#</a>
+</h2>
+<h3 id="problem-description-2">
+  Problem Description
+  <a class="anchor" href="#problem-description-2">#</a>
+</h3>
+<p>You are given <code>width</code> and <code>height</code> of a rectangle and you need to print that rectangle.<br>
+Look at samples for more clarity.<br>
+The corners are to be represented by <code>'o'</code>.<br>
+The vertical sides are represented by <code>'|'</code><br>
+The horizontal sides are represented by <code>'-'</code><br>
+The <code>'o'</code> counts towards both height and width.</p>
+<p><a href="http://oj.iiit.ac.in/problem/cpro23a1q3">Link to problem on OJ</a></p>
+<h3 id="input-constraints-2">
+  Input constraints
+  <a class="anchor" href="#input-constraints-2">#</a>
+</h3>
+<span>
+  \(
+1\leq width\leq 1000, 1\leq height\leq1000\)
+</span>
+
+<h3 id="input-format-2">
+  Input format
+  <a class="anchor" href="#input-format-2">#</a>
+</h3>
+<p>Two space separated integers, <code>width</code> and <code>height</code>.</p>
+<h3 id="output-format-2">
+  Output Format
+  <a class="anchor" href="#output-format-2">#</a>
+</h3>
+<p>Print the rectangle with the given <code>width</code> and <code>height</code>.</p>
+<h3 id="sample-input-and-output-2">
+  Sample input and output
+  <a class="anchor" href="#sample-input-and-output-2">#</a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Sample Input</th>
+<th>Sample Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>4 5</code></td>
+<td><code> o--o</code><br> <code>|   |</code><br> <code>|   |</code><br> <code>|   |</code><br>   <code>o--o</code></td>
+</tr>
+<tr>
+<td><code>1 1</code></td>
+<td><code>o</code></td>
+</tr>
+<tr>
+<td><code>1 3</code></td>
+<td><code>o</code><br><code>|</code><br><code>o</code></td>
+</tr>
+<tr>
+<td><code>3 2</code></td>
+<td><code>o-o</code><br><code>o-o</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="solution-2">
+  Solution
+  <a class="anchor" href="#solution-2">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> width, height;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">scanf</span>(<span style="color:#e6db74">&#34;%d %d&#34;</span>, <span style="color:#f92672">&amp;</span>width, <span style="color:#f92672">&amp;</span>height);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> height; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; j <span style="color:#f92672">&lt;=</span> width; j<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> ((i <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;&amp;</span> (j <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> j <span style="color:#f92672">==</span> width)) <span style="color:#f92672">||</span> (i <span style="color:#f92672">==</span> height <span style="color:#f92672">&amp;&amp;</span> (j <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> j <span style="color:#f92672">==</span> width)))
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;o&#34;</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (j <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> j <span style="color:#f92672">==</span> width) 
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;|&#34;</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (i <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> i <span style="color:#f92672">==</span> height) 
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;-&#34;</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span> 
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34; &#34;</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="question-4">
+  Question 4
+  <a class="anchor" href="#question-4">#</a>
+</h2>
+<h3 id="problem-description-3">
+  Problem Description
+  <a class="anchor" href="#problem-description-3">#</a>
+</h3>
+<p>You are given three integers <code>n</code>, <code>x</code> and <code>y</code>. You need to print the first <code>n</code> terms of the sequence <code>S</code> which starts with <span>
+  \(S_1=x\)
+</span>
+ and <span>
+  \(S_2=y\)
+</span>
+ and further terms are derived from the relation  <span>
+  \(S_i = S_{i-1} &#43; S_{i-2}\)
+</span>
+.</p>
+<blockquote class="book-hint info">
+  The first <code>n</code> values of <code>S</code> are guaranteed to fit in <code>int</code>
+</blockquote>
+
+<p><a href="http://oj.iiit.ac.in/problem/cpro23a1q4">Link to problem on OJ</a></p>
+<h3 id="input-constraints-3">
+  Input constraints
+  <a class="anchor" href="#input-constraints-3">#</a>
+</h3>
+<p><span>
+  \(
+1 \le n &lt; 50\)
+</span>
+
+<br>
+<span>
+  \(
+0\leq x,y\leq 1e5\)
+</span>
+
+<span>
+  \(\)
+</span>
+</p>
+<h3 id="input-format-3">
+  Input format
+  <a class="anchor" href="#input-format-3">#</a>
+</h3>
+<p>The only line of input contains 3 space separated integers <code>n</code>, <code>x</code> and <code>y</code>.</p>
+<h3 id="output-format-3">
+  Output Format
+  <a class="anchor" href="#output-format-3">#</a>
+</h3>
+<p>Output one line containing <code>n</code> space-seperated integers, denoting the first <code>n</code> terms of the sequence <code>S</code>.</p>
+<h3 id="sample-input-and-output-3">
+  Sample input and output
+  <a class="anchor" href="#sample-input-and-output-3">#</a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Sample Input</th>
+<th>Sample Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>5 1 2</code></td>
+<td><code>1 2 3 5 8</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="solution-3">
+  Solution
+  <a class="anchor" href="#solution-3">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> n, x, y;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">scanf</span>(<span style="color:#e6db74">&#34;%d %d %d&#34;</span>, <span style="color:#f92672">&amp;</span>n, <span style="color:#f92672">&amp;</span>x, <span style="color:#f92672">&amp;</span>y);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> n; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>)<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d &#34;</span>, x);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>)<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d &#34;</span>, y);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> z <span style="color:#f92672">=</span> x <span style="color:#f92672">+</span> y;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d &#34;</span>, z);
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> y;
+</span></span><span style="display:flex;"><span>        y <span style="color:#f92672">=</span> z;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="question-5">
+  Question 5
+  <a class="anchor" href="#question-5">#</a>
+</h2>
+<h3 id="problem-description-4">
+  Problem Description
+  <a class="anchor" href="#problem-description-4">#</a>
+</h3>
+<p>Kushagra is in love with pairs. He has a list of numbers where each number has a duplicate pair. Unfortunately, there is one number that does not have a pair. Help him figure out which number it is.</p>
+<p><a href="http://oj.iiit.ac.in/problem/cpro23a1q5">Link to problem on OJ</a></p>
+<h3 id="input-constraints-4">
+  Input constraints
+  <a class="anchor" href="#input-constraints-4">#</a>
+</h3>
+<p><span>
+  \(
+3 \le n \le 10^{6}\)
+</span>
+
+<br>
+<span>
+  \(
+1 \le A_i \le 10^{9}\)
+</span>
+
+<span>
+  \(\)
+</span>
+</p>
+<h3 id="input-format-4">
+  Input format
+  <a class="anchor" href="#input-format-4">#</a>
+</h3>
+<p>The first line contains an integer <code>n</code> denoting the numbers present in the list.</p>
+<p>The second line contains n space-separated integers <span>
+  \([A_0, A_1, A_2,... A_{n-1}]\)
+</span>
+.</p>
+<h3 id="output-format-4">
+  Output Format
+  <a class="anchor" href="#output-format-4">#</a>
+</h3>
+<p>A single integer, the number in the array without a pair</p>
+<h3 id="sample-input-and-output-4">
+  Sample input and output
+  <a class="anchor" href="#sample-input-and-output-4">#</a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Sample Input</th>
+<th>Sample Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code> 5</code><br> <code>4 5 6 4 5</code></td>
+<td><code>6</code></td>
+</tr>
+<tr>
+<td><code> 7</code><br> <code> 3 3 3 3 3 2 2</code></td>
+<td><code>3</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="solution-4">
+  Solution
+  <a class="anchor" href="#solution-4">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> n;
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">scanf</span>(<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">&amp;</span>n);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> n; i<span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> x;
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">scanf</span>(<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">&amp;</span>x);
+</span></span><span style="display:flex;"><span>		ans <span style="color:#f92672">^=</span> x;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, ans);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/bdfa472a5347fa1299f6a6332330426e842fafc3" title='Last modified by ttheshreeyasingh | September 11, 2023' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>September 11, 2023</span>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#assignment-1">Assignment 1</a>
+      <ul>
+        <li><a href="#question-1">Question 1</a>
+          <ul>
+            <li><a href="#problem-description">Problem Description</a></li>
+            <li><a href="#input-constraints">Input constraints</a></li>
+            <li><a href="#input-format">Input format</a></li>
+            <li><a href="#output-format">Output Format</a></li>
+            <li><a href="#sample-input-and-output">Sample input and output</a></li>
+            <li><a href="#solution">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-2">Question 2</a>
+          <ul>
+            <li><a href="#problem-description-1">Problem Description</a></li>
+            <li><a href="#input-constraints-1">Input constraints</a></li>
+            <li><a href="#input-format-1">Input format</a></li>
+            <li><a href="#output-format-1">Output Format</a></li>
+            <li><a href="#sample-input-and-output-1">Sample input and output</a></li>
+            <li><a href="#solution-1">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-3">Question 3</a>
+          <ul>
+            <li><a href="#problem-description-2">Problem Description</a></li>
+            <li><a href="#input-constraints-2">Input constraints</a></li>
+            <li><a href="#input-format-2">Input format</a></li>
+            <li><a href="#output-format-2">Output Format</a></li>
+            <li><a href="#sample-input-and-output-2">Sample input and output</a></li>
+            <li><a href="#solution-2">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-4">Question 4</a>
+          <ul>
+            <li><a href="#problem-description-3">Problem Description</a></li>
+            <li><a href="#input-constraints-3">Input constraints</a></li>
+            <li><a href="#input-format-3">Input format</a></li>
+            <li><a href="#output-format-3">Output Format</a></li>
+            <li><a href="#sample-input-and-output-3">Sample input and output</a></li>
+            <li><a href="#solution-3">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-5">Question 5</a>
+          <ul>
+            <li><a href="#problem-description-4">Problem Description</a></li>
+            <li><a href="#input-constraints-4">Input constraints</a></li>
+            <li><a href="#input-format-4">Input format</a></li>
+            <li><a href="#output-format-4">Output Format</a></li>
+            <li><a href="#sample-input-and-output-4">Sample input and output</a></li>
+            <li><a href="#solution-4">Solution</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

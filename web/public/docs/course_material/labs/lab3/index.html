@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lab 3 (Week of 4 September)#Question 1#Problem Description#A new student club is organising a huge event this semester for silver jubilee celebrations. Initially, they don&rsquo;t have enough members. So, they started recruiting new members in groups.
+Meanwhile, tasks keep coming up within the club. Each club member can work on only one task during the semester.
+If there is no member available (isn&rsquo;t occupied with a task) when a task arises, it will remain unattended regardless of whether new individuals are recruited later on.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Lab - 3" />
+<meta property="og:description" content="Lab 3 (Week of 4 September)#Question 1#Problem Description#A new student club is organising a huge event this semester for silver jubilee celebrations. Initially, they don&rsquo;t have enough members. So, they started recruiting new members in groups.
+Meanwhile, tasks keep coming up within the club. Each club member can work on only one task during the semester.
+If there is no member available (isn&rsquo;t occupied with a task) when a task arises, it will remain unattended regardless of whether new individuals are recruited later on." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/labs/lab3/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2023-09-11T02:46:19+05:30" />
+<title>Lab - 3 | CPro Mon 23</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.9813b9a015516c05172c78b95be3219e264c32dfcd09bf530a1dcd298208c8d2.js" integrity="sha256-mBO5oBVRbAUXLHi5W&#43;MhniZMMt/NCb9TCh3NKYIIyNI=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>CPro Mon 23</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Course Material</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c87ef19fe67bdb63d85d44d099797871" class="toggle"  />
+    <label for="section-c87ef19fe67bdb63d85d44d099797871" class="flex justify-between">
+      <a role="button" class="">Lectures</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/4_10/" class="">II.1 Typedef, Struct Initialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/6_10/" class="">II.2 Strings and Enums</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5b2c745bf85b67a9cd73528333cc29a8" class="toggle"  />
+    <label for="section-5b2c745bf85b67a9cd73528333cc29a8" class="flex justify-between">
+      <a role="button" class="">Assignments</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/assignments/assignment1/" class="">Assignment - 1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-68a23d3bc0e29a3d69b03994606ba228" class="toggle" checked />
+    <label for="section-68a23d3bc0e29a3d69b03994606ba228" class="flex justify-between">
+      <a role="button" class="">Labs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab1/" class="">Lab - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab2/" class="">Lab - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab3/" class="active">Lab - 3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c04055d7141066e86bae893cc2c0e07" class="toggle"  />
+    <label for="section-7c04055d7141066e86bae893cc2c0e07" class="flex justify-between">
+      <a role="button" class="">Practice Problems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week1/" class="">Week - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week2/" class="">Week - 2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4cc6bae32fccbb5cd498aeeba537746f" class="toggle"  />
+    <label for="section-4cc6bae32fccbb5cd498aeeba537746f" class="flex justify-between">
+      <a role="button" class="">Tutorials</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/tutorials/week1/" class="">Tutorial - 1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="toggle"  />
+    <label for="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="flex justify-between">
+      <a role="button" class="">Quizzes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/quiz1A/" class="">Quiz - 1 Section A</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/quiz1B/" class="">Quiz - 1 Section B</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Resources
+      </a>
+  </li>
+  
+  <li>
+    <a href="/tas/"  >
+        Teaching Assistants
+      </a>
+  </li>
+  
+  <li>
+    <a href="/grading_scheme/"  >
+        Grading Scheme
+      </a>
+  </li>
+  
+  <li>
+    <a href="/honor_code/"  >
+        Honor Code
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/cpro-iiit/cpro-iiit.github.io"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Lab - 3</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#lab-3-week-of-4-september">Lab 3 (Week of 4 September)</a>
+      <ul>
+        <li><a href="#question-1">Question 1</a>
+          <ul>
+            <li><a href="#problem-description">Problem Description</a></li>
+            <li><a href="#input-constraints">Input constraints</a></li>
+            <li><a href="#input-format">Input format</a></li>
+            <li><a href="#output-format">Output Format</a></li>
+            <li><a href="#sample-input-and-output">Sample input and output</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-2">Question 2</a>
+          <ul>
+            <li><a href="#problem-description-1">Problem Description</a></li>
+            <li><a href="#input-constraints-1">Input constraints</a></li>
+            <li><a href="#input-format-1">Input format</a></li>
+            <li><a href="#output-format-1">Output Format</a></li>
+            <li><a href="#sample-input-and-output-1">Sample input and output</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="lab-3-week-of-4-september">
+  Lab 3 (Week of 4 September)
+  <a class="anchor" href="#lab-3-week-of-4-september">#</a>
+</h1>
+<h2 id="question-1">
+  Question 1
+  <a class="anchor" href="#question-1">#</a>
+</h2>
+<h3 id="problem-description">
+  Problem Description
+  <a class="anchor" href="#problem-description">#</a>
+</h3>
+<p><em>A new student club is organising a huge event this semester for silver jubilee celebrations. Initially, they don&rsquo;t have enough members. So, they started recruiting new members in groups.</em></p>
+<p>Meanwhile, tasks keep coming up within the club. <strong>Each club member can work on only one task</strong> during the semester.</p>
+<p>If there is no member available (isn&rsquo;t occupied with a task) <strong>when a task arises</strong>, it will remain unattended regardless of whether new individuals are recruited later on.</p>
+<p><strong>Given the chronological order of task arrivals and club members’ recruitment, find the number of tasks that will remain unattended.</strong></p>
+<p>In the input, a <code>-1</code> denotes the arrival of a task (which may or may not go unattended depending on whether or not there are currently any free members to take up the task). Similarly, a non-neagative number denotes the number of new recruits.</p>
+<p>Note that once an individual is recruited for the club, they&rsquo;ll always be part of the club. When an individual takes up a task, they&rsquo;ll be occupied with it for the rest of the semester.</p>
+<p><a href="http://oj.iiit.ac.in/problem/cpro23lab3q1">Link to problem on OJ</a></p>
+<h3 id="input-constraints">
+  Input constraints
+  <a class="anchor" href="#input-constraints">#</a>
+</h3>
+<p>
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \(
+1 \le N \le 2 \times 10^5\)
+</span>
+
+<br>
+<span>
+  \(
+A_i \in [-1, 10]\)
+</span>
+</p>
+<h3 id="input-format">
+  Input format
+  <a class="anchor" href="#input-format">#</a>
+</h3>
+<p>The first line of input contains a single integer <code>N</code> that denotes the number of events (either task arrival or new recruitment).</p>
+<p>The second line of input contains <code>N</code> space-separated integers <span>
+  \(A_1, A_2, \dots, A_N\)
+</span>
+ that describe the <code>N</code> events as explained in the description.</p>
+<h3 id="output-format">
+  Output Format
+  <a class="anchor" href="#output-format">#</a>
+</h3>
+<p>Output a single integer that denotes the number of unattended tasks.</p>
+<h3 id="sample-input-and-output">
+  Sample input and output
+  <a class="anchor" href="#sample-input-and-output">#</a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Sample Input</th>
+<th>Sample Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>3</code> <br> <code>-1 -1 -1</code></td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td><code>11</code> <br> <code>-1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1</code></td>
+<td><code>8</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="question-2">
+  Question 2
+  <a class="anchor" href="#question-2">#</a>
+</h2>
+<h3 id="problem-description-1">
+  Problem Description
+  <a class="anchor" href="#problem-description-1">#</a>
+</h3>
+<p>You are given a sequence of <code>N</code> integers <span>
+  \(A_1,A_2,...,A_N \)
+</span>
+ and while looking at the sequence in order from left to right (that is, from index <code>1</code> to <code>N</code>), you start by crossing the first number, and you cross a subsequent number if it is strictly greater than every number you crossed before. You keep crossing until you reach the end of the sequence.</p>
+<p>Output all the numbers you have crossed.</p>
+<p><a href="http://oj.iiit.ac.in/problem/cpro23lab3q2">Link to problem on OJ</a></p>
+<h3 id="input-constraints-1">
+  Input constraints
+  <a class="anchor" href="#input-constraints-1">#</a>
+</h3>
+<p><span>
+  \(
+1 \le N \le 2 \times 10^5\)
+</span>
+
+<br>
+<span>
+  \(
+0 \le A_i \le 10^9\)
+</span>
+</p>
+<h3 id="input-format-1">
+  Input format
+  <a class="anchor" href="#input-format-1">#</a>
+</h3>
+<p>The first line of input contains a single integer <code>N</code> that denotes the size of the array.</p>
+<p>The second line of input contains <code>N</code> space-separated integers <span>
+  \(A_1,A_2,...,A_N \)
+</span>
+ that describe the <code>N</code> elements.</p>
+<h3 id="output-format-1">
+  Output Format
+  <a class="anchor" href="#output-format-1">#</a>
+</h3>
+<p>On the first line, output the count of numbers that you cross out, <code>K</code>. Note that this is a positive number since the first number is always crossed.</p>
+<p>On the second line, output <code>K</code> space-separated integers denoting the numbers crossed out in the order in which they appear in the original array.</p>
+<h3 id="sample-input-and-output-1">
+  Sample input and output
+  <a class="anchor" href="#sample-input-and-output-1">#</a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Sample Input</th>
+<th>Sample Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code> 7</code><br><code>1 1 3 2 4 10 9</code></td>
+<td><code>4</code><br> <code>1 3 4 10</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/3dfa45066fadc1aeaa90bb31ea884588a8da06f6" title='Last modified by ttheshreeyasingh | September 11, 2023' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>September 11, 2023</span>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#lab-3-week-of-4-september">Lab 3 (Week of 4 September)</a>
+      <ul>
+        <li><a href="#question-1">Question 1</a>
+          <ul>
+            <li><a href="#problem-description">Problem Description</a></li>
+            <li><a href="#input-constraints">Input constraints</a></li>
+            <li><a href="#input-format">Input format</a></li>
+            <li><a href="#output-format">Output Format</a></li>
+            <li><a href="#sample-input-and-output">Sample input and output</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-2">Question 2</a>
+          <ul>
+            <li><a href="#problem-description-1">Problem Description</a></li>
+            <li><a href="#input-constraints-1">Input constraints</a></li>
+            <li><a href="#input-format-1">Input format</a></li>
+            <li><a href="#output-format-1">Output Format</a></li>
+            <li><a href="#sample-input-and-output-1">Sample input and output</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

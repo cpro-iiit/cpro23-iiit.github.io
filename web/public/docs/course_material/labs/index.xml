@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CPro Mon 23</title>
+    <link>https://cpro-iiit.github.io/docs/course_material/labs/</link>
+    <description>Recent content on CPro Mon 23</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://cpro-iiit.github.io/docs/course_material/labs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lab - 1</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/labs/lab1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/docs/course_material/labs/lab1/</guid>
+      <description>Lab 1 (Week of 14 August)#Question 1#Problem Description#Given an integer n as input, print the last 3 bits of the number in its binary representation starting with the most significant bit among the three.
+Note: The last three bits are the bits corresponding to the,
+\( 2^2, 2^1 \)and \( 2^0 \)positions (in that order)Link to problem on OJ
+Input constraints#\(0 \le n \le 2^{31}\)Input format#The only line of input contains a single integer n</description>
+    </item>
+    
+    <item>
+      <title>Lab - 2</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/labs/lab2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/docs/course_material/labs/lab2/</guid>
+      <description>Lab 2 (Week of 21 August)#Question 1#Problem Description#Given an integer which has n digits, print YES if it is divisible by 3, and NO otherwise.
+Note: The input number will not contain any leading zeroes.Link to problem on OJ
+Input constraints#\(0 \le n \le 1000\)Input format#The first line of input contains a single integer n denoting the number of digits.</description>
+    </item>
+    
+    <item>
+      <title>Lab - 3</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/labs/lab3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/docs/course_material/labs/lab3/</guid>
+      <description>Lab 3 (Week of 4 September)#Question 1#Problem Description#A new student club is organising a huge event this semester for silver jubilee celebrations. Initially, they don&amp;rsquo;t have enough members. So, they started recruiting new members in groups.
+Meanwhile, tasks keep coming up within the club. Each club member can work on only one task during the semester.
+If there is no member available (isn&amp;rsquo;t occupied with a task) when a task arises, it will remain unattended regardless of whether new individuals are recruited later on.</description>
+    </item>
+    
+  </channel>
+</rss>

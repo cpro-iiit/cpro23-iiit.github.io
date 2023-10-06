@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lab 2 (Week of 21 August)#Question 1#Problem Description#Given an integer which has n digits, print YES if it is divisible by 3, and NO otherwise.
+Note: The input number will not contain any leading zeroes.Link to problem on OJ
+Input constraints#\(0 \le n \le 1000\)Input format#The first line of input contains a single integer n denoting the number of digits.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Lab - 2" />
+<meta property="og:description" content="Lab 2 (Week of 21 August)#Question 1#Problem Description#Given an integer which has n digits, print YES if it is divisible by 3, and NO otherwise.
+Note: The input number will not contain any leading zeroes.Link to problem on OJ
+Input constraints#\(0 \le n \le 1000\)Input format#The first line of input contains a single integer n denoting the number of digits." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/labs/lab2/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2023-09-01T06:40:38+05:30" />
+<title>Lab - 2 | CPro Mon 23</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.9813b9a015516c05172c78b95be3219e264c32dfcd09bf530a1dcd298208c8d2.js" integrity="sha256-mBO5oBVRbAUXLHi5W&#43;MhniZMMt/NCb9TCh3NKYIIyNI=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>CPro Mon 23</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Course Material</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c87ef19fe67bdb63d85d44d099797871" class="toggle"  />
+    <label for="section-c87ef19fe67bdb63d85d44d099797871" class="flex justify-between">
+      <a role="button" class="">Lectures</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/4_10/" class="">II.1 Typedef, Struct Initialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/6_10/" class="">II.2 Strings and Enums</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5b2c745bf85b67a9cd73528333cc29a8" class="toggle"  />
+    <label for="section-5b2c745bf85b67a9cd73528333cc29a8" class="flex justify-between">
+      <a role="button" class="">Assignments</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/assignments/assignment1/" class="">Assignment - 1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-68a23d3bc0e29a3d69b03994606ba228" class="toggle" checked />
+    <label for="section-68a23d3bc0e29a3d69b03994606ba228" class="flex justify-between">
+      <a role="button" class="">Labs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab1/" class="">Lab - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab2/" class="active">Lab - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab3/" class="">Lab - 3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c04055d7141066e86bae893cc2c0e07" class="toggle"  />
+    <label for="section-7c04055d7141066e86bae893cc2c0e07" class="flex justify-between">
+      <a role="button" class="">Practice Problems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week1/" class="">Week - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week2/" class="">Week - 2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4cc6bae32fccbb5cd498aeeba537746f" class="toggle"  />
+    <label for="section-4cc6bae32fccbb5cd498aeeba537746f" class="flex justify-between">
+      <a role="button" class="">Tutorials</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/tutorials/week1/" class="">Tutorial - 1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="toggle"  />
+    <label for="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="flex justify-between">
+      <a role="button" class="">Quizzes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/quiz1A/" class="">Quiz - 1 Section A</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/quiz1B/" class="">Quiz - 1 Section B</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Resources
+      </a>
+  </li>
+  
+  <li>
+    <a href="/tas/"  >
+        Teaching Assistants
+      </a>
+  </li>
+  
+  <li>
+    <a href="/grading_scheme/"  >
+        Grading Scheme
+      </a>
+  </li>
+  
+  <li>
+    <a href="/honor_code/"  >
+        Honor Code
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/cpro-iiit/cpro-iiit.github.io"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Lab - 2</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#lab-2-week-of-21-august">Lab 2 (Week of 21 August)</a>
+      <ul>
+        <li><a href="#question-1">Question 1</a>
+          <ul>
+            <li><a href="#problem-description">Problem Description</a></li>
+            <li><a href="#input-constraints">Input constraints</a></li>
+            <li><a href="#input-format">Input format</a></li>
+            <li><a href="#output-format">Output Format</a></li>
+            <li><a href="#sample-input-and-output">Sample input and output</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-2">Question 2</a>
+          <ul>
+            <li><a href="#problem-description-1">Problem Description</a></li>
+            <li><a href="#input-constraints-1">Input constraints</a></li>
+            <li><a href="#input-format-1">Input format</a></li>
+            <li><a href="#output-format-1">Output Format</a></li>
+            <li><a href="#sample-input-and-output-1">Sample input and output</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="lab-2-week-of-21-august">
+  Lab 2 (Week of 21 August)
+  <a class="anchor" href="#lab-2-week-of-21-august">#</a>
+</h1>
+<h2 id="question-1">
+  Question 1
+  <a class="anchor" href="#question-1">#</a>
+</h2>
+<h3 id="problem-description">
+  Problem Description
+  <a class="anchor" href="#problem-description">#</a>
+</h3>
+<p>Given an integer which has <code>n</code> digits, print <code>YES</code> if it is divisible by 3, and <code>NO</code> otherwise.</p>
+<blockquote class="book-hint info">
+  Note: The input number will not contain any leading zeroes.
+</blockquote>
+
+<p><a href="http://oj.iiit.ac.in/problem/cpro23lab2q1">Link to problem on OJ</a></p>
+<h3 id="input-constraints">
+  Input constraints
+  <a class="anchor" href="#input-constraints">#</a>
+</h3>
+
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \(
+0 \le n \le 1000\)
+</span>
+
+<h3 id="input-format">
+  Input format
+  <a class="anchor" href="#input-format">#</a>
+</h3>
+<p>The first line of input contains a single integer <code>n</code> denoting the number of digits.</p>
+<p>The second line of input contains the integer which is <code>n</code> digit long.</p>
+<h3 id="output-format">
+  Output Format
+  <a class="anchor" href="#output-format">#</a>
+</h3>
+<p>Output <code>YES</code> if the number is divisible by 3 and <code>NO</code> otherwise.</p>
+<h3 id="sample-input-and-output">
+  Sample input and output
+  <a class="anchor" href="#sample-input-and-output">#</a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Sample Input</th>
+<th>Sample Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10</code> <br> <code>1234567890</code></td>
+<td><code>YES</code></td>
+</tr>
+<tr>
+<td><code>2</code> <br> <code>22</code></td>
+<td><code>NO</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="question-2">
+  Question 2
+  <a class="anchor" href="#question-2">#</a>
+</h2>
+<h3 id="problem-description-1">
+  Problem Description
+  <a class="anchor" href="#problem-description-1">#</a>
+</h3>
+<p>You are given three non-negative integers <code>x</code>, <code>y</code> and <code>k</code> where <span>
+  \(
+0 \le k \le 31\)
+</span>
+.
+Replace the first <code>k</code> bits (from the right) of <code>x</code> with the first <code>k</code> bits of <code>y</code> and print the new value of <code>x</code>. In other words, replace the <code>k</code> least significant bits of <code>x</code> with the corresponding bits from <code>y</code>.</p>
+<p><a href="http://oj.iiit.ac.in/problem/cpro23lab2q2">Link to problem on OJ</a></p>
+<h3 id="input-constraints-1">
+  Input constraints
+  <a class="anchor" href="#input-constraints-1">#</a>
+</h3>
+<p><span>
+  \(
+0 \le x,y \le 2^{31}\)
+</span>
+
+<br>
+<span>
+  \(
+0 \le k \le 31\)
+</span>
+</p>
+<h3 id="input-format-1">
+  Input format
+  <a class="anchor" href="#input-format-1">#</a>
+</h3>
+<p>The only line of input contains 3 space-separated integers <code>x</code>, <code>y</code> and <code>k</code>.</p>
+<h3 id="output-format-1">
+  Output Format
+  <a class="anchor" href="#output-format-1">#</a>
+</h3>
+<p>Output a single integer denoting the new value of <code>x</code></p>
+<h3 id="sample-input-and-output-1">
+  Sample input and output
+  <a class="anchor" href="#sample-input-and-output-1">#</a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Sample Input</th>
+<th>Sample Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>11</code> <code>22</code> <code>3</code></td>
+<td><code>14</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/7b9166c0d00c2fecf9a3f5b282e7dca886fb3feb" title='Last modified by ttheshreeyasingh | September 1, 2023' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>September 1, 2023</span>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#lab-2-week-of-21-august">Lab 2 (Week of 21 August)</a>
+      <ul>
+        <li><a href="#question-1">Question 1</a>
+          <ul>
+            <li><a href="#problem-description">Problem Description</a></li>
+            <li><a href="#input-constraints">Input constraints</a></li>
+            <li><a href="#input-format">Input format</a></li>
+            <li><a href="#output-format">Output Format</a></li>
+            <li><a href="#sample-input-and-output">Sample input and output</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-2">Question 2</a>
+          <ul>
+            <li><a href="#problem-description-1">Problem Description</a></li>
+            <li><a href="#input-constraints-1">Input constraints</a></li>
+            <li><a href="#input-format-1">Input format</a></li>
+            <li><a href="#output-format-1">Output Format</a></li>
+            <li><a href="#sample-input-and-output-1">Sample input and output</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
