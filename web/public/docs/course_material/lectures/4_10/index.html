@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="II.1 Typedef, Struct Initialization#ldksflskj">
+<meta name="description" content="II.1 Typedef, Struct Initialization # Struct without Typedef # #include&lt;stdio.h&gt; struct rectangle { float length; float breadth; }; float compute_area(struct rectangle r) { return r.length * r.breadth; } void print_rectangle(struct rectangle r) { printf(&#34;Rectangle with length %f and breadth %f\n&#34;, r.length, r.breadth); } int main() { struct rectangle rect = { 1.5, 3.2 }; // Initializer print_rectangle(rect); printf(&#34;Area of the rectangle is %f \n&#34;, compute_area(rect) ); } Struct with Typedef # #include&lt;stdio.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="II.1 Typedef, Struct Initialization" />
-<meta property="og:description" content="II.1 Typedef, Struct Initialization#ldksflskj" />
+<meta property="og:description" content="II.1 Typedef, Struct Initialization # Struct without Typedef # #include&lt;stdio.h&gt; struct rectangle { float length; float breadth; }; float compute_area(struct rectangle r) { return r.length * r.breadth; } void print_rectangle(struct rectangle r) { printf(&#34;Rectangle with length %f and breadth %f\n&#34;, r.length, r.breadth); } int main() { struct rectangle rect = { 1.5, 3.2 }; // Initializer print_rectangle(rect); printf(&#34;Area of the rectangle is %f \n&#34;, compute_area(rect) ); } Struct with Typedef # #include&lt;stdio." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/lectures/4_10/" /><meta property="article:section" content="docs" />
 
+<meta property="article:modified_time" content="2023-10-06T14:49:20+05:30" />
 
 <title>II.1 Typedef, Struct Initialization | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.9813b9a015516c05172c78b95be3219e264c32dfcd09bf530a1dcd298208c8d2.js" integrity="sha256-mBO5oBVRbAUXLHi5W&#43;MhniZMMt/NCb9TCh3NKYIIyNI=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.e68498b9e1fe7f04ef4485378ccb1265aa06bc1ea63485b80bce0307beea0adb.js" integrity="sha256-5oSYueH&#43;fwTvRIU3jMsSZaoGvB6mNIW4C84DB77qCts=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -436,7 +437,13 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ii1-typedef-struct-initialization">II.1 Typedef, Struct Initialization</a></li>
+    <li><a href="#ii1-typedef-struct-initialization">II.1 Typedef, Struct Initialization</a>
+      <ul>
+        <li><a href="#struct-without-typedef">Struct without Typedef</a></li>
+        <li><a href="#struct-with-typedef">Struct with Typedef</a></li>
+        <li><a href="#passing-using-pointers">Passing using pointers</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -453,8 +460,93 @@ https://github.com/alex-shpak/hugo-book
   II.1 Typedef, Struct Initialization
   <a class="anchor" href="#ii1-typedef-struct-initialization">#</a>
 </h1>
-<p>ldksflskj</p>
-</article>
+<h2 id="struct-without-typedef">
+  Struct without Typedef
+  <a class="anchor" href="#struct-without-typedef">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> rectangle {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> length;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> breadth;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> <span style="color:#a6e22e">compute_area</span>(<span style="color:#66d9ef">struct</span> rectangle r) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> r.length <span style="color:#f92672">*</span> r.breadth;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">print_rectangle</span>(<span style="color:#66d9ef">struct</span> rectangle r) {
+</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;Rectangle with length %f and breadth %f</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, r.length, r.breadth);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">struct</span> rectangle rect <span style="color:#f92672">=</span> { <span style="color:#ae81ff">1.5</span>, <span style="color:#ae81ff">3.2</span> }; <span style="color:#75715e">// Initializer 		
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    print_rectangle(rect);
+</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;Area of the rectangle is %f </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, compute_area(rect) );
+</span></span><span style="display:flex;"><span>} 
+</span></span></code></pre></div><hr>
+<h2 id="struct-with-typedef">
+  Struct with Typedef
+  <a class="anchor" href="#struct-with-typedef">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">struct</span> rectangle {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> length;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> breadth;
+</span></span><span style="display:flex;"><span>} rectangle;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> <span style="color:#a6e22e">compute_area</span>(rectangle r) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> r.length<span style="color:#f92672">*</span>r.breadth;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>rectangle <span style="color:#a6e22e">scale</span>(rectangle r, <span style="color:#66d9ef">float</span> s) {
+</span></span><span style="display:flex;"><span>    r.length <span style="color:#f92672">=</span> r.length<span style="color:#f92672">*</span>s;
+</span></span><span style="display:flex;"><span>    r.breadth <span style="color:#f92672">=</span> r.breadth<span style="color:#f92672">*</span>s;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> r;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    rectangle rect <span style="color:#f92672">=</span> {  .breadth <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>, .length <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.0</span>} <span style="color:#75715e">/* {3.0, 1.0 }*/</span>; 		
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// rect.length = 3.2;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// rect.breadth = 1.2;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    printf(<span style="color:#e6db74">&#34;Area of the rectangle is %f </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, compute_area(rect));
+</span></span><span style="display:flex;"><span>    rectangle rp <span style="color:#f92672">=</span> scale(rect, <span style="color:#ae81ff">5</span>);
+</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;Area of the rectangle is %f </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, compute_area(<span style="color:#f92672">*</span>rp));
+</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;Area of the rectangle is %f </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, compute_area(rect));
+</span></span><span style="display:flex;"><span>} 
+</span></span></code></pre></div><hr>
+<h2 id="passing-using-pointers">
+  Passing using pointers
+  <a class="anchor" href="#passing-using-pointers">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">struct</span> rectangle {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> length;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> breadth;
+</span></span><span style="display:flex;"><span>} rectangle;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> <span style="color:#a6e22e">compute_area</span>(rectangle r) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> r.length<span style="color:#f92672">*</span>r.breadth;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>rectangle<span style="color:#f92672">*</span> <span style="color:#a6e22e">scale</span>(rectangle<span style="color:#f92672">*</span> r, <span style="color:#66d9ef">float</span> s) {
+</span></span><span style="display:flex;"><span>    r<span style="color:#f92672">-&gt;</span>length <span style="color:#f92672">=</span> r<span style="color:#f92672">-&gt;</span>length<span style="color:#f92672">*</span>s;
+</span></span><span style="display:flex;"><span>    r<span style="color:#f92672">-&gt;</span>breadth <span style="color:#f92672">=</span> r<span style="color:#f92672">-&gt;</span>breadth<span style="color:#f92672">*</span>s;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> r;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    rectangle rect <span style="color:#f92672">=</span> {  .breadth <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>, .length <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.0</span>} <span style="color:#75715e">/* {3.0, 1.0 }*/</span>; 		
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// rect.length = 3.2;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// rect.breadth = 1.2;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    printf(<span style="color:#e6db74">&#34;Area of the rectangle is %f </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, compute_area(rect));
+</span></span><span style="display:flex;"><span>    rectangle<span style="color:#f92672">*</span> rp <span style="color:#f92672">=</span> scale(<span style="color:#f92672">&amp;</span>rect, <span style="color:#ae81ff">5</span>);
+</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;Area of the rectangle is %f </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, compute_area(<span style="color:#f92672">*</span>rp));
+</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;Area of the rectangle is %f </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, compute_area(rect));
+</span></span><span style="display:flex;"><span>} 
+</span></span></code></pre></div></article>
  
       
 
@@ -462,6 +554,12 @@ https://github.com/alex-shpak/hugo-book
         
   <div class="flex flex-wrap justify-between">
 
+
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/efcde2539f36893eb9a4c4674b777baf6fc0c1b9" title='Last modified by Girish Varma | October 6, 2023' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>October 6, 2023</span>
+    </a>
+  </div>
 
 
 
@@ -495,7 +593,13 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ii1-typedef-struct-initialization">II.1 Typedef, Struct Initialization</a></li>
+    <li><a href="#ii1-typedef-struct-initialization">II.1 Typedef, Struct Initialization</a>
+      <ul>
+        <li><a href="#struct-without-typedef">Struct without Typedef</a></li>
+        <li><a href="#struct-with-typedef">Struct with Typedef</a></li>
+        <li><a href="#passing-using-pointers">Passing using pointers</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

@@ -12,7 +12,7 @@
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/posts/installingGCC/</guid>
-      <description>Installing gcc#This tutorial will be a quick walkthrough on installing gcc on different OS. We recommend you try installing gcc on your own before the start of classes. If, for some reason, you are unable to install gcc, then we will help you in the first tutorial session. We also recommend you install some text editor (VS Code for example).
+      <description>Installing gcc # This tutorial will be a quick walkthrough on installing gcc on different OS. We recommend you try installing gcc on your own before the start of classes. If, for some reason, you are unable to install gcc, then we will help you in the first tutorial session. We also recommend you install some text editor (VS Code for example).
 We recommend the usage of Linux as this would be advantageous for your future courses as well.</description>
     </item>
     
@@ -43,10 +43,10 @@ https://www.youtube.com/watch?v=8mAITcNt710 </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/assignments/assignment1/</guid>
-      <description>Assignment 1#Question 1#Problem Description#Given an integer n as input, print its binary representation starting with the most significant bit, i.e. don&amp;rsquo;t print the 0&amp;rsquo;s before the first 1.
+      <description>Assignment 1 # Question 1 # Problem Description # Given an integer n as input, print its binary representation starting with the most significant bit, i.e. don&amp;rsquo;t print the 0&amp;rsquo;s before the first 1.
 Link to problem on OJ
-Input constraints#\(0 \le n \le 2^{30}\)Input format#The only line of input contains a single integer n
-Output Format#Output a continous stream of bits of n starting from the most significant bit.</description>
+Input constraints # \(0 \le n \le 2^{30}\) Input format # The only line of input contains a single integer n
+Output Format # Output a continous stream of bits of n starting from the most significant bit.</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@ Output Format#Output a continous stream of bits of n starting from the most si
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/grading_scheme/</guid>
-      <description>Grading Scheme#Assignments: 30% Quizzes: 20% (2 Quizzes worth 10% each) Mid-Semester Exam: 15% End-Semester Exam: 25% Labs: 10% Bonus*: 5% Note: Total score for a student would be capped at 100% (if the student&amp;rsquo;s score happens to exceed 100)</description>
+      <description> Grading Scheme # Assignments: 30% Quizzes: 20% (2 Quizzes worth 10% each) Mid-Semester Exam: 15% End-Semester Exam: 25% Labs: 10% Bonus*: 5% Note: Total score for a student would be capped at 100% (if the student&amp;rsquo;s score happens to exceed 100) </description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ Output Format#Output a continous stream of bits of n starting from the most si
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/honor_code/</guid>
-      <description>Honor Code#Any form of plagiarism in the Assignments or in the Lab Exams would be heavily penalised and would lead to a 0 score for both students, the student who copied and the one whose code was copied. It is solely your duty to ensure the safety of your code throughout the course .Thus, we will not be entertaining any requests after a student is found guilty of plagiarism.</description>
+      <description>Honor Code # Any form of plagiarism in the Assignments or in the Lab Exams would be heavily penalised and would lead to a 0 score for both students, the student who copied and the one whose code was copied. It is solely your duty to ensure the safety of your code throughout the course .Thus, we will not be entertaining any requests after a student is found guilty of plagiarism.</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@ Output Format#Output a continous stream of bits of n starting from the most si
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/lectures/4_10/</guid>
-      <description>II.1 Typedef, Struct Initialization#ldksflskj</description>
+      <description>II.1 Typedef, Struct Initialization # Struct without Typedef # #include&amp;lt;stdio.h&amp;gt; struct rectangle { float length; float breadth; }; float compute_area(struct rectangle r) { return r.length * r.breadth; } void print_rectangle(struct rectangle r) { printf(&amp;#34;Rectangle with length %f and breadth %f\n&amp;#34;, r.length, r.breadth); } int main() { struct rectangle rect = { 1.5, 3.2 }; // Initializer print_rectangle(rect); printf(&amp;#34;Area of the rectangle is %f \n&amp;#34;, compute_area(rect) ); } Struct with Typedef # #include&amp;lt;stdio.</description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@ Output Format#Output a continous stream of bits of n starting from the most si
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/lectures/6_10/</guid>
-      <description>II.2 Strings and Enums#Strings in C#as a pointer to char char *p = &amp;#34;abcde&amp;#34;; as an array of char char s[] = &amp;#34;abcde&amp;#34;; print(&amp;#34;%d %d&amp;#34;, sizeof(p), sizeof(s)); String Function Implementation##include &amp;#34;stdio.h&amp;#34; int strlenB(char* s) { int i = 0; while (s[i] != &amp;#39;\0&amp;#39;) { i++; } return i; } char* strcpyB(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i &amp;lt;= len_s;i++) { d[i] = s[i]; } return d; } char* str_rev(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i&amp;lt; len_s; i++) { d[i] = s[len_s - 1 - i]; } d[len_s] = &amp;#39;\0&amp;#39;; return d; } int main() { char *p = &amp;#34;xyz\0dsalkfjds&amp;#34;; char s[] = &amp;#34;abcde\0kjdakfjsh&amp;#34;; // abcde\0 // printf(&amp;#34;%d %d\n&amp;#34;,sizeof(p),sizeof(s)); // printf(&amp;#34;%s %s\n&amp;#34;,p, s); // printf(&amp;#34;%d %d\n&amp;#34;, strlen(p), strlen(s)); // strcpy(s,p); printf(&amp;#34;%s\n&amp;#34;,str_rev(p, s)); return 1; } String Functions##include &amp;lt;string.</description>
+      <description>II.2 Strings and Enums # Strings in C # as a pointer to char char *p = &amp;#34;abcde&amp;#34;; as an array of char char s[] = &amp;#34;abcde&amp;#34;; print(&amp;#34;%d %d&amp;#34;, sizeof(p), sizeof(s)); String Function Implementation # #include &amp;#34;stdio.h&amp;#34; int strlenB(char* s) { int i = 0; while (s[i] != &amp;#39;\0&amp;#39;) { i++; } return i; } char* strcpyB(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i &amp;lt;= len_s;i++) { d[i] = s[i]; } return d; } char* str_rev(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i&amp;lt; len_s; i++) { d[i] = s[len_s - 1 - i]; } d[len_s] = &amp;#39;\0&amp;#39;; return d; } int main() { char *p = &amp;#34;xyz\0dsalkfjds&amp;#34;; char s[] = &amp;#34;abcde\0kjdakfjsh&amp;#34;; // abcde\0 // printf(&amp;#34;%d %d\n&amp;#34;,sizeof(p),sizeof(s)); // printf(&amp;#34;%s %s\n&amp;#34;,p, s); // printf(&amp;#34;%d %d\n&amp;#34;, strlen(p), strlen(s)); // strcpy(s,p); printf(&amp;#34;%s\n&amp;#34;,str_rev(p, s)); return 1; } String Functions # #include &amp;lt;string.</description>
     </item>
     
     <item>
@@ -91,10 +91,10 @@ Output Format#Output a continous stream of bits of n starting from the most si
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/labs/lab1/</guid>
-      <description>Lab 1 (Week of 14 August)#Question 1#Problem Description#Given an integer n as input, print the last 3 bits of the number in its binary representation starting with the most significant bit among the three.
+      <description>Lab 1 (Week of 14 August) # Question 1 # Problem Description # Given an integer n as input, print the last 3 bits of the number in its binary representation starting with the most significant bit among the three.
 Note: The last three bits are the bits corresponding to the,
-\( 2^2, 2^1 \)and \( 2^0 \)positions (in that order)Link to problem on OJ
-Input constraints#\(0 \le n \le 2^{31}\)Input format#The only line of input contains a single integer n</description>
+\( 2^2, 2^1 \) and \( 2^0 \) positions (in that order) Link to problem on OJ
+Input constraints # \(0 \le n \le 2^{31}\) Input format # The only line of input contains a single integer n</description>
     </item>
     
     <item>
@@ -103,9 +103,9 @@ Input constraints#\(0 \le n \le 2^{31}\)Input format#The only line of inp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/labs/lab2/</guid>
-      <description>Lab 2 (Week of 21 August)#Question 1#Problem Description#Given an integer which has n digits, print YES if it is divisible by 3, and NO otherwise.
-Note: The input number will not contain any leading zeroes.Link to problem on OJ
-Input constraints#\(0 \le n \le 1000\)Input format#The first line of input contains a single integer n denoting the number of digits.</description>
+      <description>Lab 2 (Week of 21 August) # Question 1 # Problem Description # Given an integer which has n digits, print YES if it is divisible by 3, and NO otherwise.
+Note: The input number will not contain any leading zeroes. Link to problem on OJ
+Input constraints # \(0 \le n \le 1000\) Input format # The first line of input contains a single integer n denoting the number of digits.</description>
     </item>
     
     <item>
@@ -114,7 +114,7 @@ Input constraints#\(0 \le n \le 1000\)Input format#The first line of inpu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/labs/lab3/</guid>
-      <description>Lab 3 (Week of 4 September)#Question 1#Problem Description#A new student club is organising a huge event this semester for silver jubilee celebrations. Initially, they don&amp;rsquo;t have enough members. So, they started recruiting new members in groups.
+      <description>Lab 3 (Week of 4 September) # Question 1 # Problem Description # A new student club is organising a huge event this semester for silver jubilee celebrations. Initially, they don&amp;rsquo;t have enough members. So, they started recruiting new members in groups.
 Meanwhile, tasks keep coming up within the club. Each club member can work on only one task during the semester.
 If there is no member available (isn&amp;rsquo;t occupied with a task) when a task arises, it will remain unattended regardless of whether new individuals are recruited later on.</description>
     </item>
@@ -125,8 +125,8 @@ If there is no member available (isn&amp;rsquo;t occupied with a task) when a ta
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz1A/</guid>
-      <description>Quiz 1#Section AQuestion 1 - 5 marks#Problem Description#Write a program to find the factorial of a number. Here n can be taken to be an input from the user.
-Solution##include &amp;lt;stdio.h&amp;gt; int main(){ int n; scanf(&amp;#34;%d&amp;#34;,&amp;amp;n); if(n&amp;lt;0){ printf(&amp;#34;Invalid Input!&amp;#34;); }else{ int ans=1; for(int i=1;i&amp;lt;=n;i++){ ans*=i; } printf(&amp;#34;%d\n&amp;#34;,ans); } return 0; } Grading Scheme#1 mark: For writing
+      <description>Quiz 1 # Section A Question 1 - 5 marks # Problem Description # Write a program to find the factorial of a number. Here n can be taken to be an input from the user.
+Solution # #include &amp;lt;stdio.h&amp;gt; int main(){ int n; scanf(&amp;#34;%d&amp;#34;,&amp;amp;n); if(n&amp;lt;0){ printf(&amp;#34;Invalid Input!&amp;#34;); }else{ int ans=1; for(int i=1;i&amp;lt;=n;i++){ ans*=i; } printf(&amp;#34;%d\n&amp;#34;,ans); } return 0; } Grading Scheme # 1 mark: For writing
 #include &amp;lt;stdio.h&amp;gt; 1 mark: For writing</description>
     </item>
     
@@ -136,8 +136,8 @@ Solution##include &amp;lt;stdio.h&amp;gt; int main(){ int n; scanf(&amp;#34;%d
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz1B/</guid>
-      <description>Quiz 1#Section BQuestion 1 - 5 marks#Problem Description#Write a program to find the sum of first n even numbers. Here n can be taken to be an input from the user.
-Solution#Both Codes are considered to be valid.
+      <description>Quiz 1 # Section B Question 1 - 5 marks # Problem Description # Write a program to find the sum of first n even numbers. Here n can be taken to be an input from the user.
+Solution # Both Codes are considered to be valid.
 #include&amp;lt;stdio.h&amp;gt; int main() { int i, ans = 0,n; scanf(&amp;#34;%d&amp;#34;, &amp;amp;n); for(i=0; i &amp;lt; n; i ++) { ans = ans + 2*i; } printf(&amp;#34;%d\n&amp;#34;, ans); return 0; } #include&amp;lt;stdio.</description>
     </item>
     
@@ -147,7 +147,7 @@ Solution#Both Codes are considered to be valid.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/tas/</guid>
-      <description>Teaching Assistants#Pramod Rao | pramod.b@research.iiit.ac.in Shreeya Singh | shreeya.singh@students.iiit.ac.in Aditya Malhotra | aditya.malhotra@students.iiit.ac.in Anushka Agrawal | anushka.agrawal@students.iiit.ac.in Ayan Datta | ayan.datta@research.iiit.ac.in Bhargav Srinivas | bhargav.srinivas@students.iiit.ac.in Dheeraja Rajreddygari | dheeraja.rajreddygari@students.iiit.ac.in Harshvardhan | harshvardhan.sv@research.iiit.ac.in Keval Jain | keval.jain@research.iiit.ac.in Kriti Gupta | kriti.gupta@research.iiit.ac.in Kushagra Kharbanda | kushagra.kharbanda@students.iiit.ac.in Kyrylo Shyvam Kumar | kyrylo.shyvam@students.iiit.ac.in Manav Shah | shah.devendrakumar@students.iiit.ac.in Mihika Sanghi | mihika.sanghi@research.iiit.ac.in Mitansh Kayathwal | mitansh.kayathwal@students.iiit.ac.in Sriteja Pashya | sriteja.pashya@research.iiit.ac.in Ujjwal Shekhar | ujjwal.</description>
+      <description>Teaching Assistants # Pramod Rao | pramod.b@research.iiit.ac.in Shreeya Singh | shreeya.singh@students.iiit.ac.in Aditya Malhotra | aditya.malhotra@students.iiit.ac.in Anushka Agrawal | anushka.agrawal@students.iiit.ac.in Ayan Datta | ayan.datta@research.iiit.ac.in Bhargav Srinivas | bhargav.srinivas@students.iiit.ac.in Dheeraja Rajreddygari | dheeraja.rajreddygari@students.iiit.ac.in Harshvardhan | harshvardhan.sv@research.iiit.ac.in Keval Jain | keval.jain@research.iiit.ac.in Kriti Gupta | kriti.gupta@research.iiit.ac.in Kushagra Kharbanda | kushagra.kharbanda@students.iiit.ac.in Kyrylo Shyvam Kumar | kyrylo.shyvam@students.iiit.ac.in Manav Shah | shah.devendrakumar@students.iiit.ac.in Mihika Sanghi | mihika.sanghi@research.iiit.ac.in Mitansh Kayathwal | mitansh.kayathwal@students.iiit.ac.in Sriteja Pashya | sriteja.pashya@research.iiit.ac.in Ujjwal Shekhar | ujjwal.</description>
     </item>
     
     <item>
@@ -156,10 +156,10 @@ Solution#Both Codes are considered to be valid.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/template/</guid>
-      <description>Course material template#Question 1#The question body would go here
-Text#Linked list can be defined as either a node structure doing nothing or one that is pointing to another linked list
-Links#See linked: Recursion
-Button#Get HomeContributeColumns#Left Content Lorem markdownum insigne&amp;hellip;Mid Content Lorem markdownum insigne&amp;hellip;Right Content Lorem markdownum insigne&amp;hellip;Expand#Expand↕Markdown content#Lorem markdownum insigne&amp;hellip;Hint#Warning: Make sure to always free up memory!</description>
+      <description>Course material template # Question 1 # The question body would go here
+Text # Linked list can be defined as either a node structure doing nothing or one that is pointing to another linked list
+Links # See linked: Recursion
+Button # Get Home Contribute Columns # Left Content Lorem markdownum insigne&amp;hellip; Mid Content Lorem markdownum insigne&amp;hellip; Right Content Lorem markdownum insigne&amp;hellip; Expand # Expand ↕ Markdown content # Lorem markdownum insigne&amp;hellip; Hint # Warning: Make sure to always free up memory!</description>
     </item>
     
     <item>
@@ -168,7 +168,7 @@ Button#Get HomeContributeColumns#Left Content Lorem markdownum insigne&amp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/tutorials/week1/</guid>
-      <description>Tutorial 1 (Week of 14 August)#Theory#Introduction to how compilation works in C#We all know that computer is incapable of reading and understanding the code we write in its native form. This means that the code needs to be converted in a form which the machine can understand. The machine only understands Binary code. Thus, there should be a process by which the code we write can be converted to Binary form.</description>
+      <description>Tutorial 1 (Week of 14 August) # Theory # Introduction to how compilation works in C # We all know that computer is incapable of reading and understanding the code we write in its native form. This means that the code needs to be converted in a form which the machine can understand. The machine only understands Binary code. Thus, there should be a process by which the code we write can be converted to Binary form.</description>
     </item>
     
     <item>
@@ -177,8 +177,8 @@ Button#Get HomeContributeColumns#Left Content Lorem markdownum insigne&amp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/practice_problems/week1/</guid>
-      <description>Practice problems for week - 1 (Week of 14 August)#None of the following problems require a knowledge of loops, conditional statements etc.
-Question 1#Problem Description#Keval has forgotten the password to his I-Pad. The password is a 4-digit number where each digit takes a value from 0 to 9. The good thing is that Keval remembers that his password had exactly two unique digits, and each of these digits appeared exactly twice in the password.</description>
+      <description>Practice problems for week - 1 (Week of 14 August) # None of the following problems require a knowledge of loops, conditional statements etc.
+Question 1 # Problem Description # Keval has forgotten the password to his I-Pad. The password is a 4-digit number where each digit takes a value from 0 to 9. The good thing is that Keval remembers that his password had exactly two unique digits, and each of these digits appeared exactly twice in the password.</description>
     </item>
     
     <item>
@@ -187,7 +187,7 @@ Question 1#Problem Description#Keval has forgotten the password to his I-Pad
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/practice_problems/week2/</guid>
-      <description>Practice problems for week - 2 (Week of 21 August)#Question 1#Problem Description#You are given a 3 x 3 grid filled with integers 1 to 9, in the following way:
+      <description>Practice problems for week - 2 (Week of 21 August) # Question 1 # Problem Description # You are given a 3 x 3 grid filled with integers 1 to 9, in the following way:
 1 2 3 4 5 6 7 8 9 You will be given two natural numbers A and B, both between 1 and 9. Your task is to find out if the two small squares with A and B written on them are horizontally adjacent.</description>
     </item>
     
