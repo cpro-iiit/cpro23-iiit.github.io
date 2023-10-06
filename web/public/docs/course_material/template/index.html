@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Course material template # Question 1 # The question body would go here
-Text # Linked list can be defined as either a node structure doing nothing or one that is pointing to another linked list
-Links # See linked: Recursion
-Button # Get Home Contribute Columns # Left Content Lorem markdownum insigne&hellip; Mid Content Lorem markdownum insigne&hellip; Right Content Lorem markdownum insigne&hellip; Expand # Expand ↕ Markdown content # Lorem markdownum insigne&hellip; Hint # Warning: Make sure to always free up memory!">
+<meta name="description" content="Course material template#Question 1#The question body would go here
+Text#Linked list can be defined as either a node structure doing nothing or one that is pointing to another linked list
+Links#See linked: Recursion
+Button#Get HomeContributeColumns#Left Content Lorem markdownum insigne&hellip;Mid Content Lorem markdownum insigne&hellip;Right Content Lorem markdownum insigne&hellip;Expand#Expand↕Markdown content#Lorem markdownum insigne&hellip;Hint#Warning: Make sure to always free up memory!">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Template" />
-<meta property="og:description" content="Course material template # Question 1 # The question body would go here
-Text # Linked list can be defined as either a node structure doing nothing or one that is pointing to another linked list
-Links # See linked: Recursion
-Button # Get Home Contribute Columns # Left Content Lorem markdownum insigne&hellip; Mid Content Lorem markdownum insigne&hellip; Right Content Lorem markdownum insigne&hellip; Expand # Expand ↕ Markdown content # Lorem markdownum insigne&hellip; Hint # Warning: Make sure to always free up memory!" />
+<meta property="og:description" content="Course material template#Question 1#The question body would go here
+Text#Linked list can be defined as either a node structure doing nothing or one that is pointing to another linked list
+Links#See linked: Recursion
+Button#Get HomeContributeColumns#Left Content Lorem markdownum insigne&hellip;Mid Content Lorem markdownum insigne&hellip;Right Content Lorem markdownum insigne&hellip;Expand#Expand↕Markdown content#Lorem markdownum insigne&hellip;Hint#Warning: Make sure to always free up memory!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/template/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-08-04T11:07:05+05:30" />
-
 <title>Template | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.e68498b9e1fe7f04ef4485378ccb1265aa06bc1ea63485b80bce0307beea0adb.js" integrity="sha256-5oSYueH&#43;fwTvRIU3jMsSZaoGvB6mNIW4C84DB77qCts=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.aaa852522fa8511a1bb3145aa2b70227c3542cdac72f42953deaa7b6f7191dbb.js" integrity="sha256-qqhSUi&#43;oURobsxRaorcCJ8NULNrHL0KVPeqntvcZHbs=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -104,7 +103,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/4_10/" class="">II.1 Typedef, Struct Initialization</a>
+    <a href="/docs/course_material/lectures/4_10/" class="">II.1 Typedef, Struct Initialization, Passing Pointers</a>
   
 
         </li>
@@ -579,7 +578,8 @@ Lorem markdownum insigne&hellip;
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
 <script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
-  \(f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\)
+  \(
+f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\)
 </span>
 
 <h2 id="tabs">
@@ -615,14 +615,14 @@ Lorem markdownum insigne&hellip;
   Code
   <a class="anchor" href="#code">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">node</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">node</span><span style="color:#f92672">*</span> nxt; <span style="color:#75715e">// will point to the next node in the linked list if any
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> val; <span style="color:#75715e">// store whatever else you might need
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>} Node;
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#75af00">node</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">struct</span> <span style="color:#75af00">node</span><span style="color:#f92672">*</span> <span style="color:#111">nxt</span><span style="color:#111">;</span> <span style="color:#75715e">// will point to the next node in the linked list if any
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">int</span> <span style="color:#111">val</span><span style="color:#111">;</span> <span style="color:#75715e">// store whatever else you might need
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span> <span style="color:#111">Node</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Code here
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span>
 </span></span></code></pre></div></article>
  
       

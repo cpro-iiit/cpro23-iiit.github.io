@@ -8,8 +8,12 @@ enableGitInfo = true
 
 # Needed for mermaid/katex shortcodes
 [markup]
+  [markup.highlight]
+    style = 'monokailight'
+    
 [markup.goldmark.renderer]
   unsafe = true
+
 
 [markup.tableOfContents]
   startLevel = 1

@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="II.2 Strings and Enums # Strings in C # as a pointer to char char *p = &#34;abcde&#34;; as an array of char char s[] = &#34;abcde&#34;; print(&#34;%d %d&#34;, sizeof(p), sizeof(s)); String Function Implementation # #include &#34;stdio.h&#34; int strlenB(char* s) { int i = 0; while (s[i] != &#39;\0&#39;) { i&#43;&#43;; } return i; } char* strcpyB(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i &lt;= len_s;i&#43;&#43;) { d[i] = s[i]; } return d; } char* str_rev(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i&lt; len_s; i&#43;&#43;) { d[i] = s[len_s - 1 - i]; } d[len_s] = &#39;\0&#39;; return d; } int main() { char *p = &#34;xyz\0dsalkfjds&#34;; char s[] = &#34;abcde\0kjdakfjsh&#34;; // abcde\0 // printf(&#34;%d %d\n&#34;,sizeof(p),sizeof(s)); // printf(&#34;%s %s\n&#34;,p, s); // printf(&#34;%d %d\n&#34;, strlen(p), strlen(s)); // strcpy(s,p); printf(&#34;%s\n&#34;,str_rev(p, s)); return 1; } String Functions # #include &lt;string.">
+<meta name="description" content="II.2 Strings and Enums#Strings in C#as a pointer to char char *p = &#34;abcde&#34;; as an array of char char s[] = &#34;abcde&#34;; print(&#34;%d %d&#34;, sizeof(p), sizeof(s)); String Function Implementation##include &#34;stdio.h&#34; int strlenB(char* s) { int i = 0; while (s[i] != &#39;\0&#39;) { i&#43;&#43;; } return i; } char* strcpyB(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i &lt;= len_s;i&#43;&#43;) { d[i] = s[i]; } return d; } char* str_rev(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i&lt; len_s; i&#43;&#43;) { d[i] = s[len_s - 1 - i]; } d[len_s] = &#39;\0&#39;; return d; } int main() { char *p = &#34;xyz\0dsalkfjds&#34;; char s[] = &#34;abcde\0kjdakfjsh&#34;; // abcde\0 // printf(&#34;%d %d\n&#34;,sizeof(p),sizeof(s)); // printf(&#34;%s %s\n&#34;,p, s); // printf(&#34;%d %d\n&#34;, strlen(p), strlen(s)); // strcpy(s,p); printf(&#34;%s\n&#34;,str_rev(p, s)); return 1; } String Functions##include &lt;string.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="II.2 Strings and Enums" />
-<meta property="og:description" content="II.2 Strings and Enums # Strings in C # as a pointer to char char *p = &#34;abcde&#34;; as an array of char char s[] = &#34;abcde&#34;; print(&#34;%d %d&#34;, sizeof(p), sizeof(s)); String Function Implementation # #include &#34;stdio.h&#34; int strlenB(char* s) { int i = 0; while (s[i] != &#39;\0&#39;) { i&#43;&#43;; } return i; } char* strcpyB(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i &lt;= len_s;i&#43;&#43;) { d[i] = s[i]; } return d; } char* str_rev(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i&lt; len_s; i&#43;&#43;) { d[i] = s[len_s - 1 - i]; } d[len_s] = &#39;\0&#39;; return d; } int main() { char *p = &#34;xyz\0dsalkfjds&#34;; char s[] = &#34;abcde\0kjdakfjsh&#34;; // abcde\0 // printf(&#34;%d %d\n&#34;,sizeof(p),sizeof(s)); // printf(&#34;%s %s\n&#34;,p, s); // printf(&#34;%d %d\n&#34;, strlen(p), strlen(s)); // strcpy(s,p); printf(&#34;%s\n&#34;,str_rev(p, s)); return 1; } String Functions # #include &lt;string." />
+<meta property="og:description" content="II.2 Strings and Enums#Strings in C#as a pointer to char char *p = &#34;abcde&#34;; as an array of char char s[] = &#34;abcde&#34;; print(&#34;%d %d&#34;, sizeof(p), sizeof(s)); String Function Implementation##include &#34;stdio.h&#34; int strlenB(char* s) { int i = 0; while (s[i] != &#39;\0&#39;) { i&#43;&#43;; } return i; } char* strcpyB(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i &lt;= len_s;i&#43;&#43;) { d[i] = s[i]; } return d; } char* str_rev(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i&lt; len_s; i&#43;&#43;) { d[i] = s[len_s - 1 - i]; } d[len_s] = &#39;\0&#39;; return d; } int main() { char *p = &#34;xyz\0dsalkfjds&#34;; char s[] = &#34;abcde\0kjdakfjsh&#34;; // abcde\0 // printf(&#34;%d %d\n&#34;,sizeof(p),sizeof(s)); // printf(&#34;%s %s\n&#34;,p, s); // printf(&#34;%d %d\n&#34;, strlen(p), strlen(s)); // strcpy(s,p); printf(&#34;%s\n&#34;,str_rev(p, s)); return 1; } String Functions##include &lt;string." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/lectures/6_10/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-10-06T14:49:20+05:30" />
-
+<meta property="article:modified_time" content="2023-10-06T15:24:42+05:30" />
 <title>II.2 Strings and Enums | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.e68498b9e1fe7f04ef4485378ccb1265aa06bc1ea63485b80bce0307beea0adb.js" integrity="sha256-5oSYueH&#43;fwTvRIU3jMsSZaoGvB6mNIW4C84DB77qCts=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.aaa852522fa8511a1bb3145aa2b70227c3542cdac72f42953deaa7b6f7191dbb.js" integrity="sha256-qqhSUi&#43;oURobsxRaorcCJ8NULNrHL0KVPeqntvcZHbs=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -98,7 +97,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/4_10/" class="">II.1 Typedef, Struct Initialization</a>
+    <a href="/docs/course_material/lectures/4_10/" class="">II.1 Typedef, Struct Initialization, Passing Pointers</a>
   
 
         </li>
@@ -444,6 +443,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#string-functions">String Functions</a></li>
         <li><a href="#social-network">Social Network</a></li>
         <li><a href="#define-a-person-profile">Define a Person (Profile)</a></li>
+        <li><a href="#hahahugoshortcode20s0hbhb">HAHAHUGOSHORTCODE20s0HBHB</a></li>
         <li><a href="#enums">Enums</a></li>
         <li><a href="#enums--changing-default-values">Enums : Changing default values</a></li>
         <li><a href="#enums--interchangable-with-int">Enums : interchangable with int</a></li>
@@ -474,57 +474,57 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li>as a pointer to char</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>p <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abcde&#34;</span>;
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#00a8c8">char</span> <span style="color:#f92672">*</span><span style="color:#111">p</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;abcde&#34;</span><span style="color:#111">;</span>
 </span></span></code></pre></div><ul>
 <li>as an array of char</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">char</span> s[] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abcde&#34;</span>;
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#00a8c8">char</span> <span style="color:#111">s</span><span style="color:#111">[]</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;abcde&#34;</span><span style="color:#111">;</span>
 </span></span></code></pre></div><p><img src="string_fig.png" alt="" /></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;%d %d&#34;</span>, <span style="color:#66d9ef">sizeof</span>(p), <span style="color:#66d9ef">sizeof</span>(s));
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75af00">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d %d&#34;</span><span style="color:#111">,</span> <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">p</span><span style="color:#111">),</span> <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">));</span>
 </span></span></code></pre></div><hr>
 <h2 id="string-function-implementation">
   String Function Implementation
   <a class="anchor" href="#string-function-implementation">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;stdio.h&#34;</span><span style="color:#75715e">
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;stdio.h&#34;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">strlenB</span>(<span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> s) {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> (s[i] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;\0&#39;</span>) {
-</span></span><span style="display:flex;"><span>        i<span style="color:#f92672">++</span>;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> i;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">strlenB</span><span style="color:#111">(</span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#111">s</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">!=</span> <span style="color:#d88200">&#39;\0&#39;</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">i</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">strcpyB</span>(<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>s, <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>d) {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> len_s <span style="color:#f92672">=</span> strlenB(s);
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;=</span> len_s;i<span style="color:#f92672">++</span>) {
-</span></span><span style="display:flex;"><span>        d[i] <span style="color:#f92672">=</span> s[i];
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> d;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#75af00">strcpyB</span><span style="color:#111">(</span><span style="color:#00a8c8">char</span> <span style="color:#f92672">*</span><span style="color:#111">s</span><span style="color:#111">,</span> <span style="color:#00a8c8">char</span> <span style="color:#f92672">*</span><span style="color:#111">d</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">len_s</span> <span style="color:#f92672">=</span> <span style="color:#75af00">strlenB</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">len_s</span><span style="color:#111">;</span><span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">d</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">s</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">d</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">str_rev</span>(<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>s, <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>d) {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> len_s <span style="color:#f92672">=</span> strlenB(s);
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span> len_s; i<span style="color:#f92672">++</span>) {
-</span></span><span style="display:flex;"><span>        d[i] <span style="color:#f92672">=</span> s[len_s <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> i];
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    d[len_s] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;\0&#39;</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> d;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#75af00">str_rev</span><span style="color:#111">(</span><span style="color:#00a8c8">char</span> <span style="color:#f92672">*</span><span style="color:#111">s</span><span style="color:#111">,</span> <span style="color:#00a8c8">char</span> <span style="color:#f92672">*</span><span style="color:#111">d</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">len_s</span> <span style="color:#f92672">=</span> <span style="color:#75af00">strlenB</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">&lt;</span> <span style="color:#111">len_s</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">d</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">s</span><span style="color:#111">[</span><span style="color:#111">len_s</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> <span style="color:#111">i</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">d</span><span style="color:#111">[</span><span style="color:#111">len_s</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;\0&#39;</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">d</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>p <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;xyz</span><span style="color:#ae81ff">\0</span><span style="color:#e6db74">dsalkfjds&#34;</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> s[] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abcde</span><span style="color:#ae81ff">\0</span><span style="color:#e6db74">kjdakfjsh&#34;</span>; <span style="color:#75715e">// abcde\0
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">char</span> <span style="color:#f92672">*</span><span style="color:#111">p</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;xyz</span><span style="color:#8045ff">\0</span><span style="color:#d88200">dsalkfjds&#34;</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">char</span> <span style="color:#111">s</span><span style="color:#111">[]</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;abcde</span><span style="color:#8045ff">\0</span><span style="color:#d88200">kjdakfjsh&#34;</span><span style="color:#111">;</span> <span style="color:#75715e">// abcde\0
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// printf(&#34;%d %d\n&#34;,sizeof(p),sizeof(s));
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// printf(&#34;%s %s\n&#34;,p, s);
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// printf(&#34;%d %d\n&#34;, strlen(p), strlen(s));
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// strcpy(s,p);
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    printf(<span style="color:#e6db74">&#34;%s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,str_rev(p, s));
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%s</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span><span style="color:#75af00">str_rev</span><span style="color:#111">(</span><span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#111">));</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
 <h2 id="string-functions">
   String Functions
@@ -589,87 +589,94 @@ https://github.com/alex-shpak/hugo-book
   Define a Person (Profile)
   <a class="anchor" href="#define-a-person-profile">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> Person {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> name[<span style="color:#ae81ff">100</span>];
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> age;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> rel_status;
-</span></span><span style="display:flex;"><span>};
-</span></span></code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">struct</span> <span style="color:#111">Person</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">char</span> <span style="color:#111">name</span><span style="color:#111">[</span><span style="color:#ae81ff">100</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">age</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">rel_status</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">};</span>
+</span></span></code></pre></div><p>Implemeting Rel Status as int, requires us to keep in mind the mapping between Single, Maried, Not Mentioned, Engaged and integers.</p>
+<h2 id="hahahugoshortcode20s0hbhb">
+  <blockquote class="book-hint info">
+  Can we specify this in code??
+</blockquote>
+
+  <a class="anchor" href="#hahahugoshortcode20s0hbhb">#</a>
+</h2>
 <h2 id="enums">
   Enums
   <a class="anchor" href="#enums">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">enum</span> Weekday {
-</span></span><span style="display:flex;"><span>    Sunday, 
-</span></span><span style="display:flex;"><span>    Monday, 
-</span></span><span style="display:flex;"><span>    Tuesday, 
-</span></span><span style="display:flex;"><span>    Wednesday, 
-</span></span><span style="display:flex;"><span>    Thursday, 
-</span></span><span style="display:flex;"><span>    Friday, 
-</span></span><span style="display:flex;"><span>    Saturday
-</span></span><span style="display:flex;"><span>} Weekday;
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>Weekday today <span style="color:#f92672">=</span> Wednesday;
-</span></span><span style="display:flex;"><span>printf(<span style="color:#e6db74">&#34;Day %d&#34;</span>,today<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>); 
-</span></span><span style="display:flex;"><span>printf(<span style="color:#e6db74">&#34;Size of enum variable = %d bytes&#34;</span>, 
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">sizeof</span>(today));	
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">enum</span> <span style="color:#111">Weekday</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Sunday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Monday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Tuesday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Wednesday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Thursday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Friday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Saturday</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">Weekday</span><span style="color:#111">;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#111">Weekday</span> <span style="color:#111">today</span> <span style="color:#f92672">=</span> <span style="color:#111">Wednesday</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Day %d&#34;</span><span style="color:#111">,</span><span style="color:#111">today</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span> 
+</span></span><span style="display:flex;"><span><span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Size of enum variable = %d bytes&#34;</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">today</span><span style="color:#111">));</span>	
 </span></span></code></pre></div><hr>
 <h2 id="enums--changing-default-values">
   Enums : Changing default values
   <a class="anchor" href="#enums--changing-default-values">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">enum</span> Weekday {
-</span></span><span style="display:flex;"><span>    Sunday <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, 
-</span></span><span style="display:flex;"><span>    Monday, 
-</span></span><span style="display:flex;"><span>    Tuesday, 
-</span></span><span style="display:flex;"><span>    Wednesday, 
-</span></span><span style="display:flex;"><span>    Thursday, 
-</span></span><span style="display:flex;"><span>    Friday, 
-</span></span><span style="display:flex;"><span>    Saturday
-</span></span><span style="display:flex;"><span>} Weekday;
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>Weekday today <span style="color:#f92672">=</span> Wednesday;
-</span></span><span style="display:flex;"><span>printf(<span style="color:#e6db74">&#34;Day %d&#34;</span>,today<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>);
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">enum</span> <span style="color:#111">Weekday</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Sunday</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Monday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Tuesday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Wednesday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Thursday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Friday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Saturday</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">Weekday</span><span style="color:#111">;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#111">Weekday</span> <span style="color:#111">today</span> <span style="color:#f92672">=</span> <span style="color:#111">Wednesday</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Day %d&#34;</span><span style="color:#111">,</span><span style="color:#111">today</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
 </span></span></code></pre></div><hr>
 <h2 id="enums--interchangable-with-int">
   Enums : interchangable with int
   <a class="anchor" href="#enums--interchangable-with-int">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;stdio.h&#34;</span><span style="color:#75715e">
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;stdio.h&#34;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">enum</span> Weekday {
-</span></span><span style="display:flex;"><span>    Sunday <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, 
-</span></span><span style="display:flex;"><span>    Monday <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, 
-</span></span><span style="display:flex;"><span>    Tuesday, 
-</span></span><span style="display:flex;"><span>    Wednesday <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, 
-</span></span><span style="display:flex;"><span>    Thursday, 
-</span></span><span style="display:flex;"><span>    Friday, 
-</span></span><span style="display:flex;"><span>    Saturday
-</span></span><span style="display:flex;"><span>} Weekday;
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">enum</span> <span style="color:#111">Weekday</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Sunday</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Monday</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Tuesday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Wednesday</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Thursday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Friday</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Saturday</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">Weekday</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
-</span></span><span style="display:flex;"><span>    Weekday today <span style="color:#f92672">=</span> Wednesday;;
-</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;Day %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,today<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>);
-</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;Size of enum variable = %d bytes&#34;</span>, 
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">sizeof</span>(today));	
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span> ;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Weekday</span> <span style="color:#111">today</span> <span style="color:#f92672">=</span> <span style="color:#111">Wednesday</span><span style="color:#111">;;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Day %d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span><span style="color:#111">today</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Size of enum variable = %d bytes&#34;</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">today</span><span style="color:#111">));</span>	
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span> <span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
 <h2 id="define-a-person-profile-1">
   Define a Person (Profile)
   <a class="anchor" href="#define-a-person-profile-1">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">enum</span> RelStatus {
-</span></span><span style="display:flex;"><span>    NotMentioned,
-</span></span><span style="display:flex;"><span>    Single,
-</span></span><span style="display:flex;"><span>    Engaged,
-</span></span><span style="display:flex;"><span>    Married
-</span></span><span style="display:flex;"><span>};
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#00a8c8">enum</span> <span style="color:#111">RelStatus</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">NotMentioned</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Single</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Engaged</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Married</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">};</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> Person {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> name[<span style="color:#ae81ff">100</span>];
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> age;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">enum</span> RelStatus status;
-</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">struct</span> <span style="color:#111">Person</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">char</span> <span style="color:#111">name</span><span style="color:#111">[</span><span style="color:#ae81ff">100</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">age</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">enum</span> <span style="color:#111">RelStatus</span> <span style="color:#111">status</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">};</span>
 </span></span></code></pre></div><hr>
 <h2 id="practice-problems">
   Practice Problems
@@ -687,7 +694,7 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/efcde2539f36893eb9a4c4674b777baf6fc0c1b9" title='Last modified by Girish Varma | October 6, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/b9d99b77719ac75354fc64b39a5b205afa1971e2" title='Last modified by Girish Varma | October 6, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>October 6, 2023</span>
     </a>
@@ -732,6 +739,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#string-functions">String Functions</a></li>
         <li><a href="#social-network">Social Network</a></li>
         <li><a href="#define-a-person-profile">Define a Person (Profile)</a></li>
+        <li><a href="#hahahugoshortcode20s0hbhb">HAHAHUGOSHORTCODE20s0HBHB</a></li>
         <li><a href="#enums">Enums</a></li>
         <li><a href="#enums--changing-default-values">Enums : Changing default values</a></li>
         <li><a href="#enums--interchangable-with-int">Enums : interchangable with int</a></li>

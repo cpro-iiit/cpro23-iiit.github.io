@@ -12,8 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz1A/</guid>
-      <description>Quiz 1 # Section A Question 1 - 5 marks # Problem Description # Write a program to find the factorial of a number. Here n can be taken to be an input from the user.
-Solution # #include &amp;lt;stdio.h&amp;gt; int main(){ int n; scanf(&amp;#34;%d&amp;#34;,&amp;amp;n); if(n&amp;lt;0){ printf(&amp;#34;Invalid Input!&amp;#34;); }else{ int ans=1; for(int i=1;i&amp;lt;=n;i++){ ans*=i; } printf(&amp;#34;%d\n&amp;#34;,ans); } return 0; } Grading Scheme # 1 mark: For writing
+      <description>Quiz 1#Section AQuestion 1 - 5 marks#Problem Description#Write a program to find the factorial of a number. Here n can be taken to be an input from the user.
+Solution##include &amp;lt;stdio.h&amp;gt; int main(){ int n; scanf(&amp;#34;%d&amp;#34;,&amp;amp;n); if(n&amp;lt;0){ printf(&amp;#34;Invalid Input!&amp;#34;); }else{ int ans=1; for(int i=1;i&amp;lt;=n;i++){ ans*=i; } printf(&amp;#34;%d\n&amp;#34;,ans); } return 0; } Grading Scheme#1 mark: For writing
 #include &amp;lt;stdio.h&amp;gt; 1 mark: For writing</description>
     </item>
     
@@ -23,8 +23,8 @@ Solution # #include &amp;lt;stdio.h&amp;gt; int main(){ int n; scanf(&amp;#34;%d
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz1B/</guid>
-      <description>Quiz 1 # Section B Question 1 - 5 marks # Problem Description # Write a program to find the sum of first n even numbers. Here n can be taken to be an input from the user.
-Solution # Both Codes are considered to be valid.
+      <description>Quiz 1#Section BQuestion 1 - 5 marks#Problem Description#Write a program to find the sum of first n even numbers. Here n can be taken to be an input from the user.
+Solution#Both Codes are considered to be valid.
 #include&amp;lt;stdio.h&amp;gt; int main() { int i, ans = 0,n; scanf(&amp;#34;%d&amp;#34;, &amp;amp;n); for(i=0; i &amp;lt; n; i ++) { ans = ans + 2*i; } printf(&amp;#34;%d\n&amp;#34;, ans); return 0; } #include&amp;lt;stdio.</description>
     </item>
     
