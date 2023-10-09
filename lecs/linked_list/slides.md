@@ -2,7 +2,7 @@
 marp: true
 size: 4:3
 ---
-## Macros, More Intializers in Social Nets
+# Macros, More Intializers in Social Nets
 
 
 ---
