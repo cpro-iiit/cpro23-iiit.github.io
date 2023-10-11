@@ -95,6 +95,15 @@ Output Format#Output a continous stream of bits of n starting from the most si
     </item>
     
     <item>
+      <title>II.4 Linked Lists</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/lectures/11_10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/docs/course_material/lectures/11_10/</guid>
+      <description>II.4 Linked Lists#Problem: Large Arrays!##define MAX_MEMBERS 100 typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Linked List: A array that grows according to needs#Linked List: Code#typedef struct Node { Person data; struct Node* next; } Node; typedef Node* LinkedList; Node third = { {&amp;#34;Alice&amp;#34;, 22}, NULL }; Node second = { {&amp;#34;Bob&amp;#34;, 26}, &amp;amp;third }; Node first = { {&amp;#34;Charlie&amp;#34;, 20}, &amp;amp;second }; LinkedList L = &amp;amp;first; Size of a Liniked List#int size(LinkedList l) { int s = 0; while (l !</description>
+    </item>
+    
+    <item>
       <title>Lab - 1</title>
       <link>https://cpro-iiit.github.io/docs/course_material/labs/lab1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

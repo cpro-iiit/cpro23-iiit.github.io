@@ -2,54 +2,21 @@
 marp: true
 size: 4:3
 ---
-# Macros, More Intializers in Social Nets
+# Linked Lists
 
 
 ---
-## Social Nets
+## HW: Mutual Friendships in Social Nets
 ```c
-typedef enum RelStatus {
-    NotMentioned,
-    Single,
-    Engaged,
-    Married
-} RelStatus;
-
-typedef struct Person {
-    char name[100];
-    int age;
-    RelStatus relstatus;
-    Person* friends[5];
-} Person;
-
-typedef struct SocialNet {
-    Person members[100];
-    int size;
-} SocialNet;
+bool check_mutual_friends(char *name1, char *name2, SocialNet *sn) {
+ // TODO p and q are mutual friends if q is in the friend list of p
+ // and p is in the friend list of q
+}
 ```
 ---
 
-## Social Nets with Macros
+## Problem: Large Arrays!
 ```c
-
-#define MAX_FRIENDS 5
-#define MAX_MEMBERS 100
-#define MAX_NAME_LEN 100
-
-typedef enum RelStatus {
-    NotMentioned,
-    Single,
-    Engaged,
-    Married
-} RelStatus;
-
-typedef struct Person {
-    char name[MAX_NAME_LEN];
-    int age;
-    RelStatus relstatus;
-    Person* friends[MAX_FRIENDS];
-} Person;
-
 typedef struct SocialNet {
     Person members[MAX_MEMBERS];
     int size;
@@ -57,61 +24,91 @@ typedef struct SocialNet {
 ```
 
 ---
-## Intitializer
-
-| Name    | Age | Rel Status    |
-|---------|-----|---------------|
-| Alice   | 24  | Not Mentioned | 
-| Bob     | 28  | Maried        | 
-| Charlie | 20  | Single        | 
+### Linked List: A array that grows according to needs
 
 
+---
+
+## Linked List: Code
 ```c
-int main()
-{
-    SocialNet social_net = {
-        // Fill here
-    };
-    print_network(social_net);
-    return 0;
-}
+typedef struct Node {
+    Person data;
+    struct Node* next;
+} Node;
+
+typedef Node* LinkedList;
+
+Node third = {
+    {"Alice", 22},
+    NULL
+};
+Node second = {
+    {"Bob", 26},
+    &third
+};
+Node first = {
+    {"Charlie", 20},
+    &second
+};
+
 ```
 
 ---
-## Print Person
+## Size of a Liniked List
 ```c
-void print_person(struct Person p) {
-/*  TODO: Write code that prints a person 
-    in the following format:
-    Alice           24      Not Mentioned
-*/
-}
-
-void print_network(SocialNet social_net) {
-    printf(
-        "----------------------------------------------\n"
-        "Name\t\tAge \t Rel Status\n"
-        "----------------------------------------------\n");
-    for (int i=0;i <social_net.size; i++) {
-        print_person(social_net.members[i]);
+int size(LinkedList l) {
+    int s = 0;
+    while (l != NULL) {
+        l = l->next;
+        s ++;
     }
-    printf("----------------------------------------------\n");
+    return s;
 }
 ```
 ---
-## Finding a person by name
+## Printing elements of a linked list
 
 ```c
-Person* find_person(char* name1, SocialNet *sn) {
+void print_list(LinkedList l) {
     // TODO
 }
 ```
 ---
 
-## HW: Check Mutual Friends by name
+## Find the element at the ith position
 ```c
-bool check_mutual_friends(char *name1, char *name2, SocialNet *sn) {
- // TODO p and q are mutual friends if q is in the friend list of p
- // and p is in the friend list of q
+Person* element_at(int pos, LinkedList l) {
+    // TODO
+}
+```
+---
+## Append element to end of the list
+```c
+LinkedList append(Person p, LinkedList l) {
+    // TODO
+}
+```
+---
+## Insert element at a position in the list
+```c
+LinkedList insert(Person p, int pos, LinkedList l) {
+    // TODO
+}
+```
+
+---
+## Concatenate 2 lists
+```c
+LinkedList concat(LinkedList l1, LinkedList l2) {
+    // TODO
+}
+```
+
+
+---
+## Reverse a list
+```c
+LinkedList reverse(LinkedList l) {
+    // TODO
 }
 ```
