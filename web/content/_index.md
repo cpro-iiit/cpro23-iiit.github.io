@@ -12,3 +12,9 @@ Problem-solving will be a major focus, where we'll teach you how to break down c
 
 Through hands-on practice and coding assignments, you'll develop the confidence to write clean, readable, and maintainable code. By the end of the course, you'll have the skills to embark on exciting programming endeavors and explore various applications. Let's dive in and unleash the power of programming!
 
+## Instructors
+[Girish Varma](https://girishvarma.in/)  
+[Abhishek Deshpande](https://fac-webpages.iiit.ac.in/Abhishek_Deshpande/)  
+[Shantanav Chakraborty](https://sites.google.com/view/shchakra)
+
+
