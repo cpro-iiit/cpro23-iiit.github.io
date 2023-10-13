@@ -160,6 +160,22 @@ Solution # Both Codes are considered to be valid.
     </item>
     
     <item>
+      <title>References</title>
+      <link>https://cpro-iiit.github.io/references/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/references/</guid>
+      <description>References from the web # Dive into C Textbook
+C Programing Textbook
+Variables, functions, arrays, strings
+C Structs and Pointers
+The C Book by Banahan, Brady, Doran
+C and Unix Documentation from the Stanford CS Education Library
+A C programming course by Steve Summit, online course material
+Programming in C by A.D. Marshall, notes and examples</description>
+    </item>
+    
+    <item>
       <title>Teaching Assistants</title>
       <link>https://cpro-iiit.github.io/tas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
