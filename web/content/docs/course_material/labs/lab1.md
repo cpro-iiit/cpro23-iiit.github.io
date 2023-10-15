@@ -40,7 +40,6 @@ Output three space-separated bits denoting the last three bits of the given numb
 ### Solution
 
 ```c
-
 #include <stdio.h>
 
 int main(void) {
@@ -48,7 +47,6 @@ int main(void) {
     printf("%d %d %d\n", !!(n & 1), !!(n & 2), !!(n & 4));
     return 0;
 }
-
 ```
 
 ---
@@ -87,7 +85,6 @@ int main(void) {
     printf("%02d-%02d-%02d\n", m, d, y);
     return 0;
 }
-
 ```
 
 ---
