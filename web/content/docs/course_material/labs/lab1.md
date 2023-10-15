@@ -4,7 +4,7 @@ bookHidden: false
 ---
 # Lab 1 (Week of 14 August)
 
-## Question 1
+## Question 1 - "The Last 3"
 
 ### Problem Description
 
@@ -37,9 +37,23 @@ Output three space-separated bits denoting the last three bits of the given numb
 | `11`         | `0 1 1`       |
 | `12`         | `1 0 0`       |
 
+### Solution
+
+```c
+
+#include <stdio.h>
+
+int main(void) {
+    int n; scanf("%d", &n);
+    printf("%d %d %d\n", !!(n & 1), !!(n & 2), !!(n & 4));
+    return 0;
+}
+
+```
+
 ---
 
-## Question 2
+## Question 2 - "Date Formats"
 
 ### Problem Description
 
@@ -61,5 +75,19 @@ Output the date in `MM-DD-YY` format with no space separation.
 | ------------ | ------------- |
 | `25-03-04`         | `03-25-04`       |
 | `15-08-23`         | `08-15-23`       |
+
+### Solution
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int d, m, y;
+    scanf("%d-%d-%d", &d, &m, &y);
+    printf("%02d-%02d-%02d\n", m, d, y);
+    return 0;
+}
+
+```
 
 ---
