@@ -4,7 +4,7 @@ bookHidden: false
 ---
 # Lab 3 (Week of 4 September)
 
-## Question 1
+## Question 1 - "Club Recruitments"
 
 ### Problem Description
 
@@ -49,9 +49,27 @@ Output a single integer that denotes the number of unattended tasks.
 | `3` <br> `-1 -1 -1` | `2`       |
 | `11` <br> `-1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1` | `8`       |
 
+### Solution
+
+```c
+#include <stdio.h>
+
+int main() {
+    int n; scanf("%d", &n);
+    int pref = 0, ans = 0;
+    for (int i = 0; i < n; i++) {
+        int x; scanf("%d", &x);
+        pref += x;
+        if (pref < 0) ans++, pref = 0;
+    }
+    printf("%d\n", ans);
+    return 0;
+}
+```
+
 ---
 
-## Question 2
+## Question 2 - Current Max
 
 ### Problem Description
 
@@ -87,5 +105,25 @@ On the second line, output `K` space-separated integers denoting the numbers cro
 | Sample Input | Sample Output |
 | ------------ | ------------- |
 | ` 7`<br>`1 1 3 2 4 10 9`|  `4`<br> `1 3 4 10`|
+
+### Solution
+
+```c
+#include <stdio.h>
+
+int main() {
+    int n; scanf("%d", &n);
+    int final[n];
+    int sz = 0;
+    for (int i = 0; i < n; i++) {
+        int x; scanf("%d", &x);
+        if (!sz || final[sz - 1] < x) final[sz++] = x;
+    }
+    printf("%d\n", sz);
+    for (int i = 0; i < sz; i++) printf("%d ", final[i]);
+    printf("\n");
+    return 0;
+}
+```
 
 ---

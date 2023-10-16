@@ -4,7 +4,7 @@ bookHidden: false
 ---
 # Lab 2 (Week of 21 August)
 
-## Question 1
+## Question 1 - "Divisibility By 3"
 
 ### Problem Description
 
@@ -40,9 +40,27 @@ Output `YES` if the number is divisible by 3 and `NO` otherwise.
 | `10` <br> `1234567890` | `YES`       |
 | `2` <br> `22` | `NO`       |
 
+### Solution
+```c
+#include <stdio.h>
+
+int main(void) {
+    int n; scanf("%d", &n);
+    char c; scanf("%c", &c); //Skips the initial new line character
+    int sum = 0;
+    while (n--) {
+        scanf("%c", &c);
+        sum += c - '0';
+    }
+    if (sum % 3) printf("NO\n");
+    else printf("YES\n");
+    return 0;
+}
+```
+
 ---
 
-## Question 2
+## Question 2 - "K-Swap"
 
 ### Problem Description
 
@@ -75,5 +93,20 @@ Output a single integer denoting the new value of `x`
 | Sample Input | Sample Output |
 | ------------ | ------------- |
 | `11` `22` `3`| `14`          |
+
+### Solution
+
+```c
+#include <stdio.h>
+
+int main() {
+    int x, y, k;
+    scanf("%d %d %d", &x, &y, &k);
+    x &= (~0 << k);
+    y &= ~(~0 << k);
+    printf("%d\n", x | y);
+    return 0;
+}
+```
 
 ---

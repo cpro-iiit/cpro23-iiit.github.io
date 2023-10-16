@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/tutorials/week1/</guid>
-      <description>Tutorial 1 (Week of 14 August)#Theory#Introduction to how compilation works in C#We all know that computer is incapable of reading and understanding the code we write in its native form. This means that the code needs to be converted in a form which the machine can understand. The machine only understands Binary code. Thus, there should be a process by which the code we write can be converted to Binary form.</description>
+      <description>Tutorial 1 (Week of 14 August) # Theory # Introduction to how compilation works in C # We all know that computer is incapable of reading and understanding the code we write in its native form. This means that the code needs to be converted in a form which the machine can understand. The machine only understands Binary code. Thus, there should be a process by which the code we write can be converted to Binary form.</description>
     </item>
     
   </channel>
