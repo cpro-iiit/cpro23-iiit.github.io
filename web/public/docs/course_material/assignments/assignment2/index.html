@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Assignment 2#Question 1 - &ldquo;Doubling Investments&rdquo;#Problem Description#Mitansh is world’s best investor. Whatever the amount he has today, it doubles on the next day.
+Initially he starts, with amount zero. Each day in the morning, he can choose to invest \(\$x\)more in addition to his previous amount \(\$y\). And on next day, his total amount becomes \(\$2(x&#43;y)\).
+However, he wants to get exactly \(\$z\)on some day.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Assignment - 2" />
+<meta property="og:description" content="Assignment 2#Question 1 - &ldquo;Doubling Investments&rdquo;#Problem Description#Mitansh is world’s best investor. Whatever the amount he has today, it doubles on the next day.
+Initially he starts, with amount zero. Each day in the morning, he can choose to invest \(\$x\)more in addition to his previous amount \(\$y\). And on next day, his total amount becomes \(\$2(x&#43;y)\).
+However, he wants to get exactly \(\$z\)on some day." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/assignments/assignment2/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2023-10-16T00:07:32+05:30" />
+<title>Assignment - 2 | CPro Mon 23</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.2dbfc31aee9620f32f0e1733e43fe552cbe067253da1fdf9176d4b28f8b47345.js" integrity="sha256-Lb/DGu6WIPMvDhcz5D/lUsvgZyU9of35F21LKPi0c0U=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>CPro Mon 23</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Course Material</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c87ef19fe67bdb63d85d44d099797871" class="toggle"  />
+    <label for="section-c87ef19fe67bdb63d85d44d099797871" class="flex justify-between">
+      <a role="button" class="">Lectures</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/4_10/" class="">II.1 Typedef, Struct Initialization, Passing Pointers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/6_10/" class="">II.2 Strings and Enums</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/9_10/" class="">II.3 Macros, More Intializers in Social Nets</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/11_10/" class="">II.4 Linked Lists</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/16_10/" class="">II.5 Linked Lists Problems</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5b2c745bf85b67a9cd73528333cc29a8" class="toggle" checked />
+    <label for="section-5b2c745bf85b67a9cd73528333cc29a8" class="flex justify-between">
+      <a role="button" class="">Assignments</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/assignments/assignment1/" class="">Assignment - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/assignments/assignment2/" class="active">Assignment - 2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-68a23d3bc0e29a3d69b03994606ba228" class="toggle"  />
+    <label for="section-68a23d3bc0e29a3d69b03994606ba228" class="flex justify-between">
+      <a role="button" class="">Labs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab1/" class="">Lab - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab2/" class="">Lab - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab3/" class="">Lab - 3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c04055d7141066e86bae893cc2c0e07" class="toggle"  />
+    <label for="section-7c04055d7141066e86bae893cc2c0e07" class="flex justify-between">
+      <a role="button" class="">Practice Problems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week1/" class="">Week - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week2/" class="">Week - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week4/" class="">Week - 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week6/" class="">Week - 6</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4cc6bae32fccbb5cd498aeeba537746f" class="toggle"  />
+    <label for="section-4cc6bae32fccbb5cd498aeeba537746f" class="flex justify-between">
+      <a role="button" class="">Tutorials</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/tutorials/week1/" class="">Tutorial - 1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="toggle"  />
+    <label for="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="flex justify-between">
+      <a role="button" class="">Quizzes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/midLab1/" class="">Mid-Sem Lab Exam</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/quiz1A/" class="">Quiz - 1 Section A</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/quiz1B/" class="">Quiz - 1 Section B</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/references/"  >
+        References
+      </a>
+  </li>
+  
+  <li>
+    <a href="/posts/"  >
+        Resources
+      </a>
+  </li>
+  
+  <li>
+    <a href="/tas/"  >
+        Teaching Assistants
+      </a>
+  </li>
+  
+  <li>
+    <a href="/grading_scheme/"  >
+        Grading Scheme
+      </a>
+  </li>
+  
+  <li>
+    <a href="/honor_code/"  >
+        Honor Code
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/cpro-iiit/cpro-iiit.github.io"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Assignment - 2</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#assignment-2">Assignment 2</a>
+      <ul>
+        <li><a href="#question-1---doubling-investments">Question 1 - &ldquo;Doubling Investments&rdquo;</a>
+          <ul>
+            <li><a href="#problem-description">Problem Description</a></li>
+            <li><a href="#input-format">Input Format</a></li>
+            <li><a href="#input-constraints">Input constraints</a></li>
+            <li><a href="#output-format">Output Format</a></li>
+            <li><a href="#sample-inputs-and-outputs">Sample inputs and outputs</a></li>
+            <li><a href="#solution">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-2---rotate-edges">Question 2 - &ldquo;Rotate Edges&rdquo;</a>
+          <ul>
+            <li><a href="#problem-description-1">Problem Description</a></li>
+            <li><a href="#input-format-1">Input Format</a></li>
+            <li><a href="#input-constraints-1">Input constraints</a></li>
+            <li><a href="#output-format-1">Output Format</a></li>
+            <li><a href="#sample-inputs-and-outputs-1">Sample inputs and outputs</a></li>
+            <li><a href="#solution-1">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-3---open-doors">Question 3 - &ldquo;Open Doors&rdquo;</a>
+          <ul>
+            <li><a href="#problem-description-2">Problem Description</a></li>
+            <li><a href="#input-format-2">Input Format</a></li>
+            <li><a href="#input-constraints-2">Input constraints</a></li>
+            <li><a href="#output-format-2">Output Format</a></li>
+            <li><a href="#sample-inputs-and-outputs-2">Sample inputs and outputs</a></li>
+            <li><a href="#solution-2">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-4---count-palindromes">Question 4 - &ldquo;Count Palindromes&rdquo;</a>
+          <ul>
+            <li><a href="#problem-description-3">Problem Description</a></li>
+            <li><a href="#input-format-3">Input Format</a></li>
+            <li><a href="#input-constraints-3">Input constraints</a></li>
+            <li><a href="#output-format-3">Output Format</a></li>
+            <li><a href="#sample-inputs-and-outputs-3">Sample inputs and outputs</a></li>
+            <li><a href="#solution-3">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-5---pec-woes">Question 5 - &ldquo;PEC woes&rdquo;</a>
+          <ul>
+            <li><a href="#problem-description-4">Problem Description</a></li>
+            <li><a href="#input-format-4">Input Format</a></li>
+            <li><a href="#input-constraints-4">Input constraints</a></li>
+            <li><a href="#output-format-4">Output Format</a></li>
+            <li><a href="#sample-inputs-and-outputs-4">Sample inputs and outputs</a></li>
+            <li><a href="#solution-4">Solution</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="assignment-2">
+  Assignment 2
+  <a class="anchor" href="#assignment-2">#</a>
+</h1>
+<h2 id="question-1---doubling-investments">
+  Question 1 - &ldquo;Doubling Investments&rdquo;
+  <a class="anchor" href="#question-1---doubling-investments">#</a>
+</h2>
+<h3 id="problem-description">
+  Problem Description
+  <a class="anchor" href="#problem-description">#</a>
+</h3>
+<p><em>Mitansh is world’s best investor.  Whatever the amount he has today, it doubles on the next day.</em></p>
+<p>Initially he starts, with amount zero. Each day in the morning, he can choose to invest 
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \(\$x\)
+</span>
+ more in addition to his previous amount <span>
+  \(\$y\)
+</span>
+. And on next day, his total amount becomes <span>
+  \(\$2(x&#43;y)\)
+</span>
+.</p>
+<p>However, he wants to get exactly <span>
+  \(\$z\)
+</span>
+ on some day.</p>
+<p>What is the minimum amount of money he needs to invest, in order to get <span>
+  \(\$z\)
+</span>
+ at some moment?</p>
+<p><a href="http://oj.iiit.ac.in/problem/cpro23a1q1">Link to problem on OJ</a></p>
+<h3 id="input-format">
+  Input Format
+  <a class="anchor" href="#input-format">#</a>
+</h3>
+<p>The first and only line of input contains a single integer <span>
+  \(z\)
+</span>
+ which denotes the desired amount.</p>
+<h3 id="input-constraints">
+  Input constraints
+  <a class="anchor" href="#input-constraints">#</a>
+</h3>
+<ul>
+<li><span>
+  \(0 \le z \le 10^9\)
+</span>
+</li>
+</ul>
+<h3 id="output-format">
+  Output Format
+  <a class="anchor" href="#output-format">#</a>
+</h3>
+<p>On a single line, output the minimum amount of money that needs to be invested, in order to get exactly <span>
+  \(\$z\)
+</span>
+ on some day.</p>
+<h3 id="sample-inputs-and-outputs">
+  Sample inputs and outputs
+  <a class="anchor" href="#sample-inputs-and-outputs">#</a>
+</h3>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>7
+</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>3
+</code></pre>
+<p><strong>Explanation:</strong> Mitansh will invest <span>
+  \(\$1\)
+</span>
+ on the <span>
+  \(1^{st}\)
+</span>
+, <span>
+  \(2^{nd}\)
+</span>
+ and <span>
+  \(3^{rd}\)
+</span>
+ days. At the beginning of the second day he has <span>
+  \(\$2\)
+</span>
+ (thanks to the <span>
+  \(\$1\)
+</span>
+ doubling). He invests <span>
+  \(\$1\)
+</span>
+ again, leading to the amount being <span>
+  \(\$3 \times 2 = \$6\)
+</span>
+ at the beginning of the third day. He again invests <span>
+  \(\$1\)
+</span>
+ to obtain the desired amount of <span>
+  \(\$7\)
+</span>
+.</p>
+<p><strong>Sample Input 2</strong></p>
+<pre><code>16
+</code></pre>
+<p><strong>Sample Output 2</strong></p>
+<pre><code>1
+</code></pre>
+<p><strong>Explanation:</strong> Mitansh invests <span>
+  \(\$1\)
+</span>
+ on the first day which doubles four times to obtain <span>
+  \(\$16\)
+</span>
+.</p>
+<p><strong>Sample Input 3</strong></p>
+<pre><code>0
+</code></pre>
+<p><strong>Sample Output 3</strong></p>
+<pre><code>0
+</code></pre>
+<h3 id="solution">
+  Solution
+  <a class="anchor" href="#solution">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#111">count</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">count</span> <span style="color:#f92672">+=</span> <span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">n</span> <span style="color:#f92672">/=</span> <span style="color:#ae81ff">2</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">count</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><hr>
+<h2 id="question-2---rotate-edges">
+  Question 2 - &ldquo;Rotate Edges&rdquo;
+  <a class="anchor" href="#question-2---rotate-edges">#</a>
+</h2>
+<h3 id="problem-description-1">
+  Problem Description
+  <a class="anchor" href="#problem-description-1">#</a>
+</h3>
+<p><em>Kitansh Mayathwal was thinking of an easy problem which he can apply MOSS on. He came up with this problem.</em></p>
+<p>You are given a grid with <span>
+  \(N\)
+</span>
+ rows and <span>
+  \(N\)
+</span>
+ columns. An integer <span>
+  \(A_{i,j}\)
+</span>
+ is written on the square at the <span>
+  \(i\)
+</span>
+-th row from the top and <span>
+  \(j\)
+</span>
+-th column from the left. Here, it is guaranteed that <span>
+  \(A_{i,j}\)
+</span>
+ is either 0 or 1.</p>
+<p>An integer <span>
+  \(D\)
+</span>
+ is also given as input. It is guaranteed that <span>
+  \(D\)
+</span>
+ is either 0 or 1.</p>
+<p>If <span>
+  \(D = 0\)
+</span>
+, shift the integers written on the outer squares anticlockwise by one square each, and print the resulting grid.</p>
+<p>If <span>
+  \(D = 1\)
+</span>
+. shift the integers written on the outer squares clockwise by one square each, and print the resulting grid.</p>
+<p>Here, the outer squares are those for which at least one of the following conditions is true:</p>
+<ul>
+<li>The square is present on the first row</li>
+<li>The square is present on the <span>
+  \(N\)
+</span>
+-th row</li>
+<li>The square is present on the first column</li>
+<li>The square is present on the <span>
+  \(N\)
+</span>
+-th column</li>
+</ul>
+<p><a href="http://oj.iiit.ac.in/problem/cpro23a1q2">Link to problem on OJ</a></p>
+<h3 id="input-format-1">
+  Input Format
+  <a class="anchor" href="#input-format-1">#</a>
+</h3>
+<p>The first line of input contains a single integer <span>
+  \(N\)
+</span>
+ that denotes the size of the grid. The next <span>
+  \(N\)
+</span>
+ lines describe the grid.</p>
+<p>The <span>
+  \(i^{th}\)
+</span>
+ line describes the <span>
+  \(i^{th}\)
+</span>
+ row of the grid, <span>
+  \(A_{i, 1}, A_{i, 2}, \dots, A_{i, N}\)
+</span>
+.</p>
+<p>The final line of input contains a single integer <span>
+  \(D\)
+</span>
+ which denotes the direction of rotation.</p>
+<p>In other words, the input is in the following format</p>
+<pre><code>N
+A_1,1 A_1,2 ... A_1,N
+A_2,1 A_2,2 ... A_2,N
+...
+A_N,1 A_N,2 ... A_N,N
+D
+</code></pre>
+<h3 id="input-constraints-1">
+  Input constraints
+  <a class="anchor" href="#input-constraints-1">#</a>
+</h3>
+<ul>
+<li><span>
+  \(2 \le N \le 100\)
+</span>
+</li>
+<li><span>
+  \(0 \le A_{i, j} \le 1 (1 \le i, j \le N)\)
+</span>
+</li>
+<li><span>
+  \(0 \le D \le 1\)
+</span>
+</li>
+</ul>
+<h3 id="output-format-1">
+  Output Format
+  <a class="anchor" href="#output-format-1">#</a>
+</h3>
+<p>Output the appropriately rotated grid <span>
+  \(B\)
+</span>
+ in the following format:</p>
+<pre><code>B_1,1 B_1,2 ... B_1,N
+B_2,1 ...
+...
+B_N,1 B_N,2 ... B_N,N
+</code></pre>
+<h3 id="sample-inputs-and-outputs-1">
+  Sample inputs and outputs
+  <a class="anchor" href="#sample-inputs-and-outputs-1">#</a>
+</h3>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>3
+1 1 1
+0 1 0
+1 0 1
+1
+</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>0 1 1
+1 1 1
+0 1 0
+</code></pre>
+<p><strong>Sample Input 2</strong></p>
+<pre><code>3
+1 1 1
+0 1 0
+1 0 1
+0
+</code></pre>
+<p><strong>Sample Output 2</strong></p>
+<pre><code>1 1 0 
+1 1 1 
+0 1 0
+</code></pre>
+<h3 id="solution-1">
+  Solution
+  <a class="anchor" href="#solution-1">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">n</span><span style="color:#111">][</span><span style="color:#111">n</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">d</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">d</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">b</span><span style="color:#111">[</span><span style="color:#111">n</span><span style="color:#111">][</span><span style="color:#111">n</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">d</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">b</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">][</span><span style="color:#111">j</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">b</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">b</span><span style="color:#111">[</span><span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#111">j</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">b</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#ae81ff">0</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">b</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">][</span><span style="color:#111">j</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">b</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">b</span><span style="color:#111">[</span><span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#111">j</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">b</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#ae81ff">0</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">b</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d &#34;</span><span style="color:#111">,</span> <span style="color:#111">b</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><hr>
+<h2 id="question-3---open-doors">
+  Question 3 - &ldquo;Open Doors&rdquo;
+  <a class="anchor" href="#question-3---open-doors">#</a>
+</h2>
+<h3 id="problem-description-2">
+  Problem Description
+  <a class="anchor" href="#problem-description-2">#</a>
+</h3>
+<p>Madhav is a very lazy boy. He doesn’t like to do sports. So our PEC instructor has assigned him a task which he should complete in an hour.
+There are <span>
+  \(n\)
+</span>
+ doors which are all closed initially. Madhav should perform <span>
+  \(n\)
+</span>
+ iterations. In the <span>
+  \(i^\text{th}\)
+</span>
+ iteration he starts from <span>
+  \(i^\text{th}\)
+</span>
+ door and goes to each multiple of <span>
+  \(i\)
+</span>
+ untill <span>
+  \(n\)
+</span>
+ i.e. <span>
+  \((i, 2*i, 3*i…..)\)
+</span>
+ and toggles the door. Here toggles means if the door is open, he will close it and if it is closed he will open it.</p>
+<p>After all <span>
+  \(n\)
+</span>
+ iterations he has to tell which all doors are still opened. As Madhav is smart, he tries to solve this task using some program. Can you help him with this task ?</p>
+<p><a href="http://oj.iiit.ac.in/problem/cpro23a1q3">Link to problem on OJ</a></p>
+<h3 id="input-format-2">
+  Input Format
+  <a class="anchor" href="#input-format-2">#</a>
+</h3>
+<p>You will be given only one integer <span>
+  \(n\)
+</span>
+ which are the number of doors.</p>
+<h3 id="input-constraints-2">
+  Input constraints
+  <a class="anchor" href="#input-constraints-2">#</a>
+</h3>
+<span>
+  \(1 \leq  n \leq 10^{10}\)
+</span>
+
+<p>Subtask 1 :  (45 points)</p>
+<span>
+  \(1 \leq  n \leq 10^3\)
+</span>
+
+<p>Subtask 2 : (55 points)</p>
+<p>Original Constraints</p>
+<h3 id="output-format-2">
+  Output Format
+  <a class="anchor" href="#output-format-2">#</a>
+</h3>
+<p>Print the open door numbers in increasing order.</p>
+<h3 id="sample-inputs-and-outputs-2">
+  Sample inputs and outputs
+  <a class="anchor" href="#sample-inputs-and-outputs-2">#</a>
+</h3>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>1
+</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>1
+</code></pre>
+<p><strong>Sample Input 2</strong></p>
+<pre><code>4
+</code></pre>
+<p><strong>Sample Output 2</strong></p>
+<pre><code>1 4
+</code></pre>
+<h3 id="solution-2">
+  Solution
+  <a class="anchor" href="#solution-2">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">long</span> <span style="color:#00a8c8">long</span> <span style="color:#111">n</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%lld&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#ae81ff">1ll</span> <span style="color:#f92672">*</span> <span style="color:#111">i</span> <span style="color:#f92672">*</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%lld &#34;</span><span style="color:#111">,</span> <span style="color:#111">i</span> <span style="color:#f92672">*</span> <span style="color:#111">i</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><hr>
+<h2 id="question-4---count-palindromes">
+  Question 4 - &ldquo;Count Palindromes&rdquo;
+  <a class="anchor" href="#question-4---count-palindromes">#</a>
+</h2>
+<h3 id="problem-description-3">
+  Problem Description
+  <a class="anchor" href="#problem-description-3">#</a>
+</h3>
+<p>Given an array <span>
+  \(A\)
+</span>
+ of length <span>
+  \(N\)
+</span>
+, count the number of <strong>non-empty subarrays</strong> which are palindromes.</p>
+<p>Note that two subarrays are considered to be different if they either start at different indices or end at different indices. The actual elements in the two subarrays do not influence this.</p>
+<p>A subarray is a contiguous segment of the array which can be obtained be deleting one or more elements from the beginning or the end of the array.</p>
+<p>An array is said to be a palindrome if it reads the same backwards and forwards. For example, <span>
+  \([1, 2, 2, 1], [1], [1, 2, 1]\)
+</span>
+ are all palindromic arrays.</p>
+<p><a href="http://oj.iiit.ac.in/problem/cpro23a1q4">Link to problem on OJ</a></p>
+<h3 id="input-format-3">
+  Input Format
+  <a class="anchor" href="#input-format-3">#</a>
+</h3>
+<p>The first line of input contains a single integer <span>
+  \(N\)
+</span>
+ that denotes the size of the array.</p>
+<p>The second line of input contains <span>
+  \(N\)
+</span>
+ space-separated integers <span>
+  \(A_1, A_2, \dots, A_N\)
+</span>
+ that describe the array.</p>
+<h3 id="input-constraints-3">
+  Input constraints
+  <a class="anchor" href="#input-constraints-3">#</a>
+</h3>
+<ul>
+<li><span>
+  \(1 \le N \le 100\)
+</span>
+</li>
+<li><span>
+  \(0 \le A_i \le 10^9\)
+</span>
+</li>
+</ul>
+<h3 id="output-format-3">
+  Output Format
+  <a class="anchor" href="#output-format-3">#</a>
+</h3>
+<p>Output a single positive that denotes the count of the non-empty palindromic subarrays</p>
+<h3 id="sample-inputs-and-outputs-3">
+  Sample inputs and outputs
+  <a class="anchor" href="#sample-inputs-and-outputs-3">#</a>
+</h3>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>4
+1 2 2 1
+</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>6
+</code></pre>
+<p><strong>Explanation:</strong> The subarrays satisfying the given conditions are: <span>
+  \([1], [2], [2], [1], [2, 2], [1, 2, 2, 1]\)
+</span>
+</p>
+<h3 id="solution-3">
+  Solution
+  <a class="anchor" href="#solution-3">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">n</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">ans</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#111">i</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">int</span> <span style="color:#111">good</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">int</span> <span style="color:#111">p</span> <span style="color:#f92672">=</span> <span style="color:#111">i</span><span style="color:#111">,</span> <span style="color:#111">q</span> <span style="color:#f92672">=</span> <span style="color:#111">j</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">p</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">q</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">p</span><span style="color:#111">]</span> <span style="color:#f92672">!=</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">q</span><span style="color:#111">])</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#111">good</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#00a8c8">break</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">p</span><span style="color:#f92672">++</span><span style="color:#111">,</span> <span style="color:#111">q</span><span style="color:#f92672">--</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">ans</span> <span style="color:#f92672">+=</span> <span style="color:#111">good</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">ans</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><hr>
+<h2 id="question-5---pec-woes">
+  Question 5 - &ldquo;PEC woes&rdquo;
+  <a class="anchor" href="#question-5---pec-woes">#</a>
+</h2>
+<h3 id="problem-description-4">
+  Problem Description
+  <a class="anchor" href="#problem-description-4">#</a>
+</h3>
+<p>As you all know, no student in IIIT likes PEC because they make us do some strange things. Once, they assigned a task to Pratham. They spread some rectangles sheets on the football ground and asked Pratham to calculate the total area covered by the rectangular sheets.</p>
+<p>So, the task is like you are given some rectangles which are parallel to X or Y axis. Specifically, the i-th sheet covers all points <span>
+  \((x, y)\)
+</span>
+ that satisfy  <span>
+  \(a_i≤x≤b_i\)
+</span>
+  and <span>
+  \(c_i≤y≤d_i\)
+</span>
+.
+You have to calculate the total area which is covered by the rectangular sheets.</p>
+<p>You have to calculate the total area which is covered by the recatngular sheets. For more explanation, read the sample test case.</p>
+<p><a href="http://oj.iiit.ac.in/problem/cpro23a1q5">Link to problem on OJ</a></p>
+<h3 id="input-format-4">
+  Input Format
+  <a class="anchor" href="#input-format-4">#</a>
+</h3>
+<p>First line contains an integer N which denotes the total number of rectangular sheets.</p>
+<p>The following N lines contain : <span>
+  \(a_i\)
+</span>
+   <span>
+  \(b_i\)
+</span>
+  <span>
+  \(c_i\)
+</span>
+  <span>
+  \(d_i\)
+</span>
+</p>
+<h3 id="input-constraints-4">
+  Input constraints
+  <a class="anchor" href="#input-constraints-4">#</a>
+</h3>
+<ul>
+<li><span>
+  \(1 \leq N \leq 100\)
+</span>
+</li>
+<li><span>
+  \(0 \leq a_i &lt; b_i \leq 100\)
+</span>
+</li>
+<li><span>
+  \(0 \leq c_i &lt; d_i \leq 100\)
+</span>
+</li>
+</ul>
+<h3 id="output-format-4">
+  Output Format
+  <a class="anchor" href="#output-format-4">#</a>
+</h3>
+<p>Output a single integer the area covered by rectangular sheets.</p>
+<h3 id="sample-inputs-and-outputs-4">
+  Sample inputs and outputs
+  <a class="anchor" href="#sample-inputs-and-outputs-4">#</a>
+</h3>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>3
+0 5 1 3
+1 4 0 5
+2 5 2 4
+</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>20
+</code></pre>
+<p><strong>Explanation:</strong> For an explanation of the sample input 1, refer to <a href="https://drive.google.com/file/d/1ffWW1G-lHxW_TfWDgwemVMtr-PdOOY2Z/view?usp=sharing">this</a>  link. We can count that the sheets cover 20 squares.</p>
+<p><strong>Sample Input 2</strong></p>
+<pre><code>3
+0 1 0 1
+0 3 0 5
+5 10 0 10
+</code></pre>
+<p><strong>Sample Output 2</strong></p>
+<pre><code>65
+</code></pre>
+<h3 id="solution-4">
+  Solution
+  <a class="anchor" href="#solution-4">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">const</span> <span style="color:#00a8c8">int</span> <span style="color:#111">MAX_N</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">101</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">g</span><span style="color:#111">[</span><span style="color:#111">MAX_N</span><span style="color:#111">][</span><span style="color:#111">MAX_N</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">memset</span><span style="color:#111">(</span><span style="color:#111">g</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">g</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#f92672">--</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">b</span><span style="color:#111">,</span> <span style="color:#111">c</span><span style="color:#111">,</span> <span style="color:#111">d</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d %d %d %d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">b</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">c</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">d</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#111">c</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">d</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">b</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">g</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">ans</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">100</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">100</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">ans</span> <span style="color:#f92672">+=</span> <span style="color:#111">g</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">ans</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><hr>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/c7b158be4b947705c4afc7cd3c0e8f4da3c3985e" title='Last modified by PramodRaoB | October 16, 2023' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>October 16, 2023</span>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#assignment-2">Assignment 2</a>
+      <ul>
+        <li><a href="#question-1---doubling-investments">Question 1 - &ldquo;Doubling Investments&rdquo;</a>
+          <ul>
+            <li><a href="#problem-description">Problem Description</a></li>
+            <li><a href="#input-format">Input Format</a></li>
+            <li><a href="#input-constraints">Input constraints</a></li>
+            <li><a href="#output-format">Output Format</a></li>
+            <li><a href="#sample-inputs-and-outputs">Sample inputs and outputs</a></li>
+            <li><a href="#solution">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-2---rotate-edges">Question 2 - &ldquo;Rotate Edges&rdquo;</a>
+          <ul>
+            <li><a href="#problem-description-1">Problem Description</a></li>
+            <li><a href="#input-format-1">Input Format</a></li>
+            <li><a href="#input-constraints-1">Input constraints</a></li>
+            <li><a href="#output-format-1">Output Format</a></li>
+            <li><a href="#sample-inputs-and-outputs-1">Sample inputs and outputs</a></li>
+            <li><a href="#solution-1">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-3---open-doors">Question 3 - &ldquo;Open Doors&rdquo;</a>
+          <ul>
+            <li><a href="#problem-description-2">Problem Description</a></li>
+            <li><a href="#input-format-2">Input Format</a></li>
+            <li><a href="#input-constraints-2">Input constraints</a></li>
+            <li><a href="#output-format-2">Output Format</a></li>
+            <li><a href="#sample-inputs-and-outputs-2">Sample inputs and outputs</a></li>
+            <li><a href="#solution-2">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-4---count-palindromes">Question 4 - &ldquo;Count Palindromes&rdquo;</a>
+          <ul>
+            <li><a href="#problem-description-3">Problem Description</a></li>
+            <li><a href="#input-format-3">Input Format</a></li>
+            <li><a href="#input-constraints-3">Input constraints</a></li>
+            <li><a href="#output-format-3">Output Format</a></li>
+            <li><a href="#sample-inputs-and-outputs-3">Sample inputs and outputs</a></li>
+            <li><a href="#solution-3">Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="#question-5---pec-woes">Question 5 - &ldquo;PEC woes&rdquo;</a>
+          <ul>
+            <li><a href="#problem-description-4">Problem Description</a></li>
+            <li><a href="#input-format-4">Input Format</a></li>
+            <li><a href="#input-constraints-4">Input constraints</a></li>
+            <li><a href="#output-format-4">Output Format</a></li>
+            <li><a href="#sample-inputs-and-outputs-4">Sample inputs and outputs</a></li>
+            <li><a href="#solution-4">Solution</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

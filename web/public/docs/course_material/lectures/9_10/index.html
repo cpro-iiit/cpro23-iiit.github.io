@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="II.3 Macros, More Intializers in Social Nets # Social Nets # typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[100]; int age; RelStatus relstatus; Person* friends[5]; } Person; typedef struct SocialNet { Person members[100]; int size; } SocialNet; Social Nets with Macros # #define MAX_FRIENDS 5 #define MAX_MEMBERS 100 #define MAX_NAME_LEN 100 typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[MAX_NAME_LEN]; int age; RelStatus relstatus; Person* friends[MAX_FRIENDS]; } Person; typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Intitializer # Name Age Rel Status Alice 24 Not Mentioned Bob 28 Maried Charlie 20 Single int main() { SocialNet social_net = { .">
+<meta name="description" content="II.3 Macros, More Intializers in Social Nets#Social Nets#typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[100]; int age; RelStatus relstatus; Person* friends[5]; } Person; typedef struct SocialNet { Person members[100]; int size; } SocialNet; Social Nets with Macros##define MAX_FRIENDS 5 #define MAX_MEMBERS 100 #define MAX_NAME_LEN 100 typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[MAX_NAME_LEN]; int age; RelStatus relstatus; Person* friends[MAX_FRIENDS]; } Person; typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Intitializer#Name Age Rel Status Alice 24 Not Mentioned Bob 28 Maried Charlie 20 Single int main() { SocialNet social_net = { .">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="II.3 Macros, More Intializers in Social Nets" />
-<meta property="og:description" content="II.3 Macros, More Intializers in Social Nets # Social Nets # typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[100]; int age; RelStatus relstatus; Person* friends[5]; } Person; typedef struct SocialNet { Person members[100]; int size; } SocialNet; Social Nets with Macros # #define MAX_FRIENDS 5 #define MAX_MEMBERS 100 #define MAX_NAME_LEN 100 typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[MAX_NAME_LEN]; int age; RelStatus relstatus; Person* friends[MAX_FRIENDS]; } Person; typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Intitializer # Name Age Rel Status Alice 24 Not Mentioned Bob 28 Maried Charlie 20 Single int main() { SocialNet social_net = { ." />
+<meta property="og:description" content="II.3 Macros, More Intializers in Social Nets#Social Nets#typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[100]; int age; RelStatus relstatus; Person* friends[5]; } Person; typedef struct SocialNet { Person members[100]; int size; } SocialNet; Social Nets with Macros##define MAX_FRIENDS 5 #define MAX_MEMBERS 100 #define MAX_NAME_LEN 100 typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[MAX_NAME_LEN]; int age; RelStatus relstatus; Person* friends[MAX_FRIENDS]; } Person; typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Intitializer#Name Age Rel Status Alice 24 Not Mentioned Bob 28 Maried Charlie 20 Single int main() { SocialNet social_net = { ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/lectures/9_10/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-10-09T14:01:58+05:30" />
-<<<<<<< HEAD
 <title>II.3 Macros, More Intializers in Social Nets | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.908f69d2f09b1f01ebf8f5ec7812479665eaba535d7197023224cbc51ed674fb.js" integrity="sha256-kI9p0vCbHwHr&#43;PXseBJHlmXqulNdcZcCMiTLxR7WdPs=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.2dbfc31aee9620f32f0e1733e43fe552cbe067253da1fdf9176d4b28f8b47345.js" integrity="sha256-Lb/DGu6WIPMvDhcz5D/lUsvgZyU9of35F21LKPi0c0U=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -190,11 +189,6 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
-  </ul>
-
-        </li>
-      
-    
       
         <li>
           
@@ -202,440 +196,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-68a23d3bc0e29a3d69b03994606ba228" class="toggle"  />
-    <label for="section-68a23d3bc0e29a3d69b03994606ba228" class="flex justify-between">
-      <a role="button" class="">Labs</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/labs/lab1/" class="">Lab - 1</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/labs/lab2/" class="">Lab - 2</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/labs/lab3/" class="">Lab - 3</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-7c04055d7141066e86bae893cc2c0e07" class="toggle"  />
-    <label for="section-7c04055d7141066e86bae893cc2c0e07" class="flex justify-between">
-      <a role="button" class="">Practice Problems</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/practice_problems/week1/" class="">Week - 1</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/practice_problems/week2/" class="">Week - 2</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-4cc6bae32fccbb5cd498aeeba537746f" class="toggle"  />
-    <label for="section-4cc6bae32fccbb5cd498aeeba537746f" class="flex justify-between">
-      <a role="button" class="">Tutorials</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/tutorials/week1/" class="">Tutorial - 1</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="toggle"  />
-    <label for="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="flex justify-between">
-      <a role="button" class="">Quizzes</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/quizzes/quiz1A/" class="">Quiz - 1 Section A</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/quizzes/quiz1B/" class="">Quiz - 1 Section B</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-
-
-
-
-
-
-
-
-
-
-  
-<ul>
-  
-  <li>
-    <a href="/posts/"  >
-        Resources
-      </a>
-  </li>
-  
-  <li>
-    <a href="/tas/"  >
-        Teaching Assistants
-      </a>
-  </li>
-  
-  <li>
-    <a href="/grading_scheme/"  >
-        Grading Scheme
-      </a>
-  </li>
-  
-  <li>
-    <a href="/honor_code/"  >
-        Honor Code
-      </a>
-  </li>
-  
-  <li>
-    <a href="https://github.com/cpro-iiit/cpro-iiit.github.io"  target="_blank" rel="noopener">
-        Github
-      </a>
-  </li>
-  
-</ul>
-
-
-
-
-
-
-</nav>
-
-
-
-
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-
-
- 
-      </div>
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <strong>II.3 Macros, More Intializers in Social Nets</strong>
-
-  <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
-</div>
-
-
-  
-  <aside class="hidden clearfix">
-    
-  
-=======
-
-<title>II.3 Macros, More Intializers in Social Nets | CPro Mon 23</title>
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.023e1e5bddac264ae255eaa234b386ea8d10b8295dc253973a41e01e889be29a.js" integrity="sha256-Aj4eW92sJkriVeqiNLOG6o0QuCldwlOXOkHgHoib4po=" crossorigin="anonymous"></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-  
-</head>
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
-  <nav>
-<h2 class="book-brand">
-  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>CPro Mon 23</span>
-  </a>
-</h2>
-
-
-<div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <ul>
-    
-      
-        <li class="book-section-flat" >
-          
-  
-  
-
-  
-    <span>Course Material</span>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-c87ef19fe67bdb63d85d44d099797871" class="toggle" checked />
-    <label for="section-c87ef19fe67bdb63d85d44d099797871" class="flex justify-between">
-      <a role="button" class="">Lectures</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/lectures/4_10/" class="">II.1 Typedef, Struct Initialization, Passing Pointers</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/lectures/6_10/" class="">II.2 Strings and Enums</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/lectures/9_10/" class="active">II.3 Macros, More Intializers in Social Nets</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/lectures/11_10/" class="">II.4 Linked Lists</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-5b2c745bf85b67a9cd73528333cc29a8" class="toggle"  />
-    <label for="section-5b2c745bf85b67a9cd73528333cc29a8" class="flex justify-between">
-      <a role="button" class="">Assignments</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/assignments/assignment1/" class="">Assignment - 1</a>
+    <a href="/docs/course_material/assignments/assignment2/" class="">Assignment - 2</a>
   
 
         </li>
@@ -748,6 +309,32 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week4/" class="">Week - 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week6/" class="">Week - 6</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -802,6 +389,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/midLab1/" class="">Mid-Sem Lab Exam</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -931,7 +531,6 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
->>>>>>> 319727e99cb47b5ef4cdec381906901f917c2b12
 <nav id="TableOfContents">
   <ul>
     <li><a href="#ii3-macros-more-intializers-in-social-nets">II.3 Macros, More Intializers in Social Nets</a>
@@ -1051,7 +650,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>        <span style="color:#111">}</span> <span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">.</span><span style="color:#111">size</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">};</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">print_network</span><span style="color:#111">(</span><span style="color:#111">social_net</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">print_network</span><span style="color:#111">(</span><span style="color:#111">social_net</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
@@ -1064,14 +663,14 @@ https://github.com/alex-shpak/hugo-book
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">print_network</span><span style="color:#111">(</span><span style="color:#111">SocialNet</span> <span style="color:#111">social_net</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;----------------------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;Name</span><span style="color:#8045ff">\t\t</span><span style="color:#d88200">Age </span><span style="color:#8045ff">\t</span><span style="color:#d88200"> Rel Status</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;----------------------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span><span style="color:#111">;</span><span style="color:#111">i</span> <span style="color:#f92672">&lt;</span><span style="color:#111">social_net</span><span style="color:#111">.</span><span style="color:#111">size</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#111">print_person</span><span style="color:#111">(</span><span style="color:#111">social_net</span><span style="color:#111">.</span><span style="color:#111">members</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">print_person</span><span style="color:#111">(</span><span style="color:#111">social_net</span><span style="color:#111">.</span><span style="color:#111">members</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;----------------------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;----------------------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
 <h2 id="finding-a-person-by-name">
@@ -1122,7 +721,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#111">Person</span><span style="color:#f92672">*</span> <span style="color:#75af00">find_person</span><span style="color:#111">(</span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#111">name1</span><span style="color:#111">,</span> <span style="color:#111">SocialNet</span> <span style="color:#f92672">*</span><span style="color:#111">sn</span><span style="color:#111">)</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">sn</span><span style="color:#f92672">-&gt;</span><span style="color:#111">size</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#111">strcmp</span><span style="color:#111">(</span><span style="color:#111">sn</span><span style="color:#f92672">-&gt;</span><span style="color:#111">members</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">].</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">name1</span><span style="color:#111">)</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#75af00">strcmp</span><span style="color:#111">(</span><span style="color:#111">sn</span><span style="color:#f92672">-&gt;</span><span style="color:#111">members</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">].</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">name1</span><span style="color:#111">)</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#f92672">&amp;</span><span style="color:#111">(</span><span style="color:#111">sn</span><span style="color:#f92672">-&gt;</span><span style="color:#111">members</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
@@ -1136,18 +735,18 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;Married&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;Engaged&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">};</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%s</span><span style="color:#8045ff">\t\t</span><span style="color:#d88200">%d</span><span style="color:#8045ff">\t</span><span style="color:#d88200">%s</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">p</span><span style="color:#111">.</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">p</span><span style="color:#111">.</span><span style="color:#111">age</span><span style="color:#111">,</span> <span style="color:#111">status_string</span><span style="color:#111">[</span><span style="color:#111">p</span><span style="color:#111">.</span><span style="color:#111">relstatus</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%s</span><span style="color:#8045ff">\t\t</span><span style="color:#d88200">%d</span><span style="color:#8045ff">\t</span><span style="color:#d88200">%s</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">p</span><span style="color:#111">.</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">p</span><span style="color:#111">.</span><span style="color:#111">age</span><span style="color:#111">,</span> <span style="color:#111">status_string</span><span style="color:#111">[</span><span style="color:#111">p</span><span style="color:#111">.</span><span style="color:#111">relstatus</span><span style="color:#111">]);</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">print_network</span><span style="color:#111">(</span><span style="color:#111">SocialNet</span> <span style="color:#111">social_net</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;----------------------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;Name</span><span style="color:#8045ff">\t\t</span><span style="color:#d88200">Age </span><span style="color:#8045ff">\t</span><span style="color:#d88200"> Rel Status</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;----------------------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span><span style="color:#111">;</span><span style="color:#111">i</span> <span style="color:#f92672">&lt;</span><span style="color:#111">social_net</span><span style="color:#111">.</span><span style="color:#111">size</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#111">print_person</span><span style="color:#111">(</span><span style="color:#111">social_net</span><span style="color:#111">.</span><span style="color:#111">members</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">print_person</span><span style="color:#111">(</span><span style="color:#111">social_net</span><span style="color:#111">.</span><span style="color:#111">members</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;----------------------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;----------------------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span>
@@ -1161,8 +760,8 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>        <span style="color:#111">}</span> <span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">.</span><span style="color:#111">size</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">};</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">print_network</span><span style="color:#111">(</span><span style="color:#111">social_net</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">print_person</span><span style="color:#111">(</span><span style="color:#f92672">*</span><span style="color:#111">find_person</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Bob&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">social_net</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">print_network</span><span style="color:#111">(</span><span style="color:#111">social_net</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">print_person</span><span style="color:#111">(</span><span style="color:#f92672">*</span><span style="color:#75af00">find_person</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Bob&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">social_net</span><span style="color:#111">));</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div></article>
