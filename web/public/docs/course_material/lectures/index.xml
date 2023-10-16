@@ -42,5 +42,14 @@
       <description>II.4 Linked Lists#Problem: Large Arrays!##define MAX_MEMBERS 100 typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Linked List: A array that grows according to needs#Linked List: Code#typedef struct Node { Person data; struct Node* next; } Node; typedef Node* LinkedList; Node third = { {&amp;#34;Alice&amp;#34;, 22}, NULL }; Node second = { {&amp;#34;Bob&amp;#34;, 26}, &amp;amp;third }; Node first = { {&amp;#34;Charlie&amp;#34;, 20}, &amp;amp;second }; LinkedList L = &amp;amp;first; Size of a Liniked List#int size(LinkedList l) { int s = 0; while (l !</description>
     </item>
     
+    <item>
+      <title>II.5 Linked Lists Problems</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/lectures/16_10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/docs/course_material/lectures/16_10/</guid>
+      <description>II.5 Linked Lists Problems#Insert element at a position in the list#LinkedList insert(Person p, int pos, LinkedList l) { if (pos == 0) { Node* D = (Node *) malloc(sizeof(Node)); D-&amp;gt;data = p; D-&amp;gt;next = l; return D; } else { l-&amp;gt;next = insert(p, pos-1, l-&amp;gt;next); return l; } } Concatenate 2 lists#LinkedList concat(LinkedList l1, LinkedList l2) { if (l1 == NULL) { return l2; } else { l1-&amp;gt;next = concat(l1-&amp;gt;next, l2); return l1; } } Reverse a list#LinkedList reverse(LinkedList l) { int s = size(l); LinkedList l2 = NULL; for (int i = 0; i &amp;lt; s; i++) { l2 = insert(*element_at(s-i-1, l), i, l2); } return l2; } Full code##include &amp;#34;stdio.</description>
+    </item>
+    
   </channel>
 </rss>
