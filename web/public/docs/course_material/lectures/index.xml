@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/lectures/4_10/</guid>
-      <description>II.1 Typedef, Struct Initialization#Struct without Typedef##include&amp;lt;stdio.h&amp;gt; struct rectangle { float length; float breadth; }; float compute_area(struct rectangle r) { return r.length * r.breadth; } void print_rectangle(struct rectangle r) { printf(&amp;#34;Rectangle with length %f and breadth %f\n&amp;#34;, r.length, r.breadth); } int main() { struct rectangle rect = { 1.5, 3.2 }; // Initializer print_rectangle(rect); printf(&amp;#34;Area of the rectangle is %f \n&amp;#34;, compute_area(rect) ); } Struct with Typedef##include&amp;lt;stdio.</description>
+      <description>II.1 Typedef, Struct Initialization # Struct without Typedef # #include&amp;lt;stdio.h&amp;gt; struct rectangle { float length; float breadth; }; float compute_area(struct rectangle r) { return r.length * r.breadth; } void print_rectangle(struct rectangle r) { printf(&amp;#34;Rectangle with length %f and breadth %f\n&amp;#34;, r.length, r.breadth); } int main() { struct rectangle rect = { 1.5, 3.2 }; // Initializer print_rectangle(rect); printf(&amp;#34;Area of the rectangle is %f \n&amp;#34;, compute_area(rect) ); } Struct with Typedef # #include&amp;lt;stdio.</description>
     </item>
     
     <item>
@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/lectures/6_10/</guid>
-      <description>II.2 Strings and Enums#Strings in C#as a pointer to char char *p = &amp;#34;abcde&amp;#34;; as an array of char char s[] = &amp;#34;abcde&amp;#34;; print(&amp;#34;%d %d&amp;#34;, sizeof(p), sizeof(s)); String Function Implementation##include &amp;#34;stdio.h&amp;#34; int strlenB(char* s) { int i = 0; while (s[i] != &amp;#39;\0&amp;#39;) { i++; } return i; } char* strcpyB(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i &amp;lt;= len_s;i++) { d[i] = s[i]; } return d; } char* str_rev(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i&amp;lt; len_s; i++) { d[i] = s[len_s - 1 - i]; } d[len_s] = &amp;#39;\0&amp;#39;; return d; } int main() { char *p = &amp;#34;xyz\0dsalkfjds&amp;#34;; char s[] = &amp;#34;abcde\0kjdakfjsh&amp;#34;; // abcde\0 // printf(&amp;#34;%d %d\n&amp;#34;,sizeof(p),sizeof(s)); // printf(&amp;#34;%s %s\n&amp;#34;,p, s); // printf(&amp;#34;%d %d\n&amp;#34;, strlen(p), strlen(s)); // strcpy(s,p); printf(&amp;#34;%s\n&amp;#34;,str_rev(p, s)); return 1; } String Functions##include &amp;lt;string.</description>
+      <description>II.2 Strings and Enums # Strings in C # as a pointer to char char *p = &amp;#34;abcde&amp;#34;; as an array of char char s[] = &amp;#34;abcde&amp;#34;; print(&amp;#34;%d %d&amp;#34;, sizeof(p), sizeof(s)); String Function Implementation # #include &amp;#34;stdio.h&amp;#34; int strlenB(char* s) { int i = 0; while (s[i] != &amp;#39;\0&amp;#39;) { i++; } return i; } char* strcpyB(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i &amp;lt;= len_s;i++) { d[i] = s[i]; } return d; } char* str_rev(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i&amp;lt; len_s; i++) { d[i] = s[len_s - 1 - i]; } d[len_s] = &amp;#39;\0&amp;#39;; return d; } int main() { char *p = &amp;#34;xyz\0dsalkfjds&amp;#34;; char s[] = &amp;#34;abcde\0kjdakfjsh&amp;#34;; // abcde\0 // printf(&amp;#34;%d %d\n&amp;#34;,sizeof(p),sizeof(s)); // printf(&amp;#34;%s %s\n&amp;#34;,p, s); // printf(&amp;#34;%d %d\n&amp;#34;, strlen(p), strlen(s)); // strcpy(s,p); printf(&amp;#34;%s\n&amp;#34;,str_rev(p, s)); return 1; } String Functions # #include &amp;lt;string.</description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/lectures/9_10/</guid>
-      <description>II.3 Macros, More Intializers in Social Nets#Social Nets#typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[100]; int age; RelStatus relstatus; Person* friends[5]; } Person; typedef struct SocialNet { Person members[100]; int size; } SocialNet; Social Nets with Macros##define MAX_FRIENDS 5 #define MAX_MEMBERS 100 #define MAX_NAME_LEN 100 typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[MAX_NAME_LEN]; int age; RelStatus relstatus; Person* friends[MAX_FRIENDS]; } Person; typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Intitializer#Name Age Rel Status Alice 24 Not Mentioned Bob 28 Maried Charlie 20 Single int main() { SocialNet social_net = { .</description>
+      <description>II.3 Macros, More Intializers in Social Nets # Social Nets # typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[100]; int age; RelStatus relstatus; struct Person* friends[5]; } Person; typedef struct SocialNet { Person members[100]; int size; } SocialNet; Social Nets with Macros # #define MAX_FRIENDS 5 #define MAX_MEMBERS 100 #define MAX_NAME_LEN 100 typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[MAX_NAME_LEN]; int age; RelStatus relstatus; Person* friends[MAX_FRIENDS]; } Person; typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Intitializer # Name Age Rel Status Alice 24 Not Mentioned Bob 28 Maried Charlie 20 Single int main() { SocialNet social_net = { .</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/lectures/11_10/</guid>
-      <description>II.4 Linked Lists#Problem: Large Arrays!##define MAX_MEMBERS 100 typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Linked List: A array that grows according to needs#Linked List: Code#typedef struct Node { Person data; struct Node* next; } Node; typedef Node* LinkedList; Node third = { {&amp;#34;Alice&amp;#34;, 22}, NULL }; Node second = { {&amp;#34;Bob&amp;#34;, 26}, &amp;amp;third }; Node first = { {&amp;#34;Charlie&amp;#34;, 20}, &amp;amp;second }; LinkedList L = &amp;amp;first; Size of a Liniked List#int size(LinkedList l) { int s = 0; while (l !</description>
+      <description>II.4 Linked Lists # Problem: Large Arrays! # #define MAX_MEMBERS 100 typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Linked List: A array that grows according to needs # Linked List: Code # typedef struct Node { Person data; struct Node* next; } Node; typedef Node* LinkedList; Node third = { {&amp;#34;Alice&amp;#34;, 22}, NULL }; Node second = { {&amp;#34;Bob&amp;#34;, 26}, &amp;amp;third }; Node first = { {&amp;#34;Charlie&amp;#34;, 20}, &amp;amp;second }; LinkedList L = &amp;amp;first; Size of a Liniked List # int size(LinkedList l) { int s = 0; while (l !</description>
     </item>
     
     <item>
@@ -48,7 +48,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/lectures/16_10/</guid>
-      <description>II.5 Linked Lists Problems#Insert element at a position in the list#LinkedList insert(Person p, int pos, LinkedList l) { if (pos == 0) { Node* D = (Node *) malloc(sizeof(Node)); D-&amp;gt;data = p; D-&amp;gt;next = l; return D; } else { l-&amp;gt;next = insert(p, pos-1, l-&amp;gt;next); return l; } } Concatenate 2 lists#LinkedList concat(LinkedList l1, LinkedList l2) { if (l1 == NULL) { return l2; } else { l1-&amp;gt;next = concat(l1-&amp;gt;next, l2); return l1; } } Reverse a list#LinkedList reverse(LinkedList l) { int s = size(l); LinkedList l2 = NULL; for (int i = 0; i &amp;lt; s; i++) { l2 = insert(*element_at(s-i-1, l), i, l2); } return l2; } Full code##include &amp;#34;stdio.</description>
+      <description>II.5 Linked Lists Problems # Insert element at a position in the list # LinkedList insert(Person p, int pos, LinkedList l) { if (pos == 0) { Node* D = (Node *) malloc(sizeof(Node)); D-&amp;gt;data = p; D-&amp;gt;next = l; return D; } else { l-&amp;gt;next = insert(p, pos-1, l-&amp;gt;next); return l; } } Concatenate 2 lists # LinkedList concat(LinkedList l1, LinkedList l2) { if (l1 == NULL) { return l2; } else { l1-&amp;gt;next = concat(l1-&amp;gt;next, l2); return l1; } } Reverse a list # LinkedList reverse(LinkedList l) { int s = size(l); LinkedList l2 = NULL; for (int i = 0; i &amp;lt; s; i++) { l2 = insert(*element_at(s-i-1, l), i, l2); } return l2; } Full code # #include &amp;#34;stdio.</description>
+    </item>
+    
+    <item>
+      <title>II.6 More Linked List Problems</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/lectures/18_10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/docs/course_material/lectures/18_10/</guid>
+      <description>II.6 More Linked List Problems # Reverse a LinkedList in place # LinkedList node_append(Node* n, LinkedList l) { if (l == NULL) { return n; } else { l-&amp;gt;next = node_append(n, l-&amp;gt;next); return l; } } // Recursive Solution LinkedList reverse_in_place(LinkedList l) { if (l == NULL) { return l; } else { LinkedList rev = reverse_in_place(l-&amp;gt;next); l-&amp;gt;next = NULL; rev = node_append(l, rev); return rev; } } HW: Shuffle 2 lists # LinkedList shuffle(LinkedList l1, LinkedList l2) { // If l1 is a-&amp;gt;b-&amp;gt;c-&amp;gt;d and l2 is 1-&amp;gt;2-&amp;gt;3-&amp;gt;4 // shuffle(l1,l2) should return the list // a-&amp;gt;1-&amp;gt;b-&amp;gt;2-&amp;gt;c-&amp;gt;3-&amp;gt;d-&amp;gt;4 } Can you make the above function also in place?</description>
     </item>
     
   </channel>
