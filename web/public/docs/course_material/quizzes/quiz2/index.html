@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en-us" dir="ltr">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="quiz 2 # Question 3 # The question body would go here
-Question 4 # Maybe another question here">
+<meta name="description" content="Quiz 2 # #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #include &lt;string.h&gt; #include &lt;stdbool.h&gt; typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Node Node; typedef Node* LinkedList; typedef struct Person { char name[100]; int age; RelStatus relstatus; LinkedList friends; } Person; struct Node { struct Person* data; struct Node* next; }; typedef struct SocialNet { LinkedList members; } SocialNet; LinkedList append(Person* p, LinkedList l) { if (l == NULL) { Node* D = (Node *) malloc(sizeof(Node)); D-&gt;data = p; D-&gt;next = NULL; return D; } else { l-&gt;next = append(p, l-&gt;next); } return l; } void print_person(Person* p) { char status_string[][15] = { &#34;Not Mentioned&#34;,&#34;Single&#34;, &#34;Married&#34;, &#34;Engaged&#34; }; printf(&#34;%s\t\t%d\t%s\t\t\t&#34;, p-&gt;name, p-&gt;age, status_string[p-&gt;relstatus]); LinkedList f = p-&gt;friends; while (f !">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Quiz 2" />
-<meta property="og:description" content="quiz 2 # Question 3 # The question body would go here
-Question 4 # Maybe another question here" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Quiz - 2" />
+<meta property="og:description" content="Quiz 2 # #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #include &lt;string.h&gt; #include &lt;stdbool.h&gt; typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Node Node; typedef Node* LinkedList; typedef struct Person { char name[100]; int age; RelStatus relstatus; LinkedList friends; } Person; struct Node { struct Person* data; struct Node* next; }; typedef struct SocialNet { LinkedList members; } SocialNet; LinkedList append(Person* p, LinkedList l) { if (l == NULL) { Node* D = (Node *) malloc(sizeof(Node)); D-&gt;data = p; D-&gt;next = NULL; return D; } else { l-&gt;next = append(p, l-&gt;next); } return l; } void print_person(Person* p) { char status_string[][15] = { &#34;Not Mentioned&#34;,&#34;Single&#34;, &#34;Married&#34;, &#34;Engaged&#34; }; printf(&#34;%s\t\t%d\t%s\t\t\t&#34;, p-&gt;name, p-&gt;age, status_string[p-&gt;relstatus]); LinkedList f = p-&gt;friends; while (f !" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.com/docs/course_material/quizzes/quiz2/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/quizzes/quiz2/" /><meta property="article:section" content="docs" />
 
 
-<title>Quiz 2 | M23 Computer Programming</title>
+
+<title>Quiz - 2 | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.4f0117e74e5337280f18eb9641eae520cb4b25adcf5dd64fafad4664145a5957.css" integrity="sha256-TwEX505TNygPGOuWQerlIMtLJa3PXdZPr61GZBRaWVc=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.1c288b9a756e95152cc633e170881aecebf5c2f6ff55efbbf9676771ba14a1dd.js" integrity="sha256-HCiLmnVulRUsxjPhcIga7Ov1wvb/Ve&#43;7&#43;WdncboUod0=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.f1d7dd4d8cbe6c789ca5cdef36525785d337438f44df2479bfc6e9677263cd30.js" integrity="sha256-8dfdTYy&#43;bHicpc3vNlJXhdM3Q49E3yR5v8bpZ3JjzTA=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -34,7 +33,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>M23 Computer Programming</span>
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>CPro Mon 23</span>
   </a>
 </h2>
 
@@ -49,18 +48,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
-
-  
-<ul>
-  
-  <li>
-    <a href="/posts/"  >
-        Announcements
-      </a>
-  </li>
-  
-</ul>
 
 
 
@@ -95,9 +82,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-5b2c745bf85b67a9cd73528333cc29a8" class="toggle"  />
-    <label for="section-5b2c745bf85b67a9cd73528333cc29a8" class="flex justify-between">
-      <a role="button" class="">Assignments</a>
+    <input type="checkbox" id="section-c87ef19fe67bdb63d85d44d099797871" class="toggle"  />
+    <label for="section-c87ef19fe67bdb63d85d44d099797871" class="flex justify-between">
+      <a role="button" class="">Lectures</a>
     </label>
   
 
@@ -111,7 +98,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/assignments/a1/" class="">Assignment 1</a>
+    <a href="/docs/course_material/lectures/4_10/" class="">II.1 Typedef, Struct Initialization, Passing Pointers</a>
   
 
         </li>
@@ -124,7 +111,59 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/assignments/a2/" class="">Assignment 2</a>
+    <a href="/docs/course_material/lectures/6_10/" class="">II.2 Strings and Enums</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/9_10/" class="">II.3 Macros, More Intializers in Social Nets</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/11_10/" class="">II.4 Linked Lists</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/16_10/" class="">II.5 Linked Lists Problems</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/18_10/" class="">II.6 More Linked List Problems</a>
   
 
         </li>
@@ -142,9 +181,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-bda9600f853ae0446a52b4697c83aabf" class="toggle"  />
-    <label for="section-bda9600f853ae0446a52b4697c83aabf" class="flex justify-between">
-      <a role="button" class="">Codes</a>
+    <input type="checkbox" id="section-5b2c745bf85b67a9cd73528333cc29a8" class="toggle"  />
+    <label for="section-5b2c745bf85b67a9cd73528333cc29a8" class="flex justify-between">
+      <a role="button" class="">Assignments</a>
     </label>
   
 
@@ -158,7 +197,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/codes/linkedList/" class="">Linked List</a>
+    <a href="/docs/course_material/assignments/assignment1/" class="">Assignment - 1</a>
   
 
         </li>
@@ -171,7 +210,174 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/codes/recursion/" class="">Recursion</a>
+    <a href="/docs/course_material/assignments/assignment2/" class="">Assignment - 2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-68a23d3bc0e29a3d69b03994606ba228" class="toggle"  />
+    <label for="section-68a23d3bc0e29a3d69b03994606ba228" class="flex justify-between">
+      <a role="button" class="">Labs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab1/" class="">Lab - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab2/" class="">Lab - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab3/" class="">Lab - 3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c04055d7141066e86bae893cc2c0e07" class="toggle"  />
+    <label for="section-7c04055d7141066e86bae893cc2c0e07" class="flex justify-between">
+      <a role="button" class="">Practice Problems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week1/" class="">Week - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week2/" class="">Week - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week4/" class="">Week - 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week6/" class="">Week - 6</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4cc6bae32fccbb5cd498aeeba537746f" class="toggle"  />
+    <label for="section-4cc6bae32fccbb5cd498aeeba537746f" class="flex justify-between">
+      <a role="button" class="">Tutorials</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/tutorials/week1/" class="">Tutorial - 1</a>
   
 
         </li>
@@ -205,7 +411,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/quizzes/quiz1/" class="">Quiz 1</a>
+    <a href="/docs/course_material/quizzes/midLab1/" class="">Mid-Sem Lab Exam</a>
   
 
         </li>
@@ -218,7 +424,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/quizzes/quiz2/" class="active">Quiz 2</a>
+    <a href="/docs/course_material/quizzes/quiz1A/" class="">Quiz - 1 Section A</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/quiz1B/" class="">Quiz - 1 Section B</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/quiz2/" class="active">Quiz - 2</a>
   
 
         </li>
@@ -250,7 +482,37 @@ https://github.com/alex-shpak/hugo-book
 <ul>
   
   <li>
-    <a href="https://github.com/alex-shpak/hugo-book"  target="_blank" rel="noopener">
+    <a href="/references/"  >
+        References
+      </a>
+  </li>
+  
+  <li>
+    <a href="/posts/"  >
+        Resources
+      </a>
+  </li>
+  
+  <li>
+    <a href="/tas/"  >
+        Teaching Assistants
+      </a>
+  </li>
+  
+  <li>
+    <a href="/grading_scheme/"  >
+        Grading Scheme
+      </a>
+  </li>
+  
+  <li>
+    <a href="/honor_code/"  >
+        Honor Code
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/cpro-iiit/cpro-iiit.github.io"  target="_blank" rel="noopener">
         Github
       </a>
   </li>
@@ -282,7 +544,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Quiz 2</strong>
+  <strong>Quiz - 2</strong>
 
   <label for="toc-control">
     
@@ -298,12 +560,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#quiz-2">quiz 2</a>
-      <ul>
-        <li><a href="#question-3">Question 3</a></li>
-        <li><a href="#question-4">Question 4</a></li>
-      </ul>
-    </li>
+    <li><a href="#quiz-2">Quiz 2</a></li>
   </ul>
 </nav>
 
@@ -317,21 +574,272 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="quiz-2">
-  quiz 2
+  Quiz 2
   <a class="anchor" href="#quiz-2">#</a>
 </h1>
-<h2 id="question-3">
-  Question 3
-  <a class="anchor" href="#question-3">#</a>
-</h2>
-<p>The question body would go here</p>
-<hr>
-<h2 id="question-4">
-  Question 4
-  <a class="anchor" href="#question-4">#</a>
-</h2>
-<p>Maybe another question here</p>
-</article>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdlib.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdbool.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">enum</span> <span style="color:#111">RelStatus</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">NotMentioned</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Single</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Engaged</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Married</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">RelStatus</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">Node</span> <span style="color:#111">Node</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">LinkedList</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">Person</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">char</span> <span style="color:#111">name</span><span style="color:#111">[</span><span style="color:#ae81ff">100</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">age</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">RelStatus</span> <span style="color:#111">relstatus</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">LinkedList</span> <span style="color:#111">friends</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">Person</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">struct</span> <span style="color:#111">Node</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">struct</span> <span style="color:#111">Person</span><span style="color:#f92672">*</span> <span style="color:#111">data</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">struct</span> <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">SocialNet</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">LinkedList</span> <span style="color:#111">members</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">SocialNet</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">LinkedList</span> <span style="color:#75af00">append</span><span style="color:#111">(</span><span style="color:#111">Person</span><span style="color:#f92672">*</span> <span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>   
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">l</span> <span style="color:#f92672">==</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">D</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#111">Node</span> <span style="color:#f92672">*</span><span style="color:#111">)</span> <span style="color:#111">malloc</span><span style="color:#111">(</span><span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">Node</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">D</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#111">p</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">D</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span> <span style="color:#f92672">=</span> <span style="color:#111">NULL</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">D</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span> <span style="color:#f92672">=</span> <span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">l</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">print_person</span><span style="color:#111">(</span><span style="color:#111">Person</span><span style="color:#f92672">*</span> <span style="color:#111">p</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">char</span> <span style="color:#111">status_string</span><span style="color:#111">[][</span><span style="color:#ae81ff">15</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;Not Mentioned&#34;</span><span style="color:#111">,</span><span style="color:#d88200">&#34;Single&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;Married&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;Engaged&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%s</span><span style="color:#8045ff">\t\t</span><span style="color:#d88200">%d</span><span style="color:#8045ff">\t</span><span style="color:#d88200">%s</span><span style="color:#8045ff">\t\t\t</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">p</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">p</span><span style="color:#f92672">-&gt;</span><span style="color:#111">age</span><span style="color:#111">,</span> <span style="color:#111">status_string</span><span style="color:#111">[</span><span style="color:#111">p</span><span style="color:#f92672">-&gt;</span><span style="color:#111">relstatus</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">LinkedList</span> <span style="color:#111">f</span> <span style="color:#f92672">=</span> <span style="color:#111">p</span><span style="color:#f92672">-&gt;</span><span style="color:#111">friends</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">f</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%s, &#34;</span><span style="color:#111">,</span> <span style="color:#111">f</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">f</span> <span style="color:#f92672">=</span> <span style="color:#111">f</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">print_network</span><span style="color:#111">(</span><span style="color:#111">LinkedList</span> <span style="color:#111">m</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;------------------------------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;Name</span><span style="color:#8045ff">\t\t</span><span style="color:#d88200">Age</span><span style="color:#8045ff">\t</span><span style="color:#d88200">Status</span><span style="color:#8045ff">\t\t\t</span><span style="color:#d88200">Friends</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;------------------------------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">m</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">print_person</span><span style="color:#111">(</span><span style="color:#111">m</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">m</span> <span style="color:#f92672">=</span> <span style="color:#111">m</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;------------------------------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">Person</span><span style="color:#f92672">*</span> <span style="color:#75af00">find_person</span><span style="color:#111">(</span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Either find the person with a particular name
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// if not found return NULL
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">while</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">strcmp</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">name</span><span style="color:#111">)</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">l</span> <span style="color:#f92672">=</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">NULL</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">size</span><span style="color:#111">(</span><span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">l</span> <span style="color:#f92672">==</span> <span style="color:#111">NULL</span><span style="color:#f92672">?</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">+</span><span style="color:#111">size</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#75af00">person_with_most_friends</span><span style="color:#111">(</span><span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Q A1: Return the name of the person with most friends
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// (3 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">int</span> <span style="color:#111">d</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">n</span> <span style="color:#f92672">=</span> <span style="color:#111">NULL</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span><span style="color:#111">(</span><span style="color:#111">l</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">e</span> <span style="color:#f92672">=</span> <span style="color:#111">size</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">friends</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">e</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">d</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">d</span> <span style="color:#f92672">=</span> <span style="color:#111">e</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">n</span> <span style="color:#f92672">=</span> <span style="color:#111">l</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">l</span> <span style="color:#f92672">=</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">n</span><span style="color:#f92672">==</span><span style="color:#111">NULL</span><span style="color:#f92672">?</span> <span style="color:#d88200">&#34;&#34;</span> <span style="color:#f92672">:</span> <span style="color:#111">n</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">popularity</span><span style="color:#111">(</span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Q B1: Return the number of people who has the person
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// named `name` amoung their friends. (3 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">int</span> <span style="color:#111">count</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span> <span style="color:#111">l</span><span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">find_person</span><span style="color:#111">(</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">friends</span><span style="color:#111">)</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">count</span><span style="color:#f92672">++</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">count</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">LinkedList</span> <span style="color:#75af00">delete_by_name</span><span style="color:#111">(</span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Q A2: Delete the person named `name` from l (3 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">l</span> <span style="color:#f92672">==</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">NULL</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">strcmp</span><span style="color:#111">(</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">)</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">tail</span> <span style="color:#f92672">=</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">free</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">tail</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span> <span style="color:#f92672">=</span> <span style="color:#111">delete_by_name</span><span style="color:#111">(</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">l</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">LinkedList</span> <span style="color:#75af00">filterby_age</span><span style="color:#111">(</span><span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">lower</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">upper</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Q B2: Return the link list of people in l with age
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// between lower and upper (3 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">LinkedList</span> <span style="color:#111">l2</span> <span style="color:#f92672">=</span> <span style="color:#111">NULL</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span><span style="color:#111">(</span><span style="color:#111">l</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">age</span> <span style="color:#f92672">&gt;=</span> <span style="color:#111">lower</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">age</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">upper</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">l2</span> <span style="color:#f92672">=</span> <span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">,</span> <span style="color:#111">l2</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">l</span> <span style="color:#f92672">=</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">l2</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">bool</span> <span style="color:#75af00">friends_triangle</span><span style="color:#111">(</span><span style="color:#111">LinkedList</span> <span style="color:#111">members</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Q A3: Check if there is a triangle of friends
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// ie there exists X, Y, Z such that
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Y is a friend of X, Z is a friend of Y, X is a friend of Z
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// ALso print all such triplets (4 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">LinkedList</span> <span style="color:#111">f</span> <span style="color:#f92672">=</span> <span style="color:#111">members</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;-----------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;Friend Triangles</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;-----------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">bool</span> <span style="color:#111">found</span> <span style="color:#f92672">=</span> <span style="color:#111">false</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span><span style="color:#111">(</span><span style="color:#111">f</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">LinkedList</span> <span style="color:#111">s</span> <span style="color:#f92672">=</span> <span style="color:#111">f</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">friends</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">s</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">LinkedList</span> <span style="color:#111">t</span> <span style="color:#f92672">=</span> <span style="color:#111">s</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">friends</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">t</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">LinkedList</span> <span style="color:#111">l</span> <span style="color:#f92672">=</span> <span style="color:#111">t</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">friends</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">l</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">strcmp</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">f</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">)</span><span style="color:#f92672">==</span><span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%s-&gt;%s-&gt;%s-&gt;%s</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">f</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">t</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">f</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#111">found</span> <span style="color:#f92672">=</span> <span style="color:#111">true</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#111">l</span> <span style="color:#f92672">=</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">t</span> <span style="color:#f92672">=</span> <span style="color:#111">t</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">s</span> <span style="color:#f92672">=</span> <span style="color:#111">s</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">f</span> <span style="color:#f92672">=</span> <span style="color:#111">f</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;-------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">found</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">bool</span> <span style="color:#75af00">transitive_friendship</span><span style="color:#111">(</span><span style="color:#111">LinkedList</span> <span style="color:#111">members</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Q B3: check if the friendship relation is transitive
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// ie for any X,Y, Z, if Y is a friend of X and 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Z is a friend of Y then Z is a friend of X
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Also print all the links that violates transitivity
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// (4 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">LinkedList</span> <span style="color:#111">f</span> <span style="color:#f92672">=</span> <span style="color:#111">members</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;-----------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;Links that are not Transitive</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#d88200">&#34;-----------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">bool</span> <span style="color:#111">found</span> <span style="color:#f92672">=</span> <span style="color:#111">false</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span><span style="color:#111">(</span><span style="color:#111">f</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">LinkedList</span> <span style="color:#111">s</span> <span style="color:#f92672">=</span> <span style="color:#111">f</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">friends</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">s</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">LinkedList</span> <span style="color:#111">t</span> <span style="color:#f92672">=</span> <span style="color:#111">s</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">friends</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">t</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">find_person</span><span style="color:#111">(</span><span style="color:#111">t</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">f</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">friends</span><span style="color:#111">)</span> <span style="color:#f92672">==</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%s-&gt;%s-&gt;%s, but there is no %s-&gt;%s</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">f</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">t</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">f</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">,</span><span style="color:#111">t</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#111">found</span> <span style="color:#f92672">=</span> <span style="color:#111">true</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">t</span> <span style="color:#f92672">=</span> <span style="color:#111">t</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">s</span> <span style="color:#f92672">=</span> <span style="color:#111">s</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">f</span> <span style="color:#f92672">=</span> <span style="color:#111">f</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;-------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#f92672">!</span><span style="color:#111">found</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">SocialNet</span> <span style="color:#111">s</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span> <span style="color:#111">NULL</span> <span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Person</span> <span style="color:#111">A</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span><span style="color:#d88200">&#34;Alice&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">23</span><span style="color:#111">,</span> <span style="color:#111">Single</span><span style="color:#111">,</span> <span style="color:#111">NULL</span><span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Person</span> <span style="color:#111">B</span> <span style="color:#f92672">=</span><span style="color:#111">{</span><span style="color:#d88200">&#34;Bob&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">26</span><span style="color:#111">,</span> <span style="color:#111">Engaged</span><span style="color:#111">,</span> <span style="color:#111">NULL</span><span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Person</span> <span style="color:#111">C</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span><span style="color:#d88200">&#34;Charlie&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">21</span><span style="color:#111">,</span> <span style="color:#111">NotMentioned</span><span style="color:#111">,</span> <span style="color:#111">NULL</span><span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Person</span> <span style="color:#111">D</span> <span style="color:#f92672">=</span><span style="color:#111">{</span><span style="color:#d88200">&#34;Don&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">28</span><span style="color:#111">,</span> <span style="color:#111">Married</span><span style="color:#111">,</span> <span style="color:#111">NULL</span><span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">s</span><span style="color:#111">.</span><span style="color:#111">members</span> <span style="color:#f92672">=</span> <span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">A</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#111">.</span><span style="color:#111">members</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">s</span><span style="color:#111">.</span><span style="color:#111">members</span> <span style="color:#f92672">=</span> <span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">B</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#111">.</span><span style="color:#111">members</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">s</span><span style="color:#111">.</span><span style="color:#111">members</span> <span style="color:#f92672">=</span> <span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">C</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#111">.</span><span style="color:#111">members</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">s</span><span style="color:#111">.</span><span style="color:#111">members</span> <span style="color:#f92672">=</span> <span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">D</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#111">.</span><span style="color:#111">members</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">A</span><span style="color:#111">.</span><span style="color:#111">friends</span> <span style="color:#f92672">=</span> <span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">B</span><span style="color:#111">,</span> <span style="color:#111">A</span><span style="color:#111">.</span><span style="color:#111">friends</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">A</span><span style="color:#111">.</span><span style="color:#111">friends</span> <span style="color:#f92672">=</span> <span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">C</span><span style="color:#111">,</span> <span style="color:#111">A</span><span style="color:#111">.</span><span style="color:#111">friends</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">B</span><span style="color:#111">.</span><span style="color:#111">friends</span> <span style="color:#f92672">=</span> <span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">D</span><span style="color:#111">,</span> <span style="color:#111">B</span><span style="color:#111">.</span><span style="color:#111">friends</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">C</span><span style="color:#111">.</span><span style="color:#111">friends</span> <span style="color:#f92672">=</span> <span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">D</span><span style="color:#111">,</span> <span style="color:#111">C</span><span style="color:#111">.</span><span style="color:#111">friends</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">D</span><span style="color:#111">.</span><span style="color:#111">friends</span> <span style="color:#f92672">=</span> <span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">A</span><span style="color:#111">,</span> <span style="color:#111">D</span><span style="color:#111">.</span><span style="color:#111">friends</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;List of people between ages 24 to 28:</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">print_network</span><span style="color:#111">(</span><span style="color:#111">filterby_age</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">.</span><span style="color:#111">members</span><span style="color:#111">,</span> <span style="color:#ae81ff">24</span><span style="color:#111">,</span> <span style="color:#ae81ff">28</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;The person with most friends is %s.</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span><span style="color:#111">person_with_most_friends</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">.</span><span style="color:#111">members</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// For above social network, `friends_triangle(s.members)` 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// returns `true` and prints
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// -----------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Friend Triangles
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// -----------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Alice-&gt;Bob-&gt;Don-&gt;Alice
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Alice-&gt;Charlie-&gt;Don-&gt;Alice
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Bob-&gt;Don-&gt;Alice-&gt;Bob
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Charlie-&gt;Don-&gt;Alice-&gt;Charlie
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Don-&gt;Alice-&gt;Bob-&gt;Don
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Don-&gt;Alice-&gt;Charlie-&gt;Don
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// -------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">friends_triangle</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">.</span><span style="color:#111">members</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// For the above social network, `transitive_friendship(s.members)`
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// returns false and prints
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// -----------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Links that are not Transitive
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// -----------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Alice-&gt;Bob-&gt;Don, but there is no Alice-&gt;Don
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Alice-&gt;Charlie-&gt;Don, but there is no Alice-&gt;Don
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Bob-&gt;Don-&gt;Alice, but there is no Bob-&gt;Alice
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Charlie-&gt;Don-&gt;Alice, but there is no Charlie-&gt;Alice
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Don-&gt;Alice-&gt;Bob, but there is no Don-&gt;Bob
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Don-&gt;Alice-&gt;Charlie, but there is no Don-&gt;Charlie
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// -------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">transitive_friendship</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">.</span><span style="color:#111">members</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div></article>
  
       
 
@@ -372,12 +880,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#quiz-2">quiz 2</a>
-      <ul>
-        <li><a href="#question-3">Question 3</a></li>
-        <li><a href="#question-4">Question 4</a></li>
-      </ul>
-    </li>
+    <li><a href="#quiz-2">Quiz 2</a></li>
   </ul>
 </nav>
 
