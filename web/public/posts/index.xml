@@ -26,6 +26,15 @@ We recommend the usage of Linux as this would be advantageous for your future co
     </item>
     
     <item>
+      <title>Linear Algebra in C</title>
+      <link>https://cpro-iiit.github.io/posts/linear_algebra_in_c/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/posts/linear_algebra_in_c/</guid>
+      <description>See implementation of a linear algebra library in C here: https://www.andreinc.net/2021/01/20/writing-your-own-linear-algebra-matrix-library-in-c</description>
+    </item>
+    
+    <item>
       <title>Video Lectures from Elsewhere</title>
       <link>https://cpro-iiit.github.io/posts/video_lectures/</link>
       <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
