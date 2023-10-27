@@ -3,556 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="II.4 Linked Lists # Problem: Large Arrays! # #define MAX_MEMBERS 100 typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Linked List: A array that grows according to needs # Linked List: Code # typedef struct Node { Person data; struct Node* next; } Node; typedef Node* LinkedList; Node third = { {&#34;Alice&#34;, 22}, NULL }; Node second = { {&#34;Bob&#34;, 26}, &amp;third }; Node first = { {&#34;Charlie&#34;, 20}, &amp;second }; LinkedList L = &amp;first; Size of a Liniked List # int size(LinkedList l) { int s = 0; while (l !">
+<meta name="description" content="II.4 Linked Lists#Problem: Large Arrays!##define MAX_MEMBERS 100 typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Linked List: A array that grows according to needs#Linked List: Code#typedef struct Node { Person data; struct Node* next; } Node; typedef Node* LinkedList; Node third = { {&#34;Alice&#34;, 22}, NULL }; Node second = { {&#34;Bob&#34;, 26}, &amp;third }; Node first = { {&#34;Charlie&#34;, 20}, &amp;second }; LinkedList L = &amp;first; Size of a Liniked List#int size(LinkedList l) { int s = 0; while (l !">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="II.4 Linked Lists" />
-<meta property="og:description" content="II.4 Linked Lists # Problem: Large Arrays! # #define MAX_MEMBERS 100 typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Linked List: A array that grows according to needs # Linked List: Code # typedef struct Node { Person data; struct Node* next; } Node; typedef Node* LinkedList; Node third = { {&#34;Alice&#34;, 22}, NULL }; Node second = { {&#34;Bob&#34;, 26}, &amp;third }; Node first = { {&#34;Charlie&#34;, 20}, &amp;second }; LinkedList L = &amp;first; Size of a Liniked List # int size(LinkedList l) { int s = 0; while (l !" />
+<meta property="og:description" content="II.4 Linked Lists#Problem: Large Arrays!##define MAX_MEMBERS 100 typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Linked List: A array that grows according to needs#Linked List: Code#typedef struct Node { Person data; struct Node* next; } Node; typedef Node* LinkedList; Node third = { {&#34;Alice&#34;, 22}, NULL }; Node second = { {&#34;Bob&#34;, 26}, &amp;third }; Node first = { {&#34;Charlie&#34;, 20}, &amp;second }; LinkedList L = &amp;first; Size of a Liniked List#int size(LinkedList l) { int s = 0; while (l !" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/lectures/11_10/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-10-12T18:34:42+05:30" />
-<<<<<<< HEAD
 <title>II.4 Linked Lists | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.420907a4cb7a6c6e50dbba5f1b1627d6dc852a4ab63ba1733c2ab64e419f0cb5.js" integrity="sha256-QgkHpMt6bG5Q27pfGxYn1tyFKkq2O6FzPCq2TkGfDLU=" crossorigin="anonymous"></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-  
-</head>
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
-  <nav>
-<h2 class="book-brand">
-  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>CPro Mon 23</span>
-  </a>
-</h2>
-
-
-<div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <ul>
-    
-      
-        <li class="book-section-flat" >
-          
-  
-  
-
-  
-    <span>Course Material</span>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-c87ef19fe67bdb63d85d44d099797871" class="toggle" checked />
-    <label for="section-c87ef19fe67bdb63d85d44d099797871" class="flex justify-between">
-      <a role="button" class="">Lectures</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/lectures/4_10/" class="">II.1 Typedef, Struct Initialization, Passing Pointers</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/lectures/6_10/" class="">II.2 Strings and Enums</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/lectures/9_10/" class="">II.3 Macros, More Intializers in Social Nets</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/lectures/11_10/" class="active">II.4 Linked Lists</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/lectures/16_10/" class="">II.5 Linked Lists Problems</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/lectures/27_10/" class="">II.6 Commandline Args &amp; Multifile Programming</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-5b2c745bf85b67a9cd73528333cc29a8" class="toggle"  />
-    <label for="section-5b2c745bf85b67a9cd73528333cc29a8" class="flex justify-between">
-      <a role="button" class="">Assignments</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/assignments/assignment1/" class="">Assignment - 1</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/assignments/assignment2/" class="">Assignment - 2</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-68a23d3bc0e29a3d69b03994606ba228" class="toggle"  />
-    <label for="section-68a23d3bc0e29a3d69b03994606ba228" class="flex justify-between">
-      <a role="button" class="">Labs</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/labs/lab1/" class="">Lab - 1</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/labs/lab2/" class="">Lab - 2</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/labs/lab3/" class="">Lab - 3</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-7c04055d7141066e86bae893cc2c0e07" class="toggle"  />
-    <label for="section-7c04055d7141066e86bae893cc2c0e07" class="flex justify-between">
-      <a role="button" class="">Practice Problems</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/practice_problems/week1/" class="">Week - 1</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/practice_problems/week2/" class="">Week - 2</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/practice_problems/week4/" class="">Week - 4</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/practice_problems/week6/" class="">Week - 6</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-4cc6bae32fccbb5cd498aeeba537746f" class="toggle"  />
-    <label for="section-4cc6bae32fccbb5cd498aeeba537746f" class="flex justify-between">
-      <a role="button" class="">Tutorials</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/tutorials/week1/" class="">Tutorial - 1</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="toggle"  />
-    <label for="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="flex justify-between">
-      <a role="button" class="">Quizzes</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/quizzes/midLab1/" class="">Mid-Sem Lab Exam</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/quizzes/quiz1A/" class="">Quiz - 1 Section A</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/course_material/quizzes/quiz1B/" class="">Quiz - 1 Section B</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-
-
-
-
-
-
-
-
-
-
-  
-<ul>
-  
-  <li>
-    <a href="/references/"  >
-        References
-      </a>
-  </li>
-  
-  <li>
-    <a href="/posts/"  >
-        Resources
-      </a>
-  </li>
-  
-  <li>
-    <a href="/tas/"  >
-        Teaching Assistants
-      </a>
-  </li>
-  
-  <li>
-    <a href="/grading_scheme/"  >
-        Grading Scheme
-      </a>
-  </li>
-  
-  <li>
-    <a href="/honor_code/"  >
-        Honor Code
-      </a>
-  </li>
-  
-  <li>
-    <a href="https://github.com/cpro-iiit/cpro-iiit.github.io"  target="_blank" rel="noopener">
-        Github
-      </a>
-  </li>
-  
-</ul>
-
-
-
-
-
-
-</nav>
-
-
-
-
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-
-
- 
-      </div>
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <strong>II.4 Linked Lists</strong>
-
-  <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
-</div>
-
-
-  
-  <aside class="hidden clearfix">
-    
-  
-=======
-
-<title>II.4 Linked Lists | CPro Mon 23</title>
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.f1d7dd4d8cbe6c789ca5cdef36525785d337438f44df2479bfc6e9677263cd30.js" integrity="sha256-8dfdTYy&#43;bHicpc3vNlJXhdM3Q49E3yR5v8bpZ3JjzTA=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.0e5d642146175e35014a6ac43e458265cc0c61e7f3fc0e9aadd167283e218ee5.js" integrity="sha256-Dl1kIUYXXjUBSmrEPkWCZcwMYefz/A6ardFnKD4hjuU=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -699,6 +163,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/course_material/lectures/18_10/" class="">II.6 More Linked List Problems</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/27_10/" class="">II.7 Commandline Args &amp; Multifile Programming</a>
   
 
         </li>
@@ -1093,7 +570,6 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
->>>>>>> 1aa4d6cd118c78199b7b0912d997dd24508b8b08
 <nav id="TableOfContents">
   <ul>
     <li><a href="#ii4-linked-lists">II.4 Linked Lists</a>
@@ -1194,7 +670,7 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#a-recursive-solution">#</a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">size</span><span style="color:#111">(</span><span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">l</span><span style="color:#f92672">==</span><span style="color:#111">NULL</span><span style="color:#f92672">?</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span> <span style="color:#111">size</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">)</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">l</span><span style="color:#f92672">==</span><span style="color:#111">NULL</span><span style="color:#f92672">?</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span> <span style="color:#75af00">size</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">)</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
 <h2 id="printing-elements-of-a-linked-list">
@@ -1203,7 +679,7 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">print_list</span><span style="color:#111">(</span><span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">l</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%s</span><span style="color:#8045ff">\t\t</span><span style="color:#d88200">%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">.</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">.</span><span style="color:#111">age</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%s</span><span style="color:#8045ff">\t\t</span><span style="color:#d88200">%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">.</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">.</span><span style="color:#111">age</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">l</span> <span style="color:#f92672">=</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>   
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
@@ -1229,7 +705,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// TODO
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#f92672">==</span><span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#00a8c8">return</span> <span style="color:#111">NULL</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">pos</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span>   <span style="color:#111">{</span><span style="color:#00a8c8">return</span> <span style="color:#f92672">&amp;</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">);}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">else</span> <span style="color:#111">{</span> <span style="color:#00a8c8">return</span> <span style="color:#111">element_at</span><span style="color:#111">(</span><span style="color:#111">pos</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">);</span> <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">else</span> <span style="color:#111">{</span> <span style="color:#00a8c8">return</span> <span style="color:#75af00">element_at</span><span style="color:#111">(</span><span style="color:#111">pos</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">);</span> <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// return pos == 0 ? &amp;(l-&gt;data): element_at(pos-1, l-&gt;next);
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span>
@@ -1240,7 +716,7 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#111">LinkedList</span> <span style="color:#75af00">append</span><span style="color:#111">(</span><span style="color:#111">Person</span> <span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Node D = {{&#34;Raj&#34;, 18}, NULL}; Local Variable! Will not work.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">D</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#111">Node</span> <span style="color:#f92672">*</span><span style="color:#111">)</span> <span style="color:#111">malloc</span><span style="color:#111">(</span><span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">Node</span><span style="color:#111">));</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">D</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#111">Node</span> <span style="color:#f92672">*</span><span style="color:#111">)</span> <span style="color:#75af00">malloc</span><span style="color:#111">(</span><span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">Node</span><span style="color:#111">));</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">D</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#111">p</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">D</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span> <span style="color:#f92672">=</span> <span style="color:#111">NULL</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">l</span> <span style="color:#f92672">==</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#00a8c8">return</span> <span style="color:#111">D</span><span style="color:#111">;</span> <span style="color:#75715e">// if l is empty just return D.
@@ -1272,12 +748,12 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">LinkedList</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">print_list</span><span style="color:#111">(</span><span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;-----------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;-----------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">l</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%s</span><span style="color:#8045ff">\t\t</span><span style="color:#d88200">%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">.</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">.</span><span style="color:#111">age</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%s</span><span style="color:#8045ff">\t\t</span><span style="color:#d88200">%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">.</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">.</span><span style="color:#111">age</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">l</span> <span style="color:#f92672">=</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">;</span>   
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;-----------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;-----------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">size</span><span style="color:#111">(</span><span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>
@@ -1305,7 +781,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// TODO
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#f92672">==</span><span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#00a8c8">return</span> <span style="color:#111">NULL</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">pos</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span>   <span style="color:#111">{</span><span style="color:#00a8c8">return</span> <span style="color:#f92672">&amp;</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">);}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">else</span> <span style="color:#111">{</span> <span style="color:#00a8c8">return</span> <span style="color:#111">element_at</span><span style="color:#111">(</span><span style="color:#111">pos</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">);</span> <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">else</span> <span style="color:#111">{</span> <span style="color:#00a8c8">return</span> <span style="color:#75af00">element_at</span><span style="color:#111">(</span><span style="color:#111">pos</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span><span style="color:#111">);</span> <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// return pos == 0 ? &amp;(l-&gt;data): element_at(pos-1, l-&gt;next);
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span>
@@ -1313,7 +789,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span><span style="color:#111">LinkedList</span> <span style="color:#75af00">append</span><span style="color:#111">(</span><span style="color:#111">Person</span> <span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Node D = {{&#34;Raj&#34;, 18}, NULL};
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">D</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#111">Node</span> <span style="color:#f92672">*</span><span style="color:#111">)</span> <span style="color:#111">malloc</span><span style="color:#111">(</span><span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">Node</span><span style="color:#111">));</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">D</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#111">Node</span> <span style="color:#f92672">*</span><span style="color:#111">)</span> <span style="color:#75af00">malloc</span><span style="color:#111">(</span><span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">Node</span><span style="color:#111">));</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">D</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#111">p</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">D</span><span style="color:#f92672">-&gt;</span><span style="color:#111">next</span> <span style="color:#f92672">=</span> <span style="color:#111">NULL</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">l</span> <span style="color:#f92672">==</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#00a8c8">return</span> <span style="color:#111">D</span><span style="color:#111">;</span>
@@ -1340,13 +816,13 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#111">Person</span> <span style="color:#111">D</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span><span style="color:#d88200">&#34;Raj&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">18</span><span style="color:#111">};</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">LinkedList</span> <span style="color:#111">l</span> <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span><span style="color:#111">first</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Size of the list is %d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">size</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#111">));</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">print_list</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Element at 1st position: %s</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">element_at</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#111">l</span><span style="color:#111">)</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Element at 2nd position: %s</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">element_at</span><span style="color:#111">(</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#111">l</span><span style="color:#111">)</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#111">D</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;List after appending</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">print_list</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Size of the list is %d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#75af00">size</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">print_list</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Element at 1st position: %s</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#75af00">element_at</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#111">l</span><span style="color:#111">)</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Element at 2nd position: %s</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#75af00">element_at</span><span style="color:#111">(</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#111">l</span><span style="color:#111">)</span><span style="color:#f92672">-&gt;</span><span style="color:#111">name</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">append</span><span style="color:#111">(</span><span style="color:#111">D</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;List after appending</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">print_list</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
