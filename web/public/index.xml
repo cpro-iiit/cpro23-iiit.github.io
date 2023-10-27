@@ -102,7 +102,7 @@ However, he wants to get exactly \(\$z\)on some day.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/lectures/9_10/</guid>
-      <description>II.3 Macros, More Intializers in Social Nets#Social Nets#typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[100]; int age; RelStatus relstatus; Person* friends[5]; } Person; typedef struct SocialNet { Person members[100]; int size; } SocialNet; Social Nets with Macros##define MAX_FRIENDS 5 #define MAX_MEMBERS 100 #define MAX_NAME_LEN 100 typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[MAX_NAME_LEN]; int age; RelStatus relstatus; Person* friends[MAX_FRIENDS]; } Person; typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Intitializer#Name Age Rel Status Alice 24 Not Mentioned Bob 28 Maried Charlie 20 Single int main() { SocialNet social_net = { .</description>
+      <description>II.3 Macros, More Intializers in Social Nets#Social Nets#typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[100]; int age; RelStatus relstatus; struct Person* friends[5]; } Person; typedef struct SocialNet { Person members[100]; int size; } SocialNet; Social Nets with Macros##define MAX_FRIENDS 5 #define MAX_MEMBERS 100 #define MAX_NAME_LEN 100 typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[MAX_NAME_LEN]; int age; RelStatus relstatus; Person* friends[MAX_FRIENDS]; } Person; typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Intitializer#Name Age Rel Status Alice 24 Not Mentioned Bob 28 Maried Charlie 20 Single int main() { SocialNet social_net = { .</description>
     </item>
     
     <item>
@@ -121,6 +121,15 @@ However, he wants to get exactly \(\$z\)on some day.</description>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/lectures/16_10/</guid>
       <description>II.5 Linked Lists Problems#Insert element at a position in the list#LinkedList insert(Person p, int pos, LinkedList l) { if (pos == 0) { Node* D = (Node *) malloc(sizeof(Node)); D-&amp;gt;data = p; D-&amp;gt;next = l; return D; } else { l-&amp;gt;next = insert(p, pos-1, l-&amp;gt;next); return l; } } Concatenate 2 lists#LinkedList concat(LinkedList l1, LinkedList l2) { if (l1 == NULL) { return l2; } else { l1-&amp;gt;next = concat(l1-&amp;gt;next, l2); return l1; } } Reverse a list#LinkedList reverse(LinkedList l) { int s = size(l); LinkedList l2 = NULL; for (int i = 0; i &amp;lt; s; i++) { l2 = insert(*element_at(s-i-1, l), i, l2); } return l2; } Full code##include &amp;#34;stdio.</description>
+    </item>
+    
+    <item>
+      <title>II.6 Commandline Args &amp; Multifile Programming</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/lectures/27_10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/docs/course_material/lectures/27_10/</guid>
+      <description>II.6 Commandline Args &amp;amp; Multifile Programming#Commandline Argument##include &amp;#34;stdio.h&amp;#34; int main(int argc, char* argv[]) { printf(&amp;#34;The number of arguments is %d\n&amp;#34;, argc); for (int i = 0; i &amp;lt; argc; i++) { printf(&amp;#34;%d Argument: %s\n&amp;#34;, i, argv[i]); } return 0; } Write a program that takes the First Name Last Name Age as commandline arguments and prints it as follows First Name: Last name : Age : /// Command Line Arguments // Write a program that takes the First Name Last Name Age // as commandline arguments and prints it as follows // First Name: &amp;lt;first arg&amp;gt; // Last name : &amp;lt;sec arg&amp;gt; // Age : &amp;lt;third arg&amp;gt; #include &amp;#34;stdio.</description>
     </item>
     
     <item>

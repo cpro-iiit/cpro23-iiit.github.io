@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="II.3 Macros, More Intializers in Social Nets#Social Nets#typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[100]; int age; RelStatus relstatus; Person* friends[5]; } Person; typedef struct SocialNet { Person members[100]; int size; } SocialNet; Social Nets with Macros##define MAX_FRIENDS 5 #define MAX_MEMBERS 100 #define MAX_NAME_LEN 100 typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[MAX_NAME_LEN]; int age; RelStatus relstatus; Person* friends[MAX_FRIENDS]; } Person; typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Intitializer#Name Age Rel Status Alice 24 Not Mentioned Bob 28 Maried Charlie 20 Single int main() { SocialNet social_net = { .">
+<meta name="description" content="II.3 Macros, More Intializers in Social Nets#Social Nets#typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[100]; int age; RelStatus relstatus; struct Person* friends[5]; } Person; typedef struct SocialNet { Person members[100]; int size; } SocialNet; Social Nets with Macros##define MAX_FRIENDS 5 #define MAX_MEMBERS 100 #define MAX_NAME_LEN 100 typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[MAX_NAME_LEN]; int age; RelStatus relstatus; Person* friends[MAX_FRIENDS]; } Person; typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Intitializer#Name Age Rel Status Alice 24 Not Mentioned Bob 28 Maried Charlie 20 Single int main() { SocialNet social_net = { .">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="II.3 Macros, More Intializers in Social Nets" />
-<meta property="og:description" content="II.3 Macros, More Intializers in Social Nets#Social Nets#typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[100]; int age; RelStatus relstatus; Person* friends[5]; } Person; typedef struct SocialNet { Person members[100]; int size; } SocialNet; Social Nets with Macros##define MAX_FRIENDS 5 #define MAX_MEMBERS 100 #define MAX_NAME_LEN 100 typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[MAX_NAME_LEN]; int age; RelStatus relstatus; Person* friends[MAX_FRIENDS]; } Person; typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Intitializer#Name Age Rel Status Alice 24 Not Mentioned Bob 28 Maried Charlie 20 Single int main() { SocialNet social_net = { ." />
+<meta property="og:description" content="II.3 Macros, More Intializers in Social Nets#Social Nets#typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[100]; int age; RelStatus relstatus; struct Person* friends[5]; } Person; typedef struct SocialNet { Person members[100]; int size; } SocialNet; Social Nets with Macros##define MAX_FRIENDS 5 #define MAX_MEMBERS 100 #define MAX_NAME_LEN 100 typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Person { char name[MAX_NAME_LEN]; int age; RelStatus relstatus; Person* friends[MAX_FRIENDS]; } Person; typedef struct SocialNet { Person members[MAX_MEMBERS]; int size; } SocialNet; Intitializer#Name Age Rel Status Alice 24 Not Mentioned Bob 28 Maried Charlie 20 Single int main() { SocialNet social_net = { ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/lectures/9_10/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-10-09T14:01:58+05:30" />
+<meta property="article:modified_time" content="2023-10-18T13:55:08+05:30" />
 <title>II.3 Macros, More Intializers in Social Nets | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.e234874776fa4188eb387850fdade3f7f147e1df4631550f46eedab2e13ff7d8.js" integrity="sha256-4jSHR3b6QYjrOHhQ/a3j9/FH4d9GMVUPRu7asuE/99g=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.420907a4cb7a6c6e50dbba5f1b1627d6dc852a4ab63ba1733c2ab64e419f0cb5.js" integrity="sha256-QgkHpMt6bG5Q27pfGxYn1tyFKkq2O6FzPCq2TkGfDLU=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -150,6 +150,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/course_material/lectures/16_10/" class="">II.5 Linked Lists Problems</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/27_10/" class="">II.6 Commandline Args &amp; Multifile Programming</a>
   
 
         </li>
@@ -575,7 +588,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">char</span> <span style="color:#111">name</span><span style="color:#111">[</span><span style="color:#ae81ff">100</span><span style="color:#111">];</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">age</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">RelStatus</span> <span style="color:#111">relstatus</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">Person</span><span style="color:#f92672">*</span> <span style="color:#111">friends</span><span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">struct</span> <span style="color:#111">Person</span><span style="color:#f92672">*</span> <span style="color:#111">friends</span><span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">];</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">Person</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">SocialNet</span> <span style="color:#111">{</span>
@@ -773,9 +786,9 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/3ef46b6917c67791dca46bcd7e5013c779e387a1" title='Last modified by Girish Varma | October 9, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/cee8222371e288af97da37f31bf6a92e987c16d9" title='Last modified by Girish Varma | October 18, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>October 9, 2023</span>
+      <span>October 18, 2023</span>
     </a>
   </div>
 
