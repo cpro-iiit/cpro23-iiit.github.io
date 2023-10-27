@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="II.2 Strings and Enums#Strings in C#as a pointer to char char *p = &#34;abcde&#34;; as an array of char char s[] = &#34;abcde&#34;; print(&#34;%d %d&#34;, sizeof(p), sizeof(s)); String Function Implementation##include &#34;stdio.h&#34; int strlenB(char* s) { int i = 0; while (s[i] != &#39;\0&#39;) { i&#43;&#43;; } return i; } char* strcpyB(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i &lt;= len_s;i&#43;&#43;) { d[i] = s[i]; } return d; } char* str_rev(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i&lt; len_s; i&#43;&#43;) { d[i] = s[len_s - 1 - i]; } d[len_s] = &#39;\0&#39;; return d; } int main() { char *p = &#34;xyz\0dsalkfjds&#34;; char s[] = &#34;abcde\0kjdakfjsh&#34;; // abcde\0 // printf(&#34;%d %d\n&#34;,sizeof(p),sizeof(s)); // printf(&#34;%s %s\n&#34;,p, s); // printf(&#34;%d %d\n&#34;, strlen(p), strlen(s)); // strcpy(s,p); printf(&#34;%s\n&#34;,str_rev(p, s)); return 1; } String Functions##include &lt;string.">
+<meta name="description" content="II.2 Strings and Enums # Strings in C # as a pointer to char char *p = &#34;abcde&#34;; as an array of char char s[] = &#34;abcde&#34;; print(&#34;%d %d&#34;, sizeof(p), sizeof(s)); String Function Implementation # #include &#34;stdio.h&#34; int strlenB(char* s) { int i = 0; while (s[i] != &#39;\0&#39;) { i&#43;&#43;; } return i; } char* strcpyB(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i &lt;= len_s;i&#43;&#43;) { d[i] = s[i]; } return d; } char* str_rev(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i&lt; len_s; i&#43;&#43;) { d[i] = s[len_s - 1 - i]; } d[len_s] = &#39;\0&#39;; return d; } int main() { char *p = &#34;xyz\0dsalkfjds&#34;; char s[] = &#34;abcde\0kjdakfjsh&#34;; // abcde\0 // printf(&#34;%d %d\n&#34;,sizeof(p),sizeof(s)); // printf(&#34;%s %s\n&#34;,p, s); // printf(&#34;%d %d\n&#34;, strlen(p), strlen(s)); // strcpy(s,p); printf(&#34;%s\n&#34;,str_rev(p, s)); return 1; } String Functions # #include &lt;string.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="II.2 Strings and Enums" />
-<meta property="og:description" content="II.2 Strings and Enums#Strings in C#as a pointer to char char *p = &#34;abcde&#34;; as an array of char char s[] = &#34;abcde&#34;; print(&#34;%d %d&#34;, sizeof(p), sizeof(s)); String Function Implementation##include &#34;stdio.h&#34; int strlenB(char* s) { int i = 0; while (s[i] != &#39;\0&#39;) { i&#43;&#43;; } return i; } char* strcpyB(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i &lt;= len_s;i&#43;&#43;) { d[i] = s[i]; } return d; } char* str_rev(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i&lt; len_s; i&#43;&#43;) { d[i] = s[len_s - 1 - i]; } d[len_s] = &#39;\0&#39;; return d; } int main() { char *p = &#34;xyz\0dsalkfjds&#34;; char s[] = &#34;abcde\0kjdakfjsh&#34;; // abcde\0 // printf(&#34;%d %d\n&#34;,sizeof(p),sizeof(s)); // printf(&#34;%s %s\n&#34;,p, s); // printf(&#34;%d %d\n&#34;, strlen(p), strlen(s)); // strcpy(s,p); printf(&#34;%s\n&#34;,str_rev(p, s)); return 1; } String Functions##include &lt;string." />
+<meta property="og:description" content="II.2 Strings and Enums # Strings in C # as a pointer to char char *p = &#34;abcde&#34;; as an array of char char s[] = &#34;abcde&#34;; print(&#34;%d %d&#34;, sizeof(p), sizeof(s)); String Function Implementation # #include &#34;stdio.h&#34; int strlenB(char* s) { int i = 0; while (s[i] != &#39;\0&#39;) { i&#43;&#43;; } return i; } char* strcpyB(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i &lt;= len_s;i&#43;&#43;) { d[i] = s[i]; } return d; } char* str_rev(char *s, char *d) { int len_s = strlenB(s); for(int i = 0; i&lt; len_s; i&#43;&#43;) { d[i] = s[len_s - 1 - i]; } d[len_s] = &#39;\0&#39;; return d; } int main() { char *p = &#34;xyz\0dsalkfjds&#34;; char s[] = &#34;abcde\0kjdakfjsh&#34;; // abcde\0 // printf(&#34;%d %d\n&#34;,sizeof(p),sizeof(s)); // printf(&#34;%s %s\n&#34;,p, s); // printf(&#34;%d %d\n&#34;, strlen(p), strlen(s)); // strcpy(s,p); printf(&#34;%s\n&#34;,str_rev(p, s)); return 1; } String Functions # #include &lt;string." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/lectures/6_10/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-10-06T15:24:42+05:30" />
+<<<<<<< HEAD
 <title>II.2 Strings and Enums | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
@@ -544,6 +545,555 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
+=======
+
+<title>II.2 Strings and Enums | CPro Mon 23</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.f1d7dd4d8cbe6c789ca5cdef36525785d337438f44df2479bfc6e9677263cd30.js" integrity="sha256-8dfdTYy&#43;bHicpc3vNlJXhdM3Q49E3yR5v8bpZ3JjzTA=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>CPro Mon 23</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Course Material</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c87ef19fe67bdb63d85d44d099797871" class="toggle" checked />
+    <label for="section-c87ef19fe67bdb63d85d44d099797871" class="flex justify-between">
+      <a role="button" class="">Lectures</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/4_10/" class="">II.1 Typedef, Struct Initialization, Passing Pointers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/6_10/" class="active">II.2 Strings and Enums</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/9_10/" class="">II.3 Macros, More Intializers in Social Nets</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/11_10/" class="">II.4 Linked Lists</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/16_10/" class="">II.5 Linked Lists Problems</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/18_10/" class="">II.6 More Linked List Problems</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5b2c745bf85b67a9cd73528333cc29a8" class="toggle"  />
+    <label for="section-5b2c745bf85b67a9cd73528333cc29a8" class="flex justify-between">
+      <a role="button" class="">Assignments</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/assignments/assignment1/" class="">Assignment - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/assignments/assignment2/" class="">Assignment - 2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-68a23d3bc0e29a3d69b03994606ba228" class="toggle"  />
+    <label for="section-68a23d3bc0e29a3d69b03994606ba228" class="flex justify-between">
+      <a role="button" class="">Labs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab1/" class="">Lab - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab2/" class="">Lab - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/labs/lab3/" class="">Lab - 3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c04055d7141066e86bae893cc2c0e07" class="toggle"  />
+    <label for="section-7c04055d7141066e86bae893cc2c0e07" class="flex justify-between">
+      <a role="button" class="">Practice Problems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week1/" class="">Week - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week2/" class="">Week - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week4/" class="">Week - 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/week6/" class="">Week - 6</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4cc6bae32fccbb5cd498aeeba537746f" class="toggle"  />
+    <label for="section-4cc6bae32fccbb5cd498aeeba537746f" class="flex justify-between">
+      <a role="button" class="">Tutorials</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/tutorials/week1/" class="">Tutorial - 1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="toggle"  />
+    <label for="section-bcbd4db602c5d4d916d5dffc713e3a7c" class="flex justify-between">
+      <a role="button" class="">Quizzes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/midLab1/" class="">Mid-Sem Lab Exam</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/quiz1A/" class="">Quiz - 1 Section A</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/quiz1B/" class="">Quiz - 1 Section B</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/quizzes/quiz2/" class="">Quiz - 2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/references/"  >
+        References
+      </a>
+  </li>
+  
+  <li>
+    <a href="/posts/"  >
+        Resources
+      </a>
+  </li>
+  
+  <li>
+    <a href="/tas/"  >
+        Teaching Assistants
+      </a>
+  </li>
+  
+  <li>
+    <a href="/grading_scheme/"  >
+        Grading Scheme
+      </a>
+  </li>
+  
+  <li>
+    <a href="/honor_code/"  >
+        Honor Code
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/cpro-iiit/cpro-iiit.github.io"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>II.2 Strings and Enums</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+>>>>>>> 1aa4d6cd118c78199b7b0912d997dd24508b8b08
 <nav id="TableOfContents">
   <ul>
     <li><a href="#ii2-strings-and-enums">II.2 Strings and Enums</a>
@@ -553,7 +1103,11 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#string-functions">String Functions</a></li>
         <li><a href="#social-network">Social Network</a></li>
         <li><a href="#define-a-person-profile">Define a Person (Profile)</a></li>
+<<<<<<< HEAD
         <li><a href="#hahahugoshortcode25s0hbhb">HAHAHUGOSHORTCODE25s0HBHB</a></li>
+=======
+        <li><a href="#hahahugoshortcode-s0-hbhb">HAHAHUGOSHORTCODE-s0-HBHB</a></li>
+>>>>>>> 1aa4d6cd118c78199b7b0912d997dd24508b8b08
         <li><a href="#enums">Enums</a></li>
         <li><a href="#enums--changing-default-values">Enums : Changing default values</a></li>
         <li><a href="#enums--interchangable-with-int">Enums : interchangable with int</a></li>
@@ -590,7 +1144,7 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#00a8c8">char</span> <span style="color:#111">s</span><span style="color:#111">[]</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;abcde&#34;</span><span style="color:#111">;</span>
 </span></span></code></pre></div><p><img src="string_fig.png" alt="" /></p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75af00">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d %d&#34;</span><span style="color:#111">,</span> <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">p</span><span style="color:#111">),</span> <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">));</span>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d %d&#34;</span><span style="color:#111">,</span> <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">p</span><span style="color:#111">),</span> <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">));</span>
 </span></span></code></pre></div><hr>
 <h2 id="string-function-implementation">
   String Function Implementation
@@ -607,7 +1161,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#75af00">strcpyB</span><span style="color:#111">(</span><span style="color:#00a8c8">char</span> <span style="color:#f92672">*</span><span style="color:#111">s</span><span style="color:#111">,</span> <span style="color:#00a8c8">char</span> <span style="color:#f92672">*</span><span style="color:#111">d</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">len_s</span> <span style="color:#f92672">=</span> <span style="color:#75af00">strlenB</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">len_s</span> <span style="color:#f92672">=</span> <span style="color:#111">strlenB</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">len_s</span><span style="color:#111">;</span><span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">d</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">s</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">];</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
@@ -615,7 +1169,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#75af00">str_rev</span><span style="color:#111">(</span><span style="color:#00a8c8">char</span> <span style="color:#f92672">*</span><span style="color:#111">s</span><span style="color:#111">,</span> <span style="color:#00a8c8">char</span> <span style="color:#f92672">*</span><span style="color:#111">d</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">len_s</span> <span style="color:#f92672">=</span> <span style="color:#75af00">strlenB</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">len_s</span> <span style="color:#f92672">=</span> <span style="color:#111">strlenB</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">&lt;</span> <span style="color:#111">len_s</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">d</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">s</span><span style="color:#111">[</span><span style="color:#111">len_s</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> <span style="color:#111">i</span><span style="color:#111">];</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
@@ -631,7 +1185,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// printf(&#34;%s %s\n&#34;,p, s);
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// printf(&#34;%d %d\n&#34;, strlen(p), strlen(s));
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// strcpy(s,p);
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%s</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span><span style="color:#75af00">str_rev</span><span style="color:#111">(</span><span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#111">));</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%s</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span><span style="color:#111">str_rev</span><span style="color:#111">(</span><span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#111">));</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
@@ -706,6 +1260,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">rel_status</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">};</span>
 </span></span></code></pre></div><p>Implemeting Rel Status as int, requires us to keep in mind the mapping between Single, Maried, Not Mentioned, Engaged and integers.</p>
+<<<<<<< HEAD
 <h2 id="hahahugoshortcode25s0hbhb">
   <blockquote class="book-hint info">
   Can we specify this in code??
@@ -717,6 +1272,19 @@ https://github.com/alex-shpak/hugo-book
   Enums
   <a class="anchor" href="#enums">#</a>
 </h2>
+=======
+<h2 id="hahahugoshortcode-s0-hbhb">
+  <blockquote class="book-hint info">
+  Can we specify this in code??
+</blockquote>
+
+  <a class="anchor" href="#hahahugoshortcode-s0-hbhb">#</a>
+</h2>
+<h2 id="enums">
+  Enums
+  <a class="anchor" href="#enums">#</a>
+</h2>
+>>>>>>> 1aa4d6cd118c78199b7b0912d997dd24508b8b08
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">enum</span> <span style="color:#111">Weekday</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">Sunday</span><span style="color:#111">,</span> 
 </span></span><span style="display:flex;"><span>    <span style="color:#111">Monday</span><span style="color:#111">,</span> 
@@ -727,8 +1295,8 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#111">Saturday</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">Weekday</span><span style="color:#111">;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#111">Weekday</span> <span style="color:#111">today</span> <span style="color:#f92672">=</span> <span style="color:#111">Wednesday</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Day %d&#34;</span><span style="color:#111">,</span><span style="color:#111">today</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span> 
-</span></span><span style="display:flex;"><span><span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Size of enum variable = %d bytes&#34;</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span><span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Day %d&#34;</span><span style="color:#111">,</span><span style="color:#111">today</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span> 
+</span></span><span style="display:flex;"><span><span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Size of enum variable = %d bytes&#34;</span><span style="color:#111">,</span> 
 </span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">today</span><span style="color:#111">));</span>	
 </span></span></code></pre></div><hr>
 <h2 id="enums--changing-default-values">
@@ -745,7 +1313,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#111">Saturday</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">Weekday</span><span style="color:#111">;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#111">Weekday</span> <span style="color:#111">today</span> <span style="color:#f92672">=</span> <span style="color:#111">Wednesday</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Day %d&#34;</span><span style="color:#111">,</span><span style="color:#111">today</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Day %d&#34;</span><span style="color:#111">,</span><span style="color:#111">today</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
 </span></span></code></pre></div><hr>
 <h2 id="enums--interchangable-with-int">
   Enums : interchangable with int
@@ -765,8 +1333,8 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">Weekday</span> <span style="color:#111">today</span> <span style="color:#f92672">=</span> <span style="color:#111">Wednesday</span><span style="color:#111">;;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Day %d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span><span style="color:#111">today</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Size of enum variable = %d bytes&#34;</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Day %d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span><span style="color:#111">today</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Size of enum variable = %d bytes&#34;</span><span style="color:#111">,</span> 
 </span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">today</span><span style="color:#111">));</span>	
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span> <span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
@@ -849,7 +1417,11 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#string-functions">String Functions</a></li>
         <li><a href="#social-network">Social Network</a></li>
         <li><a href="#define-a-person-profile">Define a Person (Profile)</a></li>
+<<<<<<< HEAD
         <li><a href="#hahahugoshortcode25s0hbhb">HAHAHUGOSHORTCODE25s0HBHB</a></li>
+=======
+        <li><a href="#hahahugoshortcode-s0-hbhb">HAHAHUGOSHORTCODE-s0-HBHB</a></li>
+>>>>>>> 1aa4d6cd118c78199b7b0912d997dd24508b8b08
         <li><a href="#enums">Enums</a></li>
         <li><a href="#enums--changing-default-values">Enums : Changing default values</a></li>
         <li><a href="#enums--interchangable-with-int">Enums : interchangable with int</a></li>

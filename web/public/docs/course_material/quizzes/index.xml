@@ -12,8 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/quizzes/midLab1/</guid>
-      <description>Mid-Sem Lab Exam#Question 1 - &amp;ldquo;Voting&amp;rdquo;#Problem Description#The Elections for the new academic year are in full swing!
-There are \(N\)students in the college and two candidates for the current elections (where \(N\)is guaranteed to be an odd number). The students cast their votes in the form of \(0s\)or \(1s\)where the \(i^{th}\)vote (\(1 &amp;lt;= i &amp;lt;= N\)) being \(1\)represents a vote to candidate A and it being \(0\)represents a vote for candidate B.</description>
+      <description>Mid-Sem Lab Exam # Question 1 - &amp;ldquo;Voting&amp;rdquo; # Problem Description # The Elections for the new academic year are in full swing!
+There are \(N\) students in the college and two candidates for the current elections (where \(N\) is guaranteed to be an odd number). The students cast their votes in the form of \(0s\) or \(1s\) where the \(i^{th}\) vote ( \(1 &amp;lt;= i &amp;lt;= N\) ) being \(1\) represents a vote to candidate A and it being \(0\) represents a vote for candidate B.</description>
     </item>
     
     <item>
@@ -22,8 +22,8 @@ There are \(N\)students in the college and two candidates for the current elect
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz1A/</guid>
-      <description>Quiz 1#Section AQuestion 1 - 5 marks#Problem Description#Write a program to find the factorial of a number. Here n can be taken to be an input from the user.
-Solution##include &amp;lt;stdio.h&amp;gt; int main(){ int n; scanf(&amp;#34;%d&amp;#34;,&amp;amp;n); if(n&amp;lt;0){ printf(&amp;#34;Invalid Input!&amp;#34;); }else{ int ans=1; for(int i=1;i&amp;lt;=n;i++){ ans*=i; } printf(&amp;#34;%d\n&amp;#34;,ans); } return 0; } Grading Scheme#1 mark: For writing
+      <description>Quiz 1 # Section A Question 1 - 5 marks # Problem Description # Write a program to find the factorial of a number. Here n can be taken to be an input from the user.
+Solution # #include &amp;lt;stdio.h&amp;gt; int main(){ int n; scanf(&amp;#34;%d&amp;#34;,&amp;amp;n); if(n&amp;lt;0){ printf(&amp;#34;Invalid Input!&amp;#34;); }else{ int ans=1; for(int i=1;i&amp;lt;=n;i++){ ans*=i; } printf(&amp;#34;%d\n&amp;#34;,ans); } return 0; } Grading Scheme # 1 mark: For writing
 #include &amp;lt;stdio.h&amp;gt; 1 mark: For writing</description>
     </item>
     
@@ -33,9 +33,18 @@ Solution##include &amp;lt;stdio.h&amp;gt; int main(){ int n; scanf(&amp;#34;%d
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz1B/</guid>
-      <description>Quiz 1#Section BQuestion 1 - 5 marks#Problem Description#Write a program to find the sum of first n even numbers. Here n can be taken to be an input from the user.
-Solution#Both Codes are considered to be valid.
+      <description>Quiz 1 # Section B Question 1 - 5 marks # Problem Description # Write a program to find the sum of first n even numbers. Here n can be taken to be an input from the user.
+Solution # Both Codes are considered to be valid.
 #include&amp;lt;stdio.h&amp;gt; int main() { int i, ans = 0,n; scanf(&amp;#34;%d&amp;#34;, &amp;amp;n); for(i=0; i &amp;lt; n; i ++) { ans = ans + 2*i; } printf(&amp;#34;%d\n&amp;#34;, ans); return 0; } #include&amp;lt;stdio.</description>
+    </item>
+    
+    <item>
+      <title>Quiz - 2</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz2/</guid>
+      <description>Quiz 2 # #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;string.h&amp;gt; #include &amp;lt;stdbool.h&amp;gt; typedef enum RelStatus { NotMentioned, Single, Engaged, Married } RelStatus; typedef struct Node Node; typedef Node* LinkedList; typedef struct Person { char name[100]; int age; RelStatus relstatus; LinkedList friends; } Person; struct Node { struct Person* data; struct Node* next; }; typedef struct SocialNet { LinkedList members; } SocialNet; LinkedList append(Person* p, LinkedList l) { if (l == NULL) { Node* D = (Node *) malloc(sizeof(Node)); D-&amp;gt;data = p; D-&amp;gt;next = NULL; return D; } else { l-&amp;gt;next = append(p, l-&amp;gt;next); } return l; } void print_person(Person* p) { char status_string[][15] = { &amp;#34;Not Mentioned&amp;#34;,&amp;#34;Single&amp;#34;, &amp;#34;Married&amp;#34;, &amp;#34;Engaged&amp;#34; }; printf(&amp;#34;%s\t\t%d\t%s\t\t\t&amp;#34;, p-&amp;gt;name, p-&amp;gt;age, status_string[p-&amp;gt;relstatus]); LinkedList f = p-&amp;gt;friends; while (f !</description>
     </item>
     
   </channel>

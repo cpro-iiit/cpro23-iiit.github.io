@@ -13,7 +13,7 @@
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/posts/installingGCC/</guid>
-      <description>Installing gcc#This tutorial will be a quick walkthrough on installing gcc on different OS. We recommend you try installing gcc on your own before the start of classes. If, for some reason, you are unable to install gcc, then we will help you in the first tutorial session. We also recommend you install some text editor (VS Code for example).
+      <description>Installing gcc # This tutorial will be a quick walkthrough on installing gcc on different OS. We recommend you try installing gcc on your own before the start of classes. If, for some reason, you are unable to install gcc, then we will help you in the first tutorial session. We also recommend you install some text editor (VS Code for example).
 We recommend the usage of Linux as this would be advantageous for your future courses as well.</description>
     </item>
     

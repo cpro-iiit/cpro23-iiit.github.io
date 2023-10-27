@@ -30,6 +30,8 @@ int size(LinkedList l) {
         s ++;
     }
     return s;
+
+    // return l==NULL? 0 : 1+ size(l->next);
 }
 
 Person* element_at(int pos, LinkedList l) {
@@ -56,9 +58,10 @@ LinkedList append(Person p, LinkedList l) {
 }
 
 
+
 // assuming a < b
 LinkedList swap(LinkedList l, int a, int b) {
-LinkedList head = l;
+   LinkedList head = l;
    Person temp;
    Node* a_ptr;
    Node* b_ptr;
@@ -80,6 +83,16 @@ LinkedList head = l;
    return head;
 }
 
+LinkedList sort(LinkedList l) {
+    if (l == NULL || l->next == NULL) {
+        return l;
+    } else {
+        int b = find_index_of_largest_node(l);
+        l = swap(l, 0, b);
+        l->next = sort(l->next);
+        return l;
+    }
+}
 
 void free_linked_list(LinkedList l) {
     if (l == NULL) {
@@ -110,12 +123,6 @@ LinkedList reverse_in_place(LinkedList l) {
         return rev;
     }
 }
-
-
-
-
-
-
 
 LinkedList insert(Person p, int pos, LinkedList l) {
     if (pos == 0) {

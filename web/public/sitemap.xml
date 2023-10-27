@@ -56,7 +56,11 @@
     <loc>https://cpro-iiit.github.io/categories/</loc>
   </url><url>
     <loc>https://cpro-iiit.github.io/docs/</loc>
+<<<<<<< HEAD
     <lastmod>2023-10-18T13:55:08+05:30</lastmod>
+=======
+    <lastmod>2023-10-18T17:12:56+05:30</lastmod>
+>>>>>>> 1aa4d6cd118c78199b7b0912d997dd24508b8b08
   </url><url>
     <loc>https://cpro-iiit.github.io/grading_scheme/</loc>
     <lastmod>2023-09-10T20:08:21+05:30</lastmod>
@@ -71,7 +75,11 @@
     <lastmod>2023-10-06T15:24:42+05:30</lastmod>
   </url><url>
     <loc>https://cpro-iiit.github.io/docs/course_material/lectures/9_10/</loc>
+<<<<<<< HEAD
     <lastmod>2023-10-18T13:55:08+05:30</lastmod>
+=======
+    <lastmod>2023-10-18T16:50:48+05:30</lastmod>
+>>>>>>> 1aa4d6cd118c78199b7b0912d997dd24508b8b08
   </url><url>
     <loc>https://cpro-iiit.github.io/docs/course_material/lectures/11_10/</loc>
     <lastmod>2023-10-12T18:34:42+05:30</lastmod>
@@ -79,7 +87,12 @@
     <loc>https://cpro-iiit.github.io/docs/course_material/lectures/16_10/</loc>
     <lastmod>2023-10-18T13:55:08+05:30</lastmod>
   </url><url>
+<<<<<<< HEAD
     <loc>https://cpro-iiit.github.io/docs/course_material/lectures/27_10/</loc>
+=======
+    <loc>https://cpro-iiit.github.io/docs/course_material/lectures/18_10/</loc>
+    <lastmod>2023-10-18T17:12:56+05:30</lastmod>
+>>>>>>> 1aa4d6cd118c78199b7b0912d997dd24508b8b08
   </url><url>
     <loc>https://cpro-iiit.github.io/</loc>
     <lastmod>2023-10-13T18:30:35+05:30</lastmod>
@@ -101,6 +114,8 @@
   </url><url>
     <loc>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz1B/</loc>
     <lastmod>2023-09-12T01:19:30+05:30</lastmod>
+  </url><url>
+    <loc>https://cpro-iiit.github.io/docs/course_material/quizzes/quiz2/</loc>
   </url><url>
     <loc>https://cpro-iiit.github.io/references/</loc>
     <lastmod>2023-10-13T15:55:19+05:30</lastmod>
