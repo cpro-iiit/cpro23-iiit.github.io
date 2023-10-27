@@ -27,3 +27,7 @@ menu:
 
 [Programming in C](https://users.cs.cf.ac.uk/Dave.Marshall/C/CE.html) by A.D. Marshall, notes and examples
 
+
+[Recursive and Loopy GCD in C](https://www.andreinc.net/2010/12/12/binary-gcd-steins-algorithm-in-c)
+
+[Sieve of Eratosthenes in C](https://www.andreinc.net/2010/12/12/sieve-of-eratosthenes-finding-all-prime-numbers-up-to-a-specific-integer)
