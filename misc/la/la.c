@@ -20,19 +20,22 @@ Matrix* create_matrix(int r, int c) {
 }
 
 void destroy_matrix(Matrix* m) {
-    // HW
+    // HW1: Write code here to free all memory used by the matrix stored in m
 }
 
 Matrix* add_matrix(Matrix* A, Matrix* B) {
-   // HW
+   // HW2: write code here to add the matrices A, B and return a new matrix which has the results.
+   // A, B should remain unmodified. If dimensions doesnt match should return NULL
 }
 
 Matrix* mult_matrix(Matrix* A, Matrix* B) {
-   // HW
+   // HW3: write code here to multiply the matrices A, B and return a new matrix which has the results.
+   // A, B should remain unmodified. If the dimensions doesnt match it should return NULL
 }
 
 Matrix* scalar_mult_matrix(float s, Matrix* M) {
-    // HW
+    // HW4: write code here to multiply the matrix A with a scalar s and return a new matrix which has the results.
+   // A should remain unmodified.
 }
 
 void print_matrix(Matrix* m) {
@@ -52,7 +55,7 @@ int main(int argc, char* argv[]) {
 
     Matrix* m = create_zero_matrix(3,3);
     print_matrix(m);
-    // write code to create matrix of the dimension provied in first and second arg
+    // HW5: write code to create matrix of the dimension provied in first and second arg
     // and initialize it with the values provided as the remaing args
 
     return 0;
