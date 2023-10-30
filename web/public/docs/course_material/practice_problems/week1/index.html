@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Practice problems for week - 1 (Week of 14 August)#None of the following problems require a knowledge of loops, conditional statements etc.
-Question 1#Problem Description#Keval has forgotten the password to his I-Pad. The password is a 4-digit number where each digit takes a value from 0 to 9. The good thing is that Keval remembers that his password had exactly two unique digits, and each of these digits appeared exactly twice in the password.">
+<meta name="description" content="Practice problems for week - 1 (Week of 14 August) # None of the following problems require a knowledge of loops, conditional statements etc.
+Question 1 # Problem Description # Keval has forgotten the password to his I-Pad. The password is a 4-digit number where each digit takes a value from 0 to 9. The good thing is that Keval remembers that his password had exactly two unique digits, and each of these digits appeared exactly twice in the password.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Week - 1" />
-<meta property="og:description" content="Practice problems for week - 1 (Week of 14 August)#None of the following problems require a knowledge of loops, conditional statements etc.
-Question 1#Problem Description#Keval has forgotten the password to his I-Pad. The password is a 4-digit number where each digit takes a value from 0 to 9. The good thing is that Keval remembers that his password had exactly two unique digits, and each of these digits appeared exactly twice in the password." />
+<meta property="og:description" content="Practice problems for week - 1 (Week of 14 August) # None of the following problems require a knowledge of loops, conditional statements etc.
+Question 1 # Problem Description # Keval has forgotten the password to his I-Pad. The password is a 4-digit number where each digit takes a value from 0 to 9. The good thing is that Keval remembers that his password had exactly two unique digits, and each of these digits appeared exactly twice in the password." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/practice_problems/week1/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-09-06T19:22:36+05:30" />
+
 <title>Week - 1 | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.9a337a48cb7086e0777ee4c520e9f196941294f223f755d2fce4d0b1e074e624.js" integrity="sha256-mjN6SMtwhuB3fuTFIOnxlpQSlPIj91XS/OTQseB05iQ=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.d1484bb161f97abe706e384b20f46b5c7054f06b6cf51f9df3829c87b02c92bb.js" integrity="sha256-0UhLsWH5er5wbjhLIPRrXHBU8Gts9R&#43;d84Kch7Askrs=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -671,8 +672,7 @@ that <code>n</code> digits (where,
   <a class="anchor" href="#input-constraints">#</a>
 </h3>
 <span>
-  \(
-0 \le n \le 10\)
+  \(0 \le n \le 10\)
 </span>
 
 <h3 id="input-format">
@@ -711,9 +711,9 @@ that <code>n</code> digits (where,
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">ans</span> <span style="color:#f92672">=</span> <span style="color:#111">((</span><span style="color:#ae81ff">10</span><span style="color:#f92672">-</span><span style="color:#111">n</span><span style="color:#111">)</span><span style="color:#f92672">*</span><span style="color:#111">(</span><span style="color:#ae81ff">10</span><span style="color:#f92672">-</span><span style="color:#111">n</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">))</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">6</span><span style="color:#111">;</span> <span style="color:#75715e">// (10-n)C2 * 4C2
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">ans</span><span style="color:#111">);</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">ans</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
@@ -731,8 +731,7 @@ that <code>n</code> digits (where,
   <a class="anchor" href="#input-constraints-1">#</a>
 </h3>
 <span>
-  \(
-1 \le x, y \le 10^9\)
+  \(1 \le x, y \le 10^9\)
 </span>
 
 <h3 id="input-format-1">
@@ -771,10 +770,10 @@ that <code>n</code> digits (where,
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#111">,</span> <span style="color:#111">y</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d %d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">x</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">y</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d %d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">x</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">y</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">z</span> <span style="color:#f92672">=</span> <span style="color:#111">x</span> <span style="color:#f92672">^</span> <span style="color:#111">y</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#111">z</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#111">z</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
@@ -835,14 +834,14 @@ that <code>n</code> digits (where,
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#111">reversed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Input a 4-digit number
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Enter a 4-digit number: &#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Enter a 4-digit number: &#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Reverse the number using modulo operator
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">reversed</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">10</span><span style="color:#111">)</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span> <span style="color:#f92672">+</span> <span style="color:#111">((</span><span style="color:#111">n</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">10</span><span style="color:#111">)</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">10</span><span style="color:#111">)</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">+</span> <span style="color:#111">((</span><span style="color:#111">n</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">100</span><span style="color:#111">)</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">10</span><span style="color:#111">)</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">+</span> <span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">1000</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Output the reversed number
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Reversed number: %d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">reversed</span><span style="color:#111">);</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Reversed number: %d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">reversed</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
@@ -896,7 +895,7 @@ that <code>n</code> digits (where,
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">int</span> <span style="color:#111">h</span><span style="color:#111">,</span> <span style="color:#111">m</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Take input in the specified format
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d:%d:%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">h</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">m</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">s</span><span style="color:#111">);</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d:%d:%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">h</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">m</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">s</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/**
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * Calculate the total minutes
@@ -907,7 +906,7 @@ that <code>n</code> digits (where,
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">float</span> <span style="color:#111">minutes</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#111">h</span> <span style="color:#f92672">+</span> <span style="color:#111">m</span> <span style="color:#f92672">+</span> <span style="color:#111">(</span><span style="color:#00a8c8">float</span><span style="color:#111">)</span><span style="color:#111">s</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">60</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Output the total minutes as a floating point number
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%f&#34;</span><span style="color:#111">,</span> <span style="color:#111">minutes</span><span style="color:#111">);</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%f&#34;</span><span style="color:#111">,</span> <span style="color:#111">minutes</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
 <h2 id="question-5">
@@ -924,8 +923,7 @@ that <code>n</code> digits (where,
 </span>
  and</p>
 <span>
-  \(
-\frac{lcm(a, b)}{gcd(a, b)} \le 3\)
+  \(\frac{lcm(a, b)}{gcd(a, b)} \le 3\)
 </span>
 
 <p>In this problem, <code>gcd(a, b)</code> denotes the <a href="https://en.wikipedia.org/wiki/Greatest_common_divisor">greatest common divisor</a> of the numbers <code>a</code> and <code>b</code>, and <code>lcm(a, b)</code> denotes their <a href="https://en.wikipedia.org/wiki/Least_common_multiple">lowest common multiple</a>.</p>
@@ -934,8 +932,7 @@ that <code>n</code> digits (where,
   <a class="anchor" href="#input-constraints-3">#</a>
 </h3>
 <span>
-  \(
-1 \le n \le 10^8\)
+  \(1 \le n \le 10^8\)
 </span>
 
 <h3 id="input-format-4">
@@ -974,10 +971,10 @@ that <code>n</code> digits (where,
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">ans</span> <span style="color:#f92672">=</span> <span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#111">((</span><span style="color:#111">n</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#111">)</span> <span style="color:#f92672">+</span> <span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">3</span><span style="color:#111">));</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#111">n</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>

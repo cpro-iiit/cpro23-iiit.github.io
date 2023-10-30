@@ -19,6 +19,8 @@ menu:
 
 [The C Book](http://publications.gbdirect.co.uk/c_book/) by Banahan, Brady, Doran
 
+[Practical Programming in C (MIT OCW)](https://ocw.mit.edu/courses/6-087-practical-programming-in-c-january-iap-2010/pages/lecture-notes/)
+
 
 [C and Unix Documentation](http://cslibrary.stanford.edu/) from the Stanford CS Education Library
 
@@ -31,3 +33,4 @@ menu:
 [Recursive and Loopy GCD in C](https://www.andreinc.net/2010/12/12/binary-gcd-steins-algorithm-in-c)
 
 [Sieve of Eratosthenes in C](https://www.andreinc.net/2010/12/12/sieve-of-eratosthenes-finding-all-prime-numbers-up-to-a-specific-integer)
+
