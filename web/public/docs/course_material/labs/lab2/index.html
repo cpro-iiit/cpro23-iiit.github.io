@@ -3,25 +3,24 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Lab 2 (Week of 21 August) # Question 1 - &ldquo;Divisibility By 3&rdquo; # Problem Description # Given an integer which has n digits, print YES if it is divisible by 3, and NO otherwise.
-Note: The input number will not contain any leading zeroes. Link to problem on OJ
-Input constraints # \(0 \le n \le 1000\) Input format # The first line of input contains a single integer n denoting the number of digits.">
+<meta name="description" content="Lab 2 (Week of 21 August)#Question 1 - &ldquo;Divisibility By 3&rdquo;#Problem Description#Given an integer which has n digits, print YES if it is divisible by 3, and NO otherwise.
+Note: The input number will not contain any leading zeroes.Link to problem on OJ
+Input constraints#\(0 \le n \le 1000\)Input format#The first line of input contains a single integer n denoting the number of digits.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Lab - 2" />
-<meta property="og:description" content="Lab 2 (Week of 21 August) # Question 1 - &ldquo;Divisibility By 3&rdquo; # Problem Description # Given an integer which has n digits, print YES if it is divisible by 3, and NO otherwise.
-Note: The input number will not contain any leading zeroes. Link to problem on OJ
-Input constraints # \(0 \le n \le 1000\) Input format # The first line of input contains a single integer n denoting the number of digits." />
+<meta property="og:description" content="Lab 2 (Week of 21 August)#Question 1 - &ldquo;Divisibility By 3&rdquo;#Problem Description#Given an integer which has n digits, print YES if it is divisible by 3, and NO otherwise.
+Note: The input number will not contain any leading zeroes.Link to problem on OJ
+Input constraints#\(0 \le n \le 1000\)Input format#The first line of input contains a single integer n denoting the number of digits." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/labs/lab2/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-10-16T01:05:22+05:30" />
-
 <title>Lab - 2 | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.d1484bb161f97abe706e384b20f46b5c7054f06b6cf51f9df3829c87b02c92bb.js" integrity="sha256-0UhLsWH5er5wbjhLIPRrXHBU8Gts9R&#43;d84Kch7Askrs=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.d2d393781d3073c82cce0e32bb3b18315aa2b39e2e0e292c8b2ee908afa03c56.js" integrity="sha256-0tOTeB0wc8gszg4yuzsYMVqis54uDiksiy7pCK&#43;gPFY=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -181,6 +180,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/course_material/lectures/27_10/" class="">II.7 Commandline Args &amp; Multifile Programming</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/30_10/" class="">II.8 Advanced Pointers</a>
   
 
         </li>
@@ -639,7 +651,8 @@ https://github.com/alex-shpak/hugo-book
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
 <script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
-  \(0 \le n \le 1000\)
+  \(
+0 \le n \le 1000\)
 </span>
 
 <h3 id="input-format">
@@ -682,15 +695,15 @@ https://github.com/alex-shpak/hugo-book
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">(</span><span style="color:#00a8c8">void</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">char</span> <span style="color:#111">c</span><span style="color:#111">;</span> <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%c&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">c</span><span style="color:#111">);</span> <span style="color:#75715e">//Skips the initial new line character
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">char</span> <span style="color:#111">c</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%c&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">c</span><span style="color:#111">);</span> <span style="color:#75715e">//Skips the initial new line character
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">int</span> <span style="color:#111">sum</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#f92672">--</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%c&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">c</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%c&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">c</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">sum</span> <span style="color:#f92672">+=</span> <span style="color:#111">c</span> <span style="color:#f92672">-</span> <span style="color:#d88200">&#39;0&#39;</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">sum</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span><span style="color:#111">)</span> <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;NO</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">else</span> <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;YES</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">sum</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span><span style="color:#111">)</span> <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;NO</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">else</span> <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;YES</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
@@ -703,7 +716,8 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#problem-description-1">#</a>
 </h3>
 <p>You are given three non-negative integers <code>x</code>, <code>y</code> and <code>k</code> where <span>
-  \(0 \le k \le 31\)
+  \(
+0 \le k \le 31\)
 </span>
 .
 Replace the first <code>k</code> bits (from the right) of <code>x</code> with the first <code>k</code> bits of <code>y</code> and print the new value of <code>x</code>. In other words, replace the <code>k</code> least significant bits of <code>x</code> with the corresponding bits from <code>y</code>.</p>
@@ -713,12 +727,14 @@ Replace the first <code>k</code> bits (from the right) of <code>x</code> with th
   <a class="anchor" href="#input-constraints-1">#</a>
 </h3>
 <p><span>
-  \(0 \le x,y \le 2^{31}\)
+  \(
+0 \le x,y \le 2^{31}\)
 </span>
 
 <br>
 <span>
-  \(0 \le k \le 31\)
+  \(
+0 \le k \le 31\)
 </span>
 </p>
 <h3 id="input-format-1">
@@ -757,10 +773,10 @@ Replace the first <code>k</code> bits (from the right) of <code>x</code> with th
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#111">,</span> <span style="color:#111">y</span><span style="color:#111">,</span> <span style="color:#111">k</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d %d %d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">x</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">y</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">k</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d %d %d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">x</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">y</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">k</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">x</span> <span style="color:#f92672">&amp;=</span> <span style="color:#111">(</span><span style="color:#f92672">~</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">k</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">y</span> <span style="color:#f92672">&amp;=</span> <span style="color:#f92672">~</span><span style="color:#111">(</span><span style="color:#f92672">~</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">k</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">x</span> <span style="color:#f92672">|</span> <span style="color:#111">y</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">x</span> <span style="color:#f92672">|</span> <span style="color:#111">y</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>

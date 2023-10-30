@@ -84,8 +84,9 @@ LinkedList insert(Person p, int pos, LinkedList l) {
     }
 }
 
+
 void insert_v2(Person p, int pos, LinkedList* l) {
-    *l = insert(p, pos, *l);
+    *l =insert(p, pos, *l);
 }
 
 LinkedList filterby_age(LinkedList l, int lower, int upper) {
@@ -110,6 +111,29 @@ LinkedList filter(LinkedList l, bool (*check)(Person)) {
     return l2;
 }
 
+Person best_by_age(LinkedList l) {
+    Person* p = &(l->data);
+    while (l != NULL) {
+        if (p->age <= l->data.age) {
+            p = &(l->data);
+        }
+        l = l->next;
+    }
+    return *p;
+}
+
+Person best(LinkedList l, bool (*compare_fn)(Person, Person)) {
+    Person* p = &(l->data);
+    while (l != NULL) {
+        if ((*compare_fn)(l->data, *p) == true) {
+            p = &(l->data);
+        }
+        l = l->next;
+    }
+    return *p;
+}
+
+
 LinkedList reverse(LinkedList l) {
     int s = size(l);
     LinkedList l2 = NULL;
@@ -119,21 +143,12 @@ LinkedList reverse(LinkedList l) {
     return l2;
 }
 
+
 void reverse_v2(LinkedList* l) {
     *l = reverse(*l);
 }
 
-Person best(LinkedList l, bool (*compare_fn)(Person, Person)) {
-    Person* b = &(l->data);
-    while(l!= NULL) {
-        if ((*compare_fn)(l->data, *b)) {
-            b = &(l->data);
-            // printf("Best person uptill now is %s\n", b->name); // for debugging
-        }
-        l = l->next;
-    }
-    return *b;
-}
+
 
 int main() {
     Node third = {
@@ -157,7 +172,7 @@ int main() {
     LinkedList l = &first;
     printf("Size of the list is %d\n", size(l));
     print_list(l);
-    l = reverse(l);
+    // l = reverse(l);
     reverse_v2(&l);
     print_list(l);
     // l = insert(D,2,l);
@@ -167,35 +182,35 @@ int main() {
     // line bellow is equivalent to line above
     insert_v2(D, 2, &l);
     insert_v2(E, 3, &l);
-    print_list(l);
+    // print_list(l);
 
-    bool compare_status(Person p, Person q) {  
-        // printf("Compare %s %s\n", p.name, q.name); //for debuging
-        return p.status >= q.status; 
-    }
-
-    bool compare_status_age(Person p, Person q) {  
-        // printf("Compare %s %s\n", p.name, q.name); // for debugging
-        return (p.status >= q.status) && (p.age >= q.age); 
-    }
-
-    printf("Best person is\n");
-    print_person(best(l, &compare_status_age));
-
-    bool check1(Person p) {
-        return p.status == Single && p.age < 24;
-    }
-
-    bool check2(Person p) {
-        return p.age <= 26 && p.age >= 16;
-    }
-
-    // bool (*check_person)(Person p) = &check1;
 
     // Problem2: Filter the linked list of person
     // who are Single and less than 24 in age.
-    l = filter(l, &check2);
+    // print_list(l);
+    bool check(Person p) {
+        return p.age >= 15 && p.age < 24;
+    }
+
+    bool check2(Person p) {
+        return p.status == Single && p.age < 24;
+    }
+
+    bool (*check_fn_ptr)(Person) = &check2;
+
+    l = filter(l, check_fn_ptr);
     print_list(l);
+
+    bool compare_by_age(Person p, Person q) {
+        return p.age >= q.age
+    }
+
+    bool compare_by_status(Person p, Person q) {
+        return p.status >= q.status
+    }
+
+    print_person(best(l,&compare_by_age));
+    print_person(best(l,&compare_by_status));
 
 
 

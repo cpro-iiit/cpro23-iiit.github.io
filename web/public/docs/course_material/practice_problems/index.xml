@@ -12,8 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/practice_problems/week1/</guid>
-      <description>Practice problems for week - 1 (Week of 14 August) # None of the following problems require a knowledge of loops, conditional statements etc.
-Question 1 # Problem Description # Keval has forgotten the password to his I-Pad. The password is a 4-digit number where each digit takes a value from 0 to 9. The good thing is that Keval remembers that his password had exactly two unique digits, and each of these digits appeared exactly twice in the password.</description>
+      <description>Practice problems for week - 1 (Week of 14 August)#None of the following problems require a knowledge of loops, conditional statements etc.
+Question 1#Problem Description#Keval has forgotten the password to his I-Pad. The password is a 4-digit number where each digit takes a value from 0 to 9. The good thing is that Keval remembers that his password had exactly two unique digits, and each of these digits appeared exactly twice in the password.</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@ Question 1 # Problem Description # Keval has forgotten the password to his I-Pad
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/practice_problems/week2/</guid>
-      <description>Practice problems for week - 2 (Week of 21 August) # Question 1 # Problem Description # You are given a 3 x 3 grid filled with integers 1 to 9, in the following way:
+      <description>Practice problems for week - 2 (Week of 21 August)#Question 1#Problem Description#You are given a 3 x 3 grid filled with integers 1 to 9, in the following way:
 1 2 3 4 5 6 7 8 9 You will be given two natural numbers A and B, both between 1 and 9. Your task is to find out if the two small squares with A and B written on them are horizontally adjacent.</description>
     </item>
     
@@ -32,9 +32,9 @@ Question 1 # Problem Description # Keval has forgotten the password to his I-Pad
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/practice_problems/week4/</guid>
-      <description>Practice problems for week 4 # Question 1 - &amp;ldquo;Divisibility by 11&amp;rdquo; # Problem Description # Given an integer which has \(n\) digits, print YES if it is divisible by \(11\) and NO otherwise.
+      <description>Practice problems for week 4#Question 1 - &amp;ldquo;Divisibility by 11&amp;rdquo;#Problem Description#Given an integer which has \(n\)digits, print YES if it is divisible by \(11\)and NO otherwise.
 Note that the input number may contain leading zeroes.
-Note that a number is divisible by \(11\) if and only if the difference of the sum of digits at odd positions and sum of digits at even positions in a number is divisible by 11.</description>
+Note that a number is divisible by \(11\)if and only if the difference of the sum of digits at odd positions and sum of digits at even positions in a number is divisible by 11.</description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@ Note that a number is divisible by \(11\) if and only if the difference of the s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/practice_problems/week6/</guid>
-      <description>Practice problems for week 6 # Question 1 - &amp;ldquo;Non-Fancy Trains&amp;rdquo; # Problem Description # There are \(n\) stations numbered \(1, 2, ... n\) . Stations \(i\) and \(j\) are connected via a train ( \(1 \le i, j \le n\) ) iff \(|i - j| \le 2\) . The price of such a train would be \(|a_i - a_{j}|\) where \(a_i\) is an input array denoting the ratings of stations.</description>
+      <description>Practice problems for week 6#Question 1 - &amp;ldquo;Non-Fancy Trains&amp;rdquo;#Problem Description#There are \(n\)stations numbered \(1, 2, ... n\). Stations \(i\)and \(j\)are connected via a train (\(1 \le i, j \le n\)) iff \(|i - j| \le 2\). The price of such a train would be \(|a_i - a_{j}|\)where \(a_i\)is an input array denoting the ratings of stations.</description>
     </item>
     
   </channel>
