@@ -197,7 +197,5 @@ int main() {
     l = filter(l, &check2);
     print_list(l);
 
-
-
     return 0;
 }

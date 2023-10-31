@@ -12,13 +12,13 @@ void insert_v2(Person p, int pos, LinkedList* l) { *l = insert(p, pos, *l); } vo
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/lectures/30_10/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-10-31T08:36:51+05:30" />
+<meta property="article:modified_time" content="2023-10-31T09:04:31+05:30" />
 <title>II.8 Advanced Pointers | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.67beb15d2ad99a9f93c219ac775d45739059aa7ad89fc5448c9d4d31132cb2e0.js" integrity="sha256-Z76xXSrZmp&#43;Twhmsd11Fc5BZqnrYn8VEjJ1NMRMssuA=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.f319a644462057489b1c3418d74446a6fd66f3912e608cab2102f078c573157b.js" integrity="sha256-8xmmREYgV0ibHDQY10RGpv1m85EuYIyrIQLweMVzFXs=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -824,7 +824,7 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#homework-2">#</a>
 </h2>
 <p>Suppose you want to find some aggregate value of the elements of the linked list with integer data field. For example,
-sum of all elements, sum of squares of all elements, sum of absolute values of all elements, product of all elements etc.</p>
+sum of all elements, sum of squares of all elements, sum of absolute values of all elements etc.</p>
 <p>Write an <code>aggregate</code> function which takes the linked list and a function pointer as arguments. The function pointer should be able to point to functions which implement any of the above functionalites. The <code>aggregate</code> function should return the aggregate value.</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">Node</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">Person</span> <span style="color:#111">data</span><span style="color:#111">;</span>
@@ -835,7 +835,7 @@ sum of all elements, sum of squares of all elements, sum of absolute values of a
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Write functions to find sum of all elements, 
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">// sum of squares of all elements, sum of absolute 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// values of all elements, product of all elements
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// values of all elements
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Generalize above functions to get an agregate function 
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">// which the takes the a function poiner where the
@@ -1059,7 +1059,7 @@ sum of all elements, sum of squares of all elements, sum of absolute values of a
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/69a7cf6a40d48988587ca70a46c51a9c8dcde18d" title='Last modified by Girish Varma | October 31, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/7abaedec52829bc367f803d349c0bbd8d7f3e38b" title='Last modified by Girish Varma | October 31, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>October 31, 2023</span>
     </a>
