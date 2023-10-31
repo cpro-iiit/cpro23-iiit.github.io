@@ -190,7 +190,7 @@ int main() {
         return p.age <= 26 && p.age >= 16;
     }
 
-    // bool (*check_person)(Person p) = &check1;
+    bool (*check_person)(Person p) = &check1;
 
     // Problem2: Filter the linked list of person
     // who are Single and less than 24 in age.
