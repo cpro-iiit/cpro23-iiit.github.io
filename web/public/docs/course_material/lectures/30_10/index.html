@@ -12,13 +12,13 @@ void insert_v2(Person p, int pos, LinkedList* l) { *l = insert(p, pos, *l); } vo
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/lectures/30_10/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-10-31T08:34:42+05:30" />
+<meta property="article:modified_time" content="2023-10-31T08:36:51+05:30" />
 <title>II.8 Advanced Pointers | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.b7aa615aea55ac22374999310606a9f76d0404626c0d0a93e0004824abcc9794.js" integrity="sha256-t6phWupVrCI3SZkxBgap920EBGJsDQqT4ABIJKvMl5Q=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.67beb15d2ad99a9f93c219ac775d45739059aa7ad89fc5448c9d4d31132cb2e0.js" integrity="sha256-Z76xXSrZmp&#43;Twhmsd11Fc5BZqnrYn8VEjJ1NMRMssuA=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -598,7 +598,8 @@ https://github.com/alex-shpak/hugo-book
           </ul>
         </li>
         <li><a href="#find-best-person">Find Best Person</a></li>
-        <li><a href="#homework">Homework</a></li>
+        <li><a href="#homework-1">Homework 1</a></li>
+        <li><a href="#homework-2">Homework 2</a></li>
         <li><a href="#full-code">Full Code</a></li>
       </ul>
     </li>
@@ -796,9 +797,9 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Best person is</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#75af00">print_person</span><span style="color:#111">(</span><span style="color:#75af00">best</span><span style="color:#111">(</span><span style="color:#111">l</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">compare_status_age</span><span style="color:#111">));</span>
-</span></span></code></pre></div><h2 id="homework">
-  Homework
-  <a class="anchor" href="#homework">#</a>
+</span></span></code></pre></div><h2 id="homework-1">
+  Homework 1
+  <a class="anchor" href="#homework-1">#</a>
 </h2>
 <p>Suppose you want to print every person in the linkedlist and would like to customize how each person is printed.</p>
 <p>Use a function pointer as a second argument to <code>print_list</code> function, which prints the person in a customized way. You should be able to pass the pointer to <code>print_person</code> function or any other similar function.</p>
@@ -818,6 +819,30 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;-----------------------------------</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h2 id="homework-2">
+  Homework 2
+  <a class="anchor" href="#homework-2">#</a>
+</h2>
+<p>Suppose you want to find some aggregate value of the elements of the linked list with integer data field. For example,
+sum of all elements, sum of squares of all elements, sum of absolute values of all elements, product of all elements etc.</p>
+<p>Write an <code>aggregate</code> function which takes the linked list and a function pointer as arguments. The function pointer should be able to point to functions which implement any of the above functionalites. The <code>aggregate</code> function should return the aggregate value.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">Node</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Person</span> <span style="color:#111">data</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">struct</span> <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">Node</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">LinkedList</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Write functions to find sum of all elements, 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// sum of squares of all elements, sum of absolute 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// values of all elements, product of all elements
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Generalize above functions to get an agregate function 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// which the takes the a function poiner where the
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// aggregation method can be passed. 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">int</span> <span style="color:#75af00">aggregate</span><span style="color:#111">(</span><span style="color:#111">LinkedList</span> <span style="color:#111">l</span><span style="color:#111">,</span> <span style="color:#75715e">/* function pointer here */</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// code for aggregae here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span>
 </span></span></code></pre></div><h2 id="full-code">
   Full Code
   <a class="anchor" href="#full-code">#</a>
@@ -1034,7 +1059,7 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/d2bea5f8799433d7cf10c5cf3d8872b2691e66b3" title='Last modified by Girish Varma | October 31, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/69a7cf6a40d48988587ca70a46c51a9c8dcde18d" title='Last modified by Girish Varma | October 31, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>October 31, 2023</span>
     </a>
@@ -1083,7 +1108,8 @@ https://github.com/alex-shpak/hugo-book
           </ul>
         </li>
         <li><a href="#find-best-person">Find Best Person</a></li>
-        <li><a href="#homework">Homework</a></li>
+        <li><a href="#homework-1">Homework 1</a></li>
+        <li><a href="#homework-2">Homework 2</a></li>
         <li><a href="#full-code">Full Code</a></li>
       </ul>
     </li>
