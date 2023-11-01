@@ -79,5 +79,14 @@
 void insert_v2(Person p, int pos, LinkedList* l) { *l = insert(p, pos, *l); } void reverse_v2(LinkedList* l) { *l = reverse(*l); } int main() { Node third = { {&amp;#34;Alice&amp;#34;, 22, Single}, NULL }; Node second = { {&amp;#34;Bob&amp;#34;, 26, Married}, &amp;amp;third }; Node first = { {&amp;#34;Charlie&amp;#34;, 20, Engaged}, &amp;amp;second }; Person D = {&amp;#34;Raj&amp;#34;, 18, NotMentioned}; Node l2 = { D, NULL}; Person E = {&amp;#34;Eve&amp;#34;, 28, Married}; Node l3 = { E, NULL}; LinkedList l = &amp;amp;first; printf(&amp;#34;Size of the list is %d\n&amp;#34;, size(l)); print_list(l); //l = reverse(l); reverse_v2(&amp;amp;l); print_list(l); // l = insert(D,2,l); // Problem1: Write the insert function such that, // we dont need to reassign l to the return value // of the function to update it.</description>
     </item>
     
+    <item>
+      <title>II.9 File Handling</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/lectures/01_11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/docs/course_material/lectures/01_11/</guid>
+      <description>II.9 File Handling#Opening/Closing a file##include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; /* File pointer to hold reference to our file */ FILE * fPtr; /* * Open file in w (write) mode. &amp;#34;data/file1.txt&amp;#34; is complete path to create file */ fPtr = fopen(&amp;#34;data/file1.txt&amp;#34;, &amp;#34;w&amp;#34;); /* fopen() return NULL if last operation was unsuccessful */ if(fPtr == NULL) { /* File not created hence exit */ printf(&amp;#34;Unable to create file.</description>
+    </item>
+    
   </channel>
 </rss>

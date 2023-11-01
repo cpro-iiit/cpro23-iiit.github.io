@@ -6,10 +6,17 @@
 #include <stdlib.h>
 
 
-int main()
+int main(int argc, char* argv[])
 {
+
+    if (argc != 3) {
+        printf("Invalid args");
+        exit(0);
+    }
+
     /* File pointer to hold reference to our file */
-    FILE * fPtr;
+    FILE * s =fopen(argv[1], "r");
+    FILE* d = fopen(argv[2], "w")
 
     char ch;
 
@@ -17,7 +24,7 @@ int main()
      * Open file in r (read) mode. 
      * "data/file1.txt" is complete file path to read
      */
-    fPtr = fopen("text.txt", "w");
+    fPtr = fopen("text.txt", "r");
 
 
     /* fopen() return NULL if last operation was unsuccessful */

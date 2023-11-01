@@ -2,7 +2,6 @@
 theme: default
 class: 
     - lead
-    - invert
 size: 4:3
 paginate: true
 marp: true
@@ -10,11 +9,56 @@ marp: true
 # Comp. Prog.
 ## File Handling
 
----
+http://bit.ly/cpro-iiit-file-handling
 
+---
 # Opening/Closing a file
 
 ```c
+#include <stdlib.h>
+/* File pointer to hold reference to our file */
+FILE * fPtr;
+```
+---
+# Opening/Closing a file
+
+```c
+#include <stdlib.h>
+/* File pointer to hold reference to our file */
+FILE * fPtr;
+/* 
+* Open file in w (write) mode. "data/file1.txt" 
+is complete path to create file
+*/
+fPtr = fopen("data/file1.txt", "w");
+```
+---
+# Opening/Closing a file
+
+```c
+#include <stdlib.h>
+/* File pointer to hold reference to our file */
+FILE * fPtr;
+/* 
+* Open file in w (write) mode. "data/file1.txt" 
+is complete path to create file
+*/
+fPtr = fopen("data/file1.txt", "w");
+/* fopen() return NULL if last operation 
+was unsuccessful */
+if(fPtr == NULL)
+{
+    /* File not created hence exit */
+    printf("Unable to create file.\n");
+    exit(0);
+}
+```
+---
+# Opening/Closing a file
+
+```c
+#include <stdlib.h>
+#include <stdio.h>
 /* File pointer to hold reference to our file */
 FILE * fPtr;
 /* 
@@ -34,7 +78,6 @@ if(fPtr == NULL)
 to release resource */
 fclose(fPtr);
 ```
-
 ---
 # Reading from file
 

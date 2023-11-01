@@ -21,6 +21,7 @@ menu:
 
 [Practical Programming in C (MIT OCW)](https://ocw.mit.edu/courses/6-087-practical-programming-in-c-january-iap-2010/pages/lecture-notes/)
 
+[Object-Oriented Programming With ANSI-C](https://www.cs.rit.edu/~ats/books/ooc.pdf)
 
 [C and Unix Documentation](http://cslibrary.stanford.edu/) from the Stanford CS Education Library
 

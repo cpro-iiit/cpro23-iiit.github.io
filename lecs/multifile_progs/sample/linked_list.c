@@ -1,5 +1,6 @@
 #include "linked_list.h"
 #include "stdlib.h"
+
 int size(LinkedList l) {
     return l == NULL? 0: 1+size(l->next);
 }

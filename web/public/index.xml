@@ -161,6 +161,15 @@ void insert_v2(Person p, int pos, LinkedList* l) { *l = insert(p, pos, *l); } vo
     </item>
     
     <item>
+      <title>II.9 File Handling</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/lectures/01_11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/docs/course_material/lectures/01_11/</guid>
+      <description>II.9 File Handling#Opening/Closing a file##include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; /* File pointer to hold reference to our file */ FILE * fPtr; /* * Open file in w (write) mode. &amp;#34;data/file1.txt&amp;#34; is complete path to create file */ fPtr = fopen(&amp;#34;data/file1.txt&amp;#34;, &amp;#34;w&amp;#34;); /* fopen() return NULL if last operation was unsuccessful */ if(fPtr == NULL) { /* File not created hence exit */ printf(&amp;#34;Unable to create file.</description>
+    </item>
+    
+    <item>
       <title>Lab - 1</title>
       <link>https://cpro-iiit.github.io/docs/course_material/labs/lab1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -246,11 +255,11 @@ Variables, functions, arrays, strings
 C Structs and Pointers
 The C Book by Banahan, Brady, Doran
 Practical Programming in C (MIT OCW)
+Object-Oriented Programming With ANSI-C
 C and Unix Documentation from the Stanford CS Education Library
 A C programming course by Steve Summit, online course material
 Programming in C by A.D. Marshall, notes and examples
-Recursive and Loopy GCD in C
-Sieve of Eratosthenes in C</description>
+Recursive and Loopy GCD in C</description>
     </item>
     
     <item>

@@ -13,7 +13,7 @@ int main()
     char data[DATA_SIZE];
 
     /* File pointer to hold reference to our file */
-    FILE * fPtr;
+    FILE* fPtr;
 
     /* 
      * Open file in w (write) mode. 
@@ -35,9 +35,15 @@ int main()
 
     /* Write data to file */
     fputs(data, fPtr);
+    fputs(data, fPtr);
 
     /* Close file to save file data */
     fclose(fPtr);
+
+
+
+
+
 
     /* Success message */
     printf("File created and saved successfully. :) \n");
