@@ -25,6 +25,7 @@ menu:
 
 [C and Unix Documentation](http://cslibrary.stanford.edu/) from the Stanford CS Education Library
 
+C Primer from Brown: [Part 1](https://cs.brown.edu/courses/csci0300/2023/assets/c-primer1.html) [Part 2](https://cs.brown.edu/courses/csci0300/2023/assets/c-primer2.html) [Part 3: Debugging](https://cs.brown.edu/courses/csci0300/2023/assets/c-primer3.html)   
 
 [A C programming course](https://www.eskimo.com/~scs/cclass/notes/top.html) by Steve Summit, online course material
 
