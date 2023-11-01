@@ -130,7 +130,7 @@ LinkedList delete_by_name(char* name, LinkedList l) {
         return tail;
     } else {
         l->next = delete_by_name(name, l->next);
-        return l;
+        return l;z
     }
 }
 
