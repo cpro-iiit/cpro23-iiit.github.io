@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="II.6 More Linked List Problems#Reverse a LinkedList in place#LinkedList node_append(Node* n, LinkedList l) { if (l == NULL) { return n; } else { l-&gt;next = node_append(n, l-&gt;next); return l; } } // Recursive Solution LinkedList reverse_in_place(LinkedList l) { if (l == NULL) { return l; } else { LinkedList rev = reverse_in_place(l-&gt;next); l-&gt;next = NULL; rev = node_append(l, rev); return rev; } } Free memory in a LinkedList#void free_linked_list(LinkedList l) { if (l == NULL) { return; } else { LinkedList tail = l-&gt;next; free(l); free_linked_list(tail); } } Sort a LinkedList#// assuming a &lt; b // swaping is done by copy the data field in Node LinkedList swap(LinkedList l, int a, int b) { LinkedList head = l; Person temp; Node* a_ptr; Node* b_ptr; // Find above while(a &gt;= 1) { l = l-&gt;next; a--; b--; } a_ptr = l; while(b &gt;= 1) { l = l-&gt;next; b--; } b_ptr = l; temp = a_ptr-&gt;data; a_ptr-&gt;data = b_ptr-&gt;data; b_ptr-&gt;data = temp; return head; } LinkedList sort(LinkedList l) { // sort the linked list l and return it.">
+<meta name="description" content="06 More Linked List Problems#Reverse a LinkedList in place#LinkedList node_append(Node* n, LinkedList l) { if (l == NULL) { return n; } else { l-&gt;next = node_append(n, l-&gt;next); return l; } } // Recursive Solution LinkedList reverse_in_place(LinkedList l) { if (l == NULL) { return l; } else { LinkedList rev = reverse_in_place(l-&gt;next); l-&gt;next = NULL; rev = node_append(l, rev); return rev; } } Free memory in a LinkedList#void free_linked_list(LinkedList l) { if (l == NULL) { return; } else { LinkedList tail = l-&gt;next; free(l); free_linked_list(tail); } } Sort a LinkedList#// assuming a &lt; b // swaping is done by copy the data field in Node LinkedList swap(LinkedList l, int a, int b) { LinkedList head = l; Person temp; Node* a_ptr; Node* b_ptr; // Find above while(a &gt;= 1) { l = l-&gt;next; a--; b--; } a_ptr = l; while(b &gt;= 1) { l = l-&gt;next; b--; } b_ptr = l; temp = a_ptr-&gt;data; a_ptr-&gt;data = b_ptr-&gt;data; b_ptr-&gt;data = temp; return head; } LinkedList sort(LinkedList l) { // sort the linked list l and return it.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="II.6 More Linked List Problems" />
-<meta property="og:description" content="II.6 More Linked List Problems#Reverse a LinkedList in place#LinkedList node_append(Node* n, LinkedList l) { if (l == NULL) { return n; } else { l-&gt;next = node_append(n, l-&gt;next); return l; } } // Recursive Solution LinkedList reverse_in_place(LinkedList l) { if (l == NULL) { return l; } else { LinkedList rev = reverse_in_place(l-&gt;next); l-&gt;next = NULL; rev = node_append(l, rev); return rev; } } Free memory in a LinkedList#void free_linked_list(LinkedList l) { if (l == NULL) { return; } else { LinkedList tail = l-&gt;next; free(l); free_linked_list(tail); } } Sort a LinkedList#// assuming a &lt; b // swaping is done by copy the data field in Node LinkedList swap(LinkedList l, int a, int b) { LinkedList head = l; Person temp; Node* a_ptr; Node* b_ptr; // Find above while(a &gt;= 1) { l = l-&gt;next; a--; b--; } a_ptr = l; while(b &gt;= 1) { l = l-&gt;next; b--; } b_ptr = l; temp = a_ptr-&gt;data; a_ptr-&gt;data = b_ptr-&gt;data; b_ptr-&gt;data = temp; return head; } LinkedList sort(LinkedList l) { // sort the linked list l and return it." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="06 More Linked List Problems" />
+<meta property="og:description" content="06 More Linked List Problems#Reverse a LinkedList in place#LinkedList node_append(Node* n, LinkedList l) { if (l == NULL) { return n; } else { l-&gt;next = node_append(n, l-&gt;next); return l; } } // Recursive Solution LinkedList reverse_in_place(LinkedList l) { if (l == NULL) { return l; } else { LinkedList rev = reverse_in_place(l-&gt;next); l-&gt;next = NULL; rev = node_append(l, rev); return rev; } } Free memory in a LinkedList#void free_linked_list(LinkedList l) { if (l == NULL) { return; } else { LinkedList tail = l-&gt;next; free(l); free_linked_list(tail); } } Sort a LinkedList#// assuming a &lt; b // swaping is done by copy the data field in Node LinkedList swap(LinkedList l, int a, int b) { LinkedList head = l; Person temp; Node* a_ptr; Node* b_ptr; // Find above while(a &gt;= 1) { l = l-&gt;next; a--; b--; } a_ptr = l; while(b &gt;= 1) { l = l-&gt;next; b--; } b_ptr = l; temp = a_ptr-&gt;data; a_ptr-&gt;data = b_ptr-&gt;data; b_ptr-&gt;data = temp; return head; } LinkedList sort(LinkedList l) { // sort the linked list l and return it." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/lectures/18_10/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-10-18T17:12:56+05:30" />
-<title>II.6 More Linked List Problems | CPro Mon 23</title>
+<title>06 More Linked List Problems | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.da490e65435bd716d30e2dec61ad996962940ebfdd6478d969f7505c28276fa0.js" integrity="sha256-2kkOZUNb1xbTDi3sYa2ZaWKUDr/dZHjZafdQXCgnb6A=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.72cfc659735fb92abc6b5a4a59c72fb3766b175bdbac0d1ba0eea8c79230c1f9.js" integrity="sha256-cs/GWXNfuSq8a1pKWccvs3ZrF1vbrA0boO6ox5Iwwfk=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -97,7 +97,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/4_10/" class="">II.1 Typedef, Struct Initialization, Passing Pointers</a>
+    <a href="/docs/course_material/lectures/4_10/" class="">01 Typedef, Struct Initialization, Passing Pointers</a>
   
 
         </li>
@@ -110,7 +110,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/6_10/" class="">II.2 Strings and Enums</a>
+    <a href="/docs/course_material/lectures/6_10/" class="">02 Strings and Enums</a>
   
 
         </li>
@@ -123,7 +123,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/9_10/" class="">II.3 Macros, More Intializers in Social Nets</a>
+    <a href="/docs/course_material/lectures/9_10/" class="">03 Macros, More Intializers in Social Nets</a>
   
 
         </li>
@@ -136,7 +136,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/11_10/" class="">II.4 Linked Lists</a>
+    <a href="/docs/course_material/lectures/11_10/" class="">04 Linked Lists</a>
   
 
         </li>
@@ -149,7 +149,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/16_10/" class="">II.5 Linked Lists Problems</a>
+    <a href="/docs/course_material/lectures/16_10/" class="">05 Linked Lists Problems</a>
   
 
         </li>
@@ -162,7 +162,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/18_10/" class="active">II.6 More Linked List Problems</a>
+    <a href="/docs/course_material/lectures/18_10/" class="active">06 More Linked List Problems</a>
   
 
         </li>
@@ -175,7 +175,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/27_10/" class="">II.7 Commandline Args &amp; Multifile Programming</a>
+    <a href="/docs/course_material/lectures/27_10/" class="">07 Commandline Args &amp; Multifile Programming</a>
   
 
         </li>
@@ -188,7 +188,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/30_10/" class="">II.8 Advanced Pointers</a>
+    <a href="/docs/course_material/lectures/30_10/" class="">08 Advanced Pointers</a>
   
 
         </li>
@@ -201,11 +201,45 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/01_11/" class="">II.9 File Handling</a>
+    <a href="/docs/course_material/lectures/01_11/" class="">09 File Handling</a>
   
 
         </li>
       
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/03_11/" class="">10 Libraries</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-90a314cddc7653eaa69fc854482ea78b" class="toggle"  />
+    <label for="section-90a314cddc7653eaa69fc854482ea78b" class="flex justify-between">
+      <a href="/docs/course_material/project/" class="">Project</a>
+    </label>
+  
+
+          
+  <ul>
     
   </ul>
 
@@ -588,7 +622,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>II.6 More Linked List Problems</strong>
+  <strong>06 More Linked List Problems</strong>
 
   <label for="toc-control">
     
@@ -604,7 +638,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ii6-more-linked-list-problems">II.6 More Linked List Problems</a>
+    <li><a href="#06-more-linked-list-problems">06 More Linked List Problems</a>
       <ul>
         <li><a href="#reverse-a-linkedlist-in-place">Reverse a LinkedList in place</a></li>
         <li><a href="#free-memory-in-a-linkedlist">Free memory in a LinkedList</a></li>
@@ -625,9 +659,9 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="ii6-more-linked-list-problems">
-  II.6 More Linked List Problems
-  <a class="anchor" href="#ii6-more-linked-list-problems">#</a>
+  <article class="markdown"><h1 id="06-more-linked-list-problems">
+  06 More Linked List Problems
+  <a class="anchor" href="#06-more-linked-list-problems">#</a>
 </h1>
 <hr>
 <h2 id="reverse-a-linkedlist-in-place">
@@ -932,7 +966,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ii6-more-linked-list-problems">II.6 More Linked List Problems</a>
+    <li><a href="#06-more-linked-list-problems">06 More Linked List Problems</a>
       <ul>
         <li><a href="#reverse-a-linkedlist-in-place">Reverse a LinkedList in place</a></li>
         <li><a href="#free-memory-in-a-linkedlist">Free memory in a LinkedList</a></li>

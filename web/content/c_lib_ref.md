@@ -17,6 +17,5 @@ menu:
 
 [Sorting & Searching](https://en.cppreference.com/w/c/algorithm)  
 
-
 [Another C Library Reference](https://cplusplus.com/reference/clibrary/)
 
