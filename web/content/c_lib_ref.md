@@ -2,7 +2,7 @@
 title: C Library Reference
 menu:
   after:
-    name: grading
+    name: lib_reference
     weight: 7
 ---
 # C Library Reference

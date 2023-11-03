@@ -3,7 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-
+#include <time.h>
+ 
 
 typedef enum RelStatus {
     NotMentioned,
@@ -58,6 +59,8 @@ void print_network(SocialNet social_net) {
 
 int main()
 {
+    
+    clock_t now = clock();
     SocialNet social_net = {
         {
             {"Alice", 24, NotMentioned},
@@ -75,5 +78,11 @@ int main()
     social_net.members[1].count_friends = 0;
 
     print_network(social_net);
+
+    
+    clock_t later = clock();
+ 
+    printf("%d %d %f\n", later, now, ((float)(later-now)/ CLOCKS_PER_SEC));
+ 
     return 0;
 }
