@@ -13,6 +13,9 @@ menu:
 
 [C Programing Textbook](https://icarus.cs.weber.edu/~dab/cs1410/textbook/basics.html)
 
+[C Programming Wikibook](https://en.wikibooks.org/wiki/C_Programming)
+
+
 [Variables, functions, arrays, strings](https://www.cs.swarthmore.edu/~newhall/cs31/resources/C-intro.php)
 
 [C Structs and Pointers](https://www.cs.swarthmore.edu/~newhall/cs31/resources/C-structs_pointers.php)

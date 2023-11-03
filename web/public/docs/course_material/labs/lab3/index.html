@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Lab 3 (Week of 4 September)#Question 1 - &ldquo;Club Recruitments&rdquo;#Problem Description#A new student club is organising a huge event this semester for silver jubilee celebrations. Initially, they don&rsquo;t have enough members. So, they started recruiting new members in groups.
+<meta name="description" content="Lab 3 (Week of 4 September) # Question 1 - &ldquo;Club Recruitments&rdquo; # Problem Description # A new student club is organising a huge event this semester for silver jubilee celebrations. Initially, they don&rsquo;t have enough members. So, they started recruiting new members in groups.
 Meanwhile, tasks keep coming up within the club. Each club member can work on only one task during the semester.
 If there is no member available (isn&rsquo;t occupied with a task) when a task arises, it will remain unattended regardless of whether new individuals are recruited later on.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Lab - 3" />
-<meta property="og:description" content="Lab 3 (Week of 4 September)#Question 1 - &ldquo;Club Recruitments&rdquo;#Problem Description#A new student club is organising a huge event this semester for silver jubilee celebrations. Initially, they don&rsquo;t have enough members. So, they started recruiting new members in groups.
+<meta property="og:description" content="Lab 3 (Week of 4 September) # Question 1 - &ldquo;Club Recruitments&rdquo; # Problem Description # A new student club is organising a huge event this semester for silver jubilee celebrations. Initially, they don&rsquo;t have enough members. So, they started recruiting new members in groups.
 Meanwhile, tasks keep coming up within the club. Each club member can work on only one task during the semester.
 If there is no member available (isn&rsquo;t occupied with a task) when a task arises, it will remain unattended regardless of whether new individuals are recruited later on." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/labs/lab3/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-10-16T01:12:56+05:30" />
+
 <title>Lab - 3 | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.8e231dc986ad37a24f77abca4139a3d67ef03c8bd27091535c5306cfd33ec219.js" integrity="sha256-jiMdyYatN6JPd6vKQTmj1n7wPIvScJFTXFMGz9M&#43;whk=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.2e73c6798a0213375ab1b9394401be0f30a12f6d8ecd9d59337d5424980ab640.js" integrity="sha256-LnPGeYoCEzdasbk5RAG&#43;DzChL22OzZ1ZM31UJJgKtkA=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -542,8 +543,8 @@ https://github.com/alex-shpak/hugo-book
   </li>
   
   <li>
-    <a href="/grading_scheme/"  >
-        Grading Scheme
+    <a href="/c_lib_ref/"  >
+        C Library Reference
       </a>
   </li>
   
@@ -665,14 +666,12 @@ https://github.com/alex-shpak/hugo-book
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
 <script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
-  \(
-1 \le N \le 2 \times 10^5\)
+  \(1 \le N \le 2 \times 10^5\)
 </span>
 
 <br>
 <span>
-  \(
-A_i \in [-1, 10]\)
+  \(A_i \in [-1, 10]\)
 </span>
 </p>
 <h3 id="input-format">
@@ -718,14 +717,14 @@ A_i \in [-1, 10]\)
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">pref</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#111">ans</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">x</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#111">;</span> <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">x</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">pref</span> <span style="color:#f92672">+=</span> <span style="color:#111">x</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">pref</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">ans</span><span style="color:#f92672">++</span><span style="color:#111">,</span> <span style="color:#111">pref</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">ans</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">ans</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
@@ -748,14 +747,12 @@ A_i \in [-1, 10]\)
   <a class="anchor" href="#input-constraints-1">#</a>
 </h3>
 <p><span>
-  \(
-1 \le N \le 2 \times 10^5\)
+  \(1 \le N \le 2 \times 10^5\)
 </span>
 
 <br>
 <span>
-  \(
-0 \le A_i \le 10^9\)
+  \(0 \le A_i \le 10^9\)
 </span>
 </p>
 <h3 id="input-format-1">
@@ -798,16 +795,16 @@ A_i \in [-1, 10]\)
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">final</span><span style="color:#111">[</span><span style="color:#111">n</span><span style="color:#111">];</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">sz</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">x</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#111">;</span> <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">x</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#f92672">!</span><span style="color:#111">sz</span> <span style="color:#f92672">||</span> <span style="color:#111">final</span><span style="color:#111">[</span><span style="color:#111">sz</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">x</span><span style="color:#111">)</span> <span style="color:#111">final</span><span style="color:#111">[</span><span style="color:#111">sz</span><span style="color:#f92672">++</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">x</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">sz</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">sz</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d &#34;</span><span style="color:#111">,</span> <span style="color:#111">final</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">sz</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">sz</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d &#34;</span><span style="color:#111">,</span> <span style="color:#111">final</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
