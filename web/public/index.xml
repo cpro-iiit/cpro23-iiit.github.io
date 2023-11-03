@@ -17,18 +17,6 @@ We recommend the usage of Linux as this would be advantageous for your future co
     </item>
     
     <item>
-      <title></title>
-      <link>https://cpro-iiit.github.io/docs/course_material/project/snake/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/docs/course_material/project/snake/</guid>
-      <description>Conceptual Overview#Snakes#A snake game can be represented by a grid of characters. The grid contains walls, fruits, and one or more snakes. An example of a game is shown below:
-##############
-#dv #v # #v # #s &amp;raquo;D # #v # #*A&amp;lt; * # ################ The grid has the following special characters:
-# denotes a wall. (space character) denotes an empty space.</description>
-    </item>
-    
-    <item>
       <title>Linux Tools Course</title>
       <link>https://cpro-iiit.github.io/posts/linux_tools_course/</link>
       <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
