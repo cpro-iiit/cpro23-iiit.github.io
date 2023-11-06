@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="10 Reading\Writing Binary Data#Store Reciept Management System#srms.h##include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #include &lt;time.h&gt; #include &lt;string.h&gt; typedef struct Customer { char name[100]; int phone_no; } Customer; typedef enum PayMode { Cash = 0, Card = 1, UPI = 2 } PayMode; typedef struct Reciept { time_t time; float value; // Customer *customer; int customer_index; PayMode mode; } Reciept; typedef struct Database { Customer customers[100]; Reciept reciepts[1000]; int customer_count; int reciept_count; } Database; int add_customer(char *name, int phone_no, Database *db); Reciept* add_reciept(int value, int c, PayMode mode, Database *db); int find_customer_by_phone_no(int phone, Database *db); srms.">
+<meta name="description" content="11 Reading\Writing Binary Data#Store Reciept Management System#srms.h##include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #include &lt;time.h&gt; #include &lt;string.h&gt; typedef struct Customer { char name[100]; int phone_no; } Customer; typedef enum PayMode { Cash = 0, Card = 1, UPI = 2 } PayMode; typedef struct Reciept { time_t time; float value; // Customer *customer; int customer_index; PayMode mode; } Reciept; typedef struct Database { Customer customers[100]; Reciept reciepts[1000]; int customer_count; int reciept_count; } Database; int add_customer(char *name, int phone_no, Database *db); Reciept* add_reciept(int value, int c, PayMode mode, Database *db); int find_customer_by_phone_no(int phone, Database *db); srms.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="11 File I/O: Binary Data" />
-<meta property="og:description" content="10 Reading\Writing Binary Data#Store Reciept Management System#srms.h##include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #include &lt;time.h&gt; #include &lt;string.h&gt; typedef struct Customer { char name[100]; int phone_no; } Customer; typedef enum PayMode { Cash = 0, Card = 1, UPI = 2 } PayMode; typedef struct Reciept { time_t time; float value; // Customer *customer; int customer_index; PayMode mode; } Reciept; typedef struct Database { Customer customers[100]; Reciept reciepts[1000]; int customer_count; int reciept_count; } Database; int add_customer(char *name, int phone_no, Database *db); Reciept* add_reciept(int value, int c, PayMode mode, Database *db); int find_customer_by_phone_no(int phone, Database *db); srms." />
+<meta property="og:description" content="11 Reading\Writing Binary Data#Store Reciept Management System#srms.h##include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #include &lt;time.h&gt; #include &lt;string.h&gt; typedef struct Customer { char name[100]; int phone_no; } Customer; typedef enum PayMode { Cash = 0, Card = 1, UPI = 2 } PayMode; typedef struct Reciept { time_t time; float value; // Customer *customer; int customer_index; PayMode mode; } Reciept; typedef struct Database { Customer customers[100]; Reciept reciepts[1000]; int customer_count; int reciept_count; } Database; int add_customer(char *name, int phone_no, Database *db); Reciept* add_reciept(int value, int c, PayMode mode, Database *db); int find_customer_by_phone_no(int phone, Database *db); srms." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/lectures/06_11/" /><meta property="article:section" content="docs" />
 
-
+<meta property="article:modified_time" content="2023-11-06T11:39:55+05:30" />
 <title>11 File I/O: Binary Data | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.2004c06300d3c3907d97539f0ae6958fe9f96b11a697df32a0eab6868b9f4015.js" integrity="sha256-IATAYwDTw5B9l1OfCuaVj&#43;n5axGml98yoOq2houfQBU=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.35835d397beb71e52c47ea0e5859af9e13e8e85e3b3f9bc1166d8997b4840d2e.js" integrity="sha256-NYNdOXvrceUsR&#43;oOWFmvnhPo6F47P5vBFm2Jl7SEDS4=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -651,7 +651,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#10-readingwriting-binary-data">10 Reading\Writing Binary Data</a>
+    <li><a href="#11-readingwriting-binary-data">11 Reading\Writing Binary Data</a>
       <ul>
         <li><a href="#store-reciept-management-system">Store Reciept Management System</a>
           <ul>
@@ -676,9 +676,9 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="10-readingwriting-binary-data">
-  10 Reading\Writing Binary Data
-  <a class="anchor" href="#10-readingwriting-binary-data">#</a>
+  <article class="markdown"><h1 id="11-readingwriting-binary-data">
+  11 Reading\Writing Binary Data
+  <a class="anchor" href="#11-readingwriting-binary-data">#</a>
 </h1>
 <h2 id="store-reciept-management-system">
   Store Reciept Management System
@@ -935,6 +935,12 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/30af4022ba3e8884a370ba4de4709aa69b312a0e" title='Last modified by Girish Varma | November 6, 2023' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>November 6, 2023</span>
+    </a>
+  </div>
+
 
 
 
@@ -967,7 +973,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#10-readingwriting-binary-data">10 Reading\Writing Binary Data</a>
+    <li><a href="#11-readingwriting-binary-data">11 Reading\Writing Binary Data</a>
       <ul>
         <li><a href="#store-reciept-management-system">Store Reciept Management System</a>
           <ul>
