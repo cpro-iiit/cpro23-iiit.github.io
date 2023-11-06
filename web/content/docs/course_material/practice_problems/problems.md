@@ -1,5 +1,5 @@
 ---
-title: "Practice problems"
+title: "Problems"
 bookHidden: false
 ---
 # Practice Problems
@@ -25,6 +25,8 @@ For input 4 and perumutation 2 1 4 3, it should output 1->2->1, 3->4->3.
 In a linked list, its possible to have a cycle in the nodes. That is, while iterating through the nodes, a node could be there whose next pointer is pointing to a previous node. 
 
 Write a C program which takes linked list as input and checks if it has a cycle.   
+
+Hint: You can add extra fields into the Node struct, for aiding this program.  
 
 For example:  
 On input linked list 1->2->3->4->5->6->3, the program should print true.  
