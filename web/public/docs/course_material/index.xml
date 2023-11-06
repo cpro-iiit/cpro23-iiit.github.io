@@ -12,10 +12,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/template/</guid>
-      <description>Course material template#Question 1#The question body would go here
-Text#Linked list can be defined as either a node structure doing nothing or one that is pointing to another linked list
-Links#See linked: Recursion
-Button#Get HomeContributeColumns#Left Content Lorem markdownum insigne&amp;hellip;Mid Content Lorem markdownum insigne&amp;hellip;Right Content Lorem markdownum insigne&amp;hellip;Expand#Expand↕Markdown content#Lorem markdownum insigne&amp;hellip;Hint#Warning: Make sure to always free up memory!</description>
+      <description>Course material template # Question 1 # The question body would go here
+Text # Linked list can be defined as either a node structure doing nothing or one that is pointing to another linked list
+Links # See linked: Recursion
+Button # Get Home Contribute Columns # Left Content Lorem markdownum insigne&amp;hellip; Mid Content Lorem markdownum insigne&amp;hellip; Right Content Lorem markdownum insigne&amp;hellip; Expand # Expand ↕ Markdown content # Lorem markdownum insigne&amp;hellip; Hint # Warning: Make sure to always free up memory!</description>
     </item>
     
   </channel>

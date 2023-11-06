@@ -3,27 +3,41 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Mid-Sem Lab Exam#Question 1 - &ldquo;Voting&rdquo;#Problem Description#The Elections for the new academic year are in full swing!
-There are \(N\)students in the college and two candidates for the current elections (where \(N\)is guaranteed to be an odd number). The students cast their votes in the form of \(0s\)or \(1s\)where the \(i^{th}\)vote (\(1 &lt;= i &lt;= N\)) being \(1\)represents a vote to candidate A and it being \(0\)represents a vote for candidate B.">
+<meta name="description" content="Mid-Sem Lab Exam # Question 1 - &ldquo;Voting&rdquo; # Problem Description # The Elections for the new academic year are in full swing!
+There are \(N\) students in the college and two candidates for the current elections (where \(N\) is guaranteed to be an odd number). The students cast their votes in the form of \(0s\) or \(1s\) where the \(i^{th}\) vote ( \(1 &lt;= i &lt;= N\) ) being \(1\) represents a vote to candidate A and it being \(0\) represents a vote for candidate B.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Mid-Sem Lab Exam" />
-<meta property="og:description" content="Mid-Sem Lab Exam#Question 1 - &ldquo;Voting&rdquo;#Problem Description#The Elections for the new academic year are in full swing!
-There are \(N\)students in the college and two candidates for the current elections (where \(N\)is guaranteed to be an odd number). The students cast their votes in the form of \(0s\)or \(1s\)where the \(i^{th}\)vote (\(1 &lt;= i &lt;= N\)) being \(1\)represents a vote to candidate A and it being \(0\)represents a vote for candidate B." />
+<meta property="og:description" content="Mid-Sem Lab Exam # Question 1 - &ldquo;Voting&rdquo; # Problem Description # The Elections for the new academic year are in full swing!
+There are \(N\) students in the college and two candidates for the current elections (where \(N\) is guaranteed to be an odd number). The students cast their votes in the form of \(0s\) or \(1s\) where the \(i^{th}\) vote ( \(1 &lt;= i &lt;= N\) ) being \(1\) represents a vote to candidate A and it being \(0\) represents a vote for candidate B." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/quizzes/midLab1/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-10-15T20:28:37+05:30" />
+
 <title>Mid-Sem Lab Exam | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.806b5cfadbc8a27d53a95b53974e69d1470798c5c4e23ea89e8f13685c251e26.js" integrity="sha256-gGtc&#43;tvIon1TqVtTl05p0UcHmMXE4j6ono8TaFwlHiY=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.b5f8e7ff7f6aae2b9c19a2d4d736e41d87265a79bb68a1c9a3024673b3277501.js" integrity="sha256-tfjn/39qriucGaLU1zbkHYcmWnm7aKHJowJGc7MndQE=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
   
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
 </head>
 <body dir="ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
@@ -383,6 +397,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/practice_problems/problems/" class="">Practice problems</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -843,15 +870,15 @@ https://github.com/alex-shpak/hugo-book
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#111">b</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">x</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#111">;</span> <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">x</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">x</span><span style="color:#111">)</span> <span style="color:#111">a</span><span style="color:#f92672">++</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">else</span> <span style="color:#111">b</span><span style="color:#f92672">++</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">a</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">b</span><span style="color:#111">)</span> <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Yes</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">else</span> <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;No</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">a</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">b</span><span style="color:#111">)</span> <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Yes</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">else</span> <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;No</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
@@ -1002,11 +1029,11 @@ https://github.com/alex-shpak/hugo-book
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">n</span><span style="color:#111">];</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span><span style="color:#f92672">--</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">curr</span> <span style="color:#f92672">=</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">ans</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
@@ -1014,7 +1041,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>        <span style="color:#111">ans</span><span style="color:#f92672">++</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">curr</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">curr</span><span style="color:#111">];</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">ans</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">ans</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
@@ -1206,10 +1233,10 @@ https://github.com/alex-shpak/hugo-book
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#111">k</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d %d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">k</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#111">k</span><span style="color:#111">;</span> <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d %d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">k</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">cnt</span><span style="color:#111">[</span><span style="color:#ae81ff">31</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span><span style="color:#ae81ff">0</span><span style="color:#111">};</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#111">;</span> <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">x</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#111">;</span> <span style="color:#111">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">x</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">31</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">,</span> <span style="color:#111">x</span> <span style="color:#f92672">/=</span> <span style="color:#ae81ff">2</span><span style="color:#111">)</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#111">cnt</span><span style="color:#111">[</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">+=</span> <span style="color:#111">(</span><span style="color:#111">x</span> <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">1</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
@@ -1221,7 +1248,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>            <span style="color:#111">k</span> <span style="color:#f92672">-=</span> <span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#111">cnt</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">ans</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#111">ans</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div><hr>
