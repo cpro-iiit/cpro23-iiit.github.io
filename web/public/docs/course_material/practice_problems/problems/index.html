@@ -10,14 +10,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/practice_problems/problems/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-11-06T21:11:02+05:30" />
+<meta property="article:modified_time" content="2023-11-06T21:16:14+05:30" />
 
 <title>Problems | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.140600c37fd307259fe15ef7aeee680a49dd897da7be0be4ac916f5340641b6c.js" integrity="sha256-FAYAw3/TByWf4V73ru5oCkndiX2nvgvkrJFvU0BkG2w=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.2c615cf99f6bc648dd39b545cbf375e058e0fea1df4b65ea77b9c73891dd6ceb.js" integrity="sha256-LGFc&#43;Z9rxkjdObVFy/N14Fjg/qHfS2Xqd7nHOJHdbOs=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -682,6 +682,21 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#1-cycles-in-a-permutation">1. Cycles in a permutation</a></li>
         <li><a href="#2-cycles-in-a-linkedlist">2. Cycles in a LinkedList</a></li>
+        <li><a href="#3-bank">3. Bank</a></li>
+        <li><a href="#4-enumerating-permutations">4. Enumerating Permutations</a></li>
+        <li><a href="#5-grades">5. Grades</a>
+          <ul>
+            <li><a href="#markscsv-input-file">marks.csv (input file)</a></li>
+            <li><a href="#gradescsv-output-file">grades.csv (output file)</a></li>
+          </ul>
+        </li>
+        <li><a href="#6-inventory-grouping">6. Inventory Grouping</a>
+          <ul>
+            <li><a href="#inventorycsv-input-file">inventory.csv (input file)</a></li>
+            <li><a href="#groupcsv-second-input-file">group.csv (second input file)</a></li>
+            <li><a href="#outcsv-output-file">out.csv (output file)</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -723,7 +738,419 @@ For input 4 and perumutation 2 1 4 3, it should output 1-&gt;2-&gt;1, 3-&gt;4-&g
 <p>For example:<br>
 On input linked list 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;3, the program should print true.<br>
 On input linked list 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;NULL, the program should print false.</p>
-</article>
+<h2 id="3-bank">
+  3. Bank
+  <a class="anchor" href="#3-bank">#</a>
+</h2>
+<p>Problems in the comments</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">/* Build a program for managing a bank.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   There should be a database of bank
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   accounts and transactions. We should
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   be able to add new accounts, 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   new transactions (credit/debit) and 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   compute the balance of a account     */</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">enum</span> <span style="color:#111">AccountType</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">Savings</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">Current</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">AccountType</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">enum</span> <span style="color:#111">TransactionType</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">Credit</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">Debit</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">TransactionType</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">Transaction</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">TransactionType</span> <span style="color:#111">type</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">struct</span> <span style="color:#111">BankAccount</span><span style="color:#f92672">*</span> <span style="color:#111">account</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">amount</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">Transaction</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">BankAccount</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">char</span> <span style="color:#111">name</span><span style="color:#111">[</span><span style="color:#ae81ff">100</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">pin</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">AccountType</span> <span style="color:#111">type</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// passbook is an array of transactions
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// pointers to avoid taking too much memory
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#00a8c8">struct</span> <span style="color:#111">Transaction</span><span style="color:#f92672">*</span> <span style="color:#111">passbook</span><span style="color:#111">[</span><span style="color:#ae81ff">1000</span><span style="color:#111">];</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">transactions_count</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">BankAccount</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">BankDatabase</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">BankAccount</span> <span style="color:#111">accounts</span><span style="color:#111">[</span><span style="color:#ae81ff">1000</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">Transaction</span> <span style="color:#111">transactions</span><span style="color:#111">[</span><span style="color:#ae81ff">10000</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">accounts_count</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">transactions_count</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">BankDatabase</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// compute the total amount of money 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// with the bank amoung all the accounts
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">int</span> <span style="color:#75af00">compute_money_with_bank</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>                      <span style="color:#111">BankDatabase</span><span style="color:#f92672">*</span> <span style="color:#111">db</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">sum</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">db</span><span style="color:#f92672">-&gt;</span><span style="color:#111">transactions_count</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">switch</span><span style="color:#111">(</span><span style="color:#111">db</span><span style="color:#f92672">-&gt;</span><span style="color:#111">transactions</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">].</span><span style="color:#111">type</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#00a8c8">case</span> <span style="color:#111">Credit</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">sum</span> <span style="color:#f92672">+=</span> <span style="color:#111">db</span><span style="color:#f92672">-&gt;</span><span style="color:#111">transactions</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">].</span><span style="color:#111">amount</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">break</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#00a8c8">case</span> <span style="color:#111">Debit</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">sum</span> <span style="color:#f92672">-=</span> <span style="color:#111">db</span><span style="color:#f92672">-&gt;</span><span style="color:#111">transactions</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">].</span><span style="color:#111">amount</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">break</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">return</span> <span style="color:#111">sum</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">compute_balance</span><span style="color:#111">(</span><span style="color:#111">BankAccount</span><span style="color:#f92672">*</span> <span style="color:#111">acc</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Problem 2 a.) fill in the code to 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// find the balance of the account 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// &#39;acc&#39;.(3 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">BankAccount</span><span style="color:#f92672">*</span> <span style="color:#75af00">add_bank_account</span><span style="color:#111">(</span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#111">name</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>                    <span style="color:#00a8c8">int</span> <span style="color:#111">pin</span><span style="color:#111">,</span> <span style="color:#111">AccountType</span> <span style="color:#111">type</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#111">BankDatabase</span><span style="color:#f92672">*</span> <span style="color:#111">db</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Problem 2 b.) fill in the code to add 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// a new account &#39;acc&#39; to the bank 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// database &#39;db&#39;. The function should 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// also return a pointer to the bank 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// account created in &#39;db&#39;. (3 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">Transaction</span><span style="color:#f92672">*</span> <span style="color:#75af00">add_transaction</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">TransactionType</span> <span style="color:#111">type</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#111">BankAccount</span> <span style="color:#f92672">*</span><span style="color:#111">account</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">int</span> <span style="color:#111">amount</span><span style="color:#111">,</span> <span style="color:#111">BankDatabase</span><span style="color:#f92672">*</span> <span style="color:#111">db</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Problem 2 c.) Fill in the code for 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// adding a transaction to the system. 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// The logic should be written such 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// that the all the other functions in
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">//  this program continue to work 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// correctly. (4 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">BankDatabase</span> <span style="color:#111">db</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">db</span><span style="color:#111">.</span><span style="color:#111">accounts_count</span> <span style="color:#f92672">=</span> <span style="color:#111">db</span><span style="color:#111">.</span><span style="color:#111">transactions_count</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">BankAccount</span> <span style="color:#111">acc</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span> <span style="color:#111">.</span><span style="color:#111">pin</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1234</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>                      <span style="color:#111">.</span><span style="color:#111">transactions_count</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">strcpy</span><span style="color:#111">(</span><span style="color:#111">acc</span><span style="color:#111">.</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;Ivan&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">BankAccount</span><span style="color:#f92672">*</span> <span style="color:#111">acc_ptr</span> <span style="color:#f92672">=</span> <span style="color:#111">add_bank_account</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>                 <span style="color:#111">acc</span><span style="color:#111">.</span><span style="color:#111">name</span><span style="color:#111">,</span><span style="color:#111">acc</span><span style="color:#111">.</span><span style="color:#111">pin</span><span style="color:#111">,</span><span style="color:#111">acc</span><span style="color:#111">.</span><span style="color:#111">type</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">db</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">add_transaction</span><span style="color:#111">(</span><span style="color:#111">Credit</span><span style="color:#111">,</span> <span style="color:#111">acc_ptr</span><span style="color:#111">,</span> <span style="color:#ae81ff">10000</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">db</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">add_transaction</span><span style="color:#111">(</span><span style="color:#111">Debit</span><span style="color:#111">,</span> <span style="color:#111">acc_ptr</span><span style="color:#111">,</span> <span style="color:#ae81ff">2000</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">db</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">add_transaction</span><span style="color:#111">(</span><span style="color:#111">Credit</span><span style="color:#111">,</span> <span style="color:#111">acc_ptr</span><span style="color:#111">,</span> <span style="color:#ae81ff">5000</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">db</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// should print 13000
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Account balance is %d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>         <span style="color:#111">compute_balance</span><span style="color:#111">(</span><span style="color:#111">acc_ptr</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">BankAccount</span> <span style="color:#111">acc2</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span> <span style="color:#111">.</span><span style="color:#111">pin</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">6897</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>                      <span style="color:#111">.</span><span style="color:#111">transactions_count</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">strcpy</span><span style="color:#111">(</span><span style="color:#111">acc2</span><span style="color:#111">.</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;Jake&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">BankAccount</span><span style="color:#f92672">*</span> <span style="color:#111">acc_ptr2</span> <span style="color:#f92672">=</span> <span style="color:#111">add_bank_account</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>             <span style="color:#111">acc2</span><span style="color:#111">.</span><span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">acc2</span><span style="color:#111">.</span><span style="color:#111">pin</span><span style="color:#111">,</span><span style="color:#111">acc2</span><span style="color:#111">.</span><span style="color:#111">type</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">db</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">add_transaction</span><span style="color:#111">(</span><span style="color:#111">Credit</span><span style="color:#111">,</span> <span style="color:#111">acc_ptr2</span><span style="color:#111">,</span> <span style="color:#ae81ff">100000</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">db</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">add_transaction</span><span style="color:#111">(</span><span style="color:#111">Debit</span><span style="color:#111">,</span> <span style="color:#111">acc_ptr2</span><span style="color:#111">,</span> <span style="color:#ae81ff">20000</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">db</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">add_transaction</span><span style="color:#111">(</span><span style="color:#111">Credit</span><span style="color:#111">,</span> <span style="color:#111">acc_ptr2</span><span style="color:#111">,</span> <span style="color:#ae81ff">50000</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">db</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// should print 130000
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Account balance is %d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>         <span style="color:#111">compute_balance</span><span style="color:#111">(</span><span style="color:#111">acc_ptr2</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// should print 143000
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Total Money with bank is %d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>         <span style="color:#111">compute_money_with_bank</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">db</span><span style="color:#111">));</span> 
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h2 id="4-enumerating-permutations">
+  4. Enumerating Permutations
+  <a class="anchor" href="#4-enumerating-permutations">#</a>
+</h2>
+<p>Problems in the comments:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">/* Consider all arrangements of $k$ items
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   from $n$ objects. For $n=3, k=2$, they
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   are $12, 21,13,31,23,32$. The number
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   of such arrangements is 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   $^nP_k = n(n-1)\cdots(n-k+2)(n-k+1).$ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   Bellow is a program which when given $n,k$
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   as input, prints all arragements of $k$
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   items from $n$ objects.               */</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdlib.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdbool.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">**</span> <span style="color:#111">PermList</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">count_arrangements</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">k</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Problem 1 a.) write a recursive 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// function logic here in one line to 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// compute the number of all arragements 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// of $k$ items from $n$ objects. (2 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">PermList</span> <span style="color:#75af00">create_perm_list</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>                                 <span style="color:#00a8c8">int</span> <span style="color:#111">k</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">fn</span> <span style="color:#f92672">=</span> <span style="color:#111">count_arrangements</span><span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#111">k</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">PermList</span> <span style="color:#111">pl</span><span style="color:#f92672">=</span><span style="color:#111">malloc</span><span style="color:#111">(</span><span style="color:#111">fn</span><span style="color:#f92672">*</span><span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#f92672">*</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span><span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">fn</span> <span style="color:#111">;</span><span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">pl</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">malloc</span><span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#f92672">*</span><span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span><span style="color:#111">));</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">return</span> <span style="color:#111">pl</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">destroy_perm_list</span><span style="color:#111">(</span><span style="color:#111">PermList</span> <span style="color:#111">pl</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>                       <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">k</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">fn</span> <span style="color:#f92672">=</span> <span style="color:#111">count_arrangements</span><span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#111">k</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span><span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">fn</span> <span style="color:#111">;</span><span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">free</span><span style="color:#111">(</span><span style="color:#111">pl</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">free</span><span style="color:#111">(</span><span style="color:#111">pl</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// given a `small_row` of size `size`
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// copies it to `big_row` which has size 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// `size+1`. Also sets the last position 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// in `big_row` to `e`
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">void</span> <span style="color:#75af00">insert_and_copy</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span><span style="color:#f92672">*</span> <span style="color:#111">small_row</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">size</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>                     <span style="color:#00a8c8">int</span> <span style="color:#111">e</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">*</span> <span style="color:#111">big_row</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">size</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">big_row</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">small_row</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">big_row</span><span style="color:#111">[</span><span style="color:#111">size</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">e</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// checks if `e` is in the `row` of size `size`
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">bool</span> <span style="color:#75af00">find</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">e</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">*</span> <span style="color:#111">row</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">size</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">size</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">row</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">e</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#00a8c8">return</span> <span style="color:#111">true</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">return</span> <span style="color:#111">false</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// find the numbers from $\{1,\ldots, n\}$
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// that are not in `row` which is of size `k`
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// and puts them in `elements`
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">void</span> <span style="color:#75af00">find_elements_not_in_row</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span><span style="color:#f92672">*</span> <span style="color:#111">row</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>                              <span style="color:#00a8c8">int</span> <span style="color:#111">k</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>                              <span style="color:#00a8c8">int</span><span style="color:#f92672">*</span> <span style="color:#111">elements</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">c</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">find</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">row</span><span style="color:#111">,</span> <span style="color:#111">k</span><span style="color:#111">)</span> <span style="color:#f92672">==</span> <span style="color:#111">false</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">elements</span><span style="color:#111">[</span><span style="color:#111">c</span><span style="color:#f92672">++</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">i</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">PermList</span> <span style="color:#75af00">enumerate_arrangements</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">k</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">PermList</span> <span style="color:#111">B</span> <span style="color:#f92672">=</span> <span style="color:#111">create_perm_list</span><span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#111">,</span><span style="color:#111">k</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">k</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Problem 1 b.) write code here for base 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// case of recursively building list `B` 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// of all arrangements of $k=1$ items 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// from $\{1,..,n\}.$ (3 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Problem 1 c.) write code here for 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// recursively building list `B` of all
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//  arrangements of $k$ items from 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// $\{1,..,n\}.$ (5 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">return</span> <span style="color:#111">B</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">print_perm_list</span><span style="color:#111">(</span><span style="color:#111">PermList</span> <span style="color:#111">pl</span><span style="color:#111">,</span> 
+</span></span><span style="display:flex;"><span>                     <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">k</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">fn</span> <span style="color:#f92672">=</span> <span style="color:#111">count_arrangements</span><span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#111">k</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">fn</span><span style="color:#111">;</span><span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span><span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;</span><span style="color:#111">k</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d &#34;</span><span style="color:#111">,</span> <span style="color:#111">pl</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">n</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">k</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">print_perm_list</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">enumerate_arrangements</span><span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#111">k</span><span style="color:#111">),</span><span style="color:#111">n</span><span style="color:#111">,</span><span style="color:#111">k</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h2 id="5-grades">
+  5. Grades
+  <a class="anchor" href="#5-grades">#</a>
+</h2>
+<p>Problem given in comments. Format of input files is also given bellow the code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdlib.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">enum</span> <span style="color:#111">Grade</span> <span style="color:#111">{</span><span style="color:#111">A</span><span style="color:#111">,</span><span style="color:#111">Am</span><span style="color:#111">,</span><span style="color:#111">B</span><span style="color:#111">,</span><span style="color:#111">Bm</span><span style="color:#111">,</span><span style="color:#111">C</span><span style="color:#111">,</span><span style="color:#111">Cm</span><span style="color:#111">}</span> <span style="color:#111">Grade</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">Student</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">char</span> <span style="color:#111">email</span><span style="color:#111">[</span><span style="color:#ae81ff">100</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">assigment1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">assigment2</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">midsem</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">endsem</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">Grade</span> <span style="color:#111">grade</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">Student</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">Database</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">Student</span> <span style="color:#111">students</span><span style="color:#111">[</span><span style="color:#ae81ff">300</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">count_students</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">Database</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">float</span> <span style="color:#75af00">compute_total_marks</span><span style="color:#111">(</span><span style="color:#111">Student</span> <span style="color:#111">s</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Problem 2.1: write code here, for computing the 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">total marks for a student and returning it. 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Assume that
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">assignment marks were out of 100, midsem marks 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">were out of 50 and endsem marks were out of 80. 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">The best 1 score amoung the 2 assignments will 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">only be taken. The weightage for the total marks 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">is 30% from assignment, 30% from midsem and 40% 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">from endsem. (2 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">compute_grades</span><span style="color:#111">(</span><span style="color:#111">Database</span><span style="color:#f92672">*</span> <span style="color:#111">db</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Problem 2.2: Assume that grades are given as 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">follows: &gt;= 90: A, between 90 and 80: Am,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">between 70 and 80: B, between 60 and 70: Bm,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">between 50 and 60: C, between 40 and 50: Cm.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Write code here to assign grades to each 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">student, and save it in the `grade` field of the
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">`Student`. (2 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">argc</span><span style="color:#111">,</span> <span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#111">argv</span><span style="color:#111">[])</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">Database</span> <span style="color:#111">db</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/* Problem 2.3: Suppose the a.out is run with the 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  first argument as the name of the `.csv` file. 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  For example `./a.out marks.csv`. Write code here, 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  that will read all the data from the `.csv` file 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  and populate the Database `db`.  (3 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  */</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>  <span style="color:#111">compute_grades</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">db</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/* Problem 2.4: Suppose the a.out is run with the 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  second argument as the name of the `.csv` file for 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  grades. 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  For example `./a.out marks.csv grades.csv`. 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Write code here, open the file with name given by
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  second argument, and write the grades.  (3 marks)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  */</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h3 id="markscsv-input-file">
+  marks.csv (input file)
+  <a class="anchor" href="#markscsv-input-file">#</a>
+</h3>
+<pre tabindex="0"><code>email,A1,A2,Mid,End
+student1@students.iiit.ac.in ,68,72,34,56
+student2@students.iiit.ac.in ,90,85,56,48
+</code></pre><h3 id="gradescsv-output-file">
+  grades.csv (output file)
+  <a class="anchor" href="#gradescsv-output-file">#</a>
+</h3>
+<pre tabindex="0"><code>email,total_marks,grade
+student1@students.iiit.ac.in ,70.000000,B
+student2@students.iiit.ac.in ,84.599998,A-
+</code></pre><h2 id="6-inventory-grouping">
+  6. Inventory Grouping
+  <a class="anchor" href="#6-inventory-grouping">#</a>
+</h2>
+<p>Problem given in comments. Format of input files is also given bellow the code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdlib.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">enum</span> <span style="color:#111">Group</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">Diary</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">Vegetables</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">Fruits</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">Group</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">char</span> <span style="color:#111">group_names</span><span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#111">][</span><span style="color:#ae81ff">100</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#d88200">&#34;diary&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#d88200">&#34;vegetable&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#d88200">&#34;fruit&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">InventoryItem</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">char</span> <span style="color:#111">name</span><span style="color:#111">[</span><span style="color:#ae81ff">100</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">quantity</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">price</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">Group</span> <span style="color:#111">group</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">InventoryItem</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">argc</span><span style="color:#111">,</span> <span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#111">argv</span><span style="color:#111">[])</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">InventoryItem</span> <span style="color:#111">inventory</span><span style="color:#111">[</span><span style="color:#ae81ff">100</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Problem 2.1: Suppose the first argument of a.out
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">contains the csv file of inventories, write code 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">here, which reads that file and stores the data in 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">the `inventory` array declared above.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Problem 2.2: Suppose the second argument of a.out
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">contains the csv file which has the group name
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">corresponding to each inventory item, write code here,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">which updates the `group` field
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">in each InventoryItem of the `inventory` array.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#111">grouped_value</span><span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Problem 2.3: Compute the total value of all
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">items in a group and store it in the correpsonding
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">entry of the array `grouped_value`. That is
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">grouped_value[0] has the total value of all
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Diary items. Similarly Vegetables for 1 and Fruits for 2.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Problem 2.4: Write down the grouped inventory values
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">into a file given by the third argument to a.out, in the format
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">specificed for `grouped_inventory.csv`.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h3 id="inventorycsv-input-file">
+  inventory.csv (input file)
+  <a class="anchor" href="#inventorycsv-input-file">#</a>
+</h3>
+<pre tabindex="0"><code>name,quantity,price
+onion ,100,15
+paneer ,50,100
+tomato ,70,10
+curd ,30,50
+apple ,150,100
+orange ,200,150
+</code></pre><h3 id="groupcsv-second-input-file">
+  group.csv (second input file)
+  <a class="anchor" href="#groupcsv-second-input-file">#</a>
+</h3>
+<pre tabindex="0"><code>item,group
+curd ,diary
+tomato ,vegetable
+paneer ,diary
+apple ,fruit
+onion ,vegetable
+orange ,fruit
+</code></pre><h3 id="outcsv-output-file">
+  out.csv (output file)
+  <a class="anchor" href="#outcsv-output-file">#</a>
+</h3>
+<pre tabindex="0"><code>group,value
+diary,6500
+vegetable,2200
+fruit,45000
+</code></pre></article>
  
       
 
@@ -732,7 +1159,7 @@ On input linked list 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;NULL, the program shoul
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/d95eb587ce6d6c88fd8531aac21b31c5ac344145" title='Last modified by girishrv | November 6, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/12387a1a43a44076b7a29e5122503c1bc4f104c9" title='Last modified by girishrv | November 6, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>November 6, 2023</span>
     </a>
@@ -774,6 +1201,21 @@ On input linked list 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;NULL, the program shoul
       <ul>
         <li><a href="#1-cycles-in-a-permutation">1. Cycles in a permutation</a></li>
         <li><a href="#2-cycles-in-a-linkedlist">2. Cycles in a LinkedList</a></li>
+        <li><a href="#3-bank">3. Bank</a></li>
+        <li><a href="#4-enumerating-permutations">4. Enumerating Permutations</a></li>
+        <li><a href="#5-grades">5. Grades</a>
+          <ul>
+            <li><a href="#markscsv-input-file">marks.csv (input file)</a></li>
+            <li><a href="#gradescsv-output-file">grades.csv (output file)</a></li>
+          </ul>
+        </li>
+        <li><a href="#6-inventory-grouping">6. Inventory Grouping</a>
+          <ul>
+            <li><a href="#inventorycsv-input-file">inventory.csv (input file)</a></li>
+            <li><a href="#groupcsv-second-input-file">group.csv (second input file)</a></li>
+            <li><a href="#outcsv-output-file">out.csv (output file)</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
