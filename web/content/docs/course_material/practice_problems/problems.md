@@ -15,8 +15,8 @@ Write a program to take $n$ and a permutation of $\\{1,\cdots,n\\}$ as inputs an
 
 For example:   
 For input 4 and perumutation 2 3 4 1, it should output 1->2->3->4->1.  
-For input 4 and perumutation 1 2 3 4, it should output 1->1,2->2,3->3,4->4.  
-For input 4 and perumutation 2 1 4 3, it should output 1->2->1,3->4->3.  
+For input 4 and perumutation 1 2 3 4, it should output 1->1, 2->2, 3->3, 4->4.  
+For input 4 and perumutation 2 1 4 3, it should output 1->2->1, 3->4->3.  
 
 
 
