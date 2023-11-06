@@ -2,7 +2,7 @@
 title: "Practice problems"
 bookHidden: false
 ---
-# Pratice Problems
+# Practice Problems
 
 
 ## 1. Cycles in a permutation

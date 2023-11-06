@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cpro-iiit.github.io/docs/course_material/practice_problems/problems/</guid>
-      <description>Pratice Problems # 1. Cycles in a permutation # Let $\pi:\{1,\cdots, n\} \rightarrow \{1,\cdots, n\}$ be permutation (that is a one-one onto function). The cycle containing 1 is the sequence of numbers $$1\qquad \pi(1)\qquad \pi(\pi(i))\qquad \pi(\pi(\pi(1)))\qquad \cdots$$ Notice that the sequence is periodic (Why?) and the period is called the size of the cycle containing 1. Similarly one can define the cycle containing 2, 3 etc. Write a program to take $n$ and a permutation of $\{1,\cdots,n\}$ as inputs and print all the cycles (you can stop at the period).</description>
+      <description>Practice Problems # 1. Cycles in a permutation # Let $\pi:\{1,\cdots, n\} \rightarrow \{1,\cdots, n\}$ be permutation (that is a one-one onto function). The cycle containing 1 is the sequence of numbers $$1\qquad \pi(1)\qquad \pi(\pi(i))\qquad \pi(\pi(\pi(1)))\qquad \cdots$$ Notice that the sequence is periodic (Why?) and the period is called the size of the cycle containing 1. Similarly one can define the cycle containing 2, 3 etc. Write a program to take $n$ and a permutation of $\{1,\cdots,n\}$ as inputs and print all the cycles (you can stop at the period).</description>
     </item>
     
     <item>
