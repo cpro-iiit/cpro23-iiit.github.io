@@ -160,7 +160,19 @@ int main() {
 }
 ```
 
-## 4. Enumerating Permutations
+
+## 4. Enumerating Sets
+
+Write a C program which takes $n$, $k$, and some $n$ number $a_1,a_2,\cdots,a_n$ as inputs and 
+prints all subsets of them of size $k$.   
+
+Example:  
+On input $n=4, k =2$ and $2,4,6,8$ it should output  
+```
+{2, 4}, {2, 6}, {2, 8}, {4, 6}, {4, 8}, {6, 8}
+```
+
+## 5. Recursively Enumerating Permutations
 Problems in the comments:
 
 ```c
@@ -274,7 +286,7 @@ int main() {
 ```
 
 
-## 5. Grades
+## 6. Grades
 Problem given in comments. Format of input files is also given bellow the code.
 
 ```c
@@ -359,7 +371,7 @@ student1@students.iiit.ac.in ,70.000000,B
 student2@students.iiit.ac.in ,84.599998,A-
 ```
 
-## 6. Inventory Grouping
+## 7. Inventory Grouping
 Problem given in comments. Format of input files is also given bellow the code.
 ```c
 #include <stdio.h>
