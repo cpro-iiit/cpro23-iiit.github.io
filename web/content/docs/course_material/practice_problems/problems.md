@@ -163,7 +163,7 @@ int main() {
 
 ## 4. Enumerating Sets
 
-Write a C program which takes $n$, $k$, and some $n$ number $a_1,a_2,\cdots,a_n$ as inputs and 
+Write a C program which takes $n$, $k$, and some $n$ numbers $a_1,a_2,\cdots,a_n$ as inputs and 
 prints all subsets of them of size $k$.   
 
 Example:  
