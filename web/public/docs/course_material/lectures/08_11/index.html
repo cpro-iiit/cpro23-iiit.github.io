@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="12 Debugger # GDB Cheatsheet
+GDB Tutorial Slides UMD">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://cpro-iiit.github.io/tags/" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="12 Debugger" />
+<meta property="og:description" content="12 Debugger # GDB Cheatsheet
+GDB Tutorial Slides UMD" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/lectures/08_11/" /><meta property="article:section" content="docs" />
 
-<title>Tags | CPro Mon 23</title>
+
+
+<title>12 Debugger | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
   <script defer src="/en.search.min.5981f839f5f9fd8145782e0d74253949cf9e70e2cc99d06409352d92e24ed95f.js" integrity="sha256-WYH4OfX5/YFFeC4NdCU5Sc&#43;ecOLMmdBkCTUtkuJO2V8=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://cpro-iiit.github.io/tags/index.xml" title="CPro Mon 23" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -94,7 +97,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-c87ef19fe67bdb63d85d44d099797871" class="toggle"  />
+    <input type="checkbox" id="section-c87ef19fe67bdb63d85d44d099797871" class="toggle" checked />
     <label for="section-c87ef19fe67bdb63d85d44d099797871" class="flex justify-between">
       <a role="button" class="">Lectures</a>
     </label>
@@ -253,7 +256,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/08_11/" class="">12 Debugger</a>
+    <a href="/docs/course_material/lectures/08_11/" class="active">12 Debugger</a>
   
 
         </li>
@@ -674,7 +677,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Tags</strong>
+  <strong>12 Debugger</strong>
 
   <label for="toc-control">
     
@@ -687,49 +690,13 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/tags/setup/">setup</a>
-          <span>3</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/tools/">tools</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/video/">video</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/gcc/">gcc</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
+    <li><a href="#12-debugger">12 Debugger</a></li>
   </ul>
 </nav>
+
 
 
   </aside>
@@ -739,89 +706,13 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/tags/setup/">setup</a>
-    </h2>
-    
-  <h5>September 5, 2023</h5>
-
-
-
-  
-
-  
-
-
-
-
-    <p>
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/tags/tools/">tools</a>
-    </h2>
-    
-  <h5>September 5, 2023</h5>
-
-
-
-  
-
-  
-
-
-
-
-    <p>
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/tags/video/">video</a>
-    </h2>
-    
-  <h5>September 5, 2023</h5>
-
-
-
-  
-
-  
-
-
-
-
-    <p>
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/tags/gcc/">gcc</a>
-    </h2>
-    
-  <h5>August 5, 2023</h5>
-
-
-
-  
-
-  
-
-
-
-
-    <p>
-    </p>
-  </article>
-  
-
-  
+  <article class="markdown"><h1 id="12-debugger">
+  12 Debugger
+  <a class="anchor" href="#12-debugger">#</a>
+</h1>
+<p><a href="https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf">GDB Cheatsheet</a></p>
+<p><a href="https://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf">GDB Tutorial Slides UMD</a></p>
+</article>
  
       
 
@@ -846,6 +737,10 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -855,49 +750,13 @@ https://github.com/alex-shpak/hugo-book
     <aside class="book-toc">
       <div class="book-toc-content">
         
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/tags/setup/">setup</a>
-          <span>3</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/tools/">tools</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/video/">video</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/gcc/">gcc</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
+    <li><a href="#12-debugger">12 Debugger</a></li>
   </ul>
 </nav>
+
 
  
       </div>

@@ -149,6 +149,16 @@ Random Number Generation # Random Number Generation Reference
     </item>
     
     <item>
+      <title>12 Debugger</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/lectures/08_11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/docs/course_material/lectures/08_11/</guid>
+      <description>12 Debugger # GDB Cheatsheet
+GDB Tutorial Slides UMD</description>
+    </item>
+    
+    <item>
       <title>Assignment - 1</title>
       <link>https://cpro-iiit.github.io/docs/course_material/assignments/assignment1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
