@@ -173,6 +173,17 @@ On input $n=4, k =2$ and $2,4,6,8$ it should output
 ```
 
 ## 5. Recursively Enumerating Permutations
+
+
+Consider all arrangements of $k$ items
+   from $n$ objects. For $n=3, k=2$, they
+   are $12, 21,13,31,23,32$. The number
+   of such arrangements is 
+   $$^nP_k = n(n-1)\cdots(n-k+2)(n-k+1).$$ 
+   Bellow is a program which when given $n,k$
+   as input, prints all arragements of $k$
+   items from $n$ objects.         
+
 Problems in the comments:
 
 ```c

@@ -10,14 +10,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/practice_problems/problems/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-11-07T06:38:20+05:30" />
+<meta property="article:modified_time" content="2023-11-07T06:39:50+05:30" />
 
 <title>Problems | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.a5a28eafb64ab9a79a23191cc2e0c92c565abf0417c0b8b7219e0cf4ccf25ac0.js" integrity="sha256-paKOr7ZKuaeaIxkcwuDJLFZavwQXwLi3IZ4M9MzyWsA=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.20d128dcebd734106518f6884952647c86147834599afcfaeecaa6a73baa2ba0.js" integrity="sha256-INEo3OvXNBBlGPaISVJkfIYUeDRZmvz67sqmpzuqK6A=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -880,6 +880,14 @@ On input $n=4, k =2$ and $2,4,6,8$ it should output</p>
   5. Recursively Enumerating Permutations
   <a class="anchor" href="#5-recursively-enumerating-permutations">#</a>
 </h2>
+<p>Consider all arrangements of $k$ items
+from $n$ objects. For $n=3, k=2$, they
+are $12, 21,13,31,23,32$. The number
+of such arrangements is
+$$^nP_k = n(n-1)\cdots(n-k+2)(n-k+1).$$
+Bellow is a program which when given $n,k$
+as input, prints all arragements of $k$
+items from $n$ objects.</p>
 <p>Problems in the comments:</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">/* Consider all arrangements of $k$ items
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">   from $n$ objects. For $n=3, k=2$, they
@@ -1169,7 +1177,7 @@ fruit,45000
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/839ede4fbde58ba30091d79b97b439b668d9ef4a" title='Last modified by girishrv | November 7, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/aea7eed48be6d7865de42366afed620bd2892414" title='Last modified by girishrv | November 7, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>November 7, 2023</span>
     </a>
