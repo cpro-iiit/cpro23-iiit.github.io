@@ -468,3 +468,19 @@ diary,6500
 vegetable,2200
 fruit,45000
 ```
+
+## 8. Checking Bipartiteness
+Given a graph $G=(V,E)$, it is said to be bipartite if the vertex set $V$ can be partitioned into two sets $V_1,V_2$ (such that $V_1 \cup V_2 = V$ and $V_1 \cap V_2 = \emptyset$), such that there is no edge in $E$ which has one endpoint in $V_1$ and another endpoint in $V_2$. 
+
+Write a program, which takes a graph as input and checks if it is bipartite.
+
+
+Note: Runtime of the algorithm doesnt matter, but it should output the correct answer.
+
+## 9. Colorings of a Graph
+Given a graph $G=(V,E)$, a *coloring* of the graph using $\{R,G,B\}$ is an assignment of these colors for every vertex, such that there is no edge in $E$ which has the same color in both end points. See [https://en.wikipedia.org/wiki/Graph_coloring](https://en.wikipedia.org/wiki/Graph_coloring).
+
+Write a program, which takes a graph as input and outputs a coloring of the graph with $\{R,G,B\}$ colors.
+
+
+Note: Runtime of the algorithm doesnt matter, but it should output the correct answer.
