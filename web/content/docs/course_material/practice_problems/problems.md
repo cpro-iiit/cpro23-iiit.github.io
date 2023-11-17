@@ -506,7 +506,94 @@ Write a program which takes a 2SAT formula as input and outputs/prints a satisfy
 Note: The algorithm only needs to be correct.
 
 
-## 11. Employee Database
+## 11. Student Database
+
+You are tasked with creating a program to manage a student database. The program should allow users to dynamically add, display, and delete student records. Each student record should include a student ID, name, and age. The program should use dynamic memory allocation for storing student records.  
+
+**Requirements:**  
+
+Implement a menu-based program with the following options:
+- Add Student: Dynamically allocate memory for a new student record and prompt the user to enter the student's details (ID, name, and age).  
+- Display Students: Display a list of all students in the database, including their details.
+- Delete Student: Prompt the user to enter a Student ID and delete the corresponding student record from the database.
+- Exit: Terminate the program.  
+
+Use structures to represent a student's details. Implement dynamic memory allocation for storing student records. Use pointers to navigate and manipulate the dynamically allocated memory. Use functions to modularize the code (e.g., separate functions for adding, displaying, and deleting student records).  
+
+Example:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Structure to represent a student
+struct Student {
+    int id;
+    char name[50];
+    int age;
+};
+
+// Function to add a new student
+void addStudent(struct Student** database, int* numStudents) {
+    // Your implementation goes here.
+}
+
+// Function to display all students
+void displayStudents(struct Student* database, int numStudents) {
+    // Your implementation goes here.
+}
+
+// Function to delete a student
+void deleteStudent(struct Student** database, int* numStudents, int idToDelete) {
+    // Your implementation goes here.
+}
+
+int main() {
+    struct Student* studentDatabase = NULL;
+    int numStudents = 0;
+    int choice, studentIdToDelete;
+
+    do {
+        printf("\nStudent Database Management System\n");
+        printf("1. Add Student\n");
+        printf("2. Display Students\n");
+        printf("3. Delete Student\n");
+        printf("4. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                addStudent(&studentDatabase, &numStudents);
+                break;
+            case 2:
+                displayStudents(studentDatabase, numStudents);
+                break;
+            case 3:
+                printf("Enter the Student ID to delete: ");
+                scanf("%d", &studentIdToDelete);
+                deleteStudent(&studentDatabase, &numStudents, studentIdToDelete);
+                break;
+            case 4:
+                printf("Exiting the program...\n");
+                break;
+            default:
+                printf("Invalid choice. Please enter a valid option.\n");
+        }
+
+    } while (choice != 4);
+
+    // Free dynamically allocated memory before exiting
+    free(studentDatabase);
+
+    return 0;
+}
+```
+Feel free to modify the problem or add additional features to suit your needs.
+
+
+## 12. Employee Database
 
 You are tasked with developing a simple employee database system in C. The program should be capable of performing the following operations:  
 
@@ -592,7 +679,7 @@ Exiting the program...
 Feel free to customize the problem as needed or add additional features for extra complexity.
 
 
-## 12. Sudoku Solver
+## 13. Sudoku Solver
 
 You are tasked with implementing a program that solves a Sudoku puzzle (see [https://en.wikipedia.org/wiki/Sudoku](https://en.wikipedia.org/wiki/Sudoku)). Sudoku is a number-placement puzzle where the objective is to fill a 9x9 grid with digits from 1 to 9, such that each column, each row, and each of the nine 3x3 subgrids that compose the grid (also called "boxes", "blocks", or "regions") contains all of the digits from 1 to 9.  
 

@@ -10,13 +10,13 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/practice_problems/problems/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-11-17T08:57:51+05:30" />
+<meta property="article:modified_time" content="2023-11-17T09:07:37+05:30" />
 <title>Problems | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.5ee915aca98f7e94b6bbcc28bcde04be8ef52acec8b33c8c51038d85437134f8.js" integrity="sha256-XukVrKmPfpS2u8wovN4Evo71Ks7IszyMUQONhUNxNPg=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.9588b23bfe0fa4446b7ed3b99b37691e5bfd25a80d4d97411744216e4d4f6d6d.js" integrity="sha256-lYiyO/4PpERrftO5mzdpHlv9JagNTZdBF0Qhbk1PbW0=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -713,8 +713,9 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#8-checking-bipartiteness">8. Checking Bipartiteness</a></li>
         <li><a href="#9-colorings-of-a-graph">9. Colorings of a Graph</a></li>
         <li><a href="#10-finding-satisfying-assignments-for-2sat">10. Finding Satisfying Assignments for 2SAT</a></li>
-        <li><a href="#11-employee-database">11. Employee Database</a></li>
-        <li><a href="#12-sudoku-solver">12. Sudoku Solver</a></li>
+        <li><a href="#11-student-database">11. Student Database</a></li>
+        <li><a href="#12-employee-database">12. Employee Database</a></li>
+        <li><a href="#13-sudoku-solver">13. Sudoku Solver</a></li>
       </ul>
     </li>
   </ul>
@@ -1217,9 +1218,91 @@ The assignment $a = 0, b = 1, c = 1, d = 1, e = 1, f = 1, g = 1$ is a satisfying
 <p>Note that in the Boolean formula above, there are 11 terms in brackets, outside which there is and $\&amp;$ operation. Inside the bracket a variable or a negated variable is or ed $||$ with another one. Formula of this form are called 2SAT.</p>
 <p>Write a program which takes a 2SAT formula as input and outputs/prints a satisfying assignment to the formula.</p>
 <p>Note: The algorithm only needs to be correct.</p>
-<h2 id="11-employee-database">
-  11. Employee Database
-  <a class="anchor" href="#11-employee-database">#</a>
+<h2 id="11-student-database">
+  11. Student Database
+  <a class="anchor" href="#11-student-database">#</a>
+</h2>
+<p>You are tasked with creating a program to manage a student database. The program should allow users to dynamically add, display, and delete student records. Each student record should include a student ID, name, and age. The program should use dynamic memory allocation for storing student records.</p>
+<p><strong>Requirements:</strong></p>
+<p>Implement a menu-based program with the following options:</p>
+<ul>
+<li>Add Student: Dynamically allocate memory for a new student record and prompt the user to enter the student&rsquo;s details (ID, name, and age).</li>
+<li>Display Students: Display a list of all students in the database, including their details.</li>
+<li>Delete Student: Prompt the user to enter a Student ID and delete the corresponding student record from the database.</li>
+<li>Exit: Terminate the program.</li>
+</ul>
+<p>Use structures to represent a student&rsquo;s details. Implement dynamic memory allocation for storing student records. Use pointers to navigate and manipulate the dynamically allocated memory. Use functions to modularize the code (e.g., separate functions for adding, displaying, and deleting student records).</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdlib.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Structure to represent a student
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">struct</span> <span style="color:#111">Student</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">id</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">char</span> <span style="color:#111">name</span><span style="color:#111">[</span><span style="color:#ae81ff">50</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">age</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Function to add a new student
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">void</span> <span style="color:#75af00">addStudent</span><span style="color:#111">(</span><span style="color:#00a8c8">struct</span> <span style="color:#111">Student</span><span style="color:#f92672">**</span> <span style="color:#111">database</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">*</span> <span style="color:#111">numStudents</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Your implementation goes here.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Function to display all students
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">void</span> <span style="color:#75af00">displayStudents</span><span style="color:#111">(</span><span style="color:#00a8c8">struct</span> <span style="color:#111">Student</span><span style="color:#f92672">*</span> <span style="color:#111">database</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">numStudents</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Your implementation goes here.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Function to delete a student
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">void</span> <span style="color:#75af00">deleteStudent</span><span style="color:#111">(</span><span style="color:#00a8c8">struct</span> <span style="color:#111">Student</span><span style="color:#f92672">**</span> <span style="color:#111">database</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">*</span> <span style="color:#111">numStudents</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">idToDelete</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Your implementation goes here.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">struct</span> <span style="color:#111">Student</span><span style="color:#f92672">*</span> <span style="color:#111">studentDatabase</span> <span style="color:#f92672">=</span> <span style="color:#111">NULL</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">numStudents</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">choice</span><span style="color:#111">,</span> <span style="color:#111">studentIdToDelete</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">do</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">Student Database Management System</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;1. Add Student</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;2. Display Students</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;3. Delete Student</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;4. Exit</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Enter your choice: &#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">choice</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">switch</span> <span style="color:#111">(</span><span style="color:#111">choice</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75af00">addStudent</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">studentDatabase</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">numStudents</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">break</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75af00">displayStudents</span><span style="color:#111">(</span><span style="color:#111">studentDatabase</span><span style="color:#111">,</span> <span style="color:#111">numStudents</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">break</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Enter the Student ID to delete: &#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75af00">scanf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d&#34;</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">studentIdToDelete</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75af00">deleteStudent</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">studentDatabase</span><span style="color:#111">,</span> <span style="color:#f92672">&amp;</span><span style="color:#111">numStudents</span><span style="color:#111">,</span> <span style="color:#111">studentIdToDelete</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">break</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Exiting the program...</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">break</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">default</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Invalid choice. Please enter a valid option.</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span> <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">choice</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">4</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Free dynamically allocated memory before exiting
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75af00">free</span><span style="color:#111">(</span><span style="color:#111">studentDatabase</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><p>Feel free to modify the problem or add additional features to suit your needs.</p>
+<h2 id="12-employee-database">
+  12. Employee Database
+  <a class="anchor" href="#12-employee-database">#</a>
 </h2>
 <p>You are tasked with developing a simple employee database system in C. The program should be capable of performing the following operations:</p>
 <ul>
@@ -1309,9 +1392,9 @@ Employee List: (empty)
 Enter your choice: 6
 Exiting the program...
 </code></pre><p>Feel free to customize the problem as needed or add additional features for extra complexity.</p>
-<h2 id="12-sudoku-solver">
-  12. Sudoku Solver
-  <a class="anchor" href="#12-sudoku-solver">#</a>
+<h2 id="13-sudoku-solver">
+  13. Sudoku Solver
+  <a class="anchor" href="#13-sudoku-solver">#</a>
 </h2>
 <p>You are tasked with implementing a program that solves a Sudoku puzzle (see <a href="https://en.wikipedia.org/wiki/Sudoku">https://en.wikipedia.org/wiki/Sudoku</a>). Sudoku is a number-placement puzzle where the objective is to fill a 9x9 grid with digits from 1 to 9, such that each column, each row, and each of the nine 3x3 subgrids that compose the grid (also called &ldquo;boxes&rdquo;, &ldquo;blocks&rdquo;, or &ldquo;regions&rdquo;) contains all of the digits from 1 to 9.</p>
 <p>Your program should take a partially filled 9x9 Sudoku grid as input, where zeros represent empty cells. The goal is to fill in the empty cells such that the Sudoku puzzle is solved.</p>
@@ -1386,7 +1469,7 @@ Solved Sudoku:
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/31a31c67904e713a79fd0d47c62bfe80bbf0f947" title='Last modified by geevi | November 17, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/a177e3713bc352b38cd46385ae9488baeda9d18e" title='Last modified by geevi | November 17, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>November 17, 2023</span>
     </a>
@@ -1447,8 +1530,9 @@ Solved Sudoku:
         <li><a href="#8-checking-bipartiteness">8. Checking Bipartiteness</a></li>
         <li><a href="#9-colorings-of-a-graph">9. Colorings of a Graph</a></li>
         <li><a href="#10-finding-satisfying-assignments-for-2sat">10. Finding Satisfying Assignments for 2SAT</a></li>
-        <li><a href="#11-employee-database">11. Employee Database</a></li>
-        <li><a href="#12-sudoku-solver">12. Sudoku Solver</a></li>
+        <li><a href="#11-student-database">11. Student Database</a></li>
+        <li><a href="#12-employee-database">12. Employee Database</a></li>
+        <li><a href="#13-sudoku-solver">13. Sudoku Solver</a></li>
       </ul>
     </li>
   </ul>
