@@ -10,13 +10,13 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/practice_problems/problems/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-11-16T08:50:30+05:30" />
+<meta property="article:modified_time" content="2023-11-17T07:15:47+05:30" />
 <title>Problems | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.f116f07a356e24dfde6208eee4b9e20f2a684ef9236415509bae2b2febf9ab00.js" integrity="sha256-8RbwejVuJN/eYgju5LniDypoTvkjZBVQm64rL&#43;v5qwA=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.113d1b6ce0dc78b9ee51d743e89ea5fbcce79edd66fb5b5c698aeb7fb69bb07c.js" integrity="sha256-ET0bbODceLnuUddD6J6l&#43;8znnt1m&#43;1tcaYrrf7absHw=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -1204,7 +1204,7 @@ fruit,45000
 <p>A Boolean formula consists of</p>
 <ul>
 <li>Boolean variables denotes by $a,b,c, \cdots, z$ which can take values $0,1$</li>
-<li>not operations which the flip the value  of the variable denoted by $\neg a$.</li>
+<li>not operations which flip the value  of the variable denoted by $\neg a$.</li>
 <li>or $||$, and $\&amp;$ operations.</li>
 </ul>
 <p>A <em>satisfying assignment</em> to a Boolean formula is an assignment of $0,1$ values to the variables,
@@ -1212,7 +1212,7 @@ such that the formula evaluates to $1$.    See <a href="https://en.wikipedia.org
 <p>For example:
 $$ (\neg a||c)~\&amp;~(\neg a||\neg d)~\&amp;~(b||\neg d)~\&amp;~(b||\neg e)~\&amp;~(c||\neg e)~\&amp;~(\neg a||\neg f)~\&amp;~(b||\neg f)~\&amp;~(c||\neg f)~\&amp;~(d||g)~\&amp;~(e||g)~\&amp;~(f||g)$$
 The assignment $a = 0, b = 1, c = 1, d = 1, e = 1, f = 1, g = 1$ is a satisfying assignment to the above formula, since if you make this substitution and evaluate the expression, 1 is obtained.</p>
-<p>Note that the Boolean formula above 11 terms in brackets, outside which there is and $\&amp;$ operation. Inside the bracket a variable or a negated variable is ored $||$ with another one. Formula of this form are called 2SAT.</p>
+<p>Note that in the Boolean formula above, there are 11 terms in brackets, outside which there is and $\&amp;$ operation. Inside the bracket a variable or a negated variable is or ed $||$ with another one. Formula of this form are called 2SAT.</p>
 <p>Write a program which takes a 2SAT formula as input and outputs/prints a satisfying assignment to the formula.</p>
 <p>Note: The algorithm only needs to be correct.</p>
 </article>
@@ -1224,9 +1224,9 @@ The assignment $a = 0, b = 1, c = 1, d = 1, e = 1, f = 1, g = 1$ is a satisfying
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/53a4b4f129a7a791fbd2ebbd1ebd6621fd56156d" title='Last modified by girishrv | November 16, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/d6bd84e23322abb1b66c6eb7c444158ddaa17a6d" title='Last modified by girishrv | November 17, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>November 16, 2023</span>
+      <span>November 17, 2023</span>
     </a>
   </div>
 

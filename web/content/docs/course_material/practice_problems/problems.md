@@ -489,7 +489,7 @@ Note: Runtime of the algorithm doesnt matter, but it should output the correct a
 
 A Boolean formula consists of 
 - Boolean variables denotes by $a,b,c, \cdots, z$ which can take values $0,1$
-- not operations which the flip the value  of the variable denoted by $\neg a$.
+- not operations which flip the value  of the variable denoted by $\neg a$.
 - or $||$, and $\\&$ operations.  
 
 A *satisfying assignment* to a Boolean formula is an assignment of $0,1$ values to the variables,
@@ -499,7 +499,7 @@ For example:
 $$ (\neg a||c)~\\&~(\neg a||\neg d)~\\&~(b||\neg d)~\\&~(b||\neg e)~\\&~(c||\neg e)~\\&~(\neg a||\neg f)~\\&~(b||\neg f)~\\&~(c||\neg f)~\\&~(d||g)~\\&~(e||g)~\\&~(f||g)$$
 The assignment $a = 0, b = 1, c = 1, d = 1, e = 1, f = 1, g = 1$ is a satisfying assignment to the above formula, since if you make this substitution and evaluate the expression, 1 is obtained.  
 
-Note that the Boolean formula above 11 terms in brackets, outside which there is and $\\&$ operation. Inside the bracket a variable or a negated variable is ored $||$ with another one. Formula of this form are called 2SAT.   
+Note that in the Boolean formula above, there are 11 terms in brackets, outside which there is and $\\&$ operation. Inside the bracket a variable or a negated variable is or ed $||$ with another one. Formula of this form are called 2SAT.   
 
 Write a program which takes a 2SAT formula as input and outputs/prints a satisfying assignment to the formula.  
 
