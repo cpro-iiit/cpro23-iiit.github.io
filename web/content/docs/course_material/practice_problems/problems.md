@@ -590,3 +590,79 @@ Enter your choice: 6
 Exiting the program...
 ```
 Feel free to customize the problem as needed or add additional features for extra complexity.
+
+
+## 12. Sudoku Solver
+
+You are tasked with implementing a program that solves a Sudoku puzzle (see [https://en.wikipedia.org/wiki/Sudoku](https://en.wikipedia.org/wiki/Sudoku)). Sudoku is a number-placement puzzle where the objective is to fill a 9x9 grid with digits from 1 to 9, such that each column, each row, and each of the nine 3x3 subgrids that compose the grid (also called "boxes", "blocks", or "regions") contains all of the digits from 1 to 9.  
+
+Your program should take a partially filled 9x9 Sudoku grid as input, where zeros represent empty cells. The goal is to fill in the empty cells such that the Sudoku puzzle is solved.  
+
+**Requirements:**
+- Implement a function solveSudoku that takes a 9x9 integer array representing the Sudoku grid and solves the puzzle in place.
+- The input grid will be given as a function parameter.
+- The solved Sudoku grid should be displayed as the output.  
+  
+Example:
+
+```c
+#include <stdio.h>
+
+void printSudoku(int sudoku[9][9]) {
+    for (int i = 0; i < 9; i++) {
+        for (int j = 0; j < 9; j++) {
+            printf("%d ", sudoku[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int sudoku[9][9] = {
+        {5, 3, 0, 0, 7, 0, 0, 0, 0},
+        {6, 0, 0, 1, 9, 5, 0, 0, 0},
+        {0, 9, 8, 0, 0, 0, 0, 6, 0},
+        {8, 0, 0, 0, 6, 0, 0, 0, 3},
+        {4, 0, 0, 8, 0, 3, 0, 0, 1},
+        {7, 0, 0, 0, 2, 0, 0, 0, 6},
+        {0, 6, 0, 0, 0, 0, 2, 8, 0},
+        {0, 0, 0, 4, 1, 9, 0, 0, 5},
+        {0, 0, 0, 0, 8, 0, 0, 7, 9}
+    };
+
+    printf("Sudoku Puzzle:\n");
+    printSudoku(sudoku);
+
+    solveSudoku(sudoku);
+
+    printf("\nSolved Sudoku:\n");
+    printSudoku(sudoku);
+
+    return 0;
+}
+
+```
+
+```
+Sudoku Puzzle:
+5 3 0 0 7 0 0 0 0 
+6 0 0 1 9 5 0 0 0 
+0 9 8 0 0 0 0 6 0 
+8 0 0 0 6 0 0 0 3 
+4 0 0 8 0 3 0 0 1 
+7 0 0 0 2 0 0 0 6 
+0 6 0 0 0 0 2 8 0 
+0 0 0 4 1 9 0 0 5 
+0 0 0 0 8 0 0 7 9 
+
+Solved Sudoku:
+5 3 4 6 7 8 9 1 2 
+6 7 2 1 9 5 3 4 8 
+1 9 8 3 4 2 5 6 7 
+8 5 9 7 6 1 4 2 3 
+4 2 6 8 5 3 7 9 1 
+7 1 3 9 2 4 8 5 6 
+9 6 1 5 3 7 2 8 4 
+2 8 7 4 1 9 6 3 5 
+3 4 5 2 8 6 1 7 9
+```

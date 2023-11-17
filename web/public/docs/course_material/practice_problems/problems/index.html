@@ -10,13 +10,13 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/practice_problems/problems/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-11-17T07:24:46+05:30" />
+<meta property="article:modified_time" content="2023-11-17T08:57:51+05:30" />
 <title>Problems | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.063bc413143ff27f559a4866cc3758f4b6e0bfa0f5ac3b22757158b952bd7552.js" integrity="sha256-BjvEExQ/8n9VmkhmzDdY9Lbgv6D1rDsidXFYuVK9dVI=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.5ee915aca98f7e94b6bbcc28bcde04be8ef52acec8b33c8c51038d85437134f8.js" integrity="sha256-XukVrKmPfpS2u8wovN4Evo71Ks7IszyMUQONhUNxNPg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -714,6 +714,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#9-colorings-of-a-graph">9. Colorings of a Graph</a></li>
         <li><a href="#10-finding-satisfying-assignments-for-2sat">10. Finding Satisfying Assignments for 2SAT</a></li>
         <li><a href="#11-employee-database">11. Employee Database</a></li>
+        <li><a href="#12-sudoku-solver">12. Sudoku Solver</a></li>
       </ul>
     </li>
   </ul>
@@ -1308,7 +1309,75 @@ Employee List: (empty)
 Enter your choice: 6
 Exiting the program...
 </code></pre><p>Feel free to customize the problem as needed or add additional features for extra complexity.</p>
-</article>
+<h2 id="12-sudoku-solver">
+  12. Sudoku Solver
+  <a class="anchor" href="#12-sudoku-solver">#</a>
+</h2>
+<p>You are tasked with implementing a program that solves a Sudoku puzzle (see <a href="https://en.wikipedia.org/wiki/Sudoku">https://en.wikipedia.org/wiki/Sudoku</a>). Sudoku is a number-placement puzzle where the objective is to fill a 9x9 grid with digits from 1 to 9, such that each column, each row, and each of the nine 3x3 subgrids that compose the grid (also called &ldquo;boxes&rdquo;, &ldquo;blocks&rdquo;, or &ldquo;regions&rdquo;) contains all of the digits from 1 to 9.</p>
+<p>Your program should take a partially filled 9x9 Sudoku grid as input, where zeros represent empty cells. The goal is to fill in the empty cells such that the Sudoku puzzle is solved.</p>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>Implement a function solveSudoku that takes a 9x9 integer array representing the Sudoku grid and solves the puzzle in place.</li>
+<li>The input grid will be given as a function parameter.</li>
+<li>The solved Sudoku grid should be displayed as the output.</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">printSudoku</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">sudoku</span><span style="color:#111">[</span><span style="color:#ae81ff">9</span><span style="color:#111">][</span><span style="color:#ae81ff">9</span><span style="color:#111">])</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">9</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">9</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;%d &#34;</span><span style="color:#111">,</span> <span style="color:#111">sudoku</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">sudoku</span><span style="color:#111">[</span><span style="color:#ae81ff">9</span><span style="color:#111">][</span><span style="color:#ae81ff">9</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span> <span style="color:#ae81ff">3</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">7</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span><span style="color:#ae81ff">6</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#ae81ff">9</span><span style="color:#111">,</span> <span style="color:#ae81ff">5</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">9</span><span style="color:#111">,</span> <span style="color:#ae81ff">8</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">6</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span><span style="color:#ae81ff">8</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">6</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">3</span><span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span><span style="color:#ae81ff">4</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">8</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">3</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">1</span><span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span><span style="color:#ae81ff">7</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">6</span><span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">6</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span> <span style="color:#ae81ff">8</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">4</span><span style="color:#111">,</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#ae81ff">9</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">5</span><span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">8</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">7</span><span style="color:#111">,</span> <span style="color:#ae81ff">9</span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Sudoku Puzzle:</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printSudoku</span><span style="color:#111">(</span><span style="color:#111">sudoku</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">solveSudoku</span><span style="color:#111">(</span><span style="color:#111">sudoku</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">Solved Sudoku:</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printSudoku</span><span style="color:#111">(</span><span style="color:#111">sudoku</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><pre tabindex="0"><code>Sudoku Puzzle:
+5 3 0 0 7 0 0 0 0 
+6 0 0 1 9 5 0 0 0 
+0 9 8 0 0 0 0 6 0 
+8 0 0 0 6 0 0 0 3 
+4 0 0 8 0 3 0 0 1 
+7 0 0 0 2 0 0 0 6 
+0 6 0 0 0 0 2 8 0 
+0 0 0 4 1 9 0 0 5 
+0 0 0 0 8 0 0 7 9 
+
+Solved Sudoku:
+5 3 4 6 7 8 9 1 2 
+6 7 2 1 9 5 3 4 8 
+1 9 8 3 4 2 5 6 7 
+8 5 9 7 6 1 4 2 3 
+4 2 6 8 5 3 7 9 1 
+7 1 3 9 2 4 8 5 6 
+9 6 1 5 3 7 2 8 4 
+2 8 7 4 1 9 6 3 5 
+3 4 5 2 8 6 1 7 9
+</code></pre></article>
  
       
 
@@ -1317,7 +1386,7 @@ Exiting the program...
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/15396f1e5520824e35bca5edcbbd4fd0c61b7699" title='Last modified by girishrv | November 17, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/31a31c67904e713a79fd0d47c62bfe80bbf0f947" title='Last modified by geevi | November 17, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>November 17, 2023</span>
     </a>
@@ -1379,6 +1448,7 @@ Exiting the program...
         <li><a href="#9-colorings-of-a-graph">9. Colorings of a Graph</a></li>
         <li><a href="#10-finding-satisfying-assignments-for-2sat">10. Finding Satisfying Assignments for 2SAT</a></li>
         <li><a href="#11-employee-database">11. Employee Database</a></li>
+        <li><a href="#12-sudoku-solver">12. Sudoku Solver</a></li>
       </ul>
     </li>
   </ul>
