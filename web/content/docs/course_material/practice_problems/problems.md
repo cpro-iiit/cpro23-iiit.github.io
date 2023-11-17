@@ -470,7 +470,7 @@ fruit,45000
 ```
 
 ## 8. Checking Bipartiteness
-Given a graph $G=(V,E)$, it is said to be bipartite if the vertex set $V$ can be partitioned into two sets $V_1,V_2$ (such that $V_1 \cup V_2 = V$ and $V_1 \cap V_2 = \emptyset$), such that there is no edge in $E$ which has one endpoint in $V_1$ and another endpoint in $V_2$. 
+Given an undirected graph $G=(V,E)$, it is said to be bipartite if the vertex set $V$ can be partitioned into two sets $V_1,V_2$ (such that $V_1 \cup V_2 = V$ and $V_1 \cap V_2 = \emptyset$), such that there is no edge in $E$ which has one endpoint in $V_1$ and another endpoint in $V_2$. 
 
 Write a program, which takes a graph as input and checks if it is bipartite.
 
@@ -478,7 +478,7 @@ Write a program, which takes a graph as input and checks if it is bipartite.
 Note: Runtime of the algorithm doesnt matter, but it should output the correct answer.
 
 ## 9. Colorings of a Graph
-Given a graph $G=(V,E)$, a *coloring* of the graph using $\{R,G,B\}$ is an assignment of these colors for every vertex, such that there is no edge in $E$ which has the same color in both end points. See [https://en.wikipedia.org/wiki/Graph_coloring](https://en.wikipedia.org/wiki/Graph_coloring).
+Given an undirected graph $G=(V,E)$, a *coloring* of the graph using $\{R,G,B\}$ is an assignment of these colors for every vertex, such that there is no edge in $E$ which has the same color in both end points. See [https://en.wikipedia.org/wiki/Graph_coloring](https://en.wikipedia.org/wiki/Graph_coloring).
 
 Write a program, which takes a graph as input and outputs a coloring of the graph with $\{R,G,B\}$ colors.
 
@@ -504,3 +504,89 @@ Note that in the Boolean formula above, there are 11 terms in brackets, outside 
 Write a program which takes a 2SAT formula as input and outputs/prints a satisfying assignment to the formula.  
 
 Note: The algorithm only needs to be correct.
+
+
+## 11. Employee Database
+
+You are tasked with developing a simple employee database system in C. The program should be capable of performing the following operations:  
+
+- Add Employee:  
+Prompt the user to enter the employee's details (Employee ID, Name, Position, and Salary).  
+Add the employee to the database.  
+ 
+- Display Employees:  
+Display a list of all employees in the database, including their details.  
+  
+- Search Employee:  
+Prompt the user to enter an Employee ID.  
+Display the details of the employee with the given ID if found; otherwise, show a message indicating that the employee was not found.  
+  
+- Update Salary:  
+Prompt the user to enter an Employee ID.  
+If the employee is found, allow the user to update the salary for that employee.  
+  
+- Delete Employee:   
+Prompt the user to enter an Employee ID.  
+If the employee is found, remove the employee from the database.  
+  
+- Exit:  
+Terminate the program.  
+  
+**Requirements:**  
+- Use structures to represent an employee's details.  
+- Implement dynamic memory allocation for storing employee records.  
+- Use functions to modularize the code (e.g., separate functions for adding, displaying, searching, updating, and deleting employees).  
+  
+Example run of the program
+```
+Employee Database Management System
+
+1. Add Employee
+2. Display Employees
+3. Search Employee
+4. Update Salary
+5. Delete Employee
+6. Exit
+
+Enter your choice: 1
+Enter Employee ID: 101
+Enter Name: John Doe
+Enter Position: Software Engineer
+Enter Salary: 60000
+
+Employee added successfully!
+
+Enter your choice: 2
+Employee List:
+
+ID    Name               Position               Salary
+-----------------------------------------------------
+101   John Doe           Software Engineer      60000
+
+Enter your choice: 3
+Enter Employee ID to search: 101
+
+Employee Found!
+
+ID    Name               Position               Salary
+-----------------------------------------------------
+101   John Doe           Software Engineer      60000
+
+Enter your choice: 4
+Enter Employee ID to update salary: 101
+Enter new salary: 65000
+
+Salary updated successfully!
+
+Enter your choice: 5
+Enter Employee ID to delete: 101
+
+Employee deleted successfully!
+
+Enter your choice: 2
+Employee List: (empty)
+
+Enter your choice: 6
+Exiting the program...
+```
+Feel free to customize the problem as needed or add additional features for extra complexity.

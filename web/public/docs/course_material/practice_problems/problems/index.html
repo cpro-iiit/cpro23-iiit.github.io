@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Practice Problems # 1. Cycles in a permutation # Let $\pi:\{1,\cdots, n\} \rightarrow \{1,\cdots, n\}$ be permutation (that is a one-one onto function). The cycle containing 1 is the sequence of numbers $$1\qquad \pi(1)\qquad \pi(\pi(1))\qquad \pi(\pi(\pi(1)))\qquad \cdots$$ Notice that the sequence is periodic (Why?) and the period is called the size of the cycle containing 1. Similarly one can define the cycle containing 2, 3 etc. Write a program to take $n$ and a permutation of $\{1,\cdots,n\}$ as inputs and print all the cycles (you can stop at the period).">
+<meta name="description" content="Practice Problems#1. Cycles in a permutation#Let $\pi:\{1,\cdots, n\} \rightarrow \{1,\cdots, n\}$ be permutation (that is a one-one onto function). The cycle containing 1 is the sequence of numbers $$1\qquad \pi(1)\qquad \pi(\pi(1))\qquad \pi(\pi(\pi(1)))\qquad \cdots$$ Notice that the sequence is periodic (Why?) and the period is called the size of the cycle containing 1. Similarly one can define the cycle containing 2, 3 etc. Write a program to take $n$ and a permutation of $\{1,\cdots,n\}$ as inputs and print all the cycles (you can stop at the period).">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Problems" />
-<meta property="og:description" content="Practice Problems # 1. Cycles in a permutation # Let $\pi:\{1,\cdots, n\} \rightarrow \{1,\cdots, n\}$ be permutation (that is a one-one onto function). The cycle containing 1 is the sequence of numbers $$1\qquad \pi(1)\qquad \pi(\pi(1))\qquad \pi(\pi(\pi(1)))\qquad \cdots$$ Notice that the sequence is periodic (Why?) and the period is called the size of the cycle containing 1. Similarly one can define the cycle containing 2, 3 etc. Write a program to take $n$ and a permutation of $\{1,\cdots,n\}$ as inputs and print all the cycles (you can stop at the period)." />
+<meta property="og:description" content="Practice Problems#1. Cycles in a permutation#Let $\pi:\{1,\cdots, n\} \rightarrow \{1,\cdots, n\}$ be permutation (that is a one-one onto function). The cycle containing 1 is the sequence of numbers $$1\qquad \pi(1)\qquad \pi(\pi(1))\qquad \pi(\pi(\pi(1)))\qquad \cdots$$ Notice that the sequence is periodic (Why?) and the period is called the size of the cycle containing 1. Similarly one can define the cycle containing 2, 3 etc. Write a program to take $n$ and a permutation of $\{1,\cdots,n\}$ as inputs and print all the cycles (you can stop at the period)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/practice_problems/problems/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-11-17T07:15:47+05:30" />
+<meta property="article:modified_time" content="2023-11-17T07:24:46+05:30" />
 <title>Problems | CPro Mon 23</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.113d1b6ce0dc78b9ee51d743e89ea5fbcce79edd66fb5b5c698aeb7fb69bb07c.js" integrity="sha256-ET0bbODceLnuUddD6J6l&#43;8znnt1m&#43;1tcaYrrf7absHw=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.063bc413143ff27f559a4866cc3758f4b6e0bfa0f5ac3b22757158b952bd7552.js" integrity="sha256-BjvEExQ/8n9VmkhmzDdY9Lbgv6D1rDsidXFYuVK9dVI=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -713,6 +713,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#8-checking-bipartiteness">8. Checking Bipartiteness</a></li>
         <li><a href="#9-colorings-of-a-graph">9. Colorings of a Graph</a></li>
         <li><a href="#10-finding-satisfying-assignments-for-2sat">10. Finding Satisfying Assignments for 2SAT</a></li>
+        <li><a href="#11-employee-database">11. Employee Database</a></li>
       </ul>
     </li>
   </ul>
@@ -1187,14 +1188,14 @@ fruit,45000
   8. Checking Bipartiteness
   <a class="anchor" href="#8-checking-bipartiteness">#</a>
 </h2>
-<p>Given a graph $G=(V,E)$, it is said to be bipartite if the vertex set $V$ can be partitioned into two sets $V_1,V_2$ (such that $V_1 \cup V_2 = V$ and $V_1 \cap V_2 = \emptyset$), such that there is no edge in $E$ which has one endpoint in $V_1$ and another endpoint in $V_2$.</p>
+<p>Given an undirected graph $G=(V,E)$, it is said to be bipartite if the vertex set $V$ can be partitioned into two sets $V_1,V_2$ (such that $V_1 \cup V_2 = V$ and $V_1 \cap V_2 = \emptyset$), such that there is no edge in $E$ which has one endpoint in $V_1$ and another endpoint in $V_2$.</p>
 <p>Write a program, which takes a graph as input and checks if it is bipartite.</p>
 <p>Note: Runtime of the algorithm doesnt matter, but it should output the correct answer.</p>
 <h2 id="9-colorings-of-a-graph">
   9. Colorings of a Graph
   <a class="anchor" href="#9-colorings-of-a-graph">#</a>
 </h2>
-<p>Given a graph $G=(V,E)$, a <em>coloring</em> of the graph using ${R,G,B}$ is an assignment of these colors for every vertex, such that there is no edge in $E$ which has the same color in both end points. See <a href="https://en.wikipedia.org/wiki/Graph_coloring">https://en.wikipedia.org/wiki/Graph_coloring</a>.</p>
+<p>Given an undirected graph $G=(V,E)$, a <em>coloring</em> of the graph using ${R,G,B}$ is an assignment of these colors for every vertex, such that there is no edge in $E$ which has the same color in both end points. See <a href="https://en.wikipedia.org/wiki/Graph_coloring">https://en.wikipedia.org/wiki/Graph_coloring</a>.</p>
 <p>Write a program, which takes a graph as input and outputs a coloring of the graph with ${R,G,B}$ colors.</p>
 <p>Note: Runtime of the algorithm doesnt matter, but it should output the correct answer.</p>
 <h2 id="10-finding-satisfying-assignments-for-2sat">
@@ -1215,6 +1216,98 @@ The assignment $a = 0, b = 1, c = 1, d = 1, e = 1, f = 1, g = 1$ is a satisfying
 <p>Note that in the Boolean formula above, there are 11 terms in brackets, outside which there is and $\&amp;$ operation. Inside the bracket a variable or a negated variable is or ed $||$ with another one. Formula of this form are called 2SAT.</p>
 <p>Write a program which takes a 2SAT formula as input and outputs/prints a satisfying assignment to the formula.</p>
 <p>Note: The algorithm only needs to be correct.</p>
+<h2 id="11-employee-database">
+  11. Employee Database
+  <a class="anchor" href="#11-employee-database">#</a>
+</h2>
+<p>You are tasked with developing a simple employee database system in C. The program should be capable of performing the following operations:</p>
+<ul>
+<li>
+<p>Add Employee:<br>
+Prompt the user to enter the employee&rsquo;s details (Employee ID, Name, Position, and Salary).<br>
+Add the employee to the database.</p>
+</li>
+<li>
+<p>Display Employees:<br>
+Display a list of all employees in the database, including their details.</p>
+</li>
+<li>
+<p>Search Employee:<br>
+Prompt the user to enter an Employee ID.<br>
+Display the details of the employee with the given ID if found; otherwise, show a message indicating that the employee was not found.</p>
+</li>
+<li>
+<p>Update Salary:<br>
+Prompt the user to enter an Employee ID.<br>
+If the employee is found, allow the user to update the salary for that employee.</p>
+</li>
+<li>
+<p>Delete Employee:<br>
+Prompt the user to enter an Employee ID.<br>
+If the employee is found, remove the employee from the database.</p>
+</li>
+<li>
+<p>Exit:<br>
+Terminate the program.</p>
+</li>
+</ul>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>Use structures to represent an employee&rsquo;s details.</li>
+<li>Implement dynamic memory allocation for storing employee records.</li>
+<li>Use functions to modularize the code (e.g., separate functions for adding, displaying, searching, updating, and deleting employees).</li>
+</ul>
+<p>Example run of the program</p>
+<pre tabindex="0"><code>Employee Database Management System
+
+1. Add Employee
+2. Display Employees
+3. Search Employee
+4. Update Salary
+5. Delete Employee
+6. Exit
+
+Enter your choice: 1
+Enter Employee ID: 101
+Enter Name: John Doe
+Enter Position: Software Engineer
+Enter Salary: 60000
+
+Employee added successfully!
+
+Enter your choice: 2
+Employee List:
+
+ID    Name               Position               Salary
+-----------------------------------------------------
+101   John Doe           Software Engineer      60000
+
+Enter your choice: 3
+Enter Employee ID to search: 101
+
+Employee Found!
+
+ID    Name               Position               Salary
+-----------------------------------------------------
+101   John Doe           Software Engineer      60000
+
+Enter your choice: 4
+Enter Employee ID to update salary: 101
+Enter new salary: 65000
+
+Salary updated successfully!
+
+Enter your choice: 5
+Enter Employee ID to delete: 101
+
+Employee deleted successfully!
+
+Enter your choice: 2
+Employee List: (empty)
+
+Enter your choice: 6
+Exiting the program...
+</code></pre><p>Feel free to customize the problem as needed or add additional features for extra complexity.</p>
 </article>
  
       
@@ -1224,7 +1317,7 @@ The assignment $a = 0, b = 1, c = 1, d = 1, e = 1, f = 1, g = 1$ is a satisfying
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/d6bd84e23322abb1b66c6eb7c444158ddaa17a6d" title='Last modified by girishrv | November 17, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/15396f1e5520824e35bca5edcbbd4fd0c61b7699" title='Last modified by girishrv | November 17, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>November 17, 2023</span>
     </a>
@@ -1285,6 +1378,7 @@ The assignment $a = 0, b = 1, c = 1, d = 1, e = 1, f = 1, g = 1$ is a satisfying
         <li><a href="#8-checking-bipartiteness">8. Checking Bipartiteness</a></li>
         <li><a href="#9-colorings-of-a-graph">9. Colorings of a Graph</a></li>
         <li><a href="#10-finding-satisfying-assignments-for-2sat">10. Finding Satisfying Assignments for 2SAT</a></li>
+        <li><a href="#11-employee-database">11. Employee Database</a></li>
       </ul>
     </li>
   </ul>

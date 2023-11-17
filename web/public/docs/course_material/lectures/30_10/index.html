@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="08 Advanced Pointers # Pointer to Pointer for LinkedList functions # Full Code
+<meta name="description" content="08 Advanced Pointers#Pointer to Pointer for LinkedList functions#Full Code
 void insert_v2(Person p, int pos, LinkedList* l) { *l = insert(p, pos, *l); } void reverse_v2(LinkedList* l) { *l = reverse(*l); } int main() { Node third = { {&#34;Alice&#34;, 22, Single}, NULL }; Node second = { {&#34;Bob&#34;, 26, Married}, &amp;third }; Node first = { {&#34;Charlie&#34;, 20, Engaged}, &amp;second }; Person D = {&#34;Raj&#34;, 18, NotMentioned}; Node l2 = { D, NULL}; Person E = {&#34;Eve&#34;, 28, Married}; Node l3 = { E, NULL}; LinkedList l = &amp;first; printf(&#34;Size of the list is %d\n&#34;, size(l)); print_list(l); //l = reverse(l); reverse_v2(&amp;l); print_list(l); // l = insert(D,2,l); // Problem1: Write the insert function such that, // we dont need to reassign l to the return value // of the function to update it.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="08 Advanced Pointers" />
-<meta property="og:description" content="08 Advanced Pointers # Pointer to Pointer for LinkedList functions # Full Code
+<meta property="og:description" content="08 Advanced Pointers#Pointer to Pointer for LinkedList functions#Full Code
 void insert_v2(Person p, int pos, LinkedList* l) { *l = insert(p, pos, *l); } void reverse_v2(LinkedList* l) { *l = reverse(*l); } int main() { Node third = { {&#34;Alice&#34;, 22, Single}, NULL }; Node second = { {&#34;Bob&#34;, 26, Married}, &amp;third }; Node first = { {&#34;Charlie&#34;, 20, Engaged}, &amp;second }; Person D = {&#34;Raj&#34;, 18, NotMentioned}; Node l2 = { D, NULL}; Person E = {&#34;Eve&#34;, 28, Married}; Node l3 = { E, NULL}; LinkedList l = &amp;first; printf(&#34;Size of the list is %d\n&#34;, size(l)); print_list(l); //l = reverse(l); reverse_v2(&amp;l); print_list(l); // l = insert(D,2,l); // Problem1: Write the insert function such that, // we dont need to reassign l to the return value // of the function to update it." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/lectures/30_10/" /><meta property="article:section" content="docs" />
@@ -18,7 +18,7 @@ void insert_v2(Person p, int pos, LinkedList* l) { *l = insert(p, pos, *l); } vo
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.113d1b6ce0dc78b9ee51d743e89ea5fbcce79edd66fb5b5c698aeb7fb69bb07c.js" integrity="sha256-ET0bbODceLnuUddD6J6l&#43;8znnt1m&#43;1tcaYrrf7absHw=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.063bc413143ff27f559a4866cc3758f4b6e0bfa0f5ac3b22757158b952bd7552.js" integrity="sha256-BjvEExQ/8n9VmkhmzDdY9Lbgv6D1rDsidXFYuVK9dVI=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book

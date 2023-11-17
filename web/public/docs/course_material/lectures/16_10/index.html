@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="05 Linked Lists Problems # Insert element at a position in the list # LinkedList insert(Person p, int pos, LinkedList l) { if (pos == 0) { Node* D = (Node *) malloc(sizeof(Node)); D-&gt;data = p; D-&gt;next = l; return D; } else { l-&gt;next = insert(p, pos-1, l-&gt;next); return l; } } Concatenate 2 lists # LinkedList concat(LinkedList l1, LinkedList l2) { if (l1 == NULL) { return l2; } else { l1-&gt;next = concat(l1-&gt;next, l2); return l1; } } Reverse a list # LinkedList reverse(LinkedList l) { int s = size(l); LinkedList l2 = NULL; for (int i = 0; i &lt; s; i&#43;&#43;) { l2 = insert(*element_at(s-i-1, l), i, l2); } return l2; } Full code # #include &#34;stdio.">
+<meta name="description" content="05 Linked Lists Problems#Insert element at a position in the list#LinkedList insert(Person p, int pos, LinkedList l) { if (pos == 0) { Node* D = (Node *) malloc(sizeof(Node)); D-&gt;data = p; D-&gt;next = l; return D; } else { l-&gt;next = insert(p, pos-1, l-&gt;next); return l; } } Concatenate 2 lists#LinkedList concat(LinkedList l1, LinkedList l2) { if (l1 == NULL) { return l2; } else { l1-&gt;next = concat(l1-&gt;next, l2); return l1; } } Reverse a list#LinkedList reverse(LinkedList l) { int s = size(l); LinkedList l2 = NULL; for (int i = 0; i &lt; s; i&#43;&#43;) { l2 = insert(*element_at(s-i-1, l), i, l2); } return l2; } Full code##include &#34;stdio.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="05 Linked Lists Problems" />
-<meta property="og:description" content="05 Linked Lists Problems # Insert element at a position in the list # LinkedList insert(Person p, int pos, LinkedList l) { if (pos == 0) { Node* D = (Node *) malloc(sizeof(Node)); D-&gt;data = p; D-&gt;next = l; return D; } else { l-&gt;next = insert(p, pos-1, l-&gt;next); return l; } } Concatenate 2 lists # LinkedList concat(LinkedList l1, LinkedList l2) { if (l1 == NULL) { return l2; } else { l1-&gt;next = concat(l1-&gt;next, l2); return l1; } } Reverse a list # LinkedList reverse(LinkedList l) { int s = size(l); LinkedList l2 = NULL; for (int i = 0; i &lt; s; i&#43;&#43;) { l2 = insert(*element_at(s-i-1, l), i, l2); } return l2; } Full code # #include &#34;stdio." />
+<meta property="og:description" content="05 Linked Lists Problems#Insert element at a position in the list#LinkedList insert(Person p, int pos, LinkedList l) { if (pos == 0) { Node* D = (Node *) malloc(sizeof(Node)); D-&gt;data = p; D-&gt;next = l; return D; } else { l-&gt;next = insert(p, pos-1, l-&gt;next); return l; } } Concatenate 2 lists#LinkedList concat(LinkedList l1, LinkedList l2) { if (l1 == NULL) { return l2; } else { l1-&gt;next = concat(l1-&gt;next, l2); return l1; } } Reverse a list#LinkedList reverse(LinkedList l) { int s = size(l); LinkedList l2 = NULL; for (int i = 0; i &lt; s; i&#43;&#43;) { l2 = insert(*element_at(s-i-1, l), i, l2); } return l2; } Full code##include &#34;stdio." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cpro-iiit.github.io/docs/course_material/lectures/16_10/" /><meta property="article:section" content="docs" />
 
@@ -16,7 +16,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.113d1b6ce0dc78b9ee51d743e89ea5fbcce79edd66fb5b5c698aeb7fb69bb07c.js" integrity="sha256-ET0bbODceLnuUddD6J6l&#43;8znnt1m&#43;1tcaYrrf7absHw=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.063bc413143ff27f559a4866cc3758f4b6e0bfa0f5ac3b22757158b952bd7552.js" integrity="sha256-BjvEExQ/8n9VmkhmzDdY9Lbgv6D1rDsidXFYuVK9dVI=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
