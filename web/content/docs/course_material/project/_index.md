@@ -17,3 +17,7 @@ The project is mainly to do something fun with programming. We will also provide
 **Honour Code:** The grading is based on viva and if we find that you don't understand your code, then there will be a negative marking!. We will also have intermediate evaluations to test wheather you are regularly solving the problem. Failing intermediate evals, will result in negative marking and loss of eligibility for bonus marks.
 
 **Other Requirements:** You will need to create a GitHub account (https://github.com/). This is only because they provide some tools which allow us to grade and give feedback easily.
+
+## Explore More Game Programming in C
+
+See [https://www.raylib.com/index.html](https://www.raylib.com/index.html) 
