@@ -7,6 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://cpro-iiit.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Game Programming in C</title>
+      <link>https://cpro-iiit.github.io/posts/garme_programming/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/posts/garme_programming/</guid>
+      <description>Raylib
+See https://www.raylib.com/index.html.
+Code for snake game in raylib: https://github.com/raysan5/raylib-games/blob/master/classics/src/snake.c
+Allegro
+https://liballeg.org/
+Quickstart</description>
+    </item>
+    
+    <item>
       <title>Installing GCC</title>
       <link>https://cpro-iiit.github.io/posts/installingGCC/</link>
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
