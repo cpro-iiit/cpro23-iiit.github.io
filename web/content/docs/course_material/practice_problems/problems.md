@@ -753,3 +753,14 @@ Solved Sudoku:
 2 8 7 4 1 9 6 3 5 
 3 4 5 2 8 6 1 7 9
 ```
+
+
+## Solutions
+
+Problem 3 Solution: https://github.com/geevi/cpro_mon_2022/blob/main/lecs/quiz2/bank_soln.c  
+
+Problem 5 Solution: https://github.com/geevi/cpro_mon_2022/blob/main/lecs/quiz2/arrangements_soln.c  
+
+Problem 6 Solution: See grades.c in https://github.com/geevi/cpro_mon_2022/tree/main/lecs/end_sem  
+
+Problem 7 Solution: see inventory_grouping_soln.c in https://github.com/geevi/cpro_mon_2022/tree/main/lecs/end_sem  
