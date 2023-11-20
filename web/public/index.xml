@@ -173,6 +173,24 @@ GDB Tutorial Slides UMD</description>
     </item>
     
     <item>
+      <title>13 Tracing for Recursing</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/lectures/15_11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/docs/course_material/lectures/15_11/</guid>
+      <description>13 Tracing Recursion#Slides</description>
+    </item>
+    
+    <item>
+      <title>14 Summary</title>
+      <link>https://cpro-iiit.github.io/docs/course_material/lectures/20_11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cpro-iiit.github.io/docs/course_material/lectures/20_11/</guid>
+      <description>14 Summary#Summary: Part I#Basic Programming Constructs for/while if/then/else switch/case variables, literals, basic datatypes basic I/O: printf/scanf Pointers, Array, Strings pointer arithmetic dynamic memory allocation malloc/free Summary: Part II#Recursion Abstract Data Types Structs, Struct Array, Struct Pointer, Struct of Struct Recursive structs using pointers (Linked Lists, Social Net) File I/O : fgets/fputs fscanf/fprintf fread/fwrite Function Pointers Misc Macros Commandline Arguments Multifile Programs C std Libraries (time.</description>
+    </item>
+    
+    <item>
       <title>Assignment - 1</title>
       <link>https://cpro-iiit.github.io/docs/course_material/assignments/assignment1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
