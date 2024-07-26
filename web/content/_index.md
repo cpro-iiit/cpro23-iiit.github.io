@@ -4,7 +4,7 @@ type: docs
 bookFlatSection: true
 ---
 
-# M23 CS0.101 Computer Programming course @ IIITH
+# M24 CS0.101 Computer Programming course @ IIITH
 
 Welcome to CS0.101 Computer Programming! In this journey, we'll explore the fundamentals of programming, learning how to communicate with computers to solve real-world problems. You'll gain essential skills in variables, conditionals, loops, functions, and data structures.
 
@@ -14,7 +14,6 @@ Through hands-on practice and coding assignments, you'll develop the confidence 
 
 ## Instructors
 [Girish Varma](https://girishvarma.in/)  
-[Abhishek Deshpande](https://fac-webpages.iiit.ac.in/Abhishek_Deshpande/)  
-[Shantanav Chakraborty](https://sites.google.com/view/shchakra)
+[Charu Sharma]()  
 
 
