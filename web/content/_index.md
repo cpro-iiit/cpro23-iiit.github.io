@@ -18,4 +18,4 @@ Through hands-on practice and coding assignments, you'll develop the confidence 
 
 ## Calendar
 
-<iframe width="626" height="900" frameborder="0" scrolling="no" src="https://iiitaphyd-my.sharepoint.com/personal/girish_varma_iiit_ac_in/_layouts/15/Doc.aspx?sourcedoc={75c958a8-1590-4c77-97bd-5e1186ea2bd8}&action=embedview&wdAllowInteractivity=False&Item='Calendar'!A1%3AJ44&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+<iframe width="422" height="710" frameborder="0" scrolling="no" src="https://iiitaphyd-my.sharepoint.com/personal/girish_varma_iiit_ac_in/_layouts/15/Doc.aspx?sourcedoc={75c958a8-1590-4c77-97bd-5e1186ea2bd8}&action=embedview&wdAllowInteractivity=False&Item='Calendar'!A1%3AG34&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
