@@ -14,7 +14,8 @@ Through hands-on practice and coding assignments, you'll develop the confidence 
 
 ## Instructors
 [Girish Varma](https://girishvarma.in/)  
-[Charu Sharma]()  
+[Abhishek Deshpande]()  
+[Sandeep Nagar]()
 
 ## Calendar
 
