@@ -8,7 +8,7 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 # Welcome to CS0.101 Lab 0
 
-https://cpro-iiit.github.io/docs/course_material/labs/0/
+https://cpro-iiit.github.io/docs/course_material/labs/0/lab0.pdf
 
 ---
 ## Introduction
@@ -26,10 +26,10 @@ Lab sessions are evaluated (2% marks per lab, 20% for 10 labs).
 ---
 ## Whats the plan for Lab 0?
 
-- Help you setup the coding environment.
-- Downloading problems and learn basic tools required for coding.
-- Submiting solutions and seeing the score.
-- Solve a hello world problem.
+1. Help you setup the coding environment.
+2. Downloading problems and learn basic tools required for coding.
+3. Submiting solutions and seeing the score.
+4. Solve a hello world problem.
 ---
 ## Some Buzz Words!
 __AutoLab__: where all labs/assignments problems are set. You can download handouts, and upload solutions (or handins). Autolab will automatically grade your solutions and give you a score. You will also get feedback on code from TAs here. You can access autolab in 2 ways.
@@ -47,34 +47,35 @@ __Pingala Shell__: where you will do all the coding. The _pingala shell_ a stand
 
 ---
 
-### 1.1 Setting Up Outlook to recieve AutoLab Mails
-Goto 1.) Settings > 2.) Mail > 3.) Junk Mail > 4.) Add Safe Sender > 5.) add cpro24mon@gmail.com
-![width:700px center](outlook_safe_sender.png)
 
----
+### 1.1 Reseting Password for AutoLab: 
+1. Open a browser and go to https://pingala.iiit.ac.in (which is the web interface for autolab). 
+2. Reset your password using forgot password. Username is IIIT email id. 
+3. Goto Outlook Mailbox for instructions for reset.
+4. After reseting, login to the site and keep this browser window open as it is also needed for step 1.3.
 
-### 1.2 Reseting Password for AutoLab: 
-Open a browser and go to https://pingala.iiit.ac.in (which is the web interface for autolab). Reset your password using forgot password. Username is IIIT email id. Keep this browser window open as it is also needed for step 1.3.
-
-Remember this password as it will be used for all labs, assignmnets and exams.
+>Remember this password!. It will be used for all labs, assignmnets and exams.
 
 
 ---
 ### 1.2 Open  pingala shell: 
 
-Open Terminal in lab machines and run the command
+1. Open Terminal in lab machines and run the command
 ```bash
 ssh <your_iiit_username>@pingala.iiit.ac.in
 ```
-Enter your IIIT CAS password to open the _pingala shell_. _pingala shell_ a standard ubuntu linux shell which has all the programs required for this course.
+2. Enter your IIIT CAS password to open the _pingala shell_.
+
+_pingala shell_ a standard ubuntu linux shell which has all the programs required for this course.
 
 ---
 ### 1.3 Setup AutoLab in shell: 
-Run the following command for setting up autolab in _pingala shell_
+1. Run the following command for setting up autolab in _pingala shell_
 ```bash
 autolab setup
 ```
-Copy the 6 character access code and paste it at https://pingala.iiit.ac.in/activate
+
+2. Copy the 6 character access code and paste it at https://pingala.iiit.ac.in/activate in the same browser window where you logged in.
 
 ---
 ## 2. Download Problems/Basic Tools for Coding
@@ -120,7 +121,7 @@ More Info: https://missing.csail.mit.edu/2020/course-shell/
 ### Can I use my computer/editor for coding?
 Yes. You can access Autolab either through the website or through Terminal as long as you are connected to IIIT network directly or indirectly through VPN.
 
-However its reccomended to use the __pingala shell__. This ensures that you can get help from your colleages and TAs easily.
+However its reccomended to use the __pingala shell__. This ensures that you can get help from your colleages and TAs easily. This is also the same setup used for all exams.
 
 ---
 ## Thanks
