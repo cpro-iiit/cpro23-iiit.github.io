@@ -2,10 +2,25 @@
 title: "Lab 0"
 bookHidden: false
 marp: true
+header: 'CS0.101 Computer Programming (Monsoon 24)'
+footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 ---
 
 # Welcome to CS0.101 Lab 0
 
+https://cpro-iiit.github.io/docs/course_material/labs/0/
+
+---
+## Introduction
+Coding can be learnt only by solving programming problems!
+
+80% of wieghtage of evaluations is on programming problems.
+
+> __Goal__: Solve 8-9 programming problems every week. 
+> (3 in lab, 2 in tutorial, 1-2 in assignment, 2 in practice)
+> Solve 100 over the entire course.   
+
+Lab sessions are evaluated (2% marks per lab, 20% for 10 labs).
 
 
 ---
@@ -26,11 +41,20 @@ __Pingala Shell__: where you will do all the coding. The _pingala shell_ a stand
 
 ---
 
+
 ## 1. Basic Setup
 
+
 ---
-### 1.1 Reseting Password for AutoLab: 
-Open a browser and go to https://pingala.iiit.ac.in (which is the web interface for autolab). Reset your password using forgot password. Username is IIIT email id. 
+
+### 1.1 Setting Up Outlook to recieve AutoLab Mails
+Goto 1.) Settings > 2.) Mail > 3.) Junk Mail > 4.) Add Safe Sender > 5.) add cpro24mon@gmail.com
+![width:700px center](outlook_safe_sender.png)
+
+---
+
+### 1.2 Reseting Password for AutoLab: 
+Open a browser and go to https://pingala.iiit.ac.in (which is the web interface for autolab). Reset your password using forgot password. Username is IIIT email id. Keep this browser window open as it is also needed for step 1.3.
 
 Remember this password as it will be used for all labs, assignmnets and exams.
 
@@ -57,20 +81,11 @@ Copy the 6 character access code and paste it at https://pingala.iiit.ac.in/acti
 
 ---
 ### 2.1 Download Problems
-Run the bellow command to list the courses
-```bash
-autolab courses
-```
-Run the bellow command to list the assesments under the courses
-```bash
-autolab asmt <course_id>
-```
-<course_id> is "cs0-101-m24" for this course (as shown by previous command).
-Run the bellow command to download the handin for Lab 0
-```bash
-autolab download <course_id>:<asmt_id>
-```
-<asmt_id> is "lab0" for Lab 0 (as shown by previous command).
+1. Run the  command `autolab courses` to list the courses
+
+2. Run the command `autolab asmt <course_id>` to list the assesments under the courses. <course_id> is "cs0-101-m24" for this course (as shown by previous command).
+
+3. Run the command `autolab download <course_id>:<asmt_id>` to download the handout for Lab 0. <asmt_id> is "lab0" for Lab 0 (as shown by previous command).
 
 More Info: https://docs.autolabproject.com/command-line-interface/
 
