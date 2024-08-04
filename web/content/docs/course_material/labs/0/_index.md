@@ -176,4 +176,3 @@ https://docs.autolabproject.com/command-line-interface/
 However, it's recommended to use the __pingala shell__ where everything is already installed. This ensures that you can get help from your colleagues and TAs easily. This is also the same setup used for all exams.
 
 ---
-## Thanks
