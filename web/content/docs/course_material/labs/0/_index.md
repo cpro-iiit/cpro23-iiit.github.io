@@ -1,7 +1,7 @@
 ---
 title: "Lab 0"
 bookHidden: false
-marp: true
+marp: false
 header: 'CS0.101 Computer Programming (Monsoon 24)'
 footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 ---
@@ -36,7 +36,7 @@ __AutoLab__: where all labs/assignments problems are set. You can download hando
 1. Through the website https://pingala.iiit.ac.in
 2. Through autolab commands in the _pingala shell_.
 
-__Pingala Shell__: where you will do all the coding. The _pingala shell_ is a standard ubuntu Linux shell with all the programs required for this course. This also ensures that the outputs/errors you encounter are similar for the entire batch.
+__Pingala Shell__: where you will do all the coding. The _pingala shell_ is a standard Ubuntu Linux shell with all the programs required for this course. This also ensures that the outputs/errors you encounter are similar for the entire batch.
 
 
 ---
@@ -50,7 +50,7 @@ __Pingala Shell__: where you will do all the coding. The _pingala shell_ is a st
 
 ### 1.1 Reseting Password for AutoLab: 
 1. Open a browser and go to https://pingala.iiit.ac.in (the web interface for autolab). 
-2. Reset your password using forgot password. Username is the IIIT email id. 
+2. Reset your password using forgot password. The username is the IIIT email id. 
 3. Goto Outlook Mailbox for instructions for reset.
 4. After resetting, login to the site and keep this browser window open, as it is also needed for step 1.3.
 
@@ -86,7 +86,7 @@ autolab setup
 
 2. Run the command `autolab asmts <course_id>` to list the assesments under the courses. <course_id> is "cs0-101-m24" for this course (as shown by the previous command).
 
-3. Run the command `autolab download <course_id>:<asmt_id>` to download the handout for Lab 0. <asmt_id> is "lab0" for Lab 0 (as shown by the previous command).
+3. Run the command `autolab download <course_id>:<asmts_id>` to download the handout for Lab 0. <asmts_id> is "lab0" for Lab 0 (as shown by the previous command).
 
 More Info: https://docs.autolabproject.com/command-line-interface/
 
@@ -98,8 +98,9 @@ More Info: https://docs.autolabproject.com/command-line-interface/
 - use `tar xvf <file_name>` to unzip tar archives `lab0-handout.tar`. More about tar file: https://en.wikipedia.org/wiki/Tar_(computing)
 - use `cd lab0-handout/` and `ls` to check the assessment files (driver.sh, Makefile, p1, p2, README)
 - use `nano p1/main.c` to open C file for the lab0/problem-1.
+--- 
 - use `nano <file_name>` to edit `<file_name>` as a text file. e.g. `nano p1/main.c`, `nano p2/main.c`.
-- edit your code and use `ctrl+o` to write the code and hit enter to save, use `ctrl+x` to exit nano editor. More about nano editor: https://www.nano-editor.org/
+- Edit your code and use `ctrl+o` to write the code. Hit enter to save, and use `ctrl+x` to exit the nano editor. More about nano editor: https://www.nano-editor.org/
 - use 'cd ..` to exit the current directory.
 - use `tar cvf <tar_file_name> <folder_name>` to create a tar archive (similar to a zip file) for the folder <folder_name>. e.g. `tar lab0-handin.tar lab0-handout`.
 - run `ls` to check the created tar files. 
@@ -175,3 +176,4 @@ https://docs.autolabproject.com/command-line-interface/
 However, it's recommended to use the __pingala shell__ where everything is already installed. This ensures that you can get help from your colleagues and TAs easily. This is also the same setup used for all exams.
 
 ---
+## Thanks
