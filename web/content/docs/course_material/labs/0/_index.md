@@ -26,9 +26,10 @@ Lab sessions are evaluated (2% marks per lab, 20% for 10 labs).
 ## What's the plan for Lab 0?
 
 1. Help you set up the coding environment.
-2. Download problems and learn the basic tools required for coding.
+2. Download problems from AutoLab (https://pingala.iiit.ac.in) and learn the basic tools required for coding.
 3. Submitting solutions and seeing the score.
-4. Solve a "Hello World" problem.
+4. Problem-1, Solve a "Hello World" problem.
+5. Problem-2, Print "Hello World! I am learning Computer Programming in C, And it is awesome!"
 ---
 ## Some Buzz Words!
 __AutoLab__: where all labs/assignments problems are set. You can download handouts and upload solutions (or handins). Autolab will automatically grade your solutions and give you a score. You will also get feedback on code from TAs here. You can access autolab in 2 ways.
@@ -93,10 +94,16 @@ More Info: https://docs.autolabproject.com/command-line-interface/
 ### 2.2 Navigate folders, edit code, extract/create tar archive in 'pingala shell'
 
 - use `ls` command to list folders and files in the current directory.
-- use `cd` to change the directory.
-- use `tar xvf <file_name>` to unzip tar archives.
-- use `nano <file_name>` to edit `<file_name>` as a text file.
-- use `tar cvf <tar_file_name> <folder_name>` to create a tar archive (similar to a zip file) for the folder <folder_name>.
+- use `cd` to change the directory. e.g. `cd lab0/`
+- use `tar xvf <file_name>` to unzip tar archives `lab0-handout.tar`. More about tar file: https://en.wikipedia.org/wiki/Tar_(computing)
+- use `cd lab0-handout/` and `ls` to check the assessment files (driver.sh, Makefile, p1, p2, README)
+- use `nano p1/main.c` to open C file for the lab0/problem-1.
+- use `nano <file_name>` to edit `<file_name>` as a text file. e.g. `nano p1/main.c`, `nano p2/main.c`.
+- edit your code and use `ctrl+o` to write the code and hit enter to save, use `ctrl+x` to exit nano editor. More about nano editor: https://www.nano-editor.org/
+- use 'cd ..` to exit the current directory.
+- use `tar cvf <tar_file_name> <folder_name>` to create a tar archive (similar to a zip file) for the folder <folder_name>. e.g. `tar lab0-handin.tar lab0-handout`.
+- run `ls` to check the created tar files. 
+- use arrow keys (up and down) to check the command history.
 
 More Info: https://missing.csail.mit.edu/2020/course-shell/ 
 
@@ -112,10 +119,10 @@ More Info: https://missing.csail.mit.edu/2020/course-shell/
 
 ---
 ### 3.1 Submit solutions
-1. go 1 directory above using `cd ..` (now `ls` should show `l0-handout` directory) and create a tar archive of the entire assessment by running
-```tar cvf l0-handin.tar l0-handout```
+1. go 1 directory above using `cd ..` (now `ls` should show `lab0-handout` directory) and create a tar archive of the entire assessment by running
+```tar cvf lab0-handin.tar lab0-handout```
 2. submit `l0-handin.tar` using the command
-```autolab submit lo-handin.tar```
+```autolab submit lab0-handin.tar```
 
 ---
 ### 3.2 See your score
@@ -126,6 +133,10 @@ see your score by running
 ---
 ## 4. Solve Lab 0
 
+Problem-1 
+
+Problem-2
+
 ---
 ### 4.1 Coding Treasure Hunt!
 
@@ -135,7 +146,9 @@ Use the above clues to solve lab 0 with full marks.
 
 2. Only when you are completely stuck, ask others.
 
-3. Understand why a guess didn't work out.
+3. Understand why a guess didn't work out. Read the Error and debug it accordingly.
+
+4. C-error debug: https://naagar.notion.site/C-Error-debug-197096220a264f53a994742fd2d4971d 
 
 ---
 ### Honor Code
@@ -162,4 +175,3 @@ https://docs.autolabproject.com/command-line-interface/
 However, it's recommended to use the __pingala shell__ where everything is already installed. This ensures that you can get help from your colleagues and TAs easily. This is also the same setup used for all exams.
 
 ---
-## Thanks
