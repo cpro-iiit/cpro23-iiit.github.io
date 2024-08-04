@@ -22,7 +22,6 @@ Coding can be learnt only by solving programming problems!
 
 Lab sessions are evaluated (2% marks per lab, 20% for 10 labs).
 
-
 ---
 ## Whats the plan for Lab 0?
 
@@ -131,6 +130,19 @@ see your score by running
 ### 4.1 Tresure Hunt!
 
 Use above clues to solve lab 0 with full marks.
+
+1. Make guesses, try it out.
+
+2. Only when you are completely stuck, ask others.
+
+3. Understand why a guess didn't work out.
+---
+### Honor Code
+
+> When you copy, you are only damaging yourself!
+
+
+
 
 ---
 ## Questions
