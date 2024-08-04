@@ -35,7 +35,7 @@ __AutoLab__: where all labs/assignments problems are set. You can download hando
 1. Through the website https://pingala.iiit.ac.in
 2. Through autolab commands in the _pingala shell_.
 
-__Pingala Shell__: where you will do all the coding. The _pingala shell_ is a standard ubuntu linux shell with all the programs required for this course. This also ensures that the outputs/errors you encounter are similar for the entire batch.
+__Pingala Shell__: where you will do all the coding. The _pingala shell_ is a standard ubuntu Linux shell with all the programs required for this course. This also ensures that the outputs/errors you encounter are similar for the entire batch.
 
 
 ---
@@ -144,6 +144,8 @@ Use the above clues to solve lab 0 with full marks.
 
 > When you allow your friend to copy, you are not helping your friend!
 
+> We will run your code for Plagiarism Detection.
+
 
 
 
@@ -151,7 +153,7 @@ Use the above clues to solve lab 0 with full marks.
 ## Questions
 ---
 ### Can I use my computer/editor for coding?
-Yes. You can access Autolab through the website (https://pingala.iiit.ac.in) as long as you are connected to the IIIT network directly or indirectly through VPN.
+Yes. You can access Autolab through the website (https://pingala.iiit.ac.in) if you are connected to the IIIT network directly or indirectly through VPN (https://vpn.iiit.ac.in/).
 
 Autolab command line could also be installed in Linux systems using directions provided at the links below:  
 https://github.com/autolab/autolab-cli   
