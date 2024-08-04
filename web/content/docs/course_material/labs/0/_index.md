@@ -76,6 +76,7 @@ autolab setup
 ```
 
 2. Copy the 6-character access code and paste it into https://pingala.iiit.ac.in/activate in the same browser window where you logged in.
+3. More info: https://docs.autolabproject.com/command-line-interface/
 
 ---
 ## 2. Download Problems/Basic Tools for Coding
