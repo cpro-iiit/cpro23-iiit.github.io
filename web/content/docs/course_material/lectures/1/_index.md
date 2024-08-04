@@ -11,8 +11,13 @@ marp: true
 ---
 ## What this Course is about?
 
+![width:500px](code_spell.jpeg)
 
+Genie needs to be instructed precisely, otherwise it will not respond!
 
+It will precisely do, what you told it to do! If you meant something else and that was your problem.
+
+Genie only understand a languguage, which has no scope for confusion/ambiguity.
 
 ---
 ## How to ace this course?

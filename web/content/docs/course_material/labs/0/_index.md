@@ -127,7 +127,7 @@ see your score by running
 ## 4. Solve Lab 0
 
 ---
-### 4.1 Tresure Hunt!
+### 4.1 Coding Tresure Hunt!
 
 Use above clues to solve lab 0 with full marks.
 
@@ -136,10 +136,13 @@ Use above clues to solve lab 0 with full marks.
 2. Only when you are completely stuck, ask others.
 
 3. Understand why a guess didn't work out.
+
 ---
 ### Honor Code
 
 > When you copy, you are only damaging yourself!
+
+> When you allow your friend to copy, you are not helping your friend!
 
 
 
