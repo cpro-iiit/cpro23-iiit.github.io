@@ -90,18 +90,22 @@ autolab setup
 
 More Info: https://docs.autolabproject.com/command-line-interface/
 
-
 ---
-### 2.2 Navigate folders and edit code in pingala shell
+### 2.2 Navigate folders, edit code, extract/create tar archive in pingala shell
 
-- use `ls` command to list folders and files in current directory
-- use `cd` to change the directory
+- use `ls` command to list folders and files in current directory.
+- use `cd` to change the directory.
+- use `tar xvf <file_name>` to unzip tar archives.
 - use `nano <file_name>` to edit `<file_name>` as a text file.
+- use `tar cvf <tar_file_name> <folder_name>` to create tar archive (similar to zip file) for the folder <folder_name>.
 
 More Info: https://missing.csail.mit.edu/2020/course-shell/ 
 
 ---
 ### 2.3 Test your solutions locally
+- run `make all` to compile both your problem solutions. If its run inside problem diretory only that problem is compiled.
+- run `./main` in each of the problem directory to see your program running.
+- run `sh driver.sh` to see your program running on test cases. 
 
 
 ---
@@ -109,19 +113,36 @@ More Info: https://missing.csail.mit.edu/2020/course-shell/
 
 ---
 ### 3.1 Submit solutions
+1. go 1 directory above using `cd ..` (now `ls` should show `l0-handout` directory) and create a tar archive of the entire assesment by running
+```tar cvf l0-handin.tar l0-handout```
+2. submit `l0-handin.tar` using the command
+```autolab submit lo-handin.tar```
 
 ---
 ### 3.2 See your score
 
+see your score by running
+```autolab scores```
+
 ---
 ## 4. Solve Lab 0
+
+---
+### 4.1 Tresure Hunt!
+
+Use above clues to solve lab 0 with full marks.
+
 ---
 ## Questions
 ---
 ### Can I use my computer/editor for coding?
-Yes. You can access Autolab either through the website or through Terminal as long as you are connected to IIIT network directly or indirectly through VPN.
+Yes. You can access Autolab through the website (https://pingala.iiit.ac.in) as long as you are connected to IIIT network directly or indirectly through VPN.
 
-However its reccomended to use the __pingala shell__. This ensures that you can get help from your colleages and TAs easily. This is also the same setup used for all exams.
+Autolab command line could also be installed in linux systems using directions provided at the links bellow:  
+https://github.com/autolab/autolab-cli   
+https://docs.autolabproject.com/command-line-interface/  
+
+However its reccomended to use the __pingala shell__ where everything is already installed. This ensures that you can get help from your colleages and TAs easily. This is also the same setup used for all exams.
 
 ---
 ## Thanks
