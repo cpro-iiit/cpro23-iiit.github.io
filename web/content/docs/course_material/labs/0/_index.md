@@ -131,6 +131,9 @@ More Info: https://missing.csail.mit.edu/2020/course-shell/
 see your score by running
 ```autolab scores```
 
+Logout from the pingala shell by running `logout`
+Logout from pingala.iiit.ac.in too. 
+
 ---
 ## 4. Solve Lab 0
 
