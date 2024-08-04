@@ -136,5 +136,14 @@ run:
 - You will eventually learn to make more clever guesses.
 
 ---
+## Reading 
+
+Chapter 1 upto Section 1.4,  
+Chapter 2 upto Section 2.2
+Computer Science: A Structured Programming Approach Using C    
+Behrouz A. Forouzan, Richard F. Gilberg
+
+
+---
 
 # Thanks
