@@ -171,7 +171,7 @@ Yes. You can access Autolab through the website (https://pingala.iiit.ac.in) if 
 
 Autolab command line could also be installed in Linux systems using directions provided at the links below:  
 https://github.com/autolab/autolab-cli   
-https://docs.autolabproject.com/command-line-interface/  
+https://docs.autolabproject.com/command-line-interface/
 
 However, it's recommended to use the __pingala shell__ where everything is already installed. This ensures that you can get help from your colleagues and TAs easily. This is also the same setup used for all exams.
 
