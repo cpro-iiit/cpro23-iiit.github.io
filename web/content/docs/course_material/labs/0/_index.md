@@ -102,7 +102,7 @@ More Info: https://docs.autolabproject.com/command-line-interface/
 --- 
 - use `nano <file_name>` to edit `<file_name>` as a text file. e.g. `nano p1/main.c`, `nano p2/main.c`.
 - Edit your code and use `ctrl+o` to write the code. Hit enter to save, and use `ctrl+x` to exit the nano editor. More about nano editor: https://www.nano-editor.org/
-- use 'cd ..` to exit the current directory.
+- use `cd ..` to exit the current directory.
 - use `tar cvf <tar_file_name> <folder_name>` to create a tar archive (similar to a zip file) for the folder <folder_name>. e.g. `tar lab0-handin.tar lab0-handout`.
 - run `ls` to check the created tar files. 
 - use arrow keys (up and down) to check the command history.
