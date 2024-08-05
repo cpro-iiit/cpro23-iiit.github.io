@@ -7,20 +7,22 @@ menu:
 ---
 # Teaching Assistants
 
-- Pramod Rao | pramod.b@research.iiit.ac.in
-- Shreeya Singh | shreeya.singh@students.iiit.ac.in
-- Aditya Malhotra | aditya.malhotra@students.iiit.ac.in
-- Anushka Agrawal | anushka.agrawal@students.iiit.ac.in
-- Ayan Datta | ayan.datta@research.iiit.ac.in
-- Bhargav Srinivas | bhargav.srinivas@students.iiit.ac.in
-- Dheeraja Rajreddygari | dheeraja.rajreddygari@students.iiit.ac.in
+- Aaditya Narain | aaditya.narain@research.iiit.ac.in
+- Annamalai Senthil | annamalai.senthil@students.iiit.ac.in
+- Shreya Bollimuntha | shreya.bollimuntha@research.iiit.ac.in
+- Devesh Marvah | devesh.marwah@research.iiit.ac.in
+- Devisetti Sai Asrith | sai.asrith@research.iiit.ac.in
+- Erukulla Druvitha | erukulla.druvitha@students.iiit.ac.in
+- Harshit Gupta | harshit.gupta@students.iiit.ac.in
 - Harshvardhan | harshvardhan.sv@research.iiit.ac.in
-- Keval Jain | keval.jain@research.iiit.ac.in
-- Kriti Gupta | kriti.gupta@research.iiit.ac.in
-- Kushagra Kharbanda | kushagra.kharbanda@students.iiit.ac.in
-- Kyrylo Shyvam Kumar | kyrylo.shyvam@students.iiit.ac.in
-- Manav Shah | shah.devendrakumar@students.iiit.ac.in
-- Mihika Sanghi | mihika.sanghi@research.iiit.ac.in
-- Mitansh Kayathwal | mitansh.kayathwal@students.iiit.ac.in
-- Sriteja Pashya | sriteja.pashya@research.iiit.ac.in
-- Ujjwal Shekhar | ujjwal.shekhar@research.iiit.ac.in
+- Karan Nijhawan | karan.nijhawan@students.iiit.ac.in
+- Khooshi Asmi | khooshi.asmi@research.iiit.ac.in
+- Manan Garg | manan.garg@students.iiit.ac.in
+- Mayaank Ashok | mayaank.ashok@research.iiit.ac.in
+- Priet Ukani  | priet.ukani@research.iiit.ac.in
+- Sahil Patel | sahil.patel@students.iiit.ac.in
+- Sarthak Chittawar | sarthak.chittawar@research.iiit.ac.in
+- Sirisetti Lahari | sirisetti.lahari@students.iiit.ac.in
+- Tanihsq Agarwal | tanishq@agarwal@students.iiit.ac.in
+- Talib Siddiqui | talib.siddiqui@students.iiit.ac.in
+- Yash Adivarekar | yash.adivarekar@students.iiit.ac.in
