@@ -109,7 +109,7 @@ All lab/assignment/tutorials problems released here. More about this in the lab.
 
 ---
 ## Hello World! C Program
-`main.c` file
+`main.c` file. Try it out at https://www.programiz.com/c-programming/online-compiler/ 
 ```c
 // 1. This line is a comment that is ignored by compiler.
 
