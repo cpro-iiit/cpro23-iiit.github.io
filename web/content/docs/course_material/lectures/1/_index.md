@@ -10,20 +10,20 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 __Girish Varma__
 
+---
 
+# Admin Stuff
 
 ---
-## What this Course is about?
 
-![bg right:50% w:500](code_spell.jpeg)
+## Teaching Team
 
-- Genie needs to be instructed precisely, otherwise it will not respond!
+Instructors (3): Girish Varma, Abhishek Deshpande, Sandeep Nagar  
 
-- It will precisely do, what you told it to do! If you meant something else and that was your problem.
+TAs (20): Devesh, Sirisetti, Mayaank, Priet, Harshvardhan, Shreya, Annamalai, Talib, Druvitha, Aaditya, Tanishq, Sahil, Karan, Manan, Madhav, Yash, Khooshi, Poorvi, Harshit, Sarthak
 
-- Genie only understand a language, which has no scope for confusion/ambiguity.
 
----
+
 
 ---
 ## How to ace this course?
@@ -65,8 +65,27 @@ All lecture/lab/tutorial material is posted. Additional information, links to ot
 Autolab Problem Server: https://pingala.iiit.ac.in/
 All lab/assignment/tutorials problems released here. More about this in the lab.
 
+---
+
+# Introduction to Computer Programming
 
 ---
+
+## What this Course is about?
+
+![bg right:50% w:500](code_spell.jpeg)
+
+- Genie needs to be instructed precisely, otherwise it will not respond!
+
+- It will precisely do, what you told it to do! If you meant something else and that was your problem.
+
+- Genie only understand a language, which has no scope for confusion/ambiguity.
+
+---
+
+
+---
+
 ## Basic Computer Organisation
 
 ![bg right:60% w:600](computer_organization.png)
@@ -80,6 +99,11 @@ All lab/assignment/tutorials problems released here. More about this in the lab.
 ![bg right:50% w:600](high-low-langs.png)
 
 ---
+
+
+---
+
+# Intro to C Programming
 
 ---
 ## Hello World! C Program
@@ -118,14 +142,31 @@ int main()
 ---
 ## Using Makefile to do it together
 
-1. Create a file `Makefile`
+1. Create a file `Makefile` (one time step)
 ```make
 // Makefile
 run: 
     gcc main.c -o main
     ./main
 ```
+
 2. run `make run`
+
+Next time, after you modify `main.c`, only `make run` needs to be done.
+
+---
+
+## Reading 
+
+Chapter 1 upto Section 1.4,  
+Chapter 2 upto Section 2.2
+Computer Science: A Structured Programming Approach Using C    
+Behrouz A. Forouzan, Richard F. Gilberg
+
+
+---
+
+# Fundas for doing Programming!
 
 ---
 ## Tresure Hunt/Dumb charades!
@@ -136,14 +177,6 @@ run:
 - You will eventually learn to make more clever guesses.
 
 ---
-## Reading 
 
-Chapter 1 upto Section 1.4,  
-Chapter 2 upto Section 2.2
-Computer Science: A Structured Programming Approach Using C    
-Behrouz A. Forouzan, Richard F. Gilberg
-
-
----
 
 # Thanks
