@@ -3,7 +3,7 @@ title: "Lab 0"
 bookHidden: false
 marp: false
 header: 'CS0.101 Computer Programming (Monsoon 24)'
-footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
+footer: '![width:150px](IIIT_Hyderabad_Logo.jpg)'
 ---
 
 # Welcome to CS0.101 Lab 0
@@ -107,8 +107,8 @@ More Info: https://docs.autolabproject.com/command-line-interface/
 - run `ls` to check the created tar files. 
 - use arrow keys (up and down) to check the command history.
 
-More Info: https://missing.csail.mit.edu/2020/course-shell/ 
---- 
+    More Info: https://missing.csail.mit.edu/2020/course-shell/ 
+---
 ### 2.3 Delete files/ folders using shell  
 - use `rm <file_name>` to delete a file. e.g. `rm p1/main.c`
 - use `rm -r <folder_name>` to delete a folder. e.g. `rm -r p1`
@@ -118,9 +118,10 @@ More Info: https://missing.csail.mit.edu/2020/course-shell/
 ### 2.4 creating file/folder and copying files/folders using shell
 - use `touch <file_name>` to create a file. e.g. `touch p1/main.c`
 - use `mkdir <folder_name>` to create a folder. e.g. `mkdir p1`
-- use `cp <file_name> <folder_name>` to copy a file to a folder. e.g. `cp p1/main.c p2/`
-- use `cp -r <folder_name> <folder_name>` to copy a folder to another folder. e.g. `cp -r p1 p2`
-### 2.4 Test your solutions locally
+- use `cp <file_name> <destination_folder_name>` to copy a file to a folder. e.g. `cp p1/main.c p2/`
+- use `cp -r <source_folder_name> <destination_folder_name>` to copy a folder to another folder. e.g. `cp -r p1 p2`
+
+### 2.5 Test your solutions locally
 - run `make all` to compile both your problem solutions. If it runs inside the problem directory, only that problem is compiled.
 - run `./main` in each problem directory to see your program running.
 - run `sh driver.sh` to see your program running on test cases. 
