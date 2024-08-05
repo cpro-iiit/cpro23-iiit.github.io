@@ -94,23 +94,33 @@ More Info: https://docs.autolabproject.com/command-line-interface/
 ---
 ### 2.2 Navigate folders, edit code, extract/create tar archive in 'pingala shell'
 
-- use `ls` command to list folders and files in the current directory.
+- use `ls` command to list folders and files in the current directory
 - use `cd` to change the directory. e.g. `cd lab0/`
 - use `tar xvf <file_name>` to unzip tar archives `lab0-handout.tar`. More about tar file: https://en.wikipedia.org/wiki/Tar_(computing)
 - use `cd lab0-handout/` and `ls` to check the assessment files (driver.sh, Makefile, p1, p2, README)
-- use `nano p1/main.c` to open C file for the lab0/problem-1.
+- use `nano p1/main.c` to open C file for the lab0/problem-1
 --- 
 - use `nano <file_name>` to edit `<file_name>` as a text file. e.g. `nano p1/main.c`, `nano p2/main.c`.
 - Edit your code and use `ctrl+o` to write the code. Hit enter to save, and use `ctrl+x` to exit the nano editor. More about nano editor: https://www.nano-editor.org/
-- use `cd ..` to exit the current directory.
-- use `tar cvf <tar_file_name> <folder_name>` to create a tar archive (similar to a zip file) for the folder <folder_name>. e.g. `tar lab0-handin.tar lab0-handout`.
+- use `cd ..` to exit the current directory
+- use `tar cvf <tar_file_name> <folder_name>` to create a tar archive (similar to a zip file) for the folder <folder_name>. e.g. `tar lab0-handin.tar lab0-handout`
 - run `ls` to check the created tar files. 
 - use arrow keys (up and down) to check the command history.
 
 More Info: https://missing.csail.mit.edu/2020/course-shell/ 
-
+--- 
+### 2.3 Delete files/ folders using shell  
+- use `rm <file_name>` to delete a file. e.g. `rm p1/main.c`
+- use `rm -r <folder_name>` to delete a folder. e.g. `rm -r p1`
+- use `-f` flag to delete a file/folder without asking for confirmation. e.g. `rm -f p1/main.c`, `rm -f p1`, `rm -f lab0`
+- use `rm -rf <folder_name>` to delete a folder and all its contents. e.g. `rm -rf lab0-handout`
 ---
-### 2.3 Test your solutions locally
+### 2.4 creating file/folder and copying files/folders using shell
+- use `touch <file_name>` to create a file. e.g. `touch p1/main.c`
+- use `mkdir <folder_name>` to create a folder. e.g. `mkdir p1`
+- use `cp <file_name> <folder_name>` to copy a file to a folder. e.g. `cp p1/main.c p2/`
+- use `cp -r <folder_name> <folder_name>` to copy a folder to another folder. e.g. `cp -r p1 p2`
+### 2.4 Test your solutions locally
 - run `make all` to compile both your problem solutions. If it runs inside the problem directory, only that problem is compiled.
 - run `./main` in each problem directory to see your program running.
 - run `sh driver.sh` to see your program running on test cases. 
