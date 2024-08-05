@@ -10,6 +10,8 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 __Girish Varma__
 
+https://cpro-iiit.github.io/docs/course_material/lectures/1/05_08.pdf
+
 ---
 
 # Admin Stuff
