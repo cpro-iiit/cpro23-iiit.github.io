@@ -98,18 +98,16 @@ More Info: https://docs.autolabproject.com/command-line-interface/
 - use `cd lab0-handout/` and `ls` to check the assessment files (driver.sh, Makefile, p1, p2, README)
 - use `nano p1/main.c` to open C file for the lab0/problem-1
   
---- 
+---
+### 2.3 Edit code
 - use `nano <file_name>` to edit `<file_name>` as a text file. e.g. `nano p1/main.c`, `nano p2/main.c`
 - Edit your code and use `ctrl+o` to write the code. Hit enter to save, and use `ctrl+x` to exit the nano editor. More about nano editor: https://www.nano-editor.org/
 - use `cd ..` to exit the current directory
 - use `tar cvf <tar_file_name>.tar <folder_name>` to create a tar archive (similar to a zip file) for the folder <folder_name>. e.g. `tar cvf lab0-handin.tar lab0-handout`
-- run `ls` to check the created tar files. 
+- run `ls` to check the created tar files. More Info: https://missing.csail.mit.edu/2020/course-shell/ 
 
-
-    More Info: https://missing.csail.mit.edu/2020/course-shell/ 
-
-
-### 2.5 Test your solutions locally
+---
+### 2.4 Test your solutions locally
 - run `make all` to compile both your problem solutions. If it runs inside the problem directory, only that problem is compiled
 - run `./main` in each problem directory to see your program running
 - run `sh driver.sh` to see your program running on test cases
@@ -193,7 +191,7 @@ However, it's recommended to use the __pingala shell__ where everything is alrea
 - use `mkdir <folder_name>` to create a folder. e.g. `mkdir p1`
 - use `cp <file_name> <destination_folder_name>` to copy a file to a folder. e.g. `cp p1/main.c p2/`
 - use `cp -r <source_folder_name> <destination_folder_name>` to copy a folder to another folder. e.g. `cp -r p1 p2`
-
+---
 Happy Programming! 
 - Coding is not just a skill, it's an adventure in logic and creativity.
 - Writing code is like solving a puzzle, one piece at a time.
