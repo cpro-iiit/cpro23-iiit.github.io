@@ -85,9 +85,9 @@ autolab setup
 ### 2.1 Download Problems
 1. Run the  command `autolab courses` to list the courses
 
-2. Run the command `autolab asmts <course_id>` to list the assesments under the courses. <course_id> is "cs0-101-m24" for this course (as shown by the previous command).
+2. Run the command `autolab asmts <course_id>` to list the assesments under the courses. <course_id> is "cs0-101-m24" for this course (as shown by the previous command)
 
-3. Run the command `autolab download <course_id>:<asmts_id>` to download the handout for Lab 0. <asmts_id> is "lab0" for Lab 0 (as shown by the previous command).
+3. Run the command `autolab download <course_id>:<asmts_id>` to download the handout for Lab 0. <asmts_id> is "lab0" for Lab 0 (as shown by the previous command)
 
 More Info: https://docs.autolabproject.com/command-line-interface/
 
@@ -100,7 +100,7 @@ More Info: https://docs.autolabproject.com/command-line-interface/
 - use `cd lab0-handout/` and `ls` to check the assessment files (driver.sh, Makefile, p1, p2, README)
 - use `nano p1/main.c` to open C file for the lab0/problem-1
 --- 
-- use `nano <file_name>` to edit `<file_name>` as a text file. e.g. `nano p1/main.c`, `nano p2/main.c`.
+- use `nano <file_name>` to edit `<file_name>` as a text file. e.g. `nano p1/main.c`, `nano p2/main.c`
 - Edit your code and use `ctrl+o` to write the code. Hit enter to save, and use `ctrl+x` to exit the nano editor. More about nano editor: https://www.nano-editor.org/
 - use `cd ..` to exit the current directory
 - use `tar cvf <tar_file_name> <folder_name>` to create a tar archive (similar to a zip file) for the folder <folder_name>. e.g. `tar lab0-handin.tar lab0-handout`
@@ -122,9 +122,9 @@ More Info: https://docs.autolabproject.com/command-line-interface/
 - use `cp -r <source_folder_name> <destination_folder_name>` to copy a folder to another folder. e.g. `cp -r p1 p2`
 
 ### 2.5 Test your solutions locally
-- run `make all` to compile both your problem solutions. If it runs inside the problem directory, only that problem is compiled.
-- run `./main` in each problem directory to see your program running.
-- run `sh driver.sh` to see your program running on test cases. 
+- run `make all` to compile both your problem solutions. If it runs inside the problem directory, only that problem is compiled
+- run `./main` in each problem directory to see your program running
+- run `sh driver.sh` to see your program running on test cases
 
 
 ---
@@ -140,11 +140,11 @@ More Info: https://docs.autolabproject.com/command-line-interface/
 ---
 ### 3.2 See your score
 
-see your score by running
+- To check your score run
 ```autolab scores```
-
-Logout from the pingala shell by running `logout`
-Logout from pingala.iiit.ac.in too. 
+- Latest submission score will be consider for grading
+- Logout from the pingala shell by running `logout`
+- Logout from pingala.iiit.ac.in too
 
 ---
 ## 4. Solve Lab 0
@@ -189,3 +189,22 @@ https://github.com/autolab/autolab-cli
 https://docs.autolabproject.com/command-line-interface/
 
 However, it's recommended to use the __pingala shell__ where everything is already installed. This ensures that you can get help from your colleagues and TAs easily. This is also the same setup used for all exams.
+
+---
+
+Happy Programming! 
+- Coding is not just a skill, it's an adventure in logic and creativity.
+- Writing code is like solving a puzzle, one piece at a time.
+- Programming is like playing with Lego bricks, building something amazing from scratch.
+  https://scratch.mit.edu/
+- Think outside the box, code inside the lines.
+---
+<p align="center">
+  <img src="meme7.jpg" alt="Image 1" width="30%">
+  <img src="meme6.png" alt="Image 2" width="30%">
+  <img src="meme_0.png" alt="Image 3" width="30%">
+  <img src="meme2.jpeg" alt="Image 4" width="30%">
+</p>
+
+
+  
