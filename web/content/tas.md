@@ -23,6 +23,6 @@ menu:
 - Sahil Patel | sahil.patel@students.iiit.ac.in
 - Sarthak Chittawar | sarthak.chittawar@research.iiit.ac.in
 - Sirisetti Lahari | sirisetti.lahari@students.iiit.ac.in
-- Tanihsq Agarwal | tanishq@agarwal@students.iiit.ac.in
+- Tanishq Agarwal | tanishq.agarwal@students.iiit.ac.in
 - Talib Siddiqui | talib.siddiqui@students.iiit.ac.in
 - Yash Adivarekar | yash.adivarekar@students.iiit.ac.in
