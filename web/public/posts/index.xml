@@ -1,64 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Resources on CPro Mon 23</title>
-    <link>https://cpro-iiit.github.io/posts/</link>
-    <description>Recent content in Resources on CPro Mon 23</description>
+    <title>Resources on CPro Mon 24</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Resources on CPro Mon 24</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://cpro-iiit.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Game Programming in C</title>
-      <link>https://cpro-iiit.github.io/posts/garme_programming/</link>
+      <link>http://localhost:1313/posts/garme_programming/</link>
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/posts/garme_programming/</guid>
-      <description>Raylib
-See https://www.raylib.com/index.html.
-Code for snake game in raylib: https://github.com/raysan5/raylib-games/blob/master/classics/src/snake.c
-Allegro
-https://liballeg.org/
-Quickstart</description>
+      <guid>http://localhost:1313/posts/garme_programming/</guid>
+      <description>Raylib&#xA;See https://www.raylib.com/index.html.&#xA;Code for snake game in raylib: https://github.com/raysan5/raylib-games/blob/master/classics/src/snake.c&#xA;Allegro&#xA;https://liballeg.org/&#xA;Quickstart</description>
     </item>
-    
     <item>
       <title>Installing GCC</title>
-      <link>https://cpro-iiit.github.io/posts/installingGCC/</link>
+      <link>http://localhost:1313/posts/installingGCC/</link>
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/posts/installingGCC/</guid>
-      <description>Installing gcc#This tutorial will be a quick walkthrough on installing gcc on different OS. We recommend you try installing gcc on your own before the start of classes. If, for some reason, you are unable to install gcc, then we will help you in the first tutorial session. We also recommend you install some text editor (VS Code for example).
-We recommend the usage of Linux as this would be advantageous for your future courses as well.</description>
+      <guid>http://localhost:1313/posts/installingGCC/</guid>
+      <description>Installing gcc # This tutorial will be a quick walkthrough on installing gcc on different OS. We recommend you try installing gcc on your own before the start of classes. If, for some reason, you are unable to install gcc, then we will help you in the first tutorial session. We also recommend you install some text editor (VS Code for example).&#xA;We recommend the usage of Linux as this would be advantageous for your future courses as well.</description>
     </item>
-    
     <item>
       <title>Linux Tools Course</title>
-      <link>https://cpro-iiit.github.io/posts/linux_tools_course/</link>
+      <link>http://localhost:1313/posts/linux_tools_course/</link>
       <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/posts/linux_tools_course/</guid>
+      <guid>http://localhost:1313/posts/linux_tools_course/</guid>
       <description>To get familiar with Linux tools that are generally helpful for computer science, please go through the material here: https://missing.csail.mit.edu/</description>
     </item>
-    
     <item>
       <title>Linear Algebra in C</title>
-      <link>https://cpro-iiit.github.io/posts/linear_algebra_in_c/</link>
+      <link>http://localhost:1313/posts/linear_algebra_in_c/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/posts/linear_algebra_in_c/</guid>
+      <guid>http://localhost:1313/posts/linear_algebra_in_c/</guid>
       <description>See implementation of a linear algebra library in C here: https://www.andreinc.net/2021/01/20/writing-your-own-linear-algebra-matrix-library-in-c</description>
     </item>
-    
     <item>
       <title>Video Lectures from Elsewhere</title>
-      <link>https://cpro-iiit.github.io/posts/video_lectures/</link>
+      <link>http://localhost:1313/posts/video_lectures/</link>
       <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/posts/video_lectures/</guid>
-      <description>You can find some video lectures on c programming from other universities bellow:
-Uni. of Nebraska, Lincon Harvard
-https://cs50.harvard.edu/x/2023/
-https://www.youtube.com/watch?v=8mAITcNt710 </description>
+      <guid>http://localhost:1313/posts/video_lectures/</guid>
+      <description>You can find some video lectures on c programming from other universities bellow:&#xA;Uni. of Nebraska, Lincon Harvard&#xA;https://cs50.harvard.edu/x/2023/&#xA;https://www.youtube.com/watch?v=8mAITcNt710 </description>
     </item>
-    
   </channel>
 </rss>

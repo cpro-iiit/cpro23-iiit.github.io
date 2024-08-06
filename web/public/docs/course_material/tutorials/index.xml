@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CPro Mon 23</title>
-    <link>https://cpro-iiit.github.io/docs/course_material/tutorials/</link>
-    <description>Recent content on CPro Mon 23</description>
+    <title>CPro Mon 24</title>
+    <link>http://localhost:1313/docs/course_material/tutorials/</link>
+    <description>Recent content on CPro Mon 24</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://cpro-iiit.github.io/docs/course_material/tutorials/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Tutorial - 1</title>
-      <link>https://cpro-iiit.github.io/docs/course_material/tutorials/week1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/docs/course_material/tutorials/week1/</guid>
-      <description>Tutorial 1 (Week of 14 August)#Theory#Introduction to how compilation works in C#We all know that computer is incapable of reading and understanding the code we write in its native form. This means that the code needs to be converted in a form which the machine can understand. The machine only understands Binary code. Thus, there should be a process by which the code we write can be converted to Binary form.</description>
-    </item>
-    
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/docs/course_material/tutorials/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

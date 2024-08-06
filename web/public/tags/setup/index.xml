@@ -1,42 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>setup on CPro Mon 23</title>
-    <link>https://cpro-iiit.github.io/tags/setup/</link>
-    <description>Recent content in setup on CPro Mon 23</description>
+    <title>Setup on CPro Mon 24</title>
+    <link>http://localhost:1313/tags/setup/</link>
+    <description>Recent content in Setup on CPro Mon 24</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cpro-iiit.github.io/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Sep 2023 11:01:37 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/setup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing GCC</title>
-      <link>https://cpro-iiit.github.io/posts/installingGCC/</link>
+      <link>http://localhost:1313/posts/installingGCC/</link>
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/posts/installingGCC/</guid>
-      <description>Installing gcc#This tutorial will be a quick walkthrough on installing gcc on different OS. We recommend you try installing gcc on your own before the start of classes. If, for some reason, you are unable to install gcc, then we will help you in the first tutorial session. We also recommend you install some text editor (VS Code for example).
-We recommend the usage of Linux as this would be advantageous for your future courses as well.</description>
+      <guid>http://localhost:1313/posts/installingGCC/</guid>
+      <description>Installing gcc # This tutorial will be a quick walkthrough on installing gcc on different OS. We recommend you try installing gcc on your own before the start of classes. If, for some reason, you are unable to install gcc, then we will help you in the first tutorial session. We also recommend you install some text editor (VS Code for example).&#xA;We recommend the usage of Linux as this would be advantageous for your future courses as well.</description>
     </item>
-    
     <item>
       <title>Linux Tools Course</title>
-      <link>https://cpro-iiit.github.io/posts/linux_tools_course/</link>
+      <link>http://localhost:1313/posts/linux_tools_course/</link>
       <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/posts/linux_tools_course/</guid>
+      <guid>http://localhost:1313/posts/linux_tools_course/</guid>
       <description>To get familiar with Linux tools that are generally helpful for computer science, please go through the material here: https://missing.csail.mit.edu/</description>
     </item>
-    
     <item>
       <title>Video Lectures from Elsewhere</title>
-      <link>https://cpro-iiit.github.io/posts/video_lectures/</link>
+      <link>http://localhost:1313/posts/video_lectures/</link>
       <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/posts/video_lectures/</guid>
-      <description>You can find some video lectures on c programming from other universities bellow:
-Uni. of Nebraska, Lincon Harvard
-https://cs50.harvard.edu/x/2023/
-https://www.youtube.com/watch?v=8mAITcNt710 </description>
+      <guid>http://localhost:1313/posts/video_lectures/</guid>
+      <description>You can find some video lectures on c programming from other universities bellow:&#xA;Uni. of Nebraska, Lincon Harvard&#xA;https://cs50.harvard.edu/x/2023/&#xA;https://www.youtube.com/watch?v=8mAITcNt710 </description>
     </item>
-    
   </channel>
 </rss>

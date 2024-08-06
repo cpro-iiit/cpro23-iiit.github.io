@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>game on CPro Mon 23</title>
-    <link>https://cpro-iiit.github.io/tags/game/</link>
-    <description>Recent content in game on CPro Mon 23</description>
+    <title>Game on CPro Mon 24</title>
+    <link>http://localhost:1313/tags/game/</link>
+    <description>Recent content in Game on CPro Mon 24</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cpro-iiit.github.io/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Nov 2023 13:52:05 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/game/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Game Programming in C</title>
-      <link>https://cpro-iiit.github.io/posts/garme_programming/</link>
+      <link>http://localhost:1313/posts/garme_programming/</link>
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/posts/garme_programming/</guid>
-      <description>Raylib
-See https://www.raylib.com/index.html.
-Code for snake game in raylib: https://github.com/raysan5/raylib-games/blob/master/classics/src/snake.c
-Allegro
-https://liballeg.org/
-Quickstart</description>
+      <guid>http://localhost:1313/posts/garme_programming/</guid>
+      <description>Raylib&#xA;See https://www.raylib.com/index.html.&#xA;Code for snake game in raylib: https://github.com/raysan5/raylib-games/blob/master/classics/src/snake.c&#xA;Allegro&#xA;https://liballeg.org/&#xA;Quickstart</description>
     </item>
-    
   </channel>
 </rss>
