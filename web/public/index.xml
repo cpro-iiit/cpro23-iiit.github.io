@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on CPro Mon 24</title>
-    <link>http://localhost:35125/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Introduction on CPro Mon 24</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:35125/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Game Programming in C</title>
-      <link>http://localhost:35125/posts/garme_programming/</link>
+      <link>http://localhost:1313/posts/garme_programming/</link>
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35125/posts/garme_programming/</guid>
+      <guid>http://localhost:1313/posts/garme_programming/</guid>
       <description>Raylib&#xA;See https://www.raylib.com/index.html.&#xA;Code for snake game in raylib: https://github.com/raysan5/raylib-games/blob/master/classics/src/snake.c&#xA;Allegro&#xA;https://liballeg.org/&#xA;Quickstart</description>
     </item>
     <item>
       <title>Installing GCC</title>
-      <link>http://localhost:35125/posts/installingGCC/</link>
+      <link>http://localhost:1313/posts/installingGCC/</link>
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35125/posts/installingGCC/</guid>
+      <guid>http://localhost:1313/posts/installingGCC/</guid>
       <description>Installing gcc # This tutorial will be a quick walkthrough on installing gcc on different OS. We recommend you try installing gcc on your own before the start of classes. If, for some reason, you are unable to install gcc, then we will help you in the first tutorial session. We also recommend you install some text editor (VS Code for example).&#xA;We recommend the usage of Linux as this would be advantageous for your future courses as well.</description>
     </item>
     <item>
       <title>Linux Tools Course</title>
-      <link>http://localhost:35125/posts/linux_tools_course/</link>
+      <link>http://localhost:1313/posts/linux_tools_course/</link>
       <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35125/posts/linux_tools_course/</guid>
+      <guid>http://localhost:1313/posts/linux_tools_course/</guid>
       <description>To get familiar with Linux tools that are generally helpful for computer science, please go through the material here: https://missing.csail.mit.edu/</description>
     </item>
     <item>
       <title>Linear Algebra in C</title>
-      <link>http://localhost:35125/posts/linear_algebra_in_c/</link>
+      <link>http://localhost:1313/posts/linear_algebra_in_c/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35125/posts/linear_algebra_in_c/</guid>
+      <guid>http://localhost:1313/posts/linear_algebra_in_c/</guid>
       <description>See implementation of a linear algebra library in C here: https://www.andreinc.net/2021/01/20/writing-your-own-linear-algebra-matrix-library-in-c</description>
     </item>
     <item>
       <title>Video Lectures from Elsewhere</title>
-      <link>http://localhost:35125/posts/video_lectures/</link>
+      <link>http://localhost:1313/posts/video_lectures/</link>
       <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35125/posts/video_lectures/</guid>
+      <guid>http://localhost:1313/posts/video_lectures/</guid>
       <description>You can find some video lectures on c programming from other universities bellow:&#xA;Uni. of Nebraska, Lincon Harvard&#xA;https://cs50.harvard.edu/x/2023/&#xA;https://www.youtube.com/watch?v=8mAITcNt710 </description>
     </item>
     <item>
       <title>C Library Reference</title>
-      <link>http://localhost:35125/c_lib_ref/</link>
+      <link>http://localhost:1313/c_lib_ref/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35125/c_lib_ref/</guid>
+      <guid>http://localhost:1313/c_lib_ref/</guid>
       <description>C Library Reference # File I/O&#xA;Strings&#xA;Date Time&#xA;Random Number Generation&#xA;Sorting &amp;amp; Searching&#xA;Another C Library Reference</description>
     </item>
     <item>
       <title>Grading Scheme</title>
-      <link>http://localhost:35125/grading_scheme/</link>
+      <link>http://localhost:1313/grading_scheme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35125/grading_scheme/</guid>
+      <guid>http://localhost:1313/grading_scheme/</guid>
       <description> Grading Scheme # Assignments: 30% Labs: 20% Mid-Semester Exam: 20% End-Semester Exam: 30% </description>
     </item>
     <item>
       <title>Honor Code</title>
-      <link>http://localhost:35125/honor_code/</link>
+      <link>http://localhost:1313/honor_code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35125/honor_code/</guid>
+      <guid>http://localhost:1313/honor_code/</guid>
       <description>Honor Code # Any form of plagiarism in the Assignments or in the Lab Exams would be heavily penalised and would lead to a 0 score for both students, the student who copied and the one whose code was copied. It is solely your duty to ensure the safety of your code throughout the course .Thus, we will not be entertaining any requests after a student is found guilty of plagiarism.</description>
     </item>
     <item>
       <title>References</title>
-      <link>http://localhost:35125/references/</link>
+      <link>http://localhost:1313/references/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35125/references/</guid>
+      <guid>http://localhost:1313/references/</guid>
       <description>References from the web # Dive into C Textbook&#xA;C Programing Textbook&#xA;C Programming Wikibook&#xA;Variables, functions, arrays, strings&#xA;C Structs and Pointers&#xA;The C Book by Banahan, Brady, Doran&#xA;Practical Programming in C (MIT OCW)&#xA;Object-Oriented Programming With ANSI-C&#xA;C and Unix Documentation from the Stanford CS Education Library&#xA;C Primer from Brown: Part 1 Part 2 Part 3: Debugging&#xA;A C programming course by Steve Summit, online course material</description>
     </item>
     <item>
       <title>Teaching Assistants</title>
-      <link>http://localhost:35125/tas/</link>
+      <link>http://localhost:1313/tas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35125/tas/</guid>
+      <guid>http://localhost:1313/tas/</guid>
       <description>Teaching Assistants # Aaditya Narain | aaditya.narain@research.iiit.ac.in Annamalai Senthil | annamalai.senthil@students.iiit.ac.in Shreya Bollimuntha | shreya.bollimuntha@research.iiit.ac.in Devesh Marvah | devesh.marwah@research.iiit.ac.in Devisetti Sai Asrith | sai.asrith@research.iiit.ac.in Erukulla Druvitha | erukulla.druvitha@students.iiit.ac.in Harshit Gupta | harshit.gupta@students.iiit.ac.in Harshvardhan | harshvardhan.sv@research.iiit.ac.in Karan Nijhawan | karan.nijhawan@students.iiit.ac.in Khooshi Asmi | khooshi.asmi@research.iiit.ac.in Manan Garg | manan.garg@students.iiit.ac.in Mayaank Ashok | mayaank.ashok@research.iiit.ac.in Priet Ukani | priet.ukani@research.iiit.ac.in Sahil Patel | sahil.patel@students.iiit.ac.in Sarthak Chittawar | sarthak.chittawar@research.iiit.ac.in Sirisetti Lahari | sirisetti.lahari@students.iiit.ac.in Tanishq Agarwal | tanishq.</description>
     </item>
     <item>
       <title>Template</title>
-      <link>http://localhost:35125/docs/course_material/template/</link>
+      <link>http://localhost:1313/docs/course_material/template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35125/docs/course_material/template/</guid>
+      <guid>http://localhost:1313/docs/course_material/template/</guid>
       <description>Course material template # Question 1 # The question body would go here&#xA;Text # Linked list can be defined as either a node structure doing nothing or one that is pointing to another linked list&#xA;Links # See linked: Recursion&#xA;Button # Get Home Contribute Columns # Left Content Lorem markdownum insigne&amp;hellip;&#xA;Mid Content Lorem markdownum insigne&amp;hellip;&#xA;Right Content Lorem markdownum insigne&amp;hellip;&#xA;Expand # Expand ↕ Markdown content # Lorem markdownum insigne&amp;hellip;</description>
     </item>
     <item>
       <title>Tools</title>
-      <link>http://localhost:35125/tools/</link>
+      <link>http://localhost:1313/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35125/tools/</guid>
+      <guid>http://localhost:1313/tools/</guid>
       <description> gdb # Valgrind # </description>
     </item>
   </channel>

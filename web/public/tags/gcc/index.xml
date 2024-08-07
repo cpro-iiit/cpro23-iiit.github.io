@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gcc on CPro Mon 24</title>
-    <link>http://localhost:35125/tags/gcc/</link>
+    <link>http://localhost:1313/tags/gcc/</link>
     <description>Recent content in Gcc on CPro Mon 24</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Aug 2023 14:39:17 +0530</lastBuildDate>
-    <atom:link href="http://localhost:35125/tags/gcc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/gcc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing GCC</title>
-      <link>http://localhost:35125/posts/installingGCC/</link>
+      <link>http://localhost:1313/posts/installingGCC/</link>
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35125/posts/installingGCC/</guid>
+      <guid>http://localhost:1313/posts/installingGCC/</guid>
       <description>Installing gcc # This tutorial will be a quick walkthrough on installing gcc on different OS. We recommend you try installing gcc on your own before the start of classes. If, for some reason, you are unable to install gcc, then we will help you in the first tutorial session. We also recommend you install some text editor (VS Code for example).&#xA;We recommend the usage of Linux as this would be advantageous for your future courses as well.</description>
     </item>
   </channel>
