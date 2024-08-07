@@ -12,7 +12,9 @@ _Constants, Data Types, Expressions_
 
 __Girish Varma__
 
-https://cpro-iiit.github.io/docs/course_material/lectures/2/07_08.pdf
+code: https://github.com/cpro-iiit/cpro-iiit.github.io/tree/main/web/content/docs/course_material/lectures/2/code
+
+code in web editor: https://www.programiz.com/online-compiler/7vCJDbICMawSj
 
 ---
 
