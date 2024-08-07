@@ -1,5 +1,5 @@
 ---
-title: "02 Constants, Data Types, Variables, Expressions"
+title: "02 Constants, Data Types, Expressions"
 bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
