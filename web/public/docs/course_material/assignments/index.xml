@@ -1,33 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>CPro Mon 23</title>
-    <link>https://cpro-iiit.github.io/docs/course_material/assignments/</link>
-    <description>Recent content on CPro Mon 23</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://cpro-iiit.github.io/docs/course_material/assignments/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Assignment - 1</title>
-      <link>https://cpro-iiit.github.io/docs/course_material/assignments/assignment1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/docs/course_material/assignments/assignment1/</guid>
-      <description>Assignment 1#Question 1#Problem Description#Given an integer n as input, print its binary representation starting with the most significant bit, i.e. don&amp;rsquo;t print the 0&amp;rsquo;s before the first 1.
-Link to problem on OJ
-Input constraints#\(0 \le n \le 2^{30}\)Input format#The only line of input contains a single integer n
-Output Format#Output a continous stream of bits of n starting from the most significant bit.</description>
-    </item>
-    
-    <item>
-      <title>Assignment - 2</title>
-      <link>https://cpro-iiit.github.io/docs/course_material/assignments/assignment2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/docs/course_material/assignments/assignment2/</guid>
-      <description>Assignment 2#Question 1 - &amp;ldquo;Doubling Investments&amp;rdquo;#Problem Description#Mitansh is world’s best investor. Whatever the amount he has today, it doubles on the next day.
-Initially he starts, with amount zero. Each day in the morning, he can choose to invest \(\$x\)more in addition to his previous amount \(\$y\). And on next day, his total amount becomes \(\$2(x&amp;#43;y)\).
-However, he wants to get exactly \(\$z\)on some day.</description>
-    </item>
-    
-  </channel>
-</rss>

@@ -1,22 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Course Material on CPro Mon 23</title>
-    <link>https://cpro-iiit.github.io/docs/course_material/</link>
-    <description>Recent content in Course Material on CPro Mon 23</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://cpro-iiit.github.io/docs/course_material/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Template</title>
-      <link>https://cpro-iiit.github.io/docs/course_material/template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cpro-iiit.github.io/docs/course_material/template/</guid>
-      <description>Course material template#Question 1#The question body would go here
-Text#Linked list can be defined as either a node structure doing nothing or one that is pointing to another linked list
-Links#See linked: Recursion
-Button#Get HomeContributeColumns#Left Content Lorem markdownum insigne&amp;hellip;Mid Content Lorem markdownum insigne&amp;hellip;Right Content Lorem markdownum insigne&amp;hellip;Expand#Expand↕Markdown content#Lorem markdownum insigne&amp;hellip;Hint#Warning: Make sure to always free up memory!</description>
-    </item>
-    
-  </channel>
-</rss>
