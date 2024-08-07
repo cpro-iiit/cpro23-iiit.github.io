@@ -20,7 +20,7 @@ What&rsquo;s the plan for Lab 0?">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.038c8a653a00d98d1efb577e05727427a1e3b2ae740fcf01929dbcb387ec0a33.js" integrity="sha256-A4yKZToA2Y0e&#43;1d&#43;BXJ0J6Hjsq50D88Bkp28s4fsCjM=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.acf65b2b157d1df0949cb5e17f5e5e65e206fb64d4bcb650c036e1aaa46817d9.js" integrity="sha256-rPZbKxV9HfCUnLXhf15eZeIG&#43;2TUvLZQwDbhqqRoF9k=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/course_material/labs/0/index.xml" title="CPro Mon 24" />
 <!--
 Made with Book Theme
@@ -116,6 +116,24 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/course_material/lectures/1/" class="">01 Introduction</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/course_material/lectures/2/" class="">02 Constants, Data Types, Variables, Expressions</a>
   
 
           
@@ -360,9 +378,8 @@ https://github.com/alex-shpak/hugo-book
           <ul>
             <li><a href="#21-download-problems">2.1 Download Problems</a></li>
             <li><a href="#22-navigate-folders-edit-code-extractcreate-tar-archive-in-pingala-shell">2.2 Navigate folders, edit code, extract/create tar archive in &lsquo;pingala shell&rsquo;</a></li>
-            <li><a href="#23-delete-files-folders-using-shell">2.3 Delete files/ folders using shell</a></li>
-            <li><a href="#24-creating-filefolder-and-copying-filesfolders-using-shell">2.4 creating file/folder and copying files/folders using shell</a></li>
-            <li><a href="#25-test-your-solutions-locally">2.5 Test your solutions locally</a></li>
+            <li><a href="#23-edit-code">2.3 Edit code</a></li>
+            <li><a href="#24-test-your-solutions-locally">2.4 Test your solutions locally</a></li>
           </ul>
         </li>
         <li><a href="#3-submitting-solutionsseeing-score">3. Submitting Solutions/Seeing Score</a>
@@ -380,6 +397,8 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#questions">Questions</a>
           <ul>
             <li><a href="#can-i-use-my-computereditor-for-coding">Can I use my computer/editor for coding?</a></li>
+            <li><a href="#51-other-optional-helpuful-shell-commands-delete-files-folders-using-shell">5.1 Other optional Helpuful shell commands, Delete files/ folders using shell</a></li>
+            <li><a href="#52-creating-filefolder-and-copying-filesfolders-using-shell">5.2 creating file/folder and copying files/folders using shell</a></li>
           </ul>
         </li>
       </ul>
@@ -497,10 +516,10 @@ Solve 100 over the entire course.</p>
 <p>Run the  command <code>autolab courses</code> to list the courses</p>
 </li>
 <li>
-<p>Run the command <code>autolab asmts &lt;course_id&gt;</code> to list the assesments under the courses. &lt;course_id&gt; is &ldquo;cs0-101-m24&rdquo; for this course (as shown by the previous command).</p>
+<p>Run the command <code>autolab asmts &lt;course_id&gt;</code> to list the assesments under the courses. &lt;course_id&gt; is &ldquo;cs0-101-m24&rdquo; for this course (as shown by the previous command)</p>
 </li>
 <li>
-<p>Run the command <code>autolab download &lt;course_id&gt;:&lt;asmts_id&gt;</code> to download the handout for Lab 0. &lt;asmts_id&gt; is &ldquo;lab0&rdquo; for Lab 0 (as shown by the previous command).</p>
+<p>Run the command <code>autolab download &lt;course_id&gt;:&lt;asmts_id&gt;</code> to download the handout for Lab 0. &lt;asmts_id&gt; is &ldquo;lab0&rdquo; for Lab 0 (as shown by the previous command)</p>
 </li>
 </ol>
 <p>More Info: <a href="https://docs.autolabproject.com/command-line-interface/">https://docs.autolabproject.com/command-line-interface/</a></p>
@@ -510,64 +529,31 @@ Solve 100 over the entire course.</p>
   <a class="anchor" href="#22-navigate-folders-edit-code-extractcreate-tar-archive-in-pingala-shell">#</a>
 </h3>
 <ul>
-<li>use <code>ls</code> command to list folders and files in the current directory</li>
-<li>use <code>cd</code> to change the directory. e.g. <code>cd lab0/</code></li>
-<li>use <code>tar xvf &lt;file_name&gt;</code> to unzip tar archives <code>lab0-handout.tar</code>. More about tar file: <a href="https://en.wikipedia.org/wiki/Tar_%28computing%29">https://en.wikipedia.org/wiki/Tar_(computing)</a></li>
+<li>use <code>tar xvf &lt;file_name&gt;</code> to unzip tar archives <code>tar xvflab0-handout.tar</code>. More about tar file: <a href="https://en.wikipedia.org/wiki/Tar_%28computing%29">https://en.wikipedia.org/wiki/Tar_(computing)</a></li>
 <li>use <code>cd lab0-handout/</code> and <code>ls</code> to check the assessment files (driver.sh, Makefile, p1, p2, README)</li>
 <li>use <code>nano p1/main.c</code> to open C file for the lab0/problem-1</li>
 </ul>
 <hr>
+<h3 id="23-edit-code">
+  2.3 Edit code
+  <a class="anchor" href="#23-edit-code">#</a>
+</h3>
 <ul>
-<li>
-<p>use <code>nano &lt;file_name&gt;</code> to edit <code>&lt;file_name&gt;</code> as a text file. e.g. <code>nano p1/main.c</code>, <code>nano p2/main.c</code>.</p>
-</li>
-<li>
-<p>Edit your code and use <code>ctrl+o</code> to write the code. Hit enter to save, and use <code>ctrl+x</code> to exit the nano editor. More about nano editor: <a href="https://www.nano-editor.org/">https://www.nano-editor.org/</a></p>
-</li>
-<li>
-<p>use <code>cd ..</code> to exit the current directory</p>
-</li>
-<li>
-<p>use <code>tar cvf &lt;tar_file_name&gt; &lt;folder_name&gt;</code> to create a tar archive (similar to a zip file) for the folder &lt;folder_name&gt;. e.g. <code>tar lab0-handin.tar lab0-handout</code></p>
-</li>
-<li>
-<p>run <code>ls</code> to check the created tar files.</p>
-</li>
-<li>
-<p>use arrow keys (up and down) to check the command history.</p>
-<p>More Info: <a href="https://missing.csail.mit.edu/2020/course-shell/">https://missing.csail.mit.edu/2020/course-shell/</a></p>
-</li>
+<li>use <code>nano &lt;file_name&gt;</code> to edit <code>&lt;file_name&gt;</code> as a text file. e.g. <code>nano p1/main.c</code>, <code>nano p2/main.c</code></li>
+<li>Edit your code and use <code>ctrl+o</code> to write the code. Hit enter to save, and use <code>ctrl+x</code> to exit the nano editor. More about nano editor: <a href="https://www.nano-editor.org/">https://www.nano-editor.org/</a></li>
+<li>use <code>cd ..</code> to exit the current directory</li>
+<li>use <code>tar cvf &lt;tar_file_name&gt;.tar &lt;folder_name&gt;</code> to create a tar archive (similar to a zip file) for the folder &lt;folder_name&gt;. e.g. <code>tar cvf lab0-handin.tar lab0-handout</code></li>
+<li>run <code>ls</code> to check the created tar files. More Info: <a href="https://missing.csail.mit.edu/2020/course-shell/">https://missing.csail.mit.edu/2020/course-shell/</a></li>
 </ul>
 <hr>
-<h3 id="23-delete-files-folders-using-shell">
-  2.3 Delete files/ folders using shell
-  <a class="anchor" href="#23-delete-files-folders-using-shell">#</a>
+<h3 id="24-test-your-solutions-locally">
+  2.4 Test your solutions locally
+  <a class="anchor" href="#24-test-your-solutions-locally">#</a>
 </h3>
 <ul>
-<li>use <code>rm &lt;file_name&gt;</code> to delete a file. e.g. <code>rm p1/main.c</code></li>
-<li>use <code>rm -r &lt;folder_name&gt;</code> to delete a folder. e.g. <code>rm -r p1</code></li>
-<li>use <code>-f</code> flag to delete a file/folder without asking for confirmation. e.g. <code>rm -f p1/main.c</code>, <code>rm -f p1</code>, <code>rm -f lab0</code></li>
-<li>use <code>rm -rf &lt;folder_name&gt;</code> to delete a folder and all its contents. e.g. <code>rm -rf lab0-handout</code></li>
-</ul>
-<hr>
-<h3 id="24-creating-filefolder-and-copying-filesfolders-using-shell">
-  2.4 creating file/folder and copying files/folders using shell
-  <a class="anchor" href="#24-creating-filefolder-and-copying-filesfolders-using-shell">#</a>
-</h3>
-<ul>
-<li>use <code>touch &lt;file_name&gt;</code> to create a file. e.g. <code>touch p1/main.c</code></li>
-<li>use <code>mkdir &lt;folder_name&gt;</code> to create a folder. e.g. <code>mkdir p1</code></li>
-<li>use <code>cp &lt;file_name&gt; &lt;destination_folder_name&gt;</code> to copy a file to a folder. e.g. <code>cp p1/main.c p2/</code></li>
-<li>use <code>cp -r &lt;source_folder_name&gt; &lt;destination_folder_name&gt;</code> to copy a folder to another folder. e.g. <code>cp -r p1 p2</code></li>
-</ul>
-<h3 id="25-test-your-solutions-locally">
-  2.5 Test your solutions locally
-  <a class="anchor" href="#25-test-your-solutions-locally">#</a>
-</h3>
-<ul>
-<li>run <code>make all</code> to compile both your problem solutions. If it runs inside the problem directory, only that problem is compiled.</li>
-<li>run <code>./main</code> in each problem directory to see your program running.</li>
-<li>run <code>sh driver.sh</code> to see your program running on test cases.</li>
+<li>run <code>make all</code> to compile both your problem solutions. If it runs inside the problem directory, only that problem is compiled</li>
+<li>run <code>./main</code> in each problem directory to see your program running</li>
+<li>run <code>sh driver.sh</code> to see your program running on test cases</li>
 </ul>
 <hr>
 <h2 id="3-submitting-solutionsseeing-score">
@@ -590,10 +576,13 @@ Solve 100 over the entire course.</p>
   3.2 See your score
   <a class="anchor" href="#32-see-your-score">#</a>
 </h3>
-<p>see your score by running
-<code>autolab scores</code></p>
-<p>Logout from the pingala shell by running <code>logout</code>
-Logout from pingala.iiit.ac.in too.</p>
+<ul>
+<li>To check your score run
+<code>autolab scores</code></li>
+<li>Latest submission score will be consider for grading</li>
+<li>Logout from the pingala shell by running <code>logout</code></li>
+<li>Logout from pingala.iiit.ac.in too</li>
+</ul>
 <hr>
 <h2 id="4-solve-lab-0">
   4. Solve Lab 0
@@ -650,6 +639,51 @@ Logout from pingala.iiit.ac.in too.</p>
 <a href="https://github.com/autolab/autolab-cli">https://github.com/autolab/autolab-cli</a><br>
 <a href="https://docs.autolabproject.com/command-line-interface/">https://docs.autolabproject.com/command-line-interface/</a></p>
 <p>However, it&rsquo;s recommended to use the <strong>pingala shell</strong> where everything is already installed. This ensures that you can get help from your colleagues and TAs easily. This is also the same setup used for all exams.</p>
+<hr>
+<h3 id="51-other-optional-helpuful-shell-commands-delete-files-folders-using-shell">
+  5.1 Other optional Helpuful shell commands, Delete files/ folders using shell
+  <a class="anchor" href="#51-other-optional-helpuful-shell-commands-delete-files-folders-using-shell">#</a>
+</h3>
+<ul>
+<li>use <code>rm &lt;file_name&gt;</code> to delete a file. e.g. <code>rm p1/main.c</code></li>
+<li>use <code>rm -r &lt;folder_name&gt;</code> to delete a folder. e.g. <code>rm -r p1</code></li>
+<li>use <code>-f</code> flag to delete a file/folder without asking for confirmation. e.g. <code>rm -f p1/main.c</code>, <code>rm -f p1</code>, <code>rm -f lab0</code></li>
+<li>use <code>rm -rf &lt;folder_name&gt;</code> to delete a folder and all its contents. e.g. <code>rm -rf lab0-handout</code></li>
+<li>
+<ul>
+<li>use <code>ls</code> command to list folders and files in the current directory</li>
+</ul>
+</li>
+<li>use <code>cd</code> to change the directory. e.g. <code>cd lab0/</code></li>
+<li>use arrow keys (up and down) to check the command history.</li>
+</ul>
+<hr>
+<h3 id="52-creating-filefolder-and-copying-filesfolders-using-shell">
+  5.2 creating file/folder and copying files/folders using shell
+  <a class="anchor" href="#52-creating-filefolder-and-copying-filesfolders-using-shell">#</a>
+</h3>
+<ul>
+<li>use <code>touch &lt;file_name&gt;</code> to create a file. e.g. <code>touch p1/main.c</code></li>
+<li>use <code>mkdir &lt;folder_name&gt;</code> to create a folder. e.g. <code>mkdir p1</code></li>
+<li>use <code>cp &lt;file_name&gt; &lt;destination_folder_name&gt;</code> to copy a file to a folder. e.g. <code>cp p1/main.c p2/</code></li>
+<li>use <code>cp -r &lt;source_folder_name&gt; &lt;destination_folder_name&gt;</code> to copy a folder to another folder. e.g. <code>cp -r p1 p2</code></li>
+</ul>
+<hr>
+<p>Happy Programming!</p>
+<ul>
+<li>Coding is not just a skill, it&rsquo;s an adventure in logic and creativity.</li>
+<li>Writing code is like solving a puzzle, one piece at a time.</li>
+<li>Programming is like playing with Lego bricks, building something amazing from scratch.
+<a href="https://scratch.mit.edu/">https://scratch.mit.edu/</a></li>
+<li>Think outside the box, code inside the lines.</li>
+</ul>
+<hr>
+<p align="center">
+  <img src="meme7.jpg" alt="Image 1" width="30%">
+  <img src="meme6.png" alt="Image 2" width="30%">
+  <img src="meme_0.png" alt="Image 3" width="30%">
+  <img src="meme2.jpeg" alt="Image 4" width="30%">
+</p>
 </article>
  
       
@@ -659,9 +693,9 @@ Logout from pingala.iiit.ac.in too.</p>
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/86f9aa86dab036aae0f7221df3837dff03beccee" title='Last modified by Sandeep Nagar | August 5, 2024' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/307c3e8dc03f19811f760a75b8c9dd488ed44dc4" title='Last modified by Sandeep Nagar | August 6, 2024' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>August 5, 2024</span>
+      <span>August 6, 2024</span>
     </a>
   </div>
 
@@ -713,9 +747,8 @@ Logout from pingala.iiit.ac.in too.</p>
           <ul>
             <li><a href="#21-download-problems">2.1 Download Problems</a></li>
             <li><a href="#22-navigate-folders-edit-code-extractcreate-tar-archive-in-pingala-shell">2.2 Navigate folders, edit code, extract/create tar archive in &lsquo;pingala shell&rsquo;</a></li>
-            <li><a href="#23-delete-files-folders-using-shell">2.3 Delete files/ folders using shell</a></li>
-            <li><a href="#24-creating-filefolder-and-copying-filesfolders-using-shell">2.4 creating file/folder and copying files/folders using shell</a></li>
-            <li><a href="#25-test-your-solutions-locally">2.5 Test your solutions locally</a></li>
+            <li><a href="#23-edit-code">2.3 Edit code</a></li>
+            <li><a href="#24-test-your-solutions-locally">2.4 Test your solutions locally</a></li>
           </ul>
         </li>
         <li><a href="#3-submitting-solutionsseeing-score">3. Submitting Solutions/Seeing Score</a>
@@ -733,6 +766,8 @@ Logout from pingala.iiit.ac.in too.</p>
         <li><a href="#questions">Questions</a>
           <ul>
             <li><a href="#can-i-use-my-computereditor-for-coding">Can I use my computer/editor for coding?</a></li>
+            <li><a href="#51-other-optional-helpuful-shell-commands-delete-files-folders-using-shell">5.1 Other optional Helpuful shell commands, Delete files/ folders using shell</a></li>
+            <li><a href="#52-creating-filefolder-and-copying-filesfolders-using-shell">5.2 creating file/folder and copying files/folders using shell</a></li>
           </ul>
         </li>
       </ul>

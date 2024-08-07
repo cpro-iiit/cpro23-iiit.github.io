@@ -3,25 +3,24 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Welcome to CS0.101 Computer Programming # Girish Varma
-https://cpro-iiit.github.io/docs/course_material/lectures/1/05_08.pdf
-Admin Stuff # Teaching Team # Instructors (3): Girish Varma, Abhishek Deshpande, Sandeep Nagar
-TAs (20): Devesh, Sirisetti, Mayaank, Priet, Harshvardhan, Shreya, Annamalai, Talib, Druvitha, Aaditya, Tanishq, Sahil, Karan, Manan, Madhav, Yash, Khooshi, Poorvi, Harshit, Sarthak
-How to ace this course? # 12 Weeks Course (excluding exam/holiday/prep weeks) ​
-Session Time (hrs) Marks (%) 3 Lectures 3 x 1 - 1 Tutorial 1 x 1 - 1 Lab 1 x 3 2 Reading/Practice 3 Assignment 3 2.">
+<meta name="description" content="C Programming Basics # Constants, Data Types, Expressions
+Girish Varma
+https://cpro-iiit.github.io/docs/course_material/lectures/2/07_08.pdf
+Hello World! C Program # main.c file. Try it out at https://www.programiz.com/c-programming/online-compiler/
+// 1. This line is a comment that is ignored by compiler. // 2. include standard library for input/output. Allows to print to shell #include &lt;stdio.h&gt; // 3. execution start inside this **function** named main. int main() { // start of main function // 4. prints to the shell printf(&#34;Hello, world\n&#34;); return 0; /* 5.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="01 Introduction" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="02 Constants, Data Types, Variables, Expressions" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/docs/course_material/lectures/1/" />
+<meta property="og:url" content="http://localhost:1313/docs/course_material/lectures/2/" />
 
-<title>01 Introduction | CPro Mon 24</title>
+<title>02 Constants, Data Types, Variables, Expressions | CPro Mon 24</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.496c3dd5b369a75f91297667c89649e48085d3814dc37b61fadab7e6f0d37244.css" integrity="sha256-SWw91bNpp1&#43;RKXZnyJZJ5ICF04FNw3th&#43;tq35vDTckQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
   <script defer src="/en.search.min.acf65b2b157d1df0949cb5e17f5e5e65e206fb64d4bcb650c036e1aaa46817d9.js" integrity="sha256-rPZbKxV9HfCUnLXhf15eZeIG&#43;2TUvLZQwDbhqqRoF9k=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/course_material/lectures/1/index.xml" title="CPro Mon 24" />
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/course_material/lectures/2/index.xml" title="CPro Mon 24" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -115,7 +114,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/1/" class="active">01 Introduction</a>
+    <a href="/docs/course_material/lectures/1/" class="">01 Introduction</a>
   
 
           
@@ -133,7 +132,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/course_material/lectures/2/" class="">02 Constants, Data Types, Variables, Expressions</a>
+    <a href="/docs/course_material/lectures/2/" class="active">02 Constants, Data Types, Variables, Expressions</a>
   
 
           
@@ -346,7 +345,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>01 Introduction</strong>
+  <strong>02 Constants, Data Types, Variables, Expressions</strong>
 
   <label for="toc-control">
     
@@ -362,34 +361,20 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#welcome-to-cs0101-computer-programming">Welcome to CS0.101 Computer Programming</a></li>
-    <li><a href="#admin-stuff">Admin Stuff</a>
-      <ul>
-        <li><a href="#teaching-team">Teaching Team</a></li>
-        <li><a href="#how-to-ace-this-course">How to ace this course?</a></li>
-        <li><a href="#evaluation">Evaluation</a></li>
-        <li><a href="#websites">Websites</a></li>
-      </ul>
-    </li>
-    <li><a href="#introduction-to-computer-programming">Introduction to Computer Programming</a>
-      <ul>
-        <li><a href="#what-this-course-is-about">What this Course is about?</a></li>
-        <li><a href="#basic-computer-organisation">Basic Computer Organisation</a></li>
-        <li><a href="#programming-languages">Programming Languages</a></li>
-      </ul>
-    </li>
-    <li><a href="#intro-to-c-programming">Intro to C Programming</a>
+    <li><a href="#c-programming-basics">C Programming Basics</a>
       <ul>
         <li><a href="#hello-world-c-program">Hello World! C Program</a></li>
         <li><a href="#running-the-program">Running the Program</a></li>
         <li><a href="#what-just-happened">What just happened?</a></li>
         <li><a href="#using-makefile-to-do-it-together">Using Makefile to do it together</a></li>
-        <li><a href="#reading">Reading</a></li>
       </ul>
     </li>
-    <li><a href="#fundas-for-doing-programming">Fundas for doing Programming!</a>
+    <li><a href="#constants-datatypes-expressions">Constants, Datatypes, Expressions</a>
       <ul>
-        <li><a href="#tresure-huntdumb-charades">Tresure Hunt/Dumb charades!</a></li>
+        <li><a href="#constants">Constants</a></li>
+        <li><a href="#data-types">Data Types</a></li>
+        <li><a href="#expressions">Expressions</a></li>
+        <li><a href="#reading">Reading</a></li>
       </ul>
     </li>
     <li><a href="#thanks">Thanks</a></li>
@@ -405,157 +390,13 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="welcome-to-cs0101-computer-programming">
-  Welcome to CS0.101 Computer Programming
-  <a class="anchor" href="#welcome-to-cs0101-computer-programming">#</a>
+  <article class="markdown"><h1 id="c-programming-basics">
+  C Programming Basics
+  <a class="anchor" href="#c-programming-basics">#</a>
 </h1>
+<p><em>Constants, Data Types, Expressions</em></p>
 <p><strong>Girish Varma</strong></p>
-<p><a href="https://cpro-iiit.github.io/docs/course_material/lectures/1/05_08.pdf">https://cpro-iiit.github.io/docs/course_material/lectures/1/05_08.pdf</a></p>
-<hr>
-<h1 id="admin-stuff">
-  Admin Stuff
-  <a class="anchor" href="#admin-stuff">#</a>
-</h1>
-<hr>
-<h2 id="teaching-team">
-  Teaching Team
-  <a class="anchor" href="#teaching-team">#</a>
-</h2>
-<p>Instructors (3): Girish Varma, Abhishek Deshpande, Sandeep Nagar</p>
-<p>TAs (20): Devesh, Sirisetti, Mayaank, Priet, Harshvardhan, Shreya, Annamalai, Talib, Druvitha, Aaditya, Tanishq, Sahil, Karan, Manan, Madhav, Yash, Khooshi, Poorvi, Harshit, Sarthak</p>
-<hr>
-<h2 id="how-to-ace-this-course">
-  How to ace this course?
-  <a class="anchor" href="#how-to-ace-this-course">#</a>
-</h2>
-<p>12 Weeks Course (excluding exam/holiday/prep weeks) ​</p>
-<table>
-<thead>
-<tr>
-<th>Session</th>
-<th style="text-align:center">Time (hrs)</th>
-<th style="text-align:right">Marks (%)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>3 Lectures</td>
-<td style="text-align:center">3 x 1</td>
-<td style="text-align:right">-</td>
-</tr>
-<tr>
-<td>1 Tutorial</td>
-<td style="text-align:center">1 x 1</td>
-<td style="text-align:right">-</td>
-</tr>
-<tr>
-<td>1 Lab</td>
-<td style="text-align:center">1 x 3</td>
-<td style="text-align:right">2</td>
-</tr>
-<tr>
-<td>Reading/Practice</td>
-<td style="text-align:center">3</td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td>Assignment</td>
-<td style="text-align:center">3</td>
-<td style="text-align:right">2.5</td>
-</tr>
-</tbody>
-</table>
-<p>Total Time per week: 13 hrs<br>
-Total Problem solving per week: 3 (Lab) + 2 (Tut) + 2 (Assgn) 2 (Practice) = 9</p>
-<hr>
-<h2 id="evaluation">
-  Evaluation
-  <a class="anchor" href="#evaluation">#</a>
-</h2>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th style="text-align:center">Marks (%)</th>
-<th style="text-align:right"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Lab</td>
-<td style="text-align:center">10 x 2</td>
-<td style="text-align:right">Best 10 of *</td>
-</tr>
-<tr>
-<td>Assignments</td>
-<td style="text-align:center">6 x 5</td>
-<td style="text-align:right">6 in No.</td>
-</tr>
-<tr>
-<td>Mid Term</td>
-<td style="text-align:center">8 + 12</td>
-<td style="text-align:right">Written + Lab</td>
-</tr>
-<tr>
-<td>End Sem</td>
-<td style="text-align:center">10 + 20</td>
-<td style="text-align:right">Written + Lab</td>
-</tr>
-</tbody>
-</table>
-<p>80% marks for programming problem solving.<br>
-Solve 100 problems over the entire course.</p>
-<hr>
-<h2 id="websites">
-  Websites
-  <a class="anchor" href="#websites">#</a>
-</h2>
-<p>Course Website: <a href="https://cpro-iiit.github.io/">https://cpro-iiit.github.io/</a>
-All lecture/lab/tutorial material is posted. Additional information, links to other courses/tutorials on the web.</p>
-<p>Autolab Problem Server: <a href="https://pingala.iiit.ac.in/">https://pingala.iiit.ac.in/</a>
-All lab/assignment/tutorials problems released here. More about this in the lab.</p>
-<hr>
-<h1 id="introduction-to-computer-programming">
-  Introduction to Computer Programming
-  <a class="anchor" href="#introduction-to-computer-programming">#</a>
-</h1>
-<hr>
-<h2 id="what-this-course-is-about">
-  What this Course is about?
-  <a class="anchor" href="#what-this-course-is-about">#</a>
-</h2>
-<p><img src="code_spell.jpeg" alt="bg right:50% w:500" /></p>
-<ul>
-<li>
-<p>Genie needs to be instructed precisely, otherwise it will not respond!</p>
-</li>
-<li>
-<p>It will precisely do, what you told it to do! If you meant something else and that was your problem.</p>
-</li>
-<li>
-<p>Genie only understand a language, which has no scope for confusion/ambiguity.</p>
-</li>
-</ul>
-<hr>
-<hr>
-<h2 id="basic-computer-organisation">
-  Basic Computer Organisation
-  <a class="anchor" href="#basic-computer-organisation">#</a>
-</h2>
-<p><img src="computer_organization.png" alt="bg right:60% w:600" /></p>
-<hr>
-<hr>
-<h2 id="programming-languages">
-  Programming Languages
-  <a class="anchor" href="#programming-languages">#</a>
-</h2>
-<p><img src="high-low-langs.png" alt="bg right:50% w:600" /></p>
-<hr>
-<hr>
-<h1 id="intro-to-c-programming">
-  Intro to C Programming
-  <a class="anchor" href="#intro-to-c-programming">#</a>
-</h1>
+<p><a href="https://cpro-iiit.github.io/docs/course_material/lectures/2/07_08.pdf">https://cpro-iiit.github.io/docs/course_material/lectures/2/07_08.pdf</a></p>
 <hr>
 <h2 id="hello-world-c-program">
   Hello World! C Program
@@ -610,30 +451,75 @@ All lab/assignment/tutorials problems released here. More about this in the lab.
 </ol>
 <p>Next time, after you modify <code>main.c</code>, only <code>make run</code> needs to be done.</p>
 <hr>
+<h1 id="constants-datatypes-expressions">
+  Constants, Datatypes, Expressions
+  <a class="anchor" href="#constants-datatypes-expressions">#</a>
+</h1>
+<hr>
+<h2 id="constants">
+  Constants
+  <a class="anchor" href="#constants">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt; </span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> 
+</span></span><span style="display:flex;"><span><span style="color:#111">{</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;printing the integer constant %d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;printing the integer constant %d</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">100</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;printing the float constant %f</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">1.5</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;printing the float constant %f</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">15.6</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> 
+</span></span></code></pre></div><p>Try out code online:
+<a href="https://www.programiz.com/online-compiler/7vCJDbICMawSj">https://www.programiz.com/online-compiler/7vCJDbICMawSj</a></p>
+<hr>
+<h2 id="data-types">
+  Data Types
+  <a class="anchor" href="#data-types">#</a>
+</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th style="text-align:center">C Type</th>
+<th style="text-align:right">Memory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Integer</td>
+<td style="text-align:center">int</td>
+<td style="text-align:right">32 bits</td>
+</tr>
+<tr>
+<td>Real Number</td>
+<td style="text-align:center">float</td>
+<td style="text-align:right">32 bits</td>
+</tr>
+<tr>
+<td>Character</td>
+<td style="text-align:center">char</td>
+<td style="text-align:right">8 bits</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="expressions">
+  Expressions
+  <a class="anchor" href="#expressions">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75af00">printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;circumference is %f&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span><span style="color:#ae81ff">3.14</span><span style="color:#f92672">*</span><span style="color:#ae81ff">5</span><span style="color:#111">);</span>
+</span></span></code></pre></div><p>Try out code online:
+<a href="https://www.programiz.com/online-compiler/7vCJDbICMawSj">https://www.programiz.com/online-compiler/7vCJDbICMawSj</a></p>
+<hr>
 <h2 id="reading">
   Reading
   <a class="anchor" href="#reading">#</a>
 </h2>
-<p>Chapter 1 upto Section 1.4,<br>
-Chapter 2 upto Section 2.2
+<p>Chapter 2
 Computer Science: A Structured Programming Approach Using C <br>
 Behrouz A. Forouzan, Richard F. Gilberg</p>
-<hr>
-<h1 id="fundas-for-doing-programming">
-  Fundas for doing Programming!
-  <a class="anchor" href="#fundas-for-doing-programming">#</a>
-</h1>
-<hr>
-<h2 id="tresure-huntdumb-charades">
-  Tresure Hunt/Dumb charades!
-  <a class="anchor" href="#tresure-huntdumb-charades">#</a>
-</h2>
-<ul>
-<li>Dont be afraid to make guesses!</li>
-<li>Dont be afraid to try out guesses!</li>
-<li>Failed guess gives clues. Learn from them!</li>
-<li>You will eventually learn to make more clever guesses.</li>
-</ul>
 <hr>
 <h1 id="thanks">
   Thanks
@@ -648,9 +534,9 @@ Behrouz A. Forouzan, Richard F. Gilberg</p>
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/5f1425311171ef40783983eaef202a2214044b8f" title='Last modified by Girish Varma | August 5, 2024' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/cpro-iiit/cpro-iiit.github.io/commit/1602a89178841134f14d915c4a3b769d631f8612" title='Last modified by geevi | August 6, 2024' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>August 5, 2024</span>
+      <span>August 6, 2024</span>
     </a>
   </div>
 
@@ -686,34 +572,20 @@ Behrouz A. Forouzan, Richard F. Gilberg</p>
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#welcome-to-cs0101-computer-programming">Welcome to CS0.101 Computer Programming</a></li>
-    <li><a href="#admin-stuff">Admin Stuff</a>
-      <ul>
-        <li><a href="#teaching-team">Teaching Team</a></li>
-        <li><a href="#how-to-ace-this-course">How to ace this course?</a></li>
-        <li><a href="#evaluation">Evaluation</a></li>
-        <li><a href="#websites">Websites</a></li>
-      </ul>
-    </li>
-    <li><a href="#introduction-to-computer-programming">Introduction to Computer Programming</a>
-      <ul>
-        <li><a href="#what-this-course-is-about">What this Course is about?</a></li>
-        <li><a href="#basic-computer-organisation">Basic Computer Organisation</a></li>
-        <li><a href="#programming-languages">Programming Languages</a></li>
-      </ul>
-    </li>
-    <li><a href="#intro-to-c-programming">Intro to C Programming</a>
+    <li><a href="#c-programming-basics">C Programming Basics</a>
       <ul>
         <li><a href="#hello-world-c-program">Hello World! C Program</a></li>
         <li><a href="#running-the-program">Running the Program</a></li>
         <li><a href="#what-just-happened">What just happened?</a></li>
         <li><a href="#using-makefile-to-do-it-together">Using Makefile to do it together</a></li>
-        <li><a href="#reading">Reading</a></li>
       </ul>
     </li>
-    <li><a href="#fundas-for-doing-programming">Fundas for doing Programming!</a>
+    <li><a href="#constants-datatypes-expressions">Constants, Datatypes, Expressions</a>
       <ul>
-        <li><a href="#tresure-huntdumb-charades">Tresure Hunt/Dumb charades!</a></li>
+        <li><a href="#constants">Constants</a></li>
+        <li><a href="#data-types">Data Types</a></li>
+        <li><a href="#expressions">Expressions</a></li>
+        <li><a href="#reading">Reading</a></li>
       </ul>
     </li>
     <li><a href="#thanks">Thanks</a></li>

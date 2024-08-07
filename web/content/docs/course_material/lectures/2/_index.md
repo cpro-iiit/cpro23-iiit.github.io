@@ -1,12 +1,14 @@
 ---
-title: "01 Introduction"
+title: "02 Constants, Data Types, Variables, Expressions"
 bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
 footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 ---
 
-# Intro to C Progamming
+# C Programming Basics 
+_Constants, Data Types, Expressions_
+
 
 __Girish Varma__
 
@@ -65,12 +67,12 @@ Next time, after you modify `main.c`, only `make run` needs to be done.
 
 ---
 
-# Constants, Datatypes, Variables
+# Constants, Datatypes, Expressions
 
 ---
 ## Constants
 
-https://www.programiz.com/online-compiler/48tOa2UyvDuJH
+
 ```c
 #include <stdio.h> 
 int main() 
@@ -84,40 +86,39 @@ int main()
     return 0;
 } 
 ```
+
+Try out code online:
+https://www.programiz.com/online-compiler/7vCJDbICMawSj 
+
 ---
 
 ## Data Types
 
-int
-float
-char
 
+| Type             |C Type     |Memory   |
+|------------------|:---------:|--------:|
+| Integer          |  int      | 32 bits |
+| Real Number      |  float    | 32 bits  |
+| Character        |  char     |  8 bits |
 
----
-
-## Variables
-
-
-
----
-
-## Initializers
 
 
 ---
 
 ## Expressions
+```c
+printf("circumference is %f", 2*3.14*5);
+```
 
----
-## Giving Input: scanf
-
+Try out code online:
+https://www.programiz.com/online-compiler/7vCJDbICMawSj 
 
 ---
 
 ## Reading 
 
 
-
+Chapter 2
 Computer Science: A Structured Programming Approach Using C    
 Behrouz A. Forouzan, Richard F. Gilberg
 

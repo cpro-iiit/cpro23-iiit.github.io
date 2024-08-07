@@ -56,13 +56,16 @@
     <loc>http://localhost:1313/docs/course_material/lectures/1/</loc>
     <lastmod>2024-08-05T19:35:49+05:30</lastmod>
   </url><url>
+    <loc>http://localhost:1313/docs/course_material/lectures/2/</loc>
+    <lastmod>2024-08-06T11:45:39+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/c_lib_ref/</loc>
     <lastmod>2023-11-03T13:55:54+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/</loc>
-    <lastmod>2024-08-05T19:35:49+05:30</lastmod>
+    <lastmod>2024-08-06T17:41:41+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/grading_scheme/</loc>
     <lastmod>2024-07-26T19:27:52+05:30</lastmod>
@@ -71,10 +74,10 @@
     <lastmod>2023-09-10T20:08:21+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-08-05T01:52:01+05:30</lastmod>
+    <lastmod>2024-08-06T05:28:29+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/course_material/labs/0/</loc>
-    <lastmod>2024-08-05T13:40:37+05:30</lastmod>
+    <lastmod>2024-08-06T17:41:41+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/references/</loc>
     <lastmod>2023-11-03T08:06:33+05:30</lastmod>
@@ -83,7 +86,7 @@
     <lastmod>2023-09-10T19:42:42+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tas/</loc>
-    <lastmod>2023-09-10T20:08:21+05:30</lastmod>
+    <lastmod>2024-08-06T17:34:39+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/course_material/template/</loc>
     <lastmod>2023-08-04T11:07:05+05:30</lastmod>
