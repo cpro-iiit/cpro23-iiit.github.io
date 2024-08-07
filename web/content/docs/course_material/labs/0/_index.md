@@ -135,9 +135,10 @@ More Info: https://docs.autolabproject.com/command-line-interface/
 ---
 ## 4. Solve Lab 0
 
-Problem-1 
+Problem-1: output should be "Hello World!" 
 
-Problem-2
+Problem-2: output should be "Hello World!I am learning Computer Programming in C.And it is awesome!"
+
 
 ---
 ### 4.1 Coding Treasure Hunt!
@@ -199,6 +200,7 @@ Happy Programming!
   https://scratch.mit.edu/
 - Think outside the box, code inside the lines.
 ---
+
 <p align="center">
   <img src="meme7.jpg" alt="Image 1" width="30%">
   <img src="meme6.png" alt="Image 2" width="30%">
